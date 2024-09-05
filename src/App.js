@@ -1,26 +1,26 @@
-import logo from './logo.svg';
+
+import React from 'react';
+
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-const React = require("react");
-const ReactDOM = require("react-dom");
-const Route = require("react-router-dom").Route;
-const BrowserRouter = require("react-router-dom").BrowserRouter;
-const hashHistory = require("react-router-dom").hashHistory;
-const bootstrap = require("bootstrap/dist/css/bootstrap.css");
+
 
 /* Import Components */
-const Header = require("./components/Header");
+/* Import Components */
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import FullStack from './components/FullStack';
+import DataVisualization2 from './components/DataVisualization2';
+import WebApps from './components/WebApps';
 
-const Home = require("./components/Home");
-const About = require("./components/About");
-const Contact = require("./components/Contact");
-const FullStack = require("./components/FullStack");
-const DataVisualization2 = require("./components/DataVisualization2");
-const WebApps = require("./components/WebApps");
 
 function App() {
   return (
     <div className="App">
-     <BrowserRouter>
+     <Router>
     <div>
       <Header />
       <Route exact path="/" component={Home} />
@@ -30,7 +30,7 @@ function App() {
       <Route path="/dataVisualization2" component={DataVisualization2} />
       <Route path="/WebApps" component={WebApps} />
     </div>
-  </BrowserRouter>,
+  </Router>,
     </div>
   );
 }

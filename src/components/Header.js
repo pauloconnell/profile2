@@ -3,13 +3,10 @@ const Link = require("react-router-dom").Link;
 const styles = require("../app.css");
 /* the main page for the index route of this app */
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
+const Header = function () {
     return (
+  
+  
       <header className="textAlign my-3">
         <div className="flexContainer fixed-top">
           <Link className="col link border bgsolid" to="/">
@@ -124,5 +121,5 @@ class Header extends React.Component {
       </header>
     );
   }
-}
+
 module.exports = Header;
