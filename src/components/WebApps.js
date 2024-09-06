@@ -212,4 +212,4 @@ const WebApps = function () {
   );
 };
 
-module.exports = WebApps;
+export default WebApps;

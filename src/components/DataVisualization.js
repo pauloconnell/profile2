@@ -146,4 +146,4 @@ const DataVisualization = function() {
   );
 };
 
-module.exports = DataVisualization;
+export default DataVisualization;

@@ -196,4 +196,4 @@ const FullStack = function () {
   );
 };
 
-module.exports = FullStack;
+export default FullStack;

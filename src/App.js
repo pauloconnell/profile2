@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
@@ -20,17 +20,19 @@ import WebApps from './components/WebApps';
 function App() {
   return (
     <div className="App">
-     <Router>
-    <div>
-      <Header />
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/fullStack" component={FullStack} />
-      <Route path="/dataVisualization2" component={DataVisualization2} />
-      <Route path="/WebApps" component={WebApps} />
-    </div>
-  </Router>,
+      <Router>
+        <div>
+          <Header />
+          <Routes>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/fullStack" component={FullStack} />
+            <Route path="/dataVisualization2" component={DataVisualization2} />
+            <Route path="/WebApps" component={WebApps} />
+          </Routes>
+        </div>
+      </Router>,
     </div>
   );
 }

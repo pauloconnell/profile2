@@ -7,7 +7,7 @@ import UnorderedList from './UnorderedList';
 import MyWork from './links/MyWork';
 import DynamicData from './DynamicData';
 import styles from '../App.css';
-import ReactTooltip from 'react-tooltip';
+//import ReactTooltip from 'react-tooltip';
 
 
 
@@ -32,7 +32,7 @@ const componentsMade = [
 
 /* the main page for the index route of this app */
 
-function Profile() {
+function Home() {
 
   const [showThis, setShowThis] = useState(false);
   const [hovering, setHovering] = useState(false);
@@ -42,10 +42,10 @@ function Profile() {
 
 
 
-  const handleClick = () => {
-    setShowThis: !showThis;
+  // const handleClick = () => {
+  //   setShowThis: !showThis;
 
-  }
+  // }
 
   const handleHoverFE = () => {
 
@@ -309,4 +309,4 @@ function Profile() {
   );
 }
 
-module.exports = Profile;
+export default Home;

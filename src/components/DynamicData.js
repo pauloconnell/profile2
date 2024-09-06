@@ -75,4 +75,4 @@ const DynamicData = function () {
   );
 };
 
-module.exports = DynamicData;
+export default DynamicData;

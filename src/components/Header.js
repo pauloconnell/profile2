@@ -1,6 +1,6 @@
-const React = require("react");
-const Link = require("react-router-dom").Link;
-const styles = require("../app.css");
+import React from "react";
+import { Link } from "react-router-dom";
+import styles from "../App.css";
 /* the main page for the index route of this app */
 
 const Header = function () {
@@ -122,4 +122,4 @@ const Header = function () {
     );
   }
 
-module.exports = Header;
+  export default Header;

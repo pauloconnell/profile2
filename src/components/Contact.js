@@ -64,4 +64,4 @@ const Contact = function () {
   );
 };
 
-module.exports = Contact;
+export default Contact;
