@@ -24,12 +24,12 @@ function App() {
         <div>
           <Header />
           <Routes>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/fullStack" component={FullStack} />
-            <Route path="/dataVisualization2" component={DataVisualization2} />
-            <Route path="/WebApps" component={WebApps} />
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/fullStack" element={<FullStack />} />
+            <Route path="/dataVisualization2" element={<DataVisualization2 />} />
+            <Route path="/WebApps" element={<WebApps />} />
           </Routes>
         </div>
       </Router>,

@@ -109,8 +109,8 @@ function Home() {
             </p>
           </div>
           <div
-            onMouseEnter={this.handleHoverIn}
-            onMouseLeave={this.handleHoverOut}
+            onMouseEnter={handleHoverIn}
+            onMouseLeave={handleHoverOut}
             style={{ minHeight: "420px" }}
           >
             <div className=" width90 ">
@@ -123,18 +123,18 @@ function Home() {
                     <span
                       className="col fs-3 link"
                       style={{
-                        color: this.state.highlightFE ? "blue" : "black",
+                        color: highlightFE ? "blue" : "black",
                       }}
-                      onClick={this.handleHoverFE}
+                      onClick={handleHoverFE}
                     >
                       FrontEnd
                     </span>
                     <span
                       className="col fs-3 link"
                       style={{
-                        color: this.state.highlightBE ? "white" : "black",
+                        color: highlightBE ? "white" : "black",
                       }}
-                      onClick={this.handleHoverBE}
+                      onClick={handleHoverBE}
                     >
                       BackEnd
                     </span>
@@ -145,11 +145,11 @@ function Home() {
                       <span
                         id="fe"
                         style={{
-                          color: this.state.highlightFE ? "white" : "black",
-                          fontWeight: this.state.highlightFE
+                          color: highlightFE ? "white" : "black",
+                          fontWeight:highlightFE
                             ? "bold"
                             : " normal",
-                          display: this.state.highlightFE ? "block" : "none",
+                          display: highlightFE ? "block" : "none",
                         }}
                       >
                         Certified Developer in: React, HTML, CSS, JavaScript,
@@ -164,11 +164,11 @@ function Home() {
                       <span
                         id="be"
                         style={{
-                          color: this.state.highlightBE ? "white" : "black",
-                          fontWeight: this.state.highlightBE
+                          color: highlightBE ? "white" : "black",
+                          fontWeight: highlightBE
                             ? "bold"
                             : " normal",
-                          display: this.state.highlightBE ? "block" : "none",
+                          display: highlightBE ? "block" : "none",
                         }}
                       >
                         Certified on Node, MongoDB, Mongoose, DataBases
@@ -180,11 +180,11 @@ function Home() {
                       <br />
                       <span
                         style={{
-                          color: this.state.highlightFE ? "white" : "black",
-                          fontWeight: this.state.highlightFE
+                          color: highlightFE ? "white" : "black",
+                          fontWeight: highlightFE
                             ? "bold"
                             : " normal",
-                          display: this.state.highlightFE ? "block" : "none",
+                          display: highlightFE ? "block" : "none",
                         }}
                       >
                         Experience using Azure Devops, sprint planning and
@@ -195,11 +195,11 @@ function Home() {
                       <br />
                       <span
                         style={{
-                          color: this.state.highlightBE ? "white" : "black",
-                          fontWeight: this.state.highlightBE
+                          color: highlightBE ? "white" : "black",
+                          fontWeight: highlightBE
                             ? "bold"
                             : " normal",
-                          display: this.state.highlightBE ? "block" : "none",
+                          display: highlightBE ? "block" : "none",
                         }}
                       >
                         Current project: Using Node.js, the back end team
@@ -207,11 +207,11 @@ function Home() {
                         DB.
                         <span
                           style={{
-                            color: this.state.highlightFE ? "blue" : "black",
-                            fontWeight: this.state.highlightFE
+                            color: highlightFE ? "blue" : "black",
+                            fontWeight: highlightFE
                               ? "bold"
                               : " normal",
-                            display: this.state.highlightFE
+                            display: highlightFE
                               ? "block"
                               : "none",
                           }}
@@ -222,11 +222,11 @@ function Home() {
                       <br />
                       <span
                         style={{
-                          color: this.state.highlightFE ? "white" : "black",
-                          fontWeight: this.state.highlightFE
+                          color: highlightFE ? "white" : "black",
+                          fontWeight: highlightFE
                             ? "bold"
                             : " normal",
-                          display: this.state.highlightFE ? "block" : "none",
+                          display: highlightFE ? "block" : "none",
                         }}
                       >
                         Currently in final stages of building out full
@@ -277,7 +277,7 @@ function Home() {
 
       <MyWork class="mb-3" />
 
-      <dynamicData data="isHere" />
+      <DynamicData data="isHere" />
 
       <div className="textAlign">
         <span className="inlineBlock">
@@ -285,13 +285,13 @@ function Home() {
             title="Click button to show details"
             type="button"
             className="btn btn-success my-3"
-            onClick={(e) => this.handleClick(e)}
+            onClick={(e) => setShowThis(!showThis)}
           >
             about this app
           </button>
           <br />
 
-          {this.state.showThis ? (
+          {showThis ? (
             <div className="expandingReadable">
               This profile app was built by Paul O'Connell using React and
               node.js <br />
