@@ -1,9 +1,9 @@
-const MyWork = require("./links/MyWork");
-const React = require("react");
-const Link = require("react-router-dom").Link;
-//const UnorderedList = require("./UnorderedList");
-const Footer = require("./Footer");
-/* the main page for the index route of this app */
+import React from "react";
+import { Link } from "react-router-dom";
+import UnorderedList from "./UnorderedList";
+import Footer from "./Footer";
+import MyWork from "./links/MyWork";
+
 const DataVisualization2 = function () {
   return (
     <div className="container-fluid">

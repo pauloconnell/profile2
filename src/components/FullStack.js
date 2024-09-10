@@ -1,8 +1,9 @@
-const React = require("react");
-const Link = require("react-router-dom").Link;
-const UnorderedList = require("./UnorderedList");
-const Footer = require("./Footer");
-const MyWork = require("./links/MyWork");
+import React from "react";
+import { Link } from "react-router-dom";
+import UnorderedList from "./UnorderedList";
+import Footer from "./Footer";
+import MyWork from "./links/MyWork";
+
 
 /* Refactored Feb 2023 */
 const FullStack = function () {
