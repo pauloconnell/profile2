@@ -92,13 +92,15 @@ function Home() {
         <div className="width90 readEasy word    m-auto my-3 animate">
           <i>
             <div className="lineHeight wordSpace ">
-              Keen problem solver interested in all aspects of Software
-              Development, specializing Web Technologies.
+              Coming Soon:  Profile V2 Sept 2024 <br/>
+              Keen problem solver experienced in all aspects of Software
+              Development, specializing in Web Technologies.
             </div>
             <div className="fade-in-info ">
               I am currently working full time as Front End Software Developer
               for a green field start up where we are building a peer-to-peer
-              e-commerce platform.
+              e-commerce platform. <br/> <a href="https://www.knowitalls.com" alt="knowitalls.com"  target="_blank"
+              rel="noreferrer" >www.knowitalls.com</a>
             </div>
           </i>
         </div>
