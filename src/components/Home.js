@@ -276,8 +276,10 @@ function Home() {
       </div>
 
       <MyWork class="mb-3" />
+{/* 
+     <DynamicData data="isHere" />
+*/}
 
-      <DynamicData data="isHere" />
 
       <div className="textAlign">
         <span className="inlineBlock">
