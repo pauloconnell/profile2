@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "../App.css";
+//import styles from "../App.css";
 /* the main page for the index route of this app */
 
 const Header = function () {

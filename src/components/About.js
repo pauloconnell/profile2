@@ -1,12 +1,12 @@
 import React from "react" ;
-import Link  from "react-router-dom";
+//import Link  from "react-router-dom";
 import MyWork from './links/MyWork';
 
 /* the main page for the about route of this app */
 const About = function () {
   return (
     <div className="textAlign">
-      <p>
+      
         <div
           className="readable title text lineHeight width90"
           style={{ fontSize: "initial" }}
@@ -20,7 +20,7 @@ const About = function () {
             applications, API's, databases, and web sites.
           </b>
         </div>
-      </p>
+      
       <div className="readEasy big lineHeight width80 mx-auto my-5 p-4 hoverDark">
         <u className="title">FULLSTACK M.E.R.N. CERTIFICATION:</u>
         <br />

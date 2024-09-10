@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import UnorderedList from "./UnorderedList";
-import Footer from "./Footer";
+//import { Link } from "react-router-dom";
+//import UnorderedList from "./UnorderedList";
+//import Footer from "./Footer";
 import MyWork from "./links/MyWork";
 
 
