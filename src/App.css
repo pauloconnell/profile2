@@ -36,3 +36,357 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: "Inter", sans-serif;
+
+  background-color: SkyLightBlue;
+  background-image: url("https://res.cloudinary.com/pollie/image/upload/v1621034051/Million_Ridge_tkchwl.png");
+  /* Center and scale the image nicely */
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 16px;
+  color: black;
+}
+
+code {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: block;
+  color: black;
+}
+
+img {
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section {
+  transition: all 1s ease-in-out;
+}
+.row section.link:hover {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+ul.readEasy li {
+  margin-bottom: 15px;
+}
+ul {
+  padding-left: 0px;
+  list-style: upper-roman;
+  list-style-position: inside;
+}
+/**not used 
+div.space {
+  margin-top: 17px;
+}
+**/
+.animation {
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+.animation.active {
+  opacity: 1;
+  height: auto;
+}
+
+.bgsolid {
+  background: rgb(12, 12, 12) !important;
+}
+
+.big {
+  font-size: 17px;
+}
+
+.border {
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+.bottom {
+  grid-area: bottom;
+}
+
+.center {
+  margin: auto;
+  width: auto;
+}
+
+.container {
+  min-height: 300px;
+}
+
+.contactCard {
+  display: inline-block;
+  height: 100%;
+}
+.expandingReadable {
+  background: rgba(128, 128, 128, 0.6);
+  color: black;
+  border-radius: 5px;
+  padding: 6px;
+  transition: background 1.5s ease-in-out, font-size 1.5s ease-in-out;
+  font-size: 8px;
+}
+.expandingReadable:hover {
+  background: rgba(128, 128, 128, 0.95);
+  font-size: 16px;
+}
+
+.fade-in-info {
+  opacity: 0;
+  transition: all 1.2s ease-in-out;
+
+  background: rgba(128, 128, 128, 0.8);
+  color: black;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.fade-in-info:hover {
+  opacity: 1;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gridContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.hoverDark {
+  max-width: 900px;
+  min-height: 300px;
+}
+.hoverDark:hover {
+  background: rgba(128, 128, 128, 0.8);
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.link {
+  color: DodgerBlue;
+  text-shadow: 1px 1px 3px white;
+  font-size: 24px;
+  padding-bottom: 6px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 2px;
+}
+
+.link:hover {
+  color: black;
+  background: DodgerBlue;
+}
+
+.lineHeight {
+  line-height: 140%;
+}
+.margin {
+  margin: 10px;
+}
+
+.marginTop {
+  margin-top: 20px;
+}
+
+.middle {
+  grid-area: middle;
+}
+
+.minWidth {
+  min-width: 320px;
+}
+
+.noShadow {
+  text-shadow: none;
+}
+.pos-one {
+}
+
+.pos-two {
+}
+
+.readEasy {
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px 6px;
+  line-height: 1.5rem;
+}
+
+.responsive {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.row {
+  flex-wrap: wrap;
+}
+
+.small {
+  font-size: 12px;
+  color: black;
+}
+
+.show {
+  visibility: visible;
+}
+
+.text {
+  padding: 15px 12px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  text-shadow: 2px 2px 2px white;
+  line-height: 1.6;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.textAlign {
+  text-align: center;
+}
+.textAlignLeft {
+  text-align: left;
+}
+
+.textShadow {
+  text-shadow: 2px 2px 5px white;
+}
+
+.top {
+  grid-area: top;
+}
+
+.vertSpace {
+  margin-bottom: 20px;
+}
+
+.width {
+  width: auto;
+}
+
+.width72 {
+  width: 72px;
+}
+
+.width80 {
+  min-width: 80%;
+  max-width: 980px;
+}
+
+.width90 {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  min-width: 315px;
+}
+
+.wordSpace {
+  word-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+
+#name {
+  background: DodgerBlue;
+  text-shadow: 3px 3px 5px white;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 3.2rem;
+  margin-top: 50px;
+}
+
+#showOnHover {
+  transition: font-size 3s ease-in-out;
+  font-weight: normal;
+}
+#showOnHover:hover {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 422px) {
+  #name {
+    margin-top: 90px;
+  }
+}
+
+@media only screen and (max-width: 452px) {
+  .fade-in-info {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  span.small {
+    font-size: 14px;
+  }
+  .fade-in-info {
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 601px) {
+  span.small {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .link {
+    font-size: 24px;
+  }
+
+  span.small {
+    font-size: 18px;
+  }
+}
+.animationContact {
+  padding: 5px;
+  margin: 5px;
+  max-height: 240px;
+  box-sizing: border-box;
+  border: 5px white solid;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(30px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-1px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(30px);
+  }
+}
