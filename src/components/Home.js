@@ -277,7 +277,7 @@ function Home() {
         </p>
       </div>
 
-      <MyWork class="mb-3" />
+      <MyWork className="mb-3" />
 {/* 
      <DynamicData data="isHere" />
 */}

@@ -26,6 +26,7 @@ const DynamicData = function () {
             title="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
             href="https://codepen.io/p_ollie/full/qJjVgR"
             target="_blank"
+            rel="noreferrer"
           >
             <div className=" text-align">
               <span className="title inlineBlock text">
@@ -49,6 +50,7 @@ const DynamicData = function () {
             className="pos-two link align-middle"
             href="https://ianbunburydogschool.glitch.me"
             target="_blank"
+            rel="noreferrer"
           >
             <div className=" text-align">
               <span className="title inlineBlock text">

@@ -65,6 +65,7 @@ const DataVisualization = function() {
             className="link pos-one"
             href="https://d3-challenge-4.pauloconnell.repl.co/"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="border">
               <span className="title text">
@@ -86,6 +87,7 @@ const DataVisualization = function() {
             className="link pos-two"
             href="https://d3-challenge-2-New.pauloconnell.repl.co"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="border">
               <span className="title text">
@@ -107,6 +109,7 @@ const DataVisualization = function() {
             className="link pos-one"
             href="https://d3-Challenge-3.pauloconnell.repl.co"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="border">
               <span className="title text">
@@ -126,6 +129,7 @@ const DataVisualization = function() {
             className="link pos-two"
             href="https://codepen.io/p_ollie/full/GRZjQJJ"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="border">
               <span className="title text">

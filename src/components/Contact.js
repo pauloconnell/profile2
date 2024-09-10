@@ -18,13 +18,13 @@ const Contact = function () {
             <a
               className="link contactCard"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
               href="https://www.linkedin.com/in/paul-o-connell-604"
               title="LinkedIn"
             >
               <img src="https://res.cloudinary.com/pollie/image/upload/c_thumb,h_102,w_131/v1622842617/linked-inLogo_arbzyw.webp" alt="linkedIn"/>
               <br />
-              <span class="text-break">
+              <span className="text-break">
                 www.linkedin.com/in/paul-o-connell-604
               </span>
             </a>
@@ -40,7 +40,7 @@ const Contact = function () {
             >
               <img src="https://res.cloudinary.com/pollie/image/upload/c_thumb,g_face,w_118/v1622847396/GitHub-Mark_hnhn3m.png"  alt="myImage"/>
               <br />
-              <span class="text-break">https://github.com/pauloconnell</span>
+              <span className="text-break">https://github.com/pauloconnell</span>
             </a>
           </div>
           <div className="col-auto"></div>

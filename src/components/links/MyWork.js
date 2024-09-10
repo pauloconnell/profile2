@@ -1,5 +1,6 @@
-const React = require("react");
-const Link = require("react-router-dom").Link;
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 /*    <!-- comment causing error on glitch???
 <Link className="link width inlineBlock" id="data" to="/DynamicData">

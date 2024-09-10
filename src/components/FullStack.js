@@ -34,6 +34,7 @@ const FullStack = function () {
             className="link  d-block"
             href="https://qa-4-suduko-solver.pauloconnell.repl.co/"
             target="_blank"
+            rel="noreferrer"
           >
             <div
               className=" "
@@ -43,7 +44,7 @@ const FullStack = function () {
                 <strong>Suduko Solver Game</strong>
               </span>
               <br />
-              <div class="d-flex align-items-start my-3">
+              <div className="d-flex align-items-start my-3">
                 <img
                   className="responsive"
                   src="https://res.cloudinary.com/pollie/image/upload/v1610747577/suduko_e2wjgi.png"
@@ -59,6 +60,7 @@ const FullStack = function () {
             className="link  d-block"
             href="https://stock-price-checker-paul.glitch.me/"
             target="_blank"
+            rel="noreferrer"
           >
             <div
               className=""
@@ -68,7 +70,7 @@ const FullStack = function () {
                 <strong>API Stock Price Checker</strong>
               </span>
               <br />
-              <div class="d-flex align-items-center my-3">
+              <div className="d-flex align-items-center my-3">
                 <img
                   className="responsive"
                   src="https://res.cloudinary.com/pollie/image/upload/v1610734887/StockPriceChecker_h0yedt.png"
@@ -86,6 +88,7 @@ const FullStack = function () {
             className=" link d-block"
             href="https://messageboard-anon.glitch.me/"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="">
               <span className="title text">
@@ -93,7 +96,7 @@ const FullStack = function () {
               </span>
               <br />
               <div
-                class="my-3"
+                className="my-3"
                 title="This App allows anonymous users to set password protected content on database 'boards'"
               >
                 <img
@@ -111,6 +114,7 @@ const FullStack = function () {
             className=" link d-block"
             href="https://exercisetrackerapi.glitch.me"
             target="_blank"
+            rel="noreferrer"
           >
             <div
               className=" "
@@ -122,7 +126,7 @@ const FullStack = function () {
                 <strong>Exercise Tracker App</strong>
               </span>
               <br />
-              <div class="d-flex align-items-center my-3">
+              <div className="d-flex align-items-center my-3">
                 <img
                   className="responsive"
                   src="https://res.cloudinary.com/pollie/image/upload/v1606166908/xTracker_nm1gfn.png"
@@ -140,6 +144,7 @@ const FullStack = function () {
             className="link  d-block "
             href="https://QA-5-american-british-english-translator.pauloconnell.repl.co"
             target="_blank"
+            rel="noreferrer"
           >
             <div
               className=""
@@ -149,7 +154,7 @@ const FullStack = function () {
                 <strong>Slang Translation App</strong>
               </span>
               <br />
-              <div class="d-flex align-items-start my-3">
+              <div className="d-flex align-items-start my-3">
                 <img
                   className="responsive"
                   src="https://res.cloudinary.com/pollie/image/upload/v1610564580/translate_yjhf3p.png"
@@ -165,6 +170,7 @@ const FullStack = function () {
             className="link  d-block "
             href="https://authentication-pug.glitch.me/"
             target="_blank"
+            rel="noreferrer"
           >
             <div
               className=" "
@@ -177,7 +183,7 @@ const FullStack = function () {
                 </strong>
               </span>
               <br />
-              <div class="d-flex align-items-center my-3">
+              <div className="d-flex align-items-center my-3">
                 <img
                   className="responsive"
                   src="https://res.cloudinary.com/pollie/image/upload/v1610815824/Authenticate-Pug_awfw7d.png"

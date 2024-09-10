@@ -1,8 +1,10 @@
-const React = require("react");
-const Link = require("react-router-dom").Link;
-const UnorderedList = require("./UnorderedList");
 
-const MyWork = require("./links/MyWork");
+import React from 'react';
+import { Link } from 'react-router-dom';
+import UnorderedList from './UnorderedList';
+import MyWork from './links/MyWork';
+
+
 
 /* the main page for the index route of this app */
 const WebApps = function () {
@@ -27,6 +29,7 @@ const WebApps = function () {
             title="Detects GeoLocation then hits weather forcast API to display weather in your area"
             href="https://codepen.io/p_ollie/full/QqGGXB"
             target="_blank"
+            rel="noreferrer"
           >
             <div className=" text-align">
               <span className="title text inlineBlock">
@@ -47,6 +50,7 @@ const WebApps = function () {
             className="link d-block"
             href="https://codepen.io/p_ollie/full/ZEzNJWo"
             target="_blank"
+            rel="noreferrer"
           >
             <div className=" text-align">
               <span className="title text inlineBlock">
@@ -69,6 +73,7 @@ const WebApps = function () {
             className="link d-block"
             href="https://cdpn.io/p_ollie/debug/xyRRyq/yPAJjKXXWKQA"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="text-align">
               <span className="title text inlineBlock">
@@ -89,6 +94,7 @@ const WebApps = function () {
             className=" link d-block"
             href="https://codepen.io/p_ollie/full/RLrxPr"
             target="_blank"
+            rel="noreferrer"
           >
             <div className=" text-align">
               <span className="title text inlineBlock">
@@ -115,6 +121,7 @@ const WebApps = function () {
             title="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
             href="https://codepen.io/p_ollie/full/qJjVgR"
             target="_blank"
+            rel="noreferrer"
           >
             <div className=" text-align">
               <span className="title inlineBlock text">
@@ -139,6 +146,7 @@ const WebApps = function () {
             className="link d-block"
             href="https://ianbunburydogschool.glitch.me"
             target="_blank"
+            rel="noreferrer"
           >
             <div className=" text-align ">
               <span className="title inlineBlock text">
@@ -169,6 +177,7 @@ const WebApps = function () {
             title="Profile developed with pure HTML and CSS"
             href="https://codepen.io/p_ollie/full/ayJXyZ"
             target="_blank"
+            rel="noreferrer"
           >
             <div className=" text-align">
               <span className="title text inlineBlock">
@@ -189,6 +198,7 @@ const WebApps = function () {
             className="link d-block"
             href="https://codepen.io/p_ollie/full/VMVeQw"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="text-align">
               <span className="title text inlineBlock">
@@ -205,7 +215,7 @@ const WebApps = function () {
         </section>
       </div>
 
-      <div class="my-3">
+      <div className="my-3">
         <MyWork />
       </div>
     </div>
