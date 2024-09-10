@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 
-/* Import Components */
+
 /* Import Components */
 import Header from './components/Header';
 import Home from './components/Home';
@@ -32,7 +32,7 @@ function App() {
             <Route path="/WebApps" element={<WebApps />} />
           </Routes>
         </div>
-      </Router>,
+      </Router>
     </div>
   );
 }
