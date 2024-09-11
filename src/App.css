@@ -85,6 +85,11 @@ div.space {
   margin-top: 17px;
 }
 **/
+
+div.row.mx-1.justify-content-center {         /* targets links to projects in all 3 categories */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .animation {
   transition: opacity 1s ease-in-out;
   opacity: 0;
