@@ -1,7 +1,7 @@
 # Rebuilding my developer profile Comming soon : Sept/Oct 2024
 
 ## Deploying to gh pages
-I have a package which automates publishing to ghpages - just push changes to github 'main', then run git run deploy in 'main' branch and it will auto update the gh-page branch which has build for deployment
+I have a package which automates publishing to ghpages - just push changes to github 'main', then run 'npm run deploy' in 'main' branch and it will auto update the gh-page branch which has build for deployment
 
 
 # Getting Started with Create React App

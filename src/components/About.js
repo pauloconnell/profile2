@@ -26,16 +26,21 @@ const About = function () {
         <br />
         <br />
         The MERN Stack is: MongoDB, Express(server) React, Node.js
-        <br /> 1800 Hours Certification awarded after completion of 6
+        <br /> 1800 Hours Certification awarded after completion of 6+
         Certifications:
         <br />
         <ul className="textAlign">
-          <li>Quality Assurance and Information Security Certification </li>
-          <li>Data Visualization with D3 Certification </li>
-          <li>APIs and MicroServices Certification </li>
+          <li>Responsive Web Design Certification</li>
           <li>JavaScript Algorithms and Data Structures Certification </li>
           <li>Front End Development Libraries Certification </li>
-          <li>Responsive Web Design Certification</li>
+          <li>Data Visualization with D3 Certification </li>
+          <li>Back End Development and APIs Certification </li>
+          <li>Quality Assurance and Information Security Certification </li>
+
+
+
+
+
         </ul>
       </div>
       <br /> <br />
@@ -57,9 +62,17 @@ const About = function () {
                 e-forms
               </code>
 
-              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/responsive-web-design">
+              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/responsive-web-design" target="_blank"
+                rel="noreferrer">
                 View Certificate
               </a>
+              <div class="my-3">
+                *** Also completed Legacy Front End Certification:<br />
+                <a href="https://www.freecodecamp.org/certification/fccd9e19c59/legacy-front-end" target="_blank"
+                  rel="noreferrer">
+                  View Certificate
+                </a>
+              </div>
             </div>
           </li>
 
@@ -78,7 +91,8 @@ const About = function () {
                 programming).
               </code>
 
-              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/javascript-algorithms-and-data-structures">
+              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/javascript-algorithms-and-data-structures" target="_blank"
+            rel="noreferrer">
                 View Certificate
               </a>
             </div>
@@ -96,7 +110,8 @@ const About = function () {
                 up.
               </code>
 
-              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/front-end-libraries">
+              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/front-end-libraries" target="_blank"
+            rel="noreferrer">
                 View Certificate
               </a>
             </div>
@@ -112,7 +127,8 @@ const About = function () {
                 visualizations.
               </code>
 
-              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/data-visualization">
+              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/data-visualization" target="_blank"
+            rel="noreferrer">
                 View Certificate
               </a>
             </div>
@@ -121,7 +137,7 @@ const About = function () {
           <li>
             <div className="hoverDark">
               <div className="big py-3">
-                APIs and MicroServices Certification
+                Back End Development and APIs Certification
               </div>
 
               <code>
@@ -130,7 +146,8 @@ const About = function () {
                 and microservices with MongoDB and the Mongoose library.
               </code>
 
-              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/apis-and-microservices">
+              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/apis-and-microservices" target="_blank"
+            rel="noreferrer">
                 View Certificate
               </a>
             </div>
@@ -145,28 +162,56 @@ const About = function () {
                 Authentication, Template Engine allows server-side variable
                 rendering with Pug, and Testing with Chai.
               </code>
-            </div>
+            
 
             <a
               className="margin"
-              href="https://www.freecodecamp.org/certification/fccd9e19c59/quality-assurance-v7"
+              href="https://www.freecodecamp.org/certification/fccd9e19c59/quality-assurance-v7" target="_blank"
+            rel="noreferrer"
             >
               View Certificate
             </a>
-            <a
-              className="margin"
-              href="https://www.freecodecamp.org/certification/fccd9e19c59/information-security-and-quality-assurance"
-            >
-              View Certificate
-            </a>
+            <div class="my-3">
+                *** Also completed Legacy Information Security and Quality Assurance Certification:<br />
+                <a href="https://www.freecodecamp.org/certification/fccd9e19c59/information-security-and-quality-assurance" target="_blank"
+                  rel="noreferrer">
+                  View Certificate
+                </a>
+              </div>
+            <br/>
+          
+            </div>
+          </li>
+
+          <li>
+          <div className=" hoverDark">
+              <div className="big py-3">Full Stack M.E.R.N. Certification</div>
+
+              <code>
+                MongoDB
+                Express.js
+                React
+                Node.js
+              </code>
+              <div> Awarded upon completion of above certifications</div>
+
+              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/full-stack" target="_blank" rel="noreferrer">
+              View Full Stack Certificate
+          </a>
+          </div>
+
           </li>
         </ul>
         <hr></hr>
 
+
+
         <div className=" my-5">
           <span className="readEasy title">
-            Full Stack Certification: 1800 hours
+            Full Stack M.E.R.N. Certification: 1800 hours
           </span>
+
+       
         </div>
 
          <MyWork />

@@ -24,7 +24,7 @@ const FullStack = function () {
           React, Express, MongoDB, Mongoose, Node.js, API MicroServices
         </h3>
 
-        <h4 className="readEasy inlineBlock">
+        <h4 className="readEasy">
           HTML, JavaScript, Css, Bootstrap, jQuerry, GitHub
         </h4>
       </div>
