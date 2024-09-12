@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -67,6 +68,7 @@ img {
 section {
   transition: all 1s ease-in-out;
 }
+
 .row section.link:hover {
   border: 2px solid black;
   border-radius: 5px;
@@ -75,31 +77,78 @@ section {
 ul.readEasy li {
   margin-bottom: 15px;
 }
+
 ul {
   padding-left: 0px;
   list-style: upper-roman;
   list-style-position: inside;
 }
+
 /**not used 
 div.space {
   margin-top: 17px;
 }
 **/
 
-div.row.mx-1.justify-content-center {         /* targets links to projects in all 3 categories */
+div.row.mx-1.justify-content-center {
+  /* targets links to projects in all 3 categories */
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .animation {
   transition: opacity 1s ease-in-out;
   opacity: 0;
   height: 0;
   overflow: hidden;
 }
+
 .animation.active {
   opacity: 1;
   height: auto;
 }
+
+/* .backgroundV2 {
+
+  transition: opacity 1s ease-in-out, height 1s ease-in-out;;
+  opacity: 1;
+  font-size:90px;
+  height: auto;
+  overflow: hidden;
+
+}
+.backgroundV2:hover {
+  
+    display:none;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  
+} */
+
+.backgroundV2 {
+  position: absolute;
+  
+  top: 50%;
+  left: 25%;
+  /* transform: translate(-50%, -50%); */
+  
+  /* transition: opacity 1s ease-in-out, height 1s ease-in-out; */
+  opacity: 1;
+  font-size: 90px;
+  height: auto;
+  overflow: hidden;
+  visibility: visible;
+}
+
+.backgroundV2:hover {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+
 
 .bgsolid {
   background: rgb(12, 12, 12) !important;
@@ -131,6 +180,7 @@ div.row.mx-1.justify-content-center {         /* targets links to projects in al
   display: inline-block;
   height: 100%;
 }
+
 .expandingReadable {
   background: rgba(128, 128, 128, 0.6);
   color: black;
@@ -139,6 +189,7 @@ div.row.mx-1.justify-content-center {         /* targets links to projects in al
   transition: background 1.5s ease-in-out, font-size 1.5s ease-in-out;
   font-size: 8px;
 }
+
 .expandingReadable:hover {
   background: rgba(128, 128, 128, 0.95);
   font-size: 16px;
@@ -177,6 +228,7 @@ div.row.mx-1.justify-content-center {         /* targets links to projects in al
   max-width: 900px;
   min-height: 300px;
 }
+
 .hoverDark:hover {
   background: rgba(128, 128, 128, 0.8);
 }
@@ -203,6 +255,7 @@ div.row.mx-1.justify-content-center {         /* targets links to projects in al
 .lineHeight {
   line-height: 140%;
 }
+
 .margin {
   margin: 10px;
 }
@@ -222,11 +275,10 @@ div.row.mx-1.justify-content-center {         /* targets links to projects in al
 .noShadow {
   text-shadow: none;
 }
-.pos-one {
-}
 
-.pos-two {
-}
+.pos-one {}
+
+.pos-two {}
 
 .readEasy {
   background: rgba(0, 0, 0, 0.1);
@@ -274,6 +326,7 @@ div.row.mx-1.justify-content-center {         /* targets links to projects in al
 .textAlign {
   text-align: center;
 }
+
 .textAlignLeft {
   text-align: left;
 }
@@ -329,6 +382,7 @@ div.row.mx-1.justify-content-center {         /* targets links to projects in al
   transition: font-size 3s ease-in-out;
   font-weight: normal;
 }
+
 #showOnHover:hover {
   font-weight: bold;
 }
@@ -349,10 +403,12 @@ div.row.mx-1.justify-content-center {         /* targets links to projects in al
   span.small {
     font-size: 14px;
   }
+
   .fade-in-info {
     opacity: 1;
   }
 }
+
 @media only screen and (min-width: 601px) {
   span.small {
     font-size: 16px;
@@ -368,6 +424,7 @@ div.row.mx-1.justify-content-center {         /* targets links to projects in al
     font-size: 18px;
   }
 }
+
 .animationContact {
   padding: 5px;
   margin: 5px;
@@ -386,10 +443,12 @@ div.row.mx-1.justify-content-center {         /* targets links to projects in al
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(30px);
   }
+
   50% {
     box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
     transform: translatey(-1px);
   }
+
   100% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(30px);

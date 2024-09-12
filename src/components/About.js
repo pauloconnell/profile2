@@ -66,7 +66,7 @@ const About = function () {
                 rel="noreferrer">
                 View Certificate
               </a>
-              <div class="my-3">
+              <div className="my-3">
                 *** Also completed Legacy Front End Certification:<br />
                 <a href="https://www.freecodecamp.org/certification/fccd9e19c59/legacy-front-end" target="_blank"
                   rel="noreferrer">
@@ -171,7 +171,7 @@ const About = function () {
             >
               View Certificate
             </a>
-            <div class="my-3">
+            <div className="my-3">
                 *** Also completed Legacy Information Security and Quality Assurance Certification:<br />
                 <a href="https://www.freecodecamp.org/certification/fccd9e19c59/information-security-and-quality-assurance" target="_blank"
                   rel="noreferrer">

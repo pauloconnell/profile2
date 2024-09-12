@@ -99,11 +99,17 @@ function Home() {
             <div className="fade-in-info ">
               I am currently working full time as Front End Software Developer
               for a green field start up where we are building a peer-to-peer
-              e-commerce platform. <br/> <a href="https://www.knowitalls.com" alt="knowitalls.com"  target="_blank"
+              e-commerce platform. <br/>   </div><a href="https://www.knowitalls.com" alt="knowitalls.com"  target="_blank"
               rel="noreferrer" >www.knowitalls.com</a>
-            </div>
+          
           </i>
         </div>
+        {/* <div className="backgroundV2">
+            <div style={{ fontSize: "150px"}}>V1 </div>
+            V2 Coming soon...<br/><br/>
+             |<br/>
+             V<br/>
+        </div> */}
         <div className=" width90 fade-in-info">
           <div className=" m-auto my-3 marginTop">
             <p className="title inlineBlock text">
