@@ -92,7 +92,7 @@ function Home() {
         <div className="width90 readEasy word    m-auto my-3 animate">
           <i>
             <div className="lineHeight wordSpace ">
-              Coming Soon:  Profile V2 Sept 2024 <br/>
+              Coming Soon: React Profile V2 Oct 2024 <br/>
               Keen problem solver experienced in all aspects of Software
               Development, specializing in Web Technologies.
             </div>
