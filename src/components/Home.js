@@ -237,11 +237,10 @@ function Home() {
                           display: highlightFE ? "block" : "none",
                         }}
                       >
-                        Currently in final stages of building out full
-                        featured peer to peer e-commerce platformp. Note:
-                        Switched tech stacks from the slower .NET prototype,
-                        to fast JavaScript, using Vue3 with Nuxt 3, utilizing
-                        local Storage and Pinia State management.
+                        Currently adding cutting edge features like hybrid SSR to our fully built out
+                        peer to peer e-commerce platform. 
+                        <br/>  Knowitalls.com started as a .NET C# razor page application, but is now built with Vue3, Nuxt 3, utilizing
+                        Payment integration with Stripe, Video integration with WhereBy, helped build both chat messages and 2 sided booking calander in-house.
                       </span>
                       {/**
                         <span
