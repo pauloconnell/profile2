@@ -4,6 +4,29 @@
 I have a package which automates publishing to ghpages - just push changes to github 'main', then run 'npm run deploy' in 'main' branch and it will auto update the gh-page branch which has build for deployment
 
 
+
+## Git commit codeNames
+
+
+
+fix: Use this when you’re addressing a bug or an issue in the code. For example, fix: resolve crash on login screen. 
+
+update: This is typically used for non-breaking changes that improve or modify existing functionality. For example, update: enhance user profile layout. 
+
+feat: Use this when you’re adding a new feature. For example, feat: add user authentication. 
+
+refactor: Use this when you’re restructuring code without changing its external behavior. For example, refactor: optimize database queries. 
+
+style: Use this for changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.). For example, style: fix indentation in main.css. 
+
+chore: Use this for changes that do not modify src or test files. For example, chore: update dependencies. 
+
+docs: Use this for documentation changes. For example, docs: update README with setup instructions. 
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
