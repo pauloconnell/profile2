@@ -239,8 +239,10 @@ function Home() {
                       >
                         Currently adding cutting edge features like hybrid SSR to our fully built out
                         peer to peer e-commerce platform. 
-                        <br/>  Knowitalls.com started as a .NET C# razor page application, but is now built with Vue3, Nuxt 3, utilizing
-                        Payment integration with Stripe, Video integration with WhereBy, helped build both chat messages and 2 sided booking calander in-house.
+                        <br/>  <a href="https://www.knowitalls.com" alt="knowitalls.com"  target="_blank"
+              rel="noreferrer" >www.knowitalls.com</a> <br/>
+              started as a .NET C# razor page application, but is now built with Vue3, Nuxt 3, utilizing
+                        Payment integration with Stripe, Video integration with WhereBy.  I create pixel perfect components on responsive pages,  helped build both chat messages and 2 sided booking calander in-house, implemented OAuth page guards, access tokens, API error handling with toasts, set up automated error monitoring and automated testing.
                       </span>
                       {/**
                         <span
