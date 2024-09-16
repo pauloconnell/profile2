@@ -97,7 +97,7 @@ function Home() {
               Development, specializing in Web Technologies.
             </div>
             <div className="fade-in-info ">
-              I am currently working full time as Front End Software Developer
+              Currently working as Front End Software Developer
               for a green field start up where we are building a peer-to-peer
               e-commerce platform. <br/>   </div><a href="https://www.knowitalls.com" alt="knowitalls.com"  target="_blank"
               rel="noreferrer" >www.knowitalls.com</a>
@@ -160,13 +160,7 @@ function Home() {
                           display: highlightFE ? "block" : "none",
                         }}
                       >
-                        Certified Developer in: React, HTML, CSS, JavaScript,
-                        Bootstrap, jQuerry, automated testing w/ Mocha
-                        PlayWright and TestIms. Currently using Vue3, Nuxt3,
-                        TypeScript on Node.js. I have also built an
-                        application in .net using RazorPages, RazorComponents
-                        and c# - but the JavaScript tech stack is my
-                        specialty.
+                       Certifications: React, HTML, CSS, JavaScript, Bootstrap, jQuery, Vue3, Nuxt3, TypeScript, Node.js, Express, automated testing (Jest, Mocha, PlayWright, TestIms). Specialized in JavaScript/TypeScript, with experience in .NET (RazorPages, RazorComponents, C#).
                       </span>
                       <br />
                       <span
@@ -179,11 +173,11 @@ function Home() {
                           display: highlightBE ? "block" : "none",
                         }}
                       >
-                        Certified on Node, MongoDB, Mongoose, DataBases
+                        Back End Certifications include:  Node, MongoDB, Mongoose, DataBases
                         deployed on AWS, Express Server, D3, Passport, OAuth,
-                        Pug(Jade) template engine, testing w/ Mocha Chai
-                        PlayWright and TestIms. Currently using Nuxt 3 to
-                        support Vue 3.
+                        Pug(Jade) template engine, testing w/ Jest Mocha Chai
+                        PlayWright and TestIms. 
+                        Recently refactored multiple pages for hybrid SSR to get great SEO results with Nuxt 3 and Vue 3.
                       </span>
                       <br />
                       <span
@@ -195,10 +189,16 @@ function Home() {
                           display: highlightFE ? "block" : "none",
                         }}
                       >
-                        Experience using Azure Devops, sprint planning and
-                        daily standup using Azure kanban board. Interfacing
-                        with backend team using Postman to build and test API
-                        connections.
+                        Experience:
+                        <ul style={{ textAlign: "left" }}>
+
+                          <li>Proficient in Git branching strategies, including feature branching, hotfixes, release branches, managing pull requests, conducting code reviews, and landing changes in production environments.</li>
+                          <li>Extensive use of Azure DevOps for sprint planning, daily standups, and using Azure Kanban boards.</li>
+                          <li>Interfacing with backend teams using Postman and Swagger for building and testing API connections.</li>
+                          <li>Collaborating with design team through Sketch and Figma</li>
+                          <li>Assisting the marketing team with a b testing using Google Analytics and GTM.</li>
+                          <li>Positive Contributions to daily and weekly meetings </li>
+                        </ul>
                       </span>
                       <br />
                       <span
@@ -210,9 +210,9 @@ function Home() {
                           display: highlightBE ? "block" : "none",
                         }}
                       >
-                        Current project: Using Node.js, the back end team
-                        works on .Net Azure functions using both SQL and Cosmo
-                        DB.
+                        Current project: Using Node.js, Nuxt 3 gives full-stack features like amazing hybrid SSR.
+                        Using:  .Net, Azure Pipelines, CosmoDB, exceptionless and Testims.
+                      
                         <span
                           style={{
                             color: highlightFE ? "blue" : "black",
@@ -239,8 +239,9 @@ function Home() {
                       >
                         Currently adding cutting edge features like hybrid SSR to our fully built out
                         peer to peer e-commerce platform. 
-                        <br/>  Knowitalls.com started as a .NET C# razor page application, but is now built with Vue3, Nuxt 3, utilizing
-                        Payment integration with Stripe, Video integration with WhereBy, helped build both chat messages and 2 sided booking calander in-house.
+                        <br/>  Knowitalls.com  utilizes
+                        Payment integration with Stripe, Video integration with WhereBy, chat messaging and 2 sided booking calander - we built both in-house.
+                        Adding Access tokens to headers for Auth guarded APIs
                       </span>
                       {/**
                         <span
