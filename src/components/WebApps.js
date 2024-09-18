@@ -115,7 +115,7 @@ const WebApps = function () {
       </div>
 
       <div className="row mx-1 justify-content-center">
-        <section className="col-12 col-sm-5 my-1 px-0 link">
+        {/*  <section className="col-12 col-sm-5 my-1 px-0 link">
           <a
             className="link d-block"
             href="https://cdpn.io/p_ollie/debug/xyRRyq/yPAJjKXXWKQA"
@@ -134,9 +134,62 @@ const WebApps = function () {
               />
             </div>
           </a>
-        </section>
+        </section> */}
+
+<section className="col-12 col-sm-5 my-1 px-0 link">
+          <a
+            className="link d-block"
+            href="https://mrproconstruction.glitch.me/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="text-align">
+              <span className="title text inlineBlock">
+                <strong>M.R.Pro Construction</strong>
+              </span>
+
+              <img
+                className="responsive"
+                src="https://res.cloudinary.com/pollie/image/upload/v1672192690/Logo_zpv0kl.png"
+                alt="M.R. PRO Construction"
+              />
+            </div>
+          </a>
+        </section> 
         <div className="col-sm-auto"></div>
         <section className="col-12 col-sm-5 my-1 px-0 link">
+        <a
+            className="link d-block"
+            title="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
+            href="https://codepen.io/p_ollie/full/qJjVgR"
+            rel="noreferrer"
+            onClick={(event) => {
+              event.preventDefault();
+            }}
+          >
+            <div className=" text-align">
+              <span className="title inlineBlock text">
+                <strong>
+                  <u>Test Center</u>
+                  <div>Product Knowledge App</div>
+                </strong>
+              </span>
+            </div>
+            <div className="my-3">
+              <img
+                alt="Test Center app screenshot"
+                className="responsive"
+                src="https://res.cloudinary.com/pollie/image/upload/v1610401628/Test_Center_ue5srv.png"
+              />
+            </div>
+          </a>
+
+        </section>
+      </div>
+      {/* 
+      <div className="row mx-1 justify-content-center">
+        <section className="col-12 col-sm-5 py-1 px-0 link">
+
           <a
             className=" link d-block"
             href="https://codepen.io/p_ollie/full/RLrxPr"
@@ -156,32 +209,6 @@ const WebApps = function () {
                 className="responsive"
                 src="https://res.cloudinary.com/pollie/image/upload/v1598905735/API_quote_machien_cmbxot.png"
                 alt="API Quote Generator"
-              />
-            </div>
-          </a>
-        </section>
-      </div>
-      <div className="row mx-1 justify-content-center">
-        <section className="col-12 col-sm-5 py-1 px-0 link">
-          <a
-            className="link d-block"
-            title="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
-            href="https://codepen.io/p_ollie/full/qJjVgR"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className=" text-align">
-              <span className="title inlineBlock text">
-                <strong>
-                  <u>Test Center</u>
-                  <div>Product Knowledge App</div>
-                </strong>
-              </span>
-            </div>
-            <div className="my-3">
-              <img
-                className="responsive"
-                src="https://res.cloudinary.com/pollie/image/upload/v1610401628/Test_Center_ue5srv.png"
               />
             </div>
           </a>
@@ -216,7 +243,7 @@ const WebApps = function () {
           </a>
         </section>
       </div>
-
+*/}
 
       <div className="my-3">
         <MyWork />
