@@ -273,6 +273,15 @@ function Home() {
                           <li>
                           <b>Access Tokens</b> in request Headers to secure relevant API calls
                           </li>
+                          <li>
+                          API Error handling with <b>Toast</b>s
+                          </li>
+                          <li>
+                          <b>Exceptionless</b> error monitoring and logging
+                          </li>
+                          <li>
+                          <b>Testims</b> automated nightly and CI/CD testing
+                          </li>
                         </ul>
                         </div>
                       {/**
