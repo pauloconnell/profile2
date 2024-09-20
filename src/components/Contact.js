@@ -47,7 +47,7 @@ const Contact = function () {
           <div className=" col-10 me-4 me-sm-0 col-sm-5 col-md-3 pt-3 animationContact link">
             <a
               className="link contactCard mb-4 mb-sm-1 mt-sm-5 pt-4"
-              href="mailto:p_ollie@hotmail.com?Subject=FromProfile"
+              href="mailto:p_ollie@hotmail.com?Subject=Contact%20Me%20from%20Profile%20link&body=Hello%20Paul,%0D%0A%0D%0AI%20am%20reaching%20out%20to%20you%20regarding..."
               target="_blank"
               rel="noreferrer"
               title="p_ollie@hotmail.com"

@@ -16,60 +16,16 @@ const WebApps = function () {
       <h2 className=" my-3 textAlign">
         <span className="readEasy title text text-dark">Web Applications</span>
       </h2>
-      <h3 className="mb-5 pt-3 textAlign">
+      <h3 className="mb-5 pt-3 px-sm-5 mx-sm-5 textAlign">
         <span className="readEasy">
-          Modern responsive custom Web Applications <br />
-          built using javaScript and React, deployed in the cloud.
+          Modern responsive custom Web Applications. <br />
+          Built using either pure HTML, CSS, JavaScript, (some jQuery), or React / Vue3 with Nuxt 3, and deployed in the cloud.
         </span>
       </h3>
 
+     
       <div className="row mx-1 justify-content-center">
-      <section className="col-12 col-sm-5 my-1 px-0 link">
-          <a
-            className="link d-block"
-            href="https://codepen.io/p_ollie/full/VMVeQw"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="text-align">
-              <span className="title text inlineBlock">
-                <strong>Wiki Search via API</strong>
-              </span>
-
-              <img
-                className="responsive"
-                src="https://res.cloudinary.com/pollie/image/upload/v1598909611/Wiki_search_avfb5n.png"
-                alt="wiki search"
-              />
-            </div>
-          </a>
-        </section>
-        <div className="col-sm-auto"></div>
-        
-        <section className="col-12 col-sm-5 my-1 px-0 link">
-          <a
-            className="link d-block"
-            title="Profile developed with pure HTML and CSS"
-            href="https://codepen.io/p_ollie/full/ayJXyZ"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className=" text-align">
-              <span className="title text inlineBlock">
-                <strong>Web Developer Profile (old) </strong>
-              </span>
-
-              <img
-                className="responsive  mt-md-3 "
-                src="https://res.cloudinary.com/pollie/image/upload/v1631908054/profile_v31u4b.png"
-                alt="Web Developer"
-              />
-            </div>
-          </a>
-        </section>
-      
-      </div>
-      <div className="row mx-1 justify-content-center">
+        {/* 
         <section className="col-12 col-sm-5 my-1 px-0 link">
           <a
             className="link d-block"
@@ -91,6 +47,29 @@ const WebApps = function () {
             </div>
           </a>
         </section>
+        */}
+   <section className="col-12 col-sm-5 my-1 px-0 link">
+          <a
+            className="link d-block"
+            title="Peer to Peer e-commerce platform"
+            href="https://www.knowitalls.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className=" text-align">
+              <span className="title text inlineBlock">
+                <strong>KnowItAlls</strong>
+              </span>
+
+              <img
+                className="responsive mt-1"
+                src="https://res.cloudinary.com/pollie/image/upload/v1726776409/homepage_flzeh0.png"
+                alt="www.knowitalls.com"
+              />
+            </div>
+          </a>
+        </section>
+
         <div className="col-sm-auto"></div>
         <section className="col-12 col-sm-5 my-1 px-0 link">
           <a
@@ -185,6 +164,52 @@ const WebApps = function () {
           </a>
 
         </section>
+      </div>
+      <div className="row mx-1 justify-content-center">
+      <section className="col-12 col-sm-5 my-1 px-0 link">
+          <a
+            className="link d-block"
+            href="https://codepen.io/p_ollie/full/VMVeQw"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="text-align">
+              <span className="title text inlineBlock">
+                <strong>Wiki Search via API</strong>
+              </span>
+
+              <img
+                className="responsive"
+                src="https://res.cloudinary.com/pollie/image/upload/v1598909611/Wiki_search_avfb5n.png"
+                alt="wiki search"
+              />
+            </div>
+          </a>
+        </section>
+        <div className="col-sm-auto"></div>
+        
+        <section className="col-12 col-sm-5 my-1 px-0 link">
+          <a
+            className="link d-block"
+            title="Profile developed with pure HTML and CSS"
+            href="https://codepen.io/p_ollie/full/ayJXyZ"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className=" text-align">
+              <span className="title text inlineBlock">
+                <strong>Web Developer Profile (old) </strong>
+              </span>
+
+              <img
+                className="responsive  mt-md-3 "
+                src="https://res.cloudinary.com/pollie/image/upload/v1631908054/profile_v31u4b.png"
+                alt="Web Developer"
+              />
+            </div>
+          </a>
+        </section>
+      
       </div>
       {/* 
       <div className="row mx-1 justify-content-center">
