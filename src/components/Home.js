@@ -38,9 +38,24 @@ function Home() {
   const [hovering, setHovering] = useState(false);
   const [highlightFE, setHighlightFE] = useState(true);
   const [highlightBE, setHighlightBE] = useState(false);
+  const [visible, setVisible] = useState({
+    dev: false,
+    git: false,
+    azure: false,
+    api: false,
+    seo: false,
+    design: false,
+    abTesting: false,
+    meetings: false,
+    details: false,
+  });
 
-
-
+  const toggleVisibility = (key) => {
+    setVisible((prevState) => ({
+      ...prevState,
+      [key]: !prevState[key],
+    }));
+  };
 
   // const handleClick = () => {
   //   setShowThis: !showThis;
@@ -90,32 +105,38 @@ function Home() {
     <div className="textAlign my-3">
       <div className="">
         <div className="width90 readEasy word    m-auto my-3 animate">
-          <i>
+          
             <div className="lineHeight wordSpace ">
-              Coming Soon: React Profile V2 Oct 2024 <br/>
+              Coming Soon: React Profile V2 Oct 2024 <br />
               Keen problem solver experienced in all aspects of Software
               Development, specializing in Web Technologies.
             </div>
             <div className="fade-in-info ">
-              Currently working as Front End Software Developer
+          <i>    Currently working as Front End Software Developer
               for a green field start up where we are building a peer-to-peer
-              e-commerce platform. <br/>   </div><a href="https://www.knowitalls.com" alt="knowitalls.com"  target="_blank"
-              rel="noreferrer" >www.knowitalls.com</a>
+              e-commerce platform. <br />  </i>
+               </div>
+           
+
           
-          </i>
         </div>
+        <div className="py-4 width90 wordSpace" style={{ background: 'black', borderRadius: '8px' }} > <a href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
+              rel="noreferrer" ><b>www.knowitalls.com</b></a>
+              <br />
+
+            </div>
         {/* <div className="backgroundV2">
             <div style={{ fontSize: "150px"}}>V1 </div>
             V2 Coming soon...<br/><br/>
              |<br/>
              V<br/>
         </div> */}
-        <div className=" width90 fade-in-info">
-          <div className=" m-auto my-3 marginTop">
+        <div className=" width90 fade-in-info mt-3">
+          <h3 className=" m-auto my-3 marginTop">
             <p className="title inlineBlock text">
               Certified M.E.R.N. Full Stack Software Developer
             </p>
-          </div>
+          </h3>
           <div
             onMouseEnter={handleHoverIn}
             onMouseLeave={handleHoverOut}
@@ -149,8 +170,8 @@ function Home() {
                   </div>
                   <br />
                   <div className="row ">
-                    <span className="text-center">
-                      <span
+                    <div className="text-center">
+                      <div
                         id="fe"
                         style={{
                           color: highlightFE ? "white" : "black",
@@ -161,9 +182,9 @@ function Home() {
                         }}
                       >
                        Certifications: React, HTML, CSS, JavaScript, Bootstrap, jQuery, Vue3, Nuxt3, TypeScript, Node.js, Express, automated testing (Jest, Mocha, PlayWright, TestIms). Specialized in JavaScript/TypeScript, with experience in .NET (RazorPages, RazorComponents, C#).
-                      </span>
+                      </div>
                       <br />
-                      <span
+                      <div
                         id="be"
                         style={{
                           color: highlightBE ? "white" : "black",
@@ -178,9 +199,9 @@ function Home() {
                         Pug(Jade) template engine, testing w/ Jest Mocha Chai
                         PlayWright and TestIms. 
                         Recently refactored multiple pages for hybrid SSR to get great SEO results with Nuxt 3 and Vue 3.
-                      </span>
+                      </div>
                       <br />
-                      <span
+                      <div
                         style={{
                           color: highlightFE ? "white" : "black",
                           fontWeight: highlightFE
@@ -190,18 +211,91 @@ function Home() {
                         }}
                       >
                         Experience:
-                        <ul style={{ textAlign: "left" }}>
-
-                          <li>Proficient in Git branching strategies, including feature branching, hotfixes, release branches, managing pull requests, conducting code reviews, and landing changes in production environments.</li>
-                          <li>Extensive use of Azure DevOps for sprint planning, daily standups, and using Azure Kanban boards.</li>
-                          <li>Interfacing with backend teams using Postman and Swagger for building and testing API connections.</li>
-                          <li>Collaborating with design team through Sketch and Figma</li>
-                          <li>Assisting the marketing team with a b testing using Google Analytics and GTM.</li>
-                          <li>Positive Contributions to daily and weekly meetings </li>
+                        <ul style={{ textAlign: "center", listStyleType: "none" }}>
+                        <li>
+                            <button className="link" onClick={() => toggleVisibility('dev')}>
+                              Software Developer
+                            </button>
+                            {visible.dev && (
+                              <p>
+                                Proficient in Development of responsive, pixel perfect, user friendly websites and web applications.
+                              </p>
+                            )}
+                          </li>
+                          <li>
+                            <button className="link" onClick={() => toggleVisibility('git')}>
+                              Version Control and Git Branching Strategies
+                            </button>
+                            {visible.git && (
+                              <p>
+                                Proficient in feature branching, hotfixes, release branches, managing pull requests, conducting code reviews, and landing changes in production environments.
+                              </p>
+                            )}
+                          </li>
+                          <li>
+                            <button className="link" onClick={() => toggleVisibility('azure')}>
+                              Azure DevOps
+                            </button>
+                            {visible.azure && (
+                              <p>
+                                Extensive use of Azure DevOps for sprint planning, daily standups, and utilizing Azure Kanban boards.
+                              </p>
+                            )}
+                          </li>
+                          <li>
+                            <button className="link" onClick={() => toggleVisibility('api')}>
+                              API Integration
+                            </button>
+                            {visible.api && (
+                              <p>
+                                Delivering data rich content with reactive data, Interfacing with backend teams using Postman and Swagger to build out API connections.
+                              </p>
+                            )}
+                          </li>
+                          <li>
+                            <button className="link" onClick={() => toggleVisibility('design')}>
+                              Design Collaboration
+                            </button>
+                            {visible.design && (
+                              <p>
+                               Developing pixel perfect code from both rough wireframes as well as collaborating closely with the design team using Sketch and Figma to ensure a seamless and visually appealing user experience.
+                              </p>
+                            )}
+                          </li>
+                          <li>
+                            <button className="link" onClick={() => toggleVisibility('seo')}>
+                              SEO, GTM, Google Analytics, and Performance Optimization
+                            </button>
+                            {visible.design && (
+                              <p>
+                                Set up GTM and interface with Google Analytics, Dynamic SEO tags and optimizing website performance and loading times.
+                              </p>
+                            )}
+                          </li>
+                          <li>
+                            <button className="link" onClick={() => toggleVisibility('abTesting')}>
+                              Marketing Collaboration
+                            </button>
+                            {visible.abTesting && (
+                              <p>
+                                Assisting the Marketing team with A/B testing using Google Analytics.
+                              </p>
+                            )}
+                          </li>
+                          <li>
+                            <button className="link" onClick={() => toggleVisibility('meetings')}>
+                              Meeting Contributions
+                            </button>
+                            {visible.meetings && (
+                              <p>
+                                Making positive contributions to daily and weekly meetings with the dev team, design team, managers, C-suite executives, and clients, by providing valuable insights, feedback, and solutions.
+                              </p>
+                            )}
+                          </li>
                         </ul>
-                      </span>
+                      </div>
                       <br />
-                      <span
+                      <div
                         style={{
                           color: highlightBE ? "white" : "black",
                           fontWeight: highlightBE
@@ -213,7 +307,7 @@ function Home() {
                         Current project: Using Node.js, Nuxt 3 gives full-stack features like amazing hybrid SSR.
                         Using:  .Net, Azure Pipelines, CosmoDB, exceptionless and Testims.
                       
-                        <span
+                        <div
                           style={{
                             color: highlightFE ? "blue" : "black",
                             fontWeight: highlightFE
@@ -225,10 +319,10 @@ function Home() {
                           }}
                         >
                           &nbsp; Azure devops.
-                        </span>
-                      </span>
+                        </div>
+                      </div>
                       <br />
-                      <span
+                      <div
                         style={{
                           color: highlightFE ? "white" : "black",
                           fontWeight: highlightFE
@@ -237,11 +331,11 @@ function Home() {
                           display: highlightFE ? "block" : "none",
                         }}
                       >
-                        Currently adding cutting edge features like hybrid SSR to our fully built out
+                        Currently adding cutting edge features like <b className="textShadow">hybrid SSR </b> to our fully built out
                         peer to peer e-commerce platform. 
-                        </span>
+                        </div>
 
-                      <div style={{
+                      <div  style={{
                         color: highlightFE ? "white" : "black",
                         fontWeight: highlightFE
                           ? "bold"
@@ -249,40 +343,59 @@ function Home() {
                         display: highlightFE ? "block" : "none",
                       }}>
                         <br /> 
-                        <div style={{background: 'black', borderRadius:'8px'}} > <a href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
+                        <div className="py-4" style={{background: 'black', borderRadius:'8px'}} > <a href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
                           rel="noreferrer" >www.knowitalls.com</a>
-                          <br />
-                        utilizes:
+                          
+                       
                         </div>
-                        <ul style={{ textAlign: "left" }}>
+                        <div className="my-2">
+                        <button className="link" onClick={() => toggleVisibility('details')}>
+                              Details of Technologies used:
+                            </button>
+                            </div>
+                            
+                            {visible.details && (
+                             
+                            
+                        <ul className="pt-4" style={{ textAlign: "left", listStyleType: "none" }}>
                           <li>
-                            Payment integration with <b>Stripe</b>
+                            Payment integration with <b className="textShadow">Stripe</b>
                           </li>
+                          <hr />
                           <li>
-                          Video integration with <b> WhereBy</b>
+                          Video integration with <b className="textShadow"> WhereBy</b>
                           </li>
+                          <hr />
                           <li>
-                          Chat messaging - <b>built in house</b>
+                          Chat messaging - <b className="textShadow">built in house</b>
                           </li>
+                          <hr />
                           <li>
-                          2 sided booking calander - <b>built in house</b>
+                          2 sided booking calander - <b className="textShadow">built in house</b>
                           </li>
+                          <hr />
                           <li>
-                           <b> Auth0</b> authentication to guard secure pages
+                           <b className="textShadow"> Auth0</b> authentication to guard secure pages
                           </li>
+                          <hr />
                           <li>
-                          <b>Access Tokens</b> in request Headers to secure relevant API calls
+                          <b className="textShadow">Access Tokens</b> in request Headers to secure relevant API calls
                           </li>
+                          <hr />
                           <li>
-                          API Error handling with <b>Toast</b>s
+                          API Error handling with <b className="textShadow">Toast</b>s
                           </li>
+                          <hr />
                           <li>
-                          <b>Exceptionless</b> error monitoring and logging
+                          <b className="textShadow">Exceptionless</b> error monitoring and logging
                           </li>
+                          <hr />
                           <li>
-                          <b>Testims</b> automated nightly and CI/CD testing
+                          <b className="textShadow">Testims</b> automated nightly and CI/CD testing
                           </li>
                         </ul>
+                        )}
+
                         </div>
                       {/**
                         <span
@@ -309,7 +422,7 @@ function Home() {
                           Pinia state management.
                         </span>
                         **/}
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
