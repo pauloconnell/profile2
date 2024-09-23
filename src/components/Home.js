@@ -2,11 +2,11 @@
 
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import UnorderedList from './UnorderedList';
 import MyWork from './links/MyWork';
-import DynamicData from './DynamicData';
-import styles from '../App.css';
+//import DynamicData from './DynamicData';
+//import styles from '../App.css';
 //import ReactTooltip from 'react-tooltip';
 
 
@@ -24,11 +24,11 @@ const dependenciesArray = [
   "bootstrap 5 - classic CSS library",
 ];
 
-const componentsMade = [
-  "Profile- which is the view you are seeing now",
-  'UnorderedList - which takes an array of "items" and returns a <ul> element with <li>, elements of each of those items within it',
-  "About -About Me",
-];
+// const componentsMade = [
+//   "Profile- which is the view you are seeing now",
+//   'UnorderedList - which takes an array of "items" and returns a <ul> element with <li>, elements of each of those items within it',
+//   "About -About Me",
+// ];
 
 /* the main page for the index route of this app */
 
