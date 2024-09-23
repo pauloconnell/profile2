@@ -153,9 +153,9 @@ function Home() {
         <div
           onMouseEnter={handleHoverIn}
           onMouseLeave={handleHoverOut}
-          className="py-4 width70 wordSpace float"
+          className="py-4 mx-auto wordSpace zoomer"
           style={{
-            background: hovering ? 'black' : 'none',
+            width: "300px",           
             borderRadius: '8px',
             transition: 'background 2.5s'
           }}

@@ -212,7 +212,7 @@ div.row.mx-1.justify-content-center {
 
 .float {
   transform: translatey(0px);
-  animation: floatCircle 8s linear infinite;
+  animation: float 8s ease infinite;
 }
 
 .gridContainer {
@@ -370,6 +370,11 @@ div.row.mx-1.justify-content-center {
   font-size: 1.2rem;
 }
 
+.zoomer {
+  transform: translatey(0px);
+  animation: zoomer 8s linear infinite;
+}
+
 #name {
   background: DodgerBlue;
   text-shadow: 3px 3px 5px white;
@@ -458,9 +463,10 @@ div.row.mx-1.justify-content-center {
     }
   }
 
-  @keyframes floatCircle {
+  @keyframes zoomer {
     0% {
       box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      background-color: transparent;
       transform: scale(1);
     }
 
@@ -471,6 +477,7 @@ div.row.mx-1.justify-content-center {
 
     50% {
       box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      background-color: black;
       transform: scale(1.4);
     }
 
