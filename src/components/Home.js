@@ -1,7 +1,7 @@
 
 
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import UnorderedList from './UnorderedList';
 import MyWork from './links/MyWork';
@@ -49,6 +49,8 @@ function Home() {
     meetings: false,
     details: false,
   });
+  
+  const isThrottled = useRef(false);
 
   const toggleVisibility = (key) => {
     setVisible((prevState) => ({
@@ -95,6 +97,33 @@ function Home() {
   // componentDidMount() {
   //   window.scrollTo(0, 0);
   // }
+
+
+  const handleScroll = () => {                                      // make 'hidden' details section appear if user scrolls down past 350px
+    
+    if (!isThrottled.current) {
+      console.log("caught scroll, ",window.scrollY)
+      if (window.scrollY > 350) { 
+        console.log("are we ever here?")
+        setHovering(true);
+      } else {
+        
+      }
+      isThrottled.current = true;
+      setTimeout(() => {
+        isThrottled.current = false;
+      }, 1000); // 0.5 seconds timeout
+    }
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {                                                // cleanup fn() on unMount
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);                                                       // empty array makes it only run once when mounted
+
+
   useEffect(() => {
     //console.log('Component did mount');
     window.scrollTo(0, 0);
@@ -104,45 +133,57 @@ function Home() {
   return (
     <div className="textAlign my-3">
       <div className="">
-        <div className="width90 readEasy word    m-auto my-3 animate">
+        <div className="width70 readEasy word  m-auto my-3 animate">
           
             <div className="lineHeight wordSpace ">
-              Coming Soon: React Profile V2 Oct 2024 <br />
+             
               Keen problem solver experienced in all aspects of Software
               Development, specializing in Web Technologies.
             </div>
             <div className="fade-in-info ">
+            Coming Soon: <b>Profile V2</b> Oct 2024 <br />
           <i>    Currently working as Front End Software Developer
               for a green field start up where we are building a peer-to-peer
-              e-commerce platform. <br />  </i>
+              e-commerce platform: <br />  </i>
                </div>
            
 
           
         </div>
-        <div className="py-4 width90 wordSpace" style={{ background: 'black', borderRadius: '8px' }} > <a href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
-              rel="noreferrer" ><b>www.knowitalls.com</b></a>
-              <br />
+        <div
+          onMouseEnter={handleHoverIn}
+          onMouseLeave={handleHoverOut}
+          className="py-4 width70 wordSpace float"
+          style={{
+            background: hovering ? 'black' : 'none',
+            borderRadius: '8px',
+            transition: 'background 2.5s'
+          }}
+        >
+          <a href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
+            rel="noreferrer" >
+            See My Work: <br />
+            <b>www.knowitalls.com</b></a>
+          <br />
 
-            </div>
+        </div>
         {/* <div className="backgroundV2">
             <div style={{ fontSize: "150px"}}>V1 </div>
             V2 Coming soon...<br/><br/>
              |<br/>
              V<br/>
         </div> */}
-        <div className=" width90 fade-in-info mt-3">
+        <div className=" width70  mt-3">
           <h3 className=" m-auto my-3 marginTop">
             <p className="title inlineBlock text">
               Certified M.E.R.N. Full Stack Software Developer
             </p>
           </h3>
-          <div
+          <div className="fade-in-info "
             onMouseEnter={handleHoverIn}
             onMouseLeave={handleHoverOut}
-            style={{ minHeight: "420px" }}
-          >
-            <div className=" width90 ">
+            style={{ minHeight: "420px", opacity: hovering ? 1 : 0, transition: 'opacity 2.5s ease' }}> 
+            <div className=" width70 ">
               <div className="wordSpace" style={{ minHeight: "300px" }}>
                 <div className="container-fluid">
                   <div className="row ">
@@ -217,7 +258,7 @@ function Home() {
                               Software Developer
                             </button>
                             {visible.dev && (
-                              <p>
+                              <p className="text-start">
                                 Proficient in Development of responsive, pixel perfect, user friendly websites and web applications.
                               </p>
                             )}
@@ -266,7 +307,7 @@ function Home() {
                             <button className="link" onClick={() => toggleVisibility('seo')}>
                               SEO, GTM, Google Analytics, and Performance Optimization
                             </button>
-                            {visible.design && (
+                            {visible.seo && (
                               <p>
                                 Set up GTM and interface with Google Analytics, Dynamic SEO tags and optimizing website performance and loading times.
                               </p>

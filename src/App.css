@@ -7,11 +7,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -41,7 +37,7 @@
 body {
   font-family: "Inter", sans-serif;
 
-  background-color: SkyLightBlue;
+  background-color: lightblue;
   background-image: url("https://res.cloudinary.com/pollie/image/upload/v1621034051/Million_Ridge_tkchwl.png");
   /* Center and scale the image nicely */
   background-position: right;
@@ -128,11 +124,11 @@ div.row.mx-1.justify-content-center {
 
 .backgroundV2 {
   position: absolute;
-  
+
   top: 50%;
   left: 25%;
   /* transform: translate(-50%, -50%); */
-  
+
   /* transition: opacity 1s ease-in-out, height 1s ease-in-out; */
   opacity: 1;
   font-size: 90px;
@@ -212,6 +208,11 @@ div.row.mx-1.justify-content-center {
 .flexContainer {
   display: flex;
   justify-content: space-around;
+}
+
+.float {
+  transform: translatey(0px);
+  animation: floatCircle 8s linear infinite;
 }
 
 .gridContainer {
@@ -356,7 +357,7 @@ div.row.mx-1.justify-content-center {
   max-width: 980px;
 }
 
-.width90 {
+.width70 {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -438,19 +439,49 @@ div.row.mx-1.justify-content-center {
   animation: float 8s ease-in-out infinite;
 }
 
-@keyframes float {
-  0% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: translatey(30px);
+@media (prefers-reduced-motion: no-preference) {
+
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(30px);
+    }
+
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-1px);
+    }
+
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(30px);
+    }
   }
 
-  50% {
-    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-    transform: translatey(-1px);
-  }
+  @keyframes floatCircle {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: scale(1);
+    }
 
-  100% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: translatey(30px);
+    25% {
+      box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4);
+      transform: scale(1.2);
+    }
+
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: scale(1.4);
+    }
+
+    75% {
+      box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4);
+      transform: scale(1.2);
+    }
+
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: scale(1);
+    }
   }
 }

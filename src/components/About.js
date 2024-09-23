@@ -8,7 +8,7 @@ const About = function () {
     <div className="textAlign">
       
         <div
-          className="readable title text lineHeight width90"
+          className="readable title text lineHeight width70"
           style={{ fontSize: "initial" }}
         >
           <b>
