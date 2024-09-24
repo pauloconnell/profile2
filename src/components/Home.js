@@ -161,9 +161,9 @@ function Home() {
           }}
         >
           <a  href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
-            rel="noreferrer" >
-            <span className="textShadow">See My Work:</span> <br />
-            <b className="link">www.knowitalls.com</b></a>
+            rel="noreferrer" title="Click to see my work on: www.knowitalls.com" >
+            <span className="p-1 textShadowWhite">See My Work:</span> <br />
+            <b className="p-1 link">www.knowitalls.com</b></a>
           <br />
 
         </div>
@@ -196,6 +196,7 @@ function Home() {
                         color: highlightFE ? "blue" : "black",
                       }}
                       onClick={handleHoverFE}
+                      title="Click to see FrontEnd details"
                     >
                       FrontEnd
                     </span>
@@ -205,6 +206,7 @@ function Home() {
                         color: highlightBE ? "white" : "black",
                       }}
                       onClick={handleHoverBE}
+                      title="Click to see BackEnd details"
                     >
                       BackEnd
                     </span>
@@ -254,7 +256,7 @@ function Home() {
                         Experience:
                         <ul style={{ textAlign: "center", listStyleType: "none" }}>
                         <li>
-                            <button className="link" onClick={() => toggleVisibility('dev')}>
+                            <button className="link" onClick={() => toggleVisibility('dev')} title="Click to see details">
                               Software Developer
                             </button>
                             {visible.dev && (
@@ -264,7 +266,7 @@ function Home() {
                             )}
                           </li>
                           <li>
-                            <button className="link" onClick={() => toggleVisibility('git')}>
+                            <button className="link" onClick={() => toggleVisibility('git')} title="Click to see details">
                               Version Control and Git Branching Strategies
                             </button>
                             {visible.git && (
@@ -274,7 +276,7 @@ function Home() {
                             )}
                           </li>
                           <li>
-                            <button className="link" onClick={() => toggleVisibility('azure')}>
+                            <button className="link" onClick={() => toggleVisibility('azure')} title="Click to see details">
                               Azure DevOps
                             </button>
                             {visible.azure && (
@@ -284,7 +286,7 @@ function Home() {
                             )}
                           </li>
                           <li>
-                            <button className="link" onClick={() => toggleVisibility('api')}>
+                            <button className="link" onClick={() => toggleVisibility('api')} title="Click to see details">
                               API Integration
                             </button>
                             {visible.api && (
@@ -294,7 +296,7 @@ function Home() {
                             )}
                           </li>
                           <li>
-                            <button className="link" onClick={() => toggleVisibility('design')}>
+                            <button className="link" onClick={() => toggleVisibility('design')} title="Click to see details">
                               Design Collaboration
                             </button>
                             {visible.design && (
@@ -304,7 +306,7 @@ function Home() {
                             )}
                           </li>
                           <li>
-                            <button className="link" onClick={() => toggleVisibility('seo')}>
+                            <button className="link" onClick={() => toggleVisibility('seo')} title="Click to see details">
                               SEO, GTM, Google Analytics, and Performance Optimization
                             </button>
                             {visible.seo && (
@@ -314,7 +316,7 @@ function Home() {
                             )}
                           </li>
                           <li>
-                            <button className="link" onClick={() => toggleVisibility('abTesting')}>
+                            <button className="link" onClick={() => toggleVisibility('abTesting')} title="Click to see details">
                               Marketing Collaboration
                             </button>
                             {visible.abTesting && (
@@ -324,7 +326,7 @@ function Home() {
                             )}
                           </li>
                           <li>
-                            <button className="link" onClick={() => toggleVisibility('meetings')}>
+                            <button className="link" onClick={() => toggleVisibility('meetings')} title="Click to see details">
                               Meeting Contributions
                             </button>
                             {visible.meetings && (
@@ -384,13 +386,13 @@ function Home() {
                         display: highlightFE ? "block" : "none",
                       }}>
                         <br /> 
-                        <div className="py-4" style={{background: 'black', borderRadius:'8px'}} > <a className="link" href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
-                          rel="noreferrer" >www.knowitalls.com</a>
+                        <div className="py-4" style={{background: 'black', borderRadius:'8px'}} > <a className="link p-1" href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
+                          rel="noreferrer" title="Click to see my work at: www.knowitalls.com" >www.knowitalls.com</a>
                           
                        
                         </div>
                         <div className="my-2">
-                        <button className="link" onClick={() => toggleVisibility('details')}>
+                        <button className="link" onClick={() => toggleVisibility('details')}  title="Click to see details">
                               Details of Technologies used:
                             </button>
                             </div>

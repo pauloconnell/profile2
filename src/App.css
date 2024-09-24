@@ -336,7 +336,10 @@ div.row.mx-1.justify-content-center {
   text-shadow: 2px 2px 8px black;
 }
 .textShadowWhite {
-  text-shadow: 2px 2px 5px white;
+  text-shadow: 2px 2px 15px white;
+  animation: changeShadow 12s ease infinite;
+  background-color: white;
+  border-radius: 5px;
 }
 .top {
   grid-area: top;
@@ -473,13 +476,13 @@ div.row.mx-1.justify-content-center {
 
   @keyframes zoomer {
     0% {
-      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
       background-color: transparent;
       transform: scale(1);
     }
 
     25% {
-      box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4);
+      /* box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4); */
       transform: scale(1.2);
     }
     35% {
@@ -487,31 +490,44 @@ div.row.mx-1.justify-content-center {
     }
 
     50% {
-      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
       
       transform: scale(1.4);
     }
 
     75% {
-      box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4);
+      /* box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4); */
       transform: scale(1.2);
     }
 
     100% {
-      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
       transform: scale(1);
     }
   }
 
-  /* @keyframes changeBG {
+   @keyframes changeShadow {
     0% {
-      background-color:rgb(255, 255, 255, .6);;
+     text-shadow: 2px 2px 15px white;
+     background-color: white;
+    }
+
+    20% {
+      /* background-color: rgb(255, 255, 255, .5);  */
+    }
+
+    30% {
+      background-color: rgb(255, 255, 255, .6);
+    }
+    
+    50% {
+      background-color: transparent;
     }
     70% {
-      background-color: transparent;
+  text-shadow: none;
     }
     100% {
      
     }
-  } */
+  } 
 }

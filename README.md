@@ -6,6 +6,7 @@ I have the ghpages package which automates publishing to ghpages - just push cha
 
 
 # Next: 
+-add tooltips to links: done for homepage
 -Add linkedin icon to message me in linked in
 -
  update links in Full Stack section
