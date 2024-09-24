@@ -1,13 +1,26 @@
 # Rebuilding my developer profile Comming soon : Sept/Oct 2024
 
 ## Deploying to gh pages
-I have a package which automates publishing to ghpages - just push changes to github 'main', then run 'npm run deploy' in 'main' branch and it will auto update the gh-page branch which has build for deployment
+I have the ghpages package which automates publishing to ghpages - just push changes to github 'main', then run 'npm run deploy'.  This is where gh pages will auto merge to the 'gh-page' branch (where live PROD lives) and runs build for deployment
+
+
+
+# Next: 
+-Add linkedin icon to message me in linked in
+-
+ update links in Full Stack section
+
+
+
+# Tech Debt
+
+feat: scroll to top of home.js should toggle hidden section to go back to hidden
+Refactor: Get rid of CSS class 'hoverDark'
+feat: Refactor CSS to BEM asap fade-in-info vs fadeInInfo => camelCase
 
 
 
 ## Git commit codeNames
-
-
 
 fix: Use this when you’re addressing a bug or an issue in the code. For example, fix: resolve crash on login screen. 
 
