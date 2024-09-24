@@ -160,10 +160,10 @@ function Home() {
             transition: 'background 2.5s'
           }}
         >
-          <a href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
+          <a  href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
             rel="noreferrer" >
-            See My Work: <br />
-            <b>www.knowitalls.com</b></a>
+            <span className="textShadow">See My Work:</span> <br />
+            <b className="link">www.knowitalls.com</b></a>
           <br />
 
         </div>
@@ -384,7 +384,7 @@ function Home() {
                         display: highlightFE ? "block" : "none",
                       }}>
                         <br /> 
-                        <div className="py-4" style={{background: 'black', borderRadius:'8px'}} > <a href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
+                        <div className="py-4" style={{background: 'black', borderRadius:'8px'}} > <a className="link" href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
                           rel="noreferrer" >www.knowitalls.com</a>
                           
                        

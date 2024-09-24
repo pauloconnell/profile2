@@ -11,14 +11,24 @@ const About = function () {
           className="readable title text lineHeight width70"
           style={{ fontSize: "initial" }}
         >
-          <b>
-            Skilled in all aspects of software development, client relations,
-            collaboration, project and team management.
+          
+          <h2>Hi, I am Paul O’Connell, a passionate Full Stack Web (M.E.R.N.) Software Developer.</h2><br/><br/>
+          <div className="fade-in-info text-start">
+            <p>I have a proven track record of developing and deploying scalable web applications in today's top Front-end frameworks: React (Next.js and Redux) and Vue (Nuxt.js and Pinia). <br />
             <br />
-            Focused on developing and testing software using both front-end and
+              I thrive on solving complex problems and turning ideas into elegant, user-friendly interfaces that drive reactive data in responsive, pixel-perfect applications.<br />
+              My mission is to leverage technology to make a positive impact.<br />
+            </p>
+
+
+          
+          <br />
+          <p>Focused on developing software using both front-end and
             back-end technologies to deploy scaleable cloud based modern web
             applications, API's, databases, and web sites.
-          </b>
+          </p>
+          </div>
+          
         </div>
       
       <div className="readEasy big lineHeight width80 mx-auto my-5 p-4 hoverDark">
