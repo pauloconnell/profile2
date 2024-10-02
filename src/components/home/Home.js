@@ -4,8 +4,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
-import UnorderedList from './UnorderedList';
-import MyWork from './links/MyWork';
+import UnorderedList from '../UnorderedList';
+import MyWork from '../links/MyWork';
 //import DynamicData from './DynamicData';
 //import styles from '../App.css';
 //import ReactTooltip from 'react-tooltip';
@@ -14,14 +14,12 @@ import MyWork from './links/MyWork';
 
 
 const dependenciesArray = [
-  "express - middleware for the node server",
+  "suspense - allows for lazy loading of components",
+  "gh-pages - builds and deploys app to gitHub Pages",
   "react - for generating the views of the app",
   "react-dom - powers the rendering of elements to the DOM, with React",
   "webpack - for bundling all the javascript",
-  "webpack-cli - command line support for webpack",
-  "jsx-loader - allows webpack to load jsx files",
-  "react-router-dom - handles routing!",
-  "css-loader - allows webpack to load css files",
+  "react-router-dom - handles routing and ",
   "bootstrap 5 - classic CSS library",
 ];
 
@@ -141,10 +139,10 @@ function Home() {
               Keen problem solver experienced in all aspects of Software
               Development, specializing in Web Technologies.
             </div>
-            <div className="fade-in-info ">
-            Coming Soon: <b>Profile V2</b> Oct 2024 <br />
+            <div className="fade-in-info  ">
+            <div className="hidden">Coming Soon: <b>Profile V2</b> </div>
           <i>    Currently working as Front End Software Developer
-              for a green field start up where we are building a peer-to-peer
+              for a green field start up. <br/>Building a peer-to-peer
               e-commerce platform: <br />  </i>
                </div>
            
@@ -240,7 +238,7 @@ function Home() {
                           display: highlightBE ? "block" : "none",
                         }}
                       >
-                        Back End Certifications include:  Node, MongoDB, Mongoose, DataBases
+                        Back End <Link to="/About#certifications">Certifications</Link> include:  Node, MongoDB, Mongoose, DataBases
                         deployed on AWS, Express Server, D3, Passport, OAuth,
                         Pug(Jade) template engine, testing w/ Jest Mocha Chai
                         PlayWright and TestIms. 
@@ -507,7 +505,7 @@ function Home() {
             <div className="expandingReadable">
               This profile app was built by Paul O'Connell using React and
               node.js <br />
-              It uses a few dependencies, including React router and:
+              It has some neat features, including :
               <UnorderedList items={dependenciesArray} />
             </div>
           ) : (

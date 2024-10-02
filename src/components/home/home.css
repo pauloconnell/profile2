@@ -1,0 +1,7 @@
+.hidden {
+    display:none;
+    transition: display 1s ease;
+  }
+.hidden:hover {
+    display:block;
+}  

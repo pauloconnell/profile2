@@ -2,15 +2,15 @@ import React from "react";
 //import { Link } from "react-router-dom";
 //import UnorderedList from "./UnorderedList";
 //import Footer from "./Footer";
-import MyWork from "./links/MyWork";
+import MyWork from "../links/MyWork";
 
 const DataVisualization2 = function () {
   return (
-    <div className="container-fluid">
+    <div className="bgSolid">
       <MyWork />
       
-      <h2 className=" my-3 textAlign">
-        <span className="readEasy title text text-dark">
+      <h2 className=" my-3 textAlign bigH2">
+        <span className="text textBlue">
           Data Visualization D3
         </span>
       </h2>

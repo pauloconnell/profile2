@@ -144,7 +144,7 @@ div.row.mx-1.justify-content-center {
 
 
 
-.bgsolid {
+.bgSolid {
   background: rgb(12, 12, 12);
 }
 
@@ -152,6 +152,9 @@ div.row.mx-1.justify-content-center {
   font-size: 17px;
 }
 
+.bigH2 {
+  font-size:34px;
+}
 .border {
   border: 3px solid white;
   border-radius: 5px;
@@ -219,9 +222,7 @@ div.row.mx-1.justify-content-center {
   flex-wrap: wrap;
 }
 
-.hidden {
-  visibility: hidden;
-}
+
 
 .hoverDark {
   max-width: 900px;
@@ -281,7 +282,7 @@ div.row.mx-1.justify-content-center {
 .pos-two {}
 
 .readEasy {
-  background: rgba(0, 0, 0, 0.1);
+  /* background: rgba(0, 0, 0, 0.1); */
   color: white;
   font-weight: bold;
   border-radius: 5px;
@@ -331,6 +332,9 @@ div.row.mx-1.justify-content-center {
   text-align: left;
 }
 
+.textBlue {
+  color: dodgerblue;
+}
 .textShadow {
   text-shadow: 2px 2px 8px black;
 }

@@ -2,18 +2,18 @@ import React from "react";
 //import { Link } from "react-router-dom";
 //import UnorderedList from "./UnorderedList";
 //import Footer from "./Footer";
-import MyWork from "./links/MyWork";
+import MyWork from "../links/MyWork";
 
 
 /* Refactored Feb 2023 */
 const FullStack = function () {
   return (
-    <div>
+    <div className="bgSolid textAlign">
       <MyWork />
 
       <div>
-        <h2 className=" my-3 textAlign">
-          <span className="readEasy title text text-dark">
+        <h2 className=" my-3 ">
+          <span className="bigH2 text textBlue">
             Full Stack MERN Applications
           </span>
         </h2>

@@ -1,7 +1,7 @@
 const React = require("react");
 const Link = require("react-router-dom").Link;
-const UnorderedList = require("./UnorderedList");
-const Footer = require("./Footer");
+const UnorderedList = require("../UnorderedList");
+const Footer = require("../Footer");
 /* the main page for the index route of this app */
 const DataVisualization = function() {
   return (

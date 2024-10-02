@@ -1,6 +1,6 @@
 import React from "react" ;
 //import Link  from "react-router-dom";
-import MyWork from './links/MyWork';
+import MyWork from '../links/MyWork';
 
 /* the main page for the about route of this app */
 const Contact = function () {
@@ -8,7 +8,7 @@ const Contact = function () {
     <div>
       <div className="textAlign">
         <div className="vertSpace">
-          <span className="title text readable">Contact Me:</span>
+          <h2 className="text bigH2">Contact Me:</h2>
         </div>
         <section
           className="row justify-content-center"

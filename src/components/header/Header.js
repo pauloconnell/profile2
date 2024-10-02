@@ -9,15 +9,15 @@ const Header = function () {
   
       <header className="textAlign my-3">
         <div className="flexContainer fixed-top">
-          <Link className="col link border bgsolid" to="/">
+          <Link className="col link border bgSolid" to="/">
             Home
           </Link>
 
-          <Link className="col link border bgsolid" to="/about">
+          <Link className="col link border bgSolid" to="/about">
             About Me
           </Link>
 
-          <Link className="col link border bgsolid" to="/Contact">
+          <Link className="col link border bgSolid" to="/Contact">
             Contact Me
           </Link>
         </div>

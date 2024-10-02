@@ -1,6 +1,7 @@
 import React from "react" ;
 //import Link  from "react-router-dom";
-import MyWork from './links/MyWork';
+import './about.css';
+import MyWork from '../links/MyWork';
 
 /* the main page for the about route of this app */
 const About = function () {
@@ -8,11 +9,11 @@ const About = function () {
     <div className="textAlign">
       
         <div
-          className="readable title text lineHeight width70"
+          className="title text lineHeight width70"
           style={{ fontSize: "initial" }}
         >
           
-          <h2>Hi, I am Paul O’Connell, a passionate Full Stack Web (M.E.R.N.) Software Developer.</h2><br/><br/>
+          <h2 className="bigH2 text">Hi, I am Paul O’Connell, a passionate Full Stack Web (M.E.R.N.) Software Developer.</h2><br/><br/>
           <div className="fade-in-info text-start">
             <p>I have a proven track record of developing and deploying scalable web applications in today's top Front-end frameworks: React (Next.js and Redux) and Vue (Nuxt.js and Pinia). <br />
             <br />

@@ -4,7 +4,7 @@ const React = require("react");
    with each item as <li> elements */
 const UnorderedList = function({ items }) {
   return (
-    <ul className="readable">
+    <ul >
       {items.map(function(item, i) {
         return <li key={i}>{item}</li>;
       })}
