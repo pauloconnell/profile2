@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -195,7 +193,7 @@ div.row.mx-1.justify-content-center {
   opacity: 0;
   transition: all 1.2s ease-in-out;
 
-  background: rgba(128, 128, 128, 0.9);
+  background: rgba(128, 128, 128, 0.98);
   color: black;
   border-radius: 5px;
   padding: 6px;
@@ -228,10 +226,11 @@ div.row.mx-1.justify-content-center {
 .hoverDark {
   max-width: 900px;
   min-height: 300px;
+  transition: background 1s ease;
 }
 
 .hoverDark:hover {
-  background: rgba(128, 128, 128, 0.8);
+  background: rgba(128, 128, 128, 0.98);
 }
 
 .inlineBlock {
@@ -286,7 +285,7 @@ div.row.mx-1.justify-content-center {
   color: white;
   font-weight: bold;
   border-radius: 5px;
-  padding: 5px 6px;
+  padding: 1px 6px;
   /* line-height: 1.5rem; */
 }
 

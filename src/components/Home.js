@@ -2,6 +2,7 @@
 
 
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
 import UnorderedList from './UnorderedList';
 import MyWork from './links/MyWork';
@@ -213,7 +214,7 @@ function Home() {
                   </div>
                   <br />
                   <div className="row ">
-                    <div className="text-center">
+                    <div className="text-start">
                       <div
                         id="fe"
                         style={{
@@ -224,7 +225,9 @@ function Home() {
                           display: highlightFE ? "block" : "none",
                         }}
                       >
-                       Certifications: React, HTML, CSS, JavaScript, Bootstrap, jQuery, Vue3, Nuxt3, TypeScript, Node.js, Express, automated testing (Jest, Mocha, PlayWright, TestIms). Specialized in JavaScript/TypeScript, with experience in .NET (RazorPages, RazorComponents, C#).
+                       <Link to="/About#certifications">Certifications</Link>: React, HTML, CSS, JavaScript, Bootstrap, jQuery, Vue3, Nuxt3, TypeScript, Node.js, Express, automated testing (Jest, Mocha, PlayWright, TestIms). 
+                       <br/>
+                       Specialized in JavaScript/TypeScript, with experience in .NET (RazorPages, RazorComponents, C#).
                       </div>
                       <br />
                       <div
@@ -270,7 +273,7 @@ function Home() {
                               Version Control and Git Branching Strategies
                             </button>
                             {visible.git && (
-                              <p>
+                              <p className="text-start">
                                 Proficient in feature branching, hotfixes, release branches, managing pull requests, conducting code reviews, and landing changes in production environments.
                               </p>
                             )}
@@ -280,7 +283,7 @@ function Home() {
                               Azure DevOps
                             </button>
                             {visible.azure && (
-                              <p>
+                              <p className="text-start">
                                 Extensive use of Azure DevOps for sprint planning, daily standups, and utilizing Azure Kanban boards.
                               </p>
                             )}
@@ -290,7 +293,7 @@ function Home() {
                               API Integration
                             </button>
                             {visible.api && (
-                              <p>
+                              <p className="text-start">
                                 Delivering data rich content with reactive data, Interfacing with backend teams using Postman and Swagger to build out API connections.
                               </p>
                             )}
@@ -300,7 +303,7 @@ function Home() {
                               Design Collaboration
                             </button>
                             {visible.design && (
-                              <p>
+                              <p className="text-start">
                                Developing pixel perfect code from both rough wireframes as well as collaborating closely with the design team using Sketch and Figma to ensure a seamless and visually appealing user experience.
                               </p>
                             )}
@@ -310,7 +313,7 @@ function Home() {
                               SEO, GTM, Google Analytics, and Performance Optimization
                             </button>
                             {visible.seo && (
-                              <p>
+                              <p className="text-start">
                                 Set up GTM and interface with Google Analytics, Dynamic SEO tags and optimizing website performance and loading times.
                               </p>
                             )}
@@ -320,7 +323,7 @@ function Home() {
                               Marketing Collaboration
                             </button>
                             {visible.abTesting && (
-                              <p>
+                              <p className="text-start">
                                 Assisting the Marketing team with A/B testing using Google Analytics.
                               </p>
                             )}
@@ -330,7 +333,7 @@ function Home() {
                               Meeting Contributions
                             </button>
                             {visible.meetings && (
-                              <p>
+                              <p className="text-start">
                                 Making positive contributions to daily and weekly meetings with the dev team, design team, managers, C-suite executives, and clients, by providing valuable insights, feedback, and solutions.
                               </p>
                             )}
@@ -386,17 +389,19 @@ function Home() {
                         display: highlightFE ? "block" : "none",
                       }}>
                         <br /> 
-                        <div className="py-4" style={{background: 'black', borderRadius:'8px'}} > <a className="link p-1" href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
+                        <div className="py-4 text-center" style={{background: 'black', borderRadius:'8px'}} > <a className="link p-1" href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
                           rel="noreferrer" title="Click to see my work at: www.knowitalls.com" >www.knowitalls.com</a>
                           
                        
                         </div>
                         <div className="my-2">
-                        <button className="link" onClick={() => toggleVisibility('details')}  title="Click to see details">
+                          <div className="text-center">
+                            <button className="link" onClick={() => toggleVisibility('details')} title="Click to see details">
                               Details of Technologies used:
                             </button>
-                            </div>
-                            
+                          </div>
+                        </div>
+
                             {visible.details && (
                              
                             

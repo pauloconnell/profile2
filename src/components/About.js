@@ -31,7 +31,7 @@ const About = function () {
           
         </div>
       
-      <div className="readEasy big lineHeight width80 mx-auto my-5 p-4 hoverDark">
+      <div id="certifications" className="readEasy big lineHeight width80 mx-auto my-5 p-4 hoverDark">
         <u className="title">FULLSTACK M.E.R.N. CERTIFICATION:</u>
         <br />
         <br />

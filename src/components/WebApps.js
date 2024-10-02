@@ -16,7 +16,7 @@ const WebApps = function () {
       <h2 className=" my-3 textAlign">
         <span className="readEasy title text text-dark">Web Applications</span>
       </h2>
-      <h3 className="mb-5 pt-3 px-sm-5 mx-sm-5 textAlign">
+      <h3 className="mb-5 pt-3 px-sm-5 mx-sm-5 text-center">
         <span className="readEasy">
           Modern responsive custom Web Applications. <br />
           Built using either pure HTML, CSS, JavaScript, (some jQuery), or React / Vue3 with Nuxt 3, and deployed in the cloud.
@@ -56,11 +56,13 @@ const WebApps = function () {
             target="_blank"
             rel="noreferrer"
           >
-            <div className=" text-align">
+            <div className="text-align">
               <span className="title text inlineBlock">
-                <strong>KnowItAlls</strong>
+                <strong><u>www.KnowItAlls.com</u></strong> <br/>
+                Peer to Peer e-commerce platform built with Vue 3 Nuxt and Azure
               </span>
-
+              
+              
               <img
                 className="responsive mt-1"
                 src="https://res.cloudinary.com/pollie/image/upload/v1726776409/homepage_flzeh0.png"
@@ -72,24 +74,33 @@ const WebApps = function () {
 
         <div className="col-sm-auto"></div>
         <section className="col-12 col-sm-5 my-1 px-0 link">
-          <a
+        <a
             className="link d-block"
-            href="https://codepen.io/p_ollie/full/ZEzNJWo"
-            target="_blank"
+            title="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
+            href="https://codepen.io/p_ollie/full/qJjVgR"
             rel="noreferrer"
+            onClick={(event) => {
+              event.preventDefault();
+            }}
           >
             <div className=" text-align">
-              <span className="title text inlineBlock">
-                <strong>React Drum Machine</strong>
+              <span className="title inlineBlock text">
+                <strong>
+                  <u>Test Center</u>
+                  </strong>
+                  <div>Product Knowledge App for retail stores</div>
+                
               </span>
-
+            </div>
+            <div className="my-3">
               <img
+                alt="Test Center app screenshot"
                 className="responsive"
-                src="https://res.cloudinary.com/pollie/image/upload/v1590166330/Drum_Machien_ithb8w.jpg"
-                alt="Drum Machine img loading"
+                src="https://res.cloudinary.com/pollie/image/upload/v1610401628/Test_Center_ue5srv.png"
               />
             </div>
           </a>
+
         </section>
       </div>
 
@@ -124,7 +135,9 @@ const WebApps = function () {
           >
             <div className="text-align">
               <span className="title text inlineBlock">
-                <strong>M.R.Pro Construction</strong>
+                <strong><u>M.R.Pro Construction</u></strong> <br/>
+                Landing page for construction company
+              
               </span>
 
               <img
@@ -136,33 +149,27 @@ const WebApps = function () {
           </a>
         </section> 
         <div className="col-sm-auto"></div>
+ 
         <section className="col-12 col-sm-5 my-1 px-0 link">
-        <a
+          <a
             className="link d-block"
-            title="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
-            href="https://codepen.io/p_ollie/full/qJjVgR"
+            href="https://codepen.io/p_ollie/full/ZEzNJWo"
+            target="_blank"
             rel="noreferrer"
-            onClick={(event) => {
-              event.preventDefault();
-            }}
           >
             <div className=" text-align">
-              <span className="title inlineBlock text">
-                <strong>
-                  <u>Test Center</u>
-                  <div>Product Knowledge App</div>
-                </strong>
+              <span className="title text inlineBlock">
+                <strong><u>React Drum Machine</u></strong><br/>
+                Drum Machine built with React
               </span>
-            </div>
-            <div className="my-3">
+
               <img
-                alt="Test Center app screenshot"
                 className="responsive"
-                src="https://res.cloudinary.com/pollie/image/upload/v1610401628/Test_Center_ue5srv.png"
+                src="https://res.cloudinary.com/pollie/image/upload/v1590166330/Drum_Machien_ithb8w.jpg"
+                alt="Drum Machine img loading"
               />
             </div>
           </a>
-
         </section>
       </div>
       <div className="row mx-1 justify-content-center">
@@ -175,7 +182,9 @@ const WebApps = function () {
           >
             <div className="text-align">
               <span className="title text inlineBlock">
-                <strong>Wiki Search via API</strong>
+                <strong><u>Wiki Search via API</u> </strong><br/>
+
+                Search for articles on Wikipedia via API
               </span>
 
               <img
@@ -198,7 +207,8 @@ const WebApps = function () {
           >
             <div className=" text-align">
               <span className="title text inlineBlock">
-                <strong>Web Developer Profile (old) </strong>
+                <strong><u>Web Developer Profile (old)</u> </strong><br/>
+                Original Profile built with HTML and CSS
               </span>
 
               <img
