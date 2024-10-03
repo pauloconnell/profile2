@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-//import { Link } from 'react-router-dom';
+import './home.css';
 import UnorderedList from '../UnorderedList';
 import MyWork from '../links/MyWork';
 //import DynamicData from './DynamicData';
@@ -50,6 +50,35 @@ function Home() {
   });
   
   const isThrottled = useRef(false);
+
+  const observeElement = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visibleNow');
+        
+        } else {
+          entry.target.classList.remove('visibleNow');
+        }
+      });
+    });
+
+    if (observeElement.current) {
+      const items = observeElement.current.querySelectorAll('li');
+      items.forEach((item) => observer.observe(item));
+    }
+  
+
+    return () => {
+      if (observeElement.current) {
+        const items = observeElement.current.querySelectorAll('li');
+        items.forEach((item) => observer.unobserve(item));
+      }
+      
+    };
+  }, []);
+
 
   const toggleVisibility = (key) => {
     setVisible((prevState) => ({
@@ -102,8 +131,8 @@ function Home() {
     
     if (!isThrottled.current) {
       console.log("caught scroll, ",window.scrollY)
-      if (window.scrollY > 350) { 
-        console.log("are we ever here?")
+      if (window.scrollY > 100) { 
+       // console.log("are we ever here?")
         setHovering(true);
       } else {
         
@@ -123,10 +152,11 @@ function Home() {
   }, []);                                                       // empty array makes it only run once when mounted
 
 
-  useEffect(() => {
-    //console.log('Component did mount');
-    window.scrollTo(0, 0);
-  }, []);
+
+  // useEffect(() => {
+  //   //console.log('Component did mount');
+  //   window.scrollTo(0, 0);
+  // }, []);
 
 
   return (
@@ -139,33 +169,36 @@ function Home() {
               Keen problem solver experienced in all aspects of Software
               Development, specializing in Web Technologies.
             </div>
-            <div className="fade-in-info  ">
+            <div className=" mt-3 my-3">
             <div className="hidden">Coming Soon: <b>Profile V2</b> </div>
-          <i>    Currently working as Front End Software Developer
-              for a green field start up. <br/>Building a peer-to-peer
+          <i>    Currently working as a Senior Front End Software Engineer. 
+            <br/>Building out a green field peer-to-peer
               e-commerce platform: <br />  </i>
                </div>
            
 
           
         </div>
-        <div
-          onMouseEnter={handleHoverIn}
-          onMouseLeave={handleHoverOut}
-          className="py-4 mx-auto wordSpace zoomer"
-          style={{
-            width: "300px",           
-            borderRadius: '8px',
-            transition: 'background 2.5s'
-          }}
-        >
-          <a  href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
-            rel="noreferrer" title="Click to see my work on: www.knowitalls.com" >
-            <span className="p-1 textShadowWhite">See My Work:</span> <br />
-            <b className="p-1 link">www.knowitalls.com</b></a>
-          <br />
+    
+          <div
 
-        </div>
+            onMouseEnter={handleHoverIn}
+            onMouseLeave={handleHoverOut}
+            className="py-4 mx-auto wordSpace zoomer"
+            style={{
+              width: "300px",
+              borderRadius: '8px',
+              transition: 'background 2.5s'
+            }}
+          >
+            <a href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
+              rel="noreferrer" title="Click to see my work on: www.knowitalls.com" >
+              {/* <span className="p-1 textShadowWhite">See My Work:</span> <br /> */}
+              <b className="p-1 link">www.knowitalls.com</b></a>
+            <br />
+
+          </div>
+      
         {/* <div className="backgroundV2">
             <div style={{ fontSize: "150px"}}>V1 </div>
             V2 Coming soon...<br/><br/>
@@ -255,7 +288,7 @@ function Home() {
                         }}
                       >
                         Experience:
-                        <ul style={{ textAlign: "center", listStyleType: "none" }}>
+                        <ul ref={observeElement} className="observe-element" style={{ textAlign: "center", listStyleType: "none" }}>
                         <li>
                             <button className="link" onClick={() => toggleVisibility('dev')} title="Click to see details">
                               Software Developer

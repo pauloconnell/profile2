@@ -1,7 +1,20 @@
 .hidden {
     display:none;
-    transition: display 1s ease;
+
   }
-.hidden:hover {
-    display:block;
-}  
+
+
+.observe-element li{
+  position: relative;
+  top: 150px; /* Initial position */
+  left:250px;
+  opacity: 0;
+  transition: top 2.5s ease-out, left 2.5s ease-out, opacity 1.5s ease-out;
+}
+.observe-element li.visibleNow {
+  top: 0; /* Final position */
+  left:0;
+  opacity: 1;
+}
+
+
