@@ -1,3 +1,23 @@
+body {
+  font-family: "Inter", sans-serif;
+
+  background-color: black;
+
+ 
+  font-size: 16px;
+  color: black;
+}
+
+
+.backgroundFixed {
+  background-image: url("https://res.cloudinary.com/pollie/image/upload/v1621034051/Million_Ridge_tkchwl.png");
+   /* Center and scale the image nicely */
+   background-position: right;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
 .hidden {
     display:none;
 
@@ -18,3 +38,45 @@
 }
 
 
+.zoomer {
+  background-color: transparent;
+  transform: translatey(0px);
+  animation: zoomer 12s ease infinite;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+
+
+  @keyframes zoomer {
+    0% {
+      /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+      background-color: transparent;
+      transform: scale(1);
+    }
+
+     25% {
+      /* box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4); 
+      transform: scale(1.2);*/
+      background-color: transparent;
+    }
+
+    50% {
+      /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+      background-color: black;
+      transform: scale(1.4);
+    }
+ 
+    75% {
+      /* box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4); 
+      transform: scale(1.2);*/
+      background-color: transparent;
+    } 
+
+    100% {
+      /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+      transform: scale(1);
+      background-color: transparent;
+    }
+  }
+}

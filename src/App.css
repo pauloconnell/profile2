@@ -32,19 +32,7 @@
   }
 }
 
-body {
-  font-family: "Inter", sans-serif;
 
-  background-color: lightblue;
-  background-image: url("https://res.cloudinary.com/pollie/image/upload/v1621034051/Million_Ridge_tkchwl.png");
-  /* Center and scale the image nicely */
-  background-position: right;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  font-size: 16px;
-  color: black;
-}
 
 code {
   margin-bottom: 15px;
@@ -154,6 +142,25 @@ div.row.mx-1.justify-content-center {
 
 .bigH2 {
   font-size:34px;
+}
+@media screen and (max-width: 1080px) {
+  .bigH2 {
+    font-size: 30px;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .bigH2 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bigH2 {
+    font-size: 22px;
+  }
 }
 .border {
   border: 3px solid white;
@@ -384,10 +391,7 @@ div.row.mx-1.justify-content-center {
   font-size: 1.2rem;
 }
 
-.zoomer {
-  transform: translatey(0px);
-  animation: zoomer 12s linear infinite;
-}
+
 
 #name {
   background: DodgerBlue;
@@ -477,36 +481,6 @@ div.row.mx-1.justify-content-center {
     }
   }
 
-  @keyframes zoomer {
-    0% {
-      /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
-      background-color: transparent;
-      transform: scale(1);
-    }
-
-    25% {
-      /* box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4); */
-      transform: scale(1.2);
-    }
-    35% {
-      background-color: black;
-    }
-
-    50% {
-      /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
-      
-      transform: scale(1.4);
-    }
-
-    75% {
-      /* box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4); */
-      transform: scale(1.2);
-    }
-
-    100% {
-      /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
-      transform: scale(1);
-    }
   }
 
    @keyframes changeShadow {
