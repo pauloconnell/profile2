@@ -23,7 +23,7 @@ body {
 
   }
 
-
+/* animate 'experience' buttons with intersection observer */
 .observe-element li{
   position: relative;
   top: 150px; /* Initial position */

@@ -345,12 +345,14 @@ div.row.mx-1.justify-content-center {
 .textShadow {
   text-shadow: 2px 2px 8px black;
 }
-.textShadowWhite {
+
+/* .textShadowWhite {
   text-shadow: 2px 2px 15px white;
   animation: changeShadow 12s ease infinite;
   background-color: white;
   border-radius: 5px;
-}
+} */
+
 .top {
   grid-area: top;
 }
@@ -481,16 +483,16 @@ div.row.mx-1.justify-content-center {
     }
   }
 
-  }
+  
 
-   @keyframes changeShadow {
+   /* @keyframes changeShadow {
     0% {
      text-shadow: 2px 2px 15px white;
      background-color: white;
     }
 
     20% {
-      /* background-color: rgb(255, 255, 255, .5);  */
+      /* background-color: rgb(255, 255, 255, .5);  
     }
 
     30% {
@@ -506,5 +508,5 @@ div.row.mx-1.justify-content-center {
     100% {
      
     }
-  } 
+  }  */
 }

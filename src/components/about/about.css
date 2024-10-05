@@ -1,0 +1,26 @@
+
+.flyLeft {
+    position:relative;
+    left:500px;
+    transition: left 2.5s ease-out;
+  }
+  
+  .flyRight {
+    position:relative;
+    right:500px;
+    transition: left 2.5s ease-out;
+  }
+
+.backgroundBlue {
+    background: DodgerBlue;
+    border-radius: 5px;
+}
+.meImage {
+  
+  position:absolute;
+  left:50%;
+  transform: translate(-50%);
+  max-height: 260px;
+    overflow: hidden;
+    z-index: -1;
+}
