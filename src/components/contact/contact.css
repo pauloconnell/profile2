@@ -1,0 +1,8 @@
+.backgroundFixed {
+    background-image: url("https://res.cloudinary.com/pollie/image/upload/v1621034051/Million_Ridge_tkchwl.png");
+     /* Center and scale the image nicely */
+     background-position: right;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+  }

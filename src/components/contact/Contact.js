@@ -1,11 +1,12 @@
 import React from "react" ;
 //import Link  from "react-router-dom";
+import './contact.css';
 import MyWork from '../links/MyWork';
 
 /* the main page for the about route of this app */
 const Contact = function () {
   return (
-    <div>
+    <div className="backgroundFixed">
       <div className="textAlign">
         <div className="vertSpace">
           <h2 className="text bigH2">Contact Me:</h2>

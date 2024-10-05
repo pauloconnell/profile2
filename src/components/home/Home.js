@@ -160,7 +160,7 @@ function Home() {
 
 
   return (
-    <div className="textAlign my-3">
+    <div className="textAlign my-3 backgroundFixed">
       <div className="">
         <div className="width70 readEasy word  m-auto my-3 animate">
           
@@ -206,11 +206,7 @@ function Home() {
              V<br/>
         </div> */}
         <div className=" width70  mt-3">
-          <h3 className=" m-auto my-3 marginTop">
-            <p className="title inlineBlock text">
-              Certified M.E.R.N. Full Stack Software Developer
-            </p>
-          </h3>
+          
           <div className="fade-in-info "
             onMouseEnter={handleHoverIn}
             onMouseLeave={handleHoverOut}
@@ -218,6 +214,13 @@ function Home() {
             <div className=" width70 ">
               <div className="wordSpace" style={{ minHeight: "300px" }}>
                 <div className="container-fluid">
+                  <div className="row">
+                    <h3 className=" m-auto my-3 marginTop">
+                      <p className="title inlineBlock text">
+                        Certified M.E.R.N. Full Stack Software Developer
+                      </p>
+                    </h3>
+                  </div>
                   <div className="row ">
                     <div className="text-center fs-2">Tech Stack:</div>
                   </div>
