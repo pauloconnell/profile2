@@ -1,3 +1,17 @@
+.animationContact {
+    padding: 5px;
+    margin: 5px;
+    max-height: 240px;
+    max-width: 340px;
+    box-sizing: border-box;
+    border: 5px white solid;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 8s ease-in-out infinite;
+  }
+
 .backgroundFixed {
     background-image: url("https://res.cloudinary.com/pollie/image/upload/v1621034051/Million_Ridge_tkchwl.png");
      /* Center and scale the image nicely */
@@ -5,4 +19,70 @@
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-size: cover;
+  }
+
+.contactMe {
+    min-height: 60vh;
+    align-items: center;
+
+
+}
+  
+@media only screen and (max-width: 575px) {
+    .contactMe {
+        min-height: 60vh;
+    }
+ 
+
+}
+@media only screen and (max-width: 767px) {
+ 
+    .contactMe.animationContact :nth-child(3) {
+        height: 140px;
+    }
+ 
+
+}
+@media only screen and (min-width: 768px) {
+    .contactMe.animationContact:nth-of-type(3) {
+        height: 240px;
+    }
+
+}
+
+@media only screen and (min-width: 1043px) {
+    .contactMe {
+        min-height: 55vh;
+    }
+
+}
+
+
+.float {
+    transform: translatey(0px);
+    animation: float 8s ease infinite;
+  }
+
+  
+@media (prefers-reduced-motion: no-preference) {
+
+    @keyframes float {
+      0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(5px);
+      }
+  
+      50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-35px);
+      }
+  
+      100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(5px);
+      }
+    }
+  
+    
+ 
   }

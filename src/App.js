@@ -27,7 +27,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<Suspense fallback={<div style={{display: 'flex', alignItems:'center'}}>Loading...</div>}><About /></Suspense>} />
-          <Route path="/contact" element={<Suspense fallback={<div class="text-center">Loading...</div>}><Contact /></Suspense>} />
+          <Route path="/contact" element={<Suspense fallback={<div className="text-center">Loading...</div>}><Contact /></Suspense>} />
           <Route path="/fullStack" element={<Suspense fallback={<div>Loading...</div>}><FullStack /></Suspense>} />
           <Route path="/dataVisualization2" element={<Suspense fallback={<div>Loading...</div>}><DataVisualization2 /></Suspense>} />
           <Route path="/WebApps" element={<Suspense fallback={<div>Loading...</div>}><WebApps /></Suspense>} />

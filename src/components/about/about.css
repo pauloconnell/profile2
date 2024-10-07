@@ -15,8 +15,8 @@
     background: DodgerBlue;
     border-radius: 5px;
 }
-.meImage {
-  
+
+.meImage { 
   position:absolute;
   left:50%;
   transform: translate(-50%);
