@@ -19,10 +19,11 @@
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-size: cover;
+     
   }
 
 .contactMe {
-    min-height: 60vh;
+    min-height: 57vh;
     align-items: center;
 
 
@@ -32,31 +33,31 @@
     .contactMe {
         min-height: 60vh;
     }
- 
-
 }
-@media only screen and (max-width: 767px) {
- 
+
+@media only screen and (max-width: 655px) {
+    .backgroundFixed {
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 767px) { 
     .contactMe.animationContact :nth-child(3) {
         height: 140px;
     }
- 
-
 }
+
 @media only screen and (min-width: 768px) {
     .contactMe.animationContact:nth-of-type(3) {
         height: 240px;
     }
-
 }
 
 @media only screen and (min-width: 1043px) {
     .contactMe {
         min-height: 55vh;
     }
-
 }
-
 
 .float {
     transform: translatey(0px);
