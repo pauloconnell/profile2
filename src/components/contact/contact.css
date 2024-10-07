@@ -25,6 +25,7 @@
 .contactMe {
     min-height: 57vh;
     align-items: center;
+    column-gap: 20px;
 
 
 }

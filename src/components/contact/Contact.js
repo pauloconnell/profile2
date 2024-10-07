@@ -39,7 +39,7 @@ const Contact = function () {
               rel="noopener noreferrer"
               title="GitHub Repos"
             >
-              <img src="https://res.cloudinary.com/pollie/image/upload/c_thumb,g_face,w_118/v1622847396/GitHub-Mark_hnhn3m.png"  alt="myImage"/>
+              <img src="https://res.cloudinary.com/pollie/image/upload/c_thumb,g_face,w_118/v1622847396/GitHub-Mark_hnhn3m.png"  alt="myImage" height="101px"/>
               <br />
               <span className="text-break">https://github.com/pauloconnell</span>
             </a>
