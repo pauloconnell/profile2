@@ -298,7 +298,7 @@ function Home() {
                             </button>
                             {visible.dev && (
                               <p className="text-start">
-                                Proficient in Development of responsive, pixel perfect, user friendly websites and web applications.
+                                Proficient in developing responsive, pixel perfect, user friendly websites and web applications using HTML, CSS, JavaScript, Vue 3 w/ Nuxt, as well as React w/ Next.
                               </p>
                             )}
                           </li>
@@ -308,7 +308,7 @@ function Home() {
                             </button>
                             {visible.git && (
                               <p className="text-start">
-                                Proficient in feature branching, hotfixes, release branches, managing pull requests, conducting code reviews, and landing changes in production environments.
+                                Proficient in feature branching, hotfixes, release branches, managing pull requests, conducting code reviews, and deploying changes in production environments using Git, GitHub, and Azure.
                               </p>
                             )}
                           </li>
@@ -328,7 +328,7 @@ function Home() {
                             </button>
                             {visible.api && (
                               <p className="text-start">
-                                Delivering data rich content with reactive data, Interfacing with backend teams using Postman and Swagger to build out API connections.
+                                Delivering data-rich content with reactive data, interfacing with backend teams, and using Postman and Swagger to build out API connections.
                               </p>
                             )}
                           </li>
@@ -348,7 +348,7 @@ function Home() {
                             </button>
                             {visible.seo && (
                               <p className="text-start">
-                                Set up GTM and interface with Google Analytics, Dynamic SEO tags and optimizing website performance and loading times.
+                                 Setting up GTM and interfacing with Google Analytics, implementing dynamic SEO tags, and optimizing website performance and loading times.
                               </p>
                             )}
                           </li>
@@ -358,7 +358,7 @@ function Home() {
                             </button>
                             {visible.abTesting && (
                               <p className="text-start">
-                                Assisting the Marketing team with A/B testing using Google Analytics.
+                              Assisting the Marketing team with A/B testing using Google Analytics to optimize campaign performance and improve user engagement.
                               </p>
                             )}
                           </li>
@@ -368,7 +368,8 @@ function Home() {
                             </button>
                             {visible.meetings && (
                               <p className="text-start">
-                                Making positive contributions to daily and weekly meetings with the dev team, design team, managers, C-suite executives, and clients, by providing valuable insights, feedback, and solutions.
+                                Making positive contributions to daily and weekly meetings with the dev team, design team, managers, 
+                                C-suite executives, and clients, by providing valuable insights, feedback, and solutions.
                               </p>
                             )}
                           </li>
@@ -384,8 +385,8 @@ function Home() {
                           display: highlightBE ? "block" : "none",
                         }}
                       >
-                        Current project: Using Node.js, Nuxt 3 gives full-stack features like amazing hybrid SSR.
-                        Using:  .Net, Azure Pipelines, CosmoDB, exceptionless and Testims.
+                        Current project: Utilizing Node.js and Nuxt 3 for full-stack development, leveraging hybrid SSR capabilities.
+                         Technologies in use include .NET, Azure Pipelines, CosmosDB, Exceptionless, and Testim.
                       
                         <div
                           style={{
@@ -411,7 +412,7 @@ function Home() {
                           display: highlightFE ? "block" : "none",
                         }}
                       >
-                        Currently adding cutting edge features like <b className="textShadow">hybrid SSR </b> to our fully built out
+                        Currently adding cutting-edge features like <b className="textShadow">hybrid SSR </b> to our full featured
                         peer to peer e-commerce platform. 
                         </div>
 
