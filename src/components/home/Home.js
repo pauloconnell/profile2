@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import './home.css';
+import styles from './home.module.css';
 import UnorderedList from '../UnorderedList';
 import MyWork from '../links/MyWork';
 //import DynamicData from './DynamicData';
@@ -56,10 +56,10 @@ function Home() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visibleNow');
+          entry.target.classList.add(styles.visibleNow);
         
         } else {
-          entry.target.classList.remove('visibleNow');
+          entry.target.classList.remove(styles.visibleNow);
         }
       });
     });
@@ -160,7 +160,7 @@ function Home() {
 
 
   return (
-    <div className="textAlign my-3 backgroundFixed">
+    <div className={`textAlign my-3 ${styles.backgroundFixed}`}>
       <div className="">
         <div className="width70 readEasy word  m-auto my-3 animate">
           
@@ -170,7 +170,7 @@ function Home() {
               Development, specializing in Web Technologies.
             </div>
             <div className=" mt-3 my-3">
-            <div className="hidden">Coming Soon: <b>Profile V2</b> </div>
+            <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div>
           <i>    Currently working as a Senior Front End Software Engineer. 
             <br/>Building out a green field peer-to-peer
               e-commerce platform: <br />  </i>
@@ -184,7 +184,7 @@ function Home() {
 
             onMouseEnter={handleHoverIn}
             onMouseLeave={handleHoverOut}
-            className="py-4 mx-auto wordSpace zoomer"
+            className={`py-4 mx-auto wordSpace ${styles.zoomer}`}
             style={{
               width: "300px",
               borderRadius: '8px',
@@ -291,7 +291,7 @@ function Home() {
                         }}
                       >
                         Experience:
-                        <ul ref={observeElement} className="observe-element" style={{ textAlign: "center", listStyleType: "none" }}>
+                        <ul ref={observeElement} className={styles.observeElement} style={{ textAlign: "center", listStyleType: "none" }}>
                         <li>
                             <button className="link" onClick={() => toggleVisibility('dev')} title="Click to see details">
                               Software Developer
@@ -436,10 +436,10 @@ function Home() {
                           </div>
                         </div>
 
-                            {visible.details && (
+                       
                              
                             
-                        <ul className="pt-4" style={{ textAlign: "left", listStyleType: "none" }}>
+                        <ul className={`pt-4 ${styles.hidden} ${visible.details? `${styles.transition}` : styles.shrink}`} style={{ textAlign: "left", listStyleType: "none" }}>
                           <li>
                             Payment integration with <b className="textShadow">Stripe</b>
                           </li>
@@ -476,7 +476,7 @@ function Home() {
                           <b className="textShadow">Testims</b> automated nightly and CI/CD testing
                           </li>
                         </ul>
-                        )}
+                        
 
                         </div>
                       {/**
@@ -524,7 +524,7 @@ function Home() {
      <DynamicData data="isHere" />
 */}
 
-
+{/* 
       <div className="textAlign">
         <span className="inlineBlock">
           <button
@@ -538,7 +538,7 @@ function Home() {
           <br />
 
           {showThis ? (
-            <div className="expandingReadable">
+            <div className={styles.expandingReadable}>
               This profile app was built by Paul O'Connell using React and
               node.js <br />
               It has some neat features, including :
@@ -550,7 +550,7 @@ function Home() {
             </span>
           )}
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -1,10 +1,15 @@
-import React from "react" ;
+import React, { useEffect } from "react" ;
 //import Link  from "react-router-dom";
-import './about.css';
+import styles from './about.module.css';
 import MyWork from '../links/MyWork';
 
 /* the main page for the about route of this app */
 const About = function () {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
+
   return (
     <div className="textAlign">
       
@@ -13,8 +18,8 @@ const About = function () {
           style={{ fontSize: "initial" }}
         >
           
-          <h2 className="bigH2 text backgroundBlue">Hi, I am Paul O’Connell, a passionate Full Stack Web (M.E.R.N.) Software Developer.</h2><br/><br/>
-          <div className="meImage"><img src="https://res.cloudinary.com/pollie/image/upload/v1728088299/Capture_rsvvf2.png" alt="This is me" /></div>
+          <h2 className={`bigH2 text ${styles.backgroundBlue}`}>Hi, I am Paul O’Connell, a passionate Full Stack Web (M.E.R.N.) Software Developer.</h2><br/><br/>
+          <div className={`${styles.meImage}`}><img src="https://res.cloudinary.com/pollie/image/upload/v1728088299/Capture_rsvvf2.png" alt="This is me" /></div>
 
           <div className="fade-in-info text-start">
             <p>I have a proven track record of developing and deploying scalable web applications in today's top Front-end frameworks: React (Next.js and Redux) and Vue (Nuxt.js and Pinia). <br />

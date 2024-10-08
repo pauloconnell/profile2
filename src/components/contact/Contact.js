@@ -1,21 +1,26 @@
-import React from "react" ;
+import React, { useEffect } from "react" ;
 //import Link  from "react-router-dom";
-import './contact.css';
+import styles from './contact.module.css';
 import MyWork from '../links/MyWork';
 
 /* the main page for the about route of this app */
 const Contact = function () {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
+
   return (
-    <div className="backgroundFixed">
+    <div className={styles.backgroundFixed}>
       <div className="textAlign">
         <div className="vertSpace">
           <h2 className="text bigH2">Contact Me:</h2>
         </div>
         <section
-          className="row justify-content-center contactMe"
+          className={`row justify-content-center ${styles.contactMe}`}
          
         >
-          <div className="col-12 col-md-5 col-lg-4 pt-3  animationContact link">
+          <div className={`col-12 col-md-5 col-lg-4 pt-3  ${styles.animationContact} link`}>
             <a
               className="link contactCard"
               target="_blank"
@@ -31,7 +36,7 @@ const Contact = function () {
             </a>
           </div>
           {/* <div className="col-auto"></div> */}
-          <div className="col-12 col-md-5 col-lg-4 pt-3 animationContact link">
+          <div className={`col-12 col-md-5 col-lg-4 pt-3 ${styles.animationContact} link`}>
             <a
               className="link contactCard"
               target="_blank"
@@ -45,7 +50,7 @@ const Contact = function () {
             </a>
           </div>
           {/* <div className="col-auto"></div> */}
-          <div className=" col-12 col-md-5 col-lg-4 pt-3 animationContact link align-middle" >
+          <div className={` col-12 col-md-5 col-lg-4 pt-3 ${styles.animationContact} link align-middle`} >
             <a
               className="link contactCard mb-4 mb-sm-1 "
               href="mailto:p_ollie@hotmail.com?Subject=Contact%20Me%20from%20Profile%20link&body=Hello%20Paul,%0D%0A%0D%0AI%20am%20reaching%20out%20to%20you%20regarding..."

@@ -30,7 +30,7 @@
 
 }
   
-@media only screen and (max-width: 575px) {
+@media  only screen and (max-width: 575px)  {
     .contactMe {
         min-height: 60vh;
     }
@@ -60,10 +60,11 @@
     }
 }
 
+/*  float is used from animationContact now
 .float {
     transform: translatey(0px);
     animation: float 8s ease infinite;
-  }
+  } */
 
   
 @media (prefers-reduced-motion: no-preference) {

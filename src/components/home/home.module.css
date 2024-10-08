@@ -1,39 +1,73 @@
-body {
+ body {
   font-family: "Inter", sans-serif;
 
   background-color: black;
 
- 
+
   font-size: 16px;
   color: black;
 }
 
 
+
 .backgroundFixed {
   background-image: url("https://res.cloudinary.com/pollie/image/upload/v1621034051/Million_Ridge_tkchwl.png");
-   /* Center and scale the image nicely */
-   background-position: right;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: cover;
+  /* Center and scale the image nicely */
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.hidden {
-    display:none;
+/*  Not being used
+.expandingReadable {
+  background: rgba(128, 128, 128, 0.6);
+  color: black;
+  border-radius: 5px;
+  padding: 6px;
+  transition: background 1.5s ease-in-out, font-size 1.5s ease-in-out;
+  font-size: 8px;
+}
 
-  }
+.expandingReadable:hover {
+  background: rgba(128, 128, 128, 0.95);
+  font-size: 16px;
+} */
+
+/* animate 'tech details' on open/close */
+.hidden {
+  max-height:90px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1.5s ease, max-height 1.5s ease,  transform 1.5s ease;
+
+}
+
+ul.hidden.shrink li {
+  max-height: 0px;
+}
+
+.hidden.transition {
+  max-height: 850px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* animate 'experience' buttons with intersection observer */
-.observe-element li{
+.observeElement li {
   position: relative;
-  top: 150px; /* Initial position */
-  left:250px;
+  top: 150px;
+  /* Initial position */
+  left: 250px;
   opacity: 0;
   transition: top 2.5s ease-out, left 2.5s ease-out, opacity 1.5s ease-out;
 }
-.observe-element li.visibleNow {
-  top: 0; /* Final position */
-  left:0;
+
+.observeElement li.visibleNow {
+  top: 0;
+  /* Final position */
+  left: 0;
   opacity: 1;
 }
 
@@ -55,7 +89,7 @@ body {
       transform: scale(1);
     }
 
-     25% {
+    25% {
       /* box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4); 
       transform: scale(1.2);*/
       background-color: transparent;
@@ -66,12 +100,12 @@ body {
       background-color: black;
       transform: scale(1.4);
     }
- 
+
     75% {
       /* box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4); 
       transform: scale(1.2);*/
       background-color: transparent;
-    } 
+    }
 
     100% {
       /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
