@@ -432,7 +432,7 @@ function Home() {
                         <div className="my-2">
                           <div className="text-center">
                             <button className="link" onClick={() => toggleVisibility('details')} title="Click to see details">
-                              Details of Technologies used:
+                              Click to see Technologies used:
                             </button>
                           </div>
                         </div>
