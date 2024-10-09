@@ -1,5 +1,5 @@
 .animationContact {
-    padding: 5px;
+    padding: 6px;
     margin: 5px;
     max-height: 240px;
     max-width: 340px;
@@ -10,6 +10,9 @@
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
     animation: float 8s ease-in-out infinite;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
 
 .backgroundFixed {
@@ -21,6 +24,11 @@
      background-size: cover;
      
   }
+
+  .contactCard {
+    display: inline-block;
+  }
+  
 
 .contactMe {
     min-height: 57vh;
@@ -42,14 +50,14 @@
     }
 }
 
-@media only screen and (max-width: 767px) { 
+/* @media only screen and (max-width: 767px) { 
     .contactMe.animationContact :nth-child(3) {
         height: 140px;
     }
-}
+} */
 
-@media only screen and (min-width: 768px) {
-    .contactMe.animationContact:nth-of-type(3) {
+@media only screen and (min-width: 1083px) {
+    .animationContact{
         height: 240px;
     }
 }

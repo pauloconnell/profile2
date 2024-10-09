@@ -25,7 +25,7 @@ const Header = function () {
           Paul O'Connell
         </h1>
 
-        <h2>
+        <h2 className="pb-2 pt-4">
           <span className="readEasy">Full Stack Software Developer</span>
         </h2>
 

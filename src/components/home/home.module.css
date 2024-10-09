@@ -48,11 +48,24 @@ ul.hidden.shrink li {
 }
 
 .hidden.transition {
-  max-height: 850px;
+  max-height: 920px;
   opacity: 1;
   transform: translateY(0);
 }
 
+.homeMainText {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.knowitalls {
+  width: 300px;
+  margin: auto;
+  border-radius: 8px;
+  text-align: center;
+  background-color: black;
+}
 
 /* animate 'experience' buttons with intersection observer */
 .observeElement li {
@@ -62,6 +75,7 @@ ul.hidden.shrink li {
   left: 250px;
   opacity: 0;
   transition: top 2.5s ease-out, left 2.5s ease-out, opacity 1.5s ease-out;
+  
 }
 
 .observeElement li.visibleNow {
@@ -71,6 +85,15 @@ ul.hidden.shrink li {
   opacity: 1;
 }
 
+.observeElement li button {
+  background-color: var(--tertiary-color);
+}
+
+ul.hidden li {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding:3px;
+}
 
 .zoomer {
   background-color: transparent;

@@ -50,9 +50,9 @@ const Contact = function () {
             </a>
           </div>
           {/* <div className="col-auto"></div> */}
-          <div className={` col-12 col-md-5 col-lg-4 pt-3 ${styles.animationContact} link align-middle`} >
+          <div className={` col-12 col-md-5 col-lg-4 pt-3 ${styles.animationContact} link `} >
             <a
-              className="link contactCard mb-4 mb-sm-1 "
+              className="link contactCard "
               href="mailto:p_ollie@hotmail.com?Subject=Contact%20Me%20from%20Profile%20link&body=Hello%20Paul,%0D%0A%0D%0AI%20am%20reaching%20out%20to%20you%20regarding..."
               target="_blank"
               rel="noreferrer"

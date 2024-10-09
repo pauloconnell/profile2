@@ -1,4 +1,14 @@
 
+/* color: 2078d0; */
+
+:root {
+  --primary-color: #1E90FF;
+  --secondary-color: #062a78;
+  --tertiary-color: #b22222;
+  --tertiary-color-lite: rgb(178, 34, 34, .2);
+  --background-color-lite: #bebfc5;
+  --background-color-dark: #536878;
+}
 
 .App-logo {
   height: 40vmin;
@@ -180,10 +190,6 @@ div.row.mx-1.justify-content-center {
   min-height: 300px;
 }
 
-.contactCard {
-  display: inline-block;
-  height: 100%;
-}
 
 
 
@@ -191,7 +197,7 @@ div.row.mx-1.justify-content-center {
   opacity: 0;
   transition: all 1.2s ease-in-out;
 
-  background: rgba(128, 128, 128, 0.98);
+   background: var(--background-color-lite); /* (128, 128, 128, 0.98); */
   color: black;
   border-radius: 5px;
   padding: 6px;

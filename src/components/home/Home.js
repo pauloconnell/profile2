@@ -164,13 +164,13 @@ function Home() {
       <div className="">
         <div className="width70 readEasy word  m-auto my-3 animate">
           
-            <div className="lineHeight wordSpace ">
+            <div className={`lineHeight wordSpace mt-3 ${styles.homeMainText}`}>
              
               Keen problem solver experienced in all aspects of Software
-              Development, specializing in Web Technologies.
+              Development. <br/> Specializing in Web Technologies including Vue 3 w/Nuxt 3 and React w/Next.
             </div>
-            <div className=" mt-3 my-3">
-            <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div>
+            <div className=" mt-5 py-5">
+            {/* <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div> */}
           <i>    Currently working as a Senior Front End Software Engineer. 
             <br/>Building out a green field peer-to-peer
               e-commerce platform: <br />  </i>
@@ -184,10 +184,8 @@ function Home() {
 
             onMouseEnter={handleHoverIn}
             onMouseLeave={handleHoverOut}
-            className={`py-4 mx-auto wordSpace ${styles.zoomer}`}
+            className={`py-4 wordSpace ${styles.knowitalls} ${styles.zoomer}`}
             style={{
-              width: "300px",
-              borderRadius: '8px',
               transition: 'background 2.5s'
             }}
           >
@@ -205,7 +203,7 @@ function Home() {
              |<br/>
              V<br/>
         </div> */}
-        <div className=" width70  mt-3">
+        <div className=" width70  mt-5 pt-5">
           
           <div className="fade-in-info "
             onMouseEnter={handleHoverIn}
@@ -283,14 +281,16 @@ function Home() {
                       <br />
                       <div
                         style={{
-                          color: highlightFE ? "white" : "black",
+                          color: highlightFE ? "black" : "black",
                           fontWeight: highlightFE
-                            ? "bold"
+                            ? "normal"
                             : " normal",
-                          display: highlightFE ? "block" : "none",
+                         
                         }}
                       >
-                        Experience:
+                        <hr></hr>
+                        <br></br>
+                        <div className="my-3 title" style={{ color:"black", textShadow:'1px 1px 3px white'}}>Experience:</div>
                         <ul ref={observeElement} className={styles.observeElement} style={{ textAlign: "center", listStyleType: "none" }}>
                         <li>
                             <button className="link" onClick={() => toggleVisibility('dev')} title="Click to see details">
@@ -368,7 +368,7 @@ function Home() {
                             </button>
                             {visible.meetings && (
                               <p className="text-start">
-                                Making positive contributions to daily and weekly meetings with the dev team, design team, managers, 
+                                Sharing my screen as champion managing Kanban board, and backlog.  Making positive contributions to daily and weekly meetings with the dev team, design team, managers, 
                                 C-suite executives, and clients, by providing valuable insights, feedback, and solutions.
                               </p>
                             )}
@@ -424,7 +424,7 @@ function Home() {
                         display: highlightFE ? "block" : "none",
                       }}>
                         <br /> 
-                        <div className="py-4 text-center" style={{background: 'black', borderRadius:'8px'}} > <a className="link p-1" href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
+                        <div className={`py-4 ${styles.knowitalls}`}  > <a className="link p-1" href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
                           rel="noreferrer" title="Click to see my work at: www.knowitalls.com" >www.knowitalls.com</a>
                           
                        
