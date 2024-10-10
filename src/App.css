@@ -379,6 +379,14 @@ div.row.mx-1.justify-content-center {
   min-width: 315px;
 }
 
+.width90 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  min-width: 315px;
+}
+
 .wordSpace {
   word-spacing: 0.2rem;
   font-size: 1.2rem;

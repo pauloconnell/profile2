@@ -88,7 +88,7 @@ ul.hidden.shrink li {
 }
 
 .observeElement li button {
-  background-color: var(--tertiary-color);
+  background-color: var(--tertiary-color-lite);
 }
 
 ul.hidden li {

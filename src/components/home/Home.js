@@ -42,10 +42,12 @@ function Home() {
     git: false,
     azure: false,
     api: false,
+    testing: false,
     seo: false,
     design: false,
     abTesting: false,
     meetings: false,
+    cms: false,
     details: false,
   });
   
@@ -162,12 +164,15 @@ function Home() {
   return (
     <div className={`textAlign my-3 ${styles.backgroundFixed}`}>
       <div className="">
-        <div className="width70 readEasy word  m-auto my-3 animate">
+        <div className="width90 readEasy word  m-auto my-3 animate">
           
             <div className={`lineHeight wordSpace mt-3 ${styles.homeMainText}`}>
              
               Keen problem solver experienced in all aspects of Software
-              Development. <br/> Specializing in Web Technologies including Vue 3 w/Nuxt 3 and React w/Next.
+              Development. 
+              <div className="mt-3">
+                 Specializing in Web Technologies including Vue 3 w/Nuxt 3 and React w/Next.
+                 </div>
             </div>
             <div className=" mt-5 py-5">
             {/* <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div> */}
@@ -203,13 +208,13 @@ function Home() {
              |<br/>
              V<br/>
         </div> */}
-        <div className=" width70  mt-5 pt-5">
+        <div className=" width90  mt-5 pt-5">
           
           <div className="fade-in-info "
             onMouseEnter={handleHoverIn}
             onMouseLeave={handleHoverOut}
             style={{ minHeight: "420px", opacity: hovering ? 1 : 0, transition: 'opacity 2.5s ease' }}> 
-            <div className=" width70 ">
+            <div className=" width90 ">
               <div className="wordSpace" style={{ minHeight: "300px" }}>
                 <div className="container-fluid">
                   <div className="row">
@@ -259,7 +264,7 @@ function Home() {
                       >
                        <Link to="/About#certifications">Certifications</Link>: React, HTML, CSS, JavaScript, Bootstrap, jQuery, Vue3, Nuxt3, TypeScript, Node.js, Express, automated testing (Jest, Mocha, PlayWright, TestIms). 
                        <br/>
-                       Specialized in JavaScript/TypeScript, with experience in .NET (RazorPages, RazorComponents, C#).
+                       Specialized in JavaScript/TypeScript, with experience in .NET (RazorPages, RazorComponents and C#).
                       </div>
                       <br />
                       <div
@@ -358,7 +363,7 @@ function Home() {
                             </button>
                             {visible.abTesting && (
                               <p className="text-start">
-                              Assisting the Marketing team with A/B testing using Google Analytics to optimize campaign performance and improve user engagement.
+                                Assisting the Marketing team with A/B testing using Google Analytics to optimize campaign performance and improve user engagement.
                               </p>
                             )}
                           </li>
@@ -368,8 +373,27 @@ function Home() {
                             </button>
                             {visible.meetings && (
                               <p className="text-start">
-                                Sharing my screen as champion managing Kanban board, and backlog.  Making positive contributions to daily and weekly meetings with the dev team, design team, managers, 
-                                C-suite executives, and clients, by providing valuable insights, feedback, and solutions.
+                                As the champion managing the Kanban board and backlog, I regularly share my screen for daily scrum, and make positive contributions to weekly meetings with the development team, design team, managers, C-suite executives, and clients by providing valuable insights, feedback, and solutions.
+                              </p>
+                            )}
+                          </li>
+                          <li>
+                            <button className="link" onClick={() => toggleVisibility('testing')} title="Click to see details">
+                              Testing and monitoring
+                            </button>
+                            {visible.testing && (
+                              <p className="text-start">
+                                Utilized Test-Driven Development (TDD) with Jest, implemented automated nightly and CI/CD testing using Testim, and integrated Exceptionless for monitoring and alerting.
+                              </p>
+                            )}
+                          </li>
+                          <li>
+                            <button className="link" onClick={() => toggleVisibility('cms')} title="Click to see details">
+                              Content Management System (CMS)
+                            </button>
+                            {visible.cms && (
+                              <p className="text-start">
+                                Implemented an in-house built CMS, enabling stakeholders to make simple content changes independently, without requiring the involvement of the development team.
                               </p>
                             )}
                           </li>
@@ -385,8 +409,8 @@ function Home() {
                           display: highlightBE ? "block" : "none",
                         }}
                       >
-                        Current project: Utilizing Node.js and Nuxt 3 for full-stack development, leveraging hybrid SSR capabilities.
-                         Technologies in use include .NET, Azure Pipelines, CosmosDB, Exceptionless, and Testim.
+                        Current project: Utilizing Node.js with Vue 3 and Nuxt 3, leveraging hybrid SSR capabilities.<br/>
+                         Other Technologies in use include .NET backend with Azure Pipelines, CosmosDB, Exceptionless, and Testim.
                       
                         <div
                           style={{
