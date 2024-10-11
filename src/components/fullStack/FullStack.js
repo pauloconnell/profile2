@@ -9,24 +9,26 @@ import MyWork from "../links/MyWork";
 const FullStack = function () {
   return (
     <div className="bgSolid textAlign">
-      <MyWork />
+    
 
-      <div>
+      <div className="py-3 mx-auto w-75 ">
         <h2 className=" my-3 ">
-          <span className="bigH2 text textBlue">
+          <span className="bigH2 text textBlue ">
             Full Stack MERN Applications
           </span>
         </h2>
 
-        <h3 className="readEasy inlineBlock pt-3">
+        <h3 className="mb-5 py-3 mx-auto backgroundBlue w-75 text-center text">
+          
           Deployed in the cloud using:
           <br />
           React, Express, MongoDB, Mongoose, Node.js, API MicroServices
+          
+          HTML, JavaScript, CSS, Bootstrap, GitHub, AWS
         </h3>
 
-        <h4 className="readEasy">
-          HTML, JavaScript, Css, Bootstrap, jQuerry, GitHub
-        </h4>
+
+
       </div>
 
       <div className="row mx-1 justify-content-center">
@@ -196,9 +198,7 @@ const FullStack = function () {
         </section>
       </div>
 
-      <div className="my-3">
-        <MyWork />
-      </div>
+    
     </div>
   );
 };

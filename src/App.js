@@ -10,11 +10,13 @@ import './App.css';
 /* Import Components */
 import Header from './components/header/Header';
 import Home from './components/home/Home';
+import MyWork from './components/links/MyWork';
 const About = lazy(() => import('./components/about/About'));
 const Contact = lazy(() => import('./components/contact/Contact'));
 const FullStack = lazy(() => import('./components/fullStack/FullStack'));
 const DataVisualization2 = lazy(() => import('./components/dataVisualization/DataVisualization2'));
 const WebApps = lazy(() => import('./components/webApps/WebApps'));
+
 
 
 
@@ -32,7 +34,7 @@ function App() {
           <Route path="/dataVisualization2" element={<Suspense fallback={<div>Loading...</div>}><DataVisualization2 /></Suspense>} />
           <Route path="/WebApps" element={<Suspense fallback={<div>Loading...</div>}><WebApps /></Suspense>} />
         </Routes>
-    
+        <MyWork />
     
       </Router >
     </div>

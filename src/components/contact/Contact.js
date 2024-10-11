@@ -62,9 +62,7 @@ const Contact = function () {
             </a>
           </div>
         </section>
-        <div style={{ width: "100%", height: 100 }}>
-          <MyWork className="mt-auto" />
-        </div>
+        
       </div>
     </div>
   );

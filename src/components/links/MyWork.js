@@ -23,7 +23,7 @@ const goToTop = () => {
 
 const MyWork = function () {
   return (
-    <div className="textAlign">
+    <div className="textAlign pt-1">
       <div className="gridContainer width70" onClick={goToTop}>
         <Link
           style={{ display: "inline-block" }}

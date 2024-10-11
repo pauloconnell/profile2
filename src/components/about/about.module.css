@@ -11,10 +11,7 @@
     transition: left 2.5s ease-out;
   }
 
-.backgroundBlue {
-    background: DodgerBlue;
-    border-radius: 5px;
-}
+
 
 .meImage { 
   position:absolute;

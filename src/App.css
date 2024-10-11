@@ -140,7 +140,10 @@ div.row.mx-1.justify-content-center {
   visibility: hidden;
 }
 
-
+.backgroundBlue {
+  background: DodgerBlue;
+  border-radius: 5px;
+}
 
 .bgSolid {
   background: rgb(12, 12, 12);

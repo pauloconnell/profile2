@@ -7,15 +7,15 @@ import MyWork from "../links/MyWork";
 const DataVisualization2 = function () {
   return (
     <div className="bgSolid">
-      <MyWork />
+ 
       
-      <h2 className=" my-3 textAlign bigH2">
-        <span className="text textBlue">
+      <h2 className=" my-3 textAlign ">
+        <span className="text textBlue bigH2">
           Data Visualization D3
         </span>
       </h2>
-      <h3 className="mb-5 pt-3 textAlign">
-        <span className="readEasy">
+      <h3 className="py-3 textAlign backgroundBlue w-75 mx-auto text">
+        <span className="">
           API driven data displayed in browser using D3 library on SVG canvas
         </span>
       </h3>
@@ -115,9 +115,7 @@ const DataVisualization2 = function () {
           </a>
         </section>
       </div>
-      <div className="my-3">
-        <MyWork />
-      </div>
+   
     </div>
   );
 };

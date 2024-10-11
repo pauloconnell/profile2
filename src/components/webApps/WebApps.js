@@ -10,17 +10,15 @@ import MyWork from '../links/MyWork';
 const WebApps = function () {
   return (
     <div className="bgSolid" >
-      
-        <MyWork />
 
       
         <h2 className=" my-3 textAlign">
           <span className="bigH2 text textBlue">Web Applications</span>
         </h2>
-        <h3 className="mb-5 pt-3 px-sm-5 mx-sm-5 text-center">
-          <span className="readEasy">
+        <h3 className="mb-5 py-3 mx-auto backgroundBlue w-75 text-center text">
+          <span className="">
             Modern responsive custom Web Applications. <br />
-            Built using either pure HTML, CSS, JavaScript, (some jQuery), or React / Vue3 with Nuxt 3, and deployed in the cloud.
+            Built using either pure JavaScript, HTML, CSS, or React / Vue3 with Nuxt 3.
           </span>
         </h3>
       
@@ -281,9 +279,7 @@ const WebApps = function () {
       </div>
 */}
 
-        <div className="my-3">
-          <MyWork />
-        </div>
+     
       </div>
     </div>
   );

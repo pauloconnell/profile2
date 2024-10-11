@@ -22,7 +22,7 @@
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-size: cover;
-     min-height: 75vh;
+     min-height: 50vh; 
   }
 
   .contactCard {
@@ -31,7 +31,7 @@
   
 
 .contactMe {
-    min-height: 57vh;
+    min-height: 50vh;
     align-items: center;
     column-gap: 20px;
 
@@ -62,11 +62,11 @@
     }
 }
 
-@media only screen and (min-width: 1043px) {
+/* @media only screen and (min-width: 1043px) {
     .contactMe {
         min-height: 55vh;
     }
-}
+} */
 
 /*  float is used from animationContact now
 .float {

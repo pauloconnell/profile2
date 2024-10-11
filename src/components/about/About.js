@@ -18,7 +18,7 @@ const About = function () {
           style={{ fontSize: "initial" }}
         >
           
-          <h2 className={`bigH2 text ${styles.backgroundBlue}`}>Hi, I am Paul O’Connell, a passionate Full Stack Web (M.E.R.N.) Software Developer.</h2><br/><br/>
+          <h2 className="bigH2 text backgroundBlue">Hi, I am Paul O’Connell, a passionate Full Stack Web (M.E.R.N.) Software Developer.</h2><br/><br/>
           <div className={`${styles.meImage}`}><img src="https://res.cloudinary.com/pollie/image/upload/v1728088299/Capture_rsvvf2.png" alt="This is me" /></div>
 
           <div className="fade-in-info text-start">
@@ -232,7 +232,7 @@ const About = function () {
        
         </div>
 
-         <MyWork />
+       
       
       </div>
     </div>
