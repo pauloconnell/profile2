@@ -201,7 +201,7 @@ function Home() {
                 Specializing in Web Technologies including Vue 3 w/Nuxt 3 and React w/Next.
               </div>
             </div>
-            <div className=" mt-5 py-5">
+            <div className={` mt-5 py-5 ${styles.textShadowBlack}`}>
               {/* <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div> */}
               <i>    Currently working as a Senior Front End Software Engineer.
                 <br />Building out a green field peer-to-peer
@@ -500,7 +500,7 @@ function Home() {
 
 
                 </div>
-                <ul className={`pt-4 ${styles.hidden} ${visible.details ? `${styles.transition}` : styles.shrink}`} style={{ textAlign: "left", listStyleType: "none" }}>
+                <ul className={`pt-4 readEasy w-75 mx-auto ${styles.hidden} ${visible.details ? `${styles.transition}` : styles.shrink}`} style={{ textAlign: "left", listStyleType: "none" }}>
               <li>
                 Payment integration with <b className="textShadow">Stripe</b>
               </li>

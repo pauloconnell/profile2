@@ -100,6 +100,10 @@ ul.hidden.shrink li {
   background-color: var(--tertiary-color-lite);
 }
 
+.textShadowBlack {
+  text-shadow: 2px 2px 1px black;
+}
+
 ul.hidden li {
   background-color: var(--secondary-color);
   border-radius: 5px;
