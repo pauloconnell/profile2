@@ -20,77 +20,92 @@ const DataVisualization2 = function () {
         </span>
       </h3>
 
-      <div className="row mx-1 justify-content-center">
-        <section className="col-12 col-sm-5 text-center py-1 px-0 link">
+      <section className="row mx-1 justify-content-center">
+        <div className=" col-12 col-sm-5 text-center my-5 py-1 px-0 link">
           <a
             className="link d-block h-100"
             href="https://d3-challenge-4.pauloconnell.repl.co/"
             target="_blank"
             rel="noreferrer"
           >
-            <div className=" h-100">
-              <span className="title text">
+            <div className=" card h-100">
+              <div className="card-header title text">
                 <strong>Population Education by Location</strong>
-              </span>
-              <div className=" d-flex align-items-center my-3 ">
+              </div>
+              <div className="card-body d-flex align-items-center my-3 ">
                 <img
                   className="img-fluid "
                   src="https://res.cloudinary.com/pollie/image/upload/v1598897252/d3_US_Education_cq6fpz.png"
                   alt="D3 Data Visualization"
                 />
               </div>
+              <div className="card-footer">
+                <small className="text-muted">
+                  *Data from the US Census Bureau
+                </small>
+              </div>
             </div>
           </a>
-        </section>
+        </div>
         <div className="col-sm-auto"></div>
-        <section className="col-12 col-sm-5 text-center py-1 px-0 link">
+        <div className="col-12 col-sm-5 text-center py-1 my-5 px-0 link">
           <a
             className="link  d-block h-100"
             href="https://d3-challenge-2-New.pauloconnell.repl.co"
             target="_blank"
             rel="noreferrer"
           >
-            <div className=" h-100">
-              <span className="title text">
+            <div className=" card h-100">
+              <div className="card-header title text">
                 <strong>Doping in Biking</strong>
-              </span>
-              <div className="d-flex align-items-center my-3">
+              </div>
+              <div className=" card-body  align-items-center my-3">
                 <img
                   className="img-fluid "
                   src="https://res.cloudinary.com/pollie/image/upload/v1622334690/d3_doping_in_biking_mtl8lk.png"
                   alt="D3 Data Visualization"
                 />
               </div>
+              <div className="card-footer">
+                <small className="text-muted">
+                  *Data from FreeCodeCamp
+                </small>
+              </div>
             </div>
           </a>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      <div className="row mx-1 justify-content-center">
-        <section className="col-12 col-sm-5 text-center py-1 px-0 link">
+      <section className="row  mx-1 justify-content-center">
+        <div className="col-12 col-sm-5 text-center my-5 py-1 px-0 link">
           <a
             className="link pos-one d-block h-100"
             href="https://d3-Challenge-3.pauloconnell.repl.co"
             target="_blank"
             rel="noreferrer"
           >
-            <div className=" h-100">
-              <span className="title text">
+            <div className=" card h-100">
+              <div className="card-header title text">
                 <strong>Global Temperature History </strong>
-              </span>
+              </div>
               <br />
-              <div className="d-flex align-items-center my-3">
+              <div className="card-body my-auto align-items-center my-3">
                 <img
-                  className="img-fluid "
+                  className="img-fluid"
                   src="https://res.cloudinary.com/pollie/image/upload/v1598905005/d3_global_warming_250years_reknwq.png"
                   alt="D3 Data Visualization"
                 />
               </div>
+              <div className="card-footer">
+                <small className="text-muted">
+                  *Data from the Global Temperature API
+                </small>
+              </div>
             </div>
           </a>
-        </section>
+        </div>
         <div className="col-sm-auto"></div>
-        <section className="col-12 col-sm-5 text-center py-1 px-0 link">
+        <div className="col-12 col-sm-5 text-center my-5 py-1 px-0 link">
 
         
           <a
@@ -99,22 +114,27 @@ const DataVisualization2 = function () {
             target="_blank"
             rel="noreferrer"
           >
-            <div className=" h-100">
-              <span className="title text">
+            <div className="card h-100">
+              <div className="card-headertitle text">
                 <strong>Historical US GDP </strong>
-              </span>
+              </div>
               <br />
-              <div className="d-flex align-items-center my-3">
+              <div className="card-body d-flex align-items-center my-3">
                 <img
                   className="img-fluid "
                   src="https://res.cloudinary.com/pollie/image/upload/v1622334021/d3_Us_GDP_nushwx.png"
                   alt="D3 Data Visualization"
                 />
               </div>
+              <div className="card-footer">
+                <small className="text-muted">
+                  *Data from the US Census Bureau
+                </small>
+              </div>
             </div>
           </a>
-        </section>
-      </div>
+        </div>
+      </section>
    
     </div>
   );
