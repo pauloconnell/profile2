@@ -19,8 +19,8 @@ const DataVisualization2 = function () {
           API driven data displayed in browser using D3 library on SVG canvas
         </span>
       </h3>
-
-      <section className="row mx-1 justify-content-center">
+    <section className="width90">
+      <div className="row mx-1 justify-content-center">
         <div className=" col-12 col-sm-5 text-center my-5 py-1 px-0 link">
           <a
             className="link d-block h-100"
@@ -59,9 +59,9 @@ const DataVisualization2 = function () {
               <div className="card-header title text">
                 <strong>Doping in Biking</strong>
               </div>
-              <div className=" card-body  align-items-center my-3">
+              <div className=" card-body  d-flex my-3">
                 <img
-                  className="img-fluid "
+                  className="img-fluid justify-content-center object-fit-contain "
                   src="https://res.cloudinary.com/pollie/image/upload/v1622334690/d3_doping_in_biking_mtl8lk.png"
                   alt="D3 Data Visualization"
                 />
@@ -74,9 +74,9 @@ const DataVisualization2 = function () {
             </div>
           </a>
         </div>
-      </section>
+      </div>
 
-      <section className="row  mx-1 justify-content-center">
+      <div className="row  mx-1 justify-content-center">
         <div className="col-12 col-sm-5 text-center my-5 py-1 px-0 link">
           <a
             className="link pos-one d-block h-100"
@@ -134,8 +134,8 @@ const DataVisualization2 = function () {
             </div>
           </a>
         </div>
-      </section>
-   
+      </div>
+    </section>
     </div>
   );
 };
