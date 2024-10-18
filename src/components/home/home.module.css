@@ -8,8 +8,6 @@
   color: black;
 }
 
-
-
 .backgroundFixed {
   background-image: url("https://res.cloudinary.com/pollie/image/upload/v1621034051/Million_Ridge_tkchwl.png");
   /* Center and scale the image nicely */
@@ -20,6 +18,12 @@
   height: 100%;
   
 }
+
+
+.colorBlack {
+  color:black;
+}
+
 
 /*  Not being used
 .expandingReadable {
@@ -76,6 +80,16 @@ ul.hidden.shrink li {
   border-radius: 8px;
   text-align: center;
   background-color: black;
+}
+
+.mainTech img {
+  width:65px;
+  height:50px;
+  margin: 10px;
+}
+.mainTech img.enlarge {
+  width:75px;
+  height:75px;
 }
 
 /* animate 'experience' buttons with intersection observer */
