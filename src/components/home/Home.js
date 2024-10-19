@@ -399,18 +399,18 @@ function Home() {
                   <Link to="/About#certifications">Certifications</Link>
                   </div>
                   <div className="mt-4 mb-2">
-                    <strong className={styles.colorBlack}>React, Redux & Next:</strong><br/>  Built dynamic, responsive, data-rich websites, applications, and user interfaces using React, Next.js, and Redux for state management and/or Context Provider for efficient simple state sharing.
+                    <strong className={styles.colorBlack}>React, Redux & Next:</strong><br/>  Expert building dynamic, responsive, data-rich websites, applications, and user interfaces using React, Next.js, and Redux for state management and/or Context Provider for efficient simple state sharing.
 
 
                   </div>
                   <div className="my-2">
-                <strong className={styles.colorBlack}>Vue3, Pinia & Nuxt3:</strong> <br/>Built dynamic, responsive, data-rich websites, applications, and user interfaces using Vue 3, Nuxt 3, and Pinia for state management, and/or  Composables for simple global state as well as reusable logic.
+                <strong className={styles.colorBlack}>Vue3, Pinia & Nuxt3:</strong> <br/>Expert building dynamic, responsive, data-rich websites, applications, and user interfaces using Vue 3, Nuxt 3, and Pinia for state management, and/or  Composables for simple global state as well as reusable logic.
                 </div>
                   <div className="my-2">
-                  <strong className={styles.colorBlack}>HTML/CSS:</strong><br/> Expert in crafting semantic, accessible HTML and CSS for clean, visually appealing web pages.
+                  <strong className={styles.colorBlack}>HTML/CSS:</strong><br/> Over a decade of experience in crafting semantic, accessible HTML and CSS for clean, visually appealing web pages.
                   </div>
                   <div className="my-2">
-                  <strong className={styles.colorBlack}>JavaScript:</strong><br/> Strong proficiency in JavaScript for interactive, user-friendly applications.
+                  <strong className={styles.colorBlack}>JavaScript:</strong><br/> Specializing in JavaScript for interactive, user-friendly applications on both frontend and backend via Node.js and Express.js.
                 </div>
                 <div className="my-2">
                 <strong className={styles.colorBlack}>TypeScript:</strong><br/> Implemented robust, type-safe code with TypeScript.
@@ -431,7 +431,7 @@ function Home() {
               
               
                 <div className="my-2">
-                <strong className={styles.colorBlack}>.NET Experience:</strong><br/> Familiar with RazorPages, RazorComponents, and C#.
+                <strong className={styles.colorBlack}>.NET Experience:</strong><br/> Experience building Front End for an e-comerce platform with RazorPages, RazorComponents, and C#.
                 </div>
               </div>
 
