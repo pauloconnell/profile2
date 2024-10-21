@@ -41,12 +41,12 @@
 } */
 
 /* animate 'tech details' on open/close */
-.hidden {
+ul.hidden {
   max-height:65px;
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 1.5s ease, max-height 1.5s ease,  transform 1.5s ease;
-
+  overflow: hidden;
 }
 
 ul.hidden.shrink li {
@@ -97,7 +97,7 @@ ul.hidden.shrink li {
   position: relative;
   top: 150px;
   /* Initial position */
-  left: 250px;
+  transform: translateX(250px);  /* Initial translate from right */
   opacity: 0;
   transition: top 2.5s ease-out, left 2.5s ease-out, opacity 1.5s ease-out;
   
@@ -106,7 +106,7 @@ ul.hidden.shrink li {
 .observeElement li.visibleNow {
   top: 0;
   /* Final position */
-  left: 0;
+  transform: translateX(0px);  /* translate back  */
   opacity: 1;
 }
 
