@@ -60,27 +60,21 @@ img {
 section {
   transition: all 1s ease-in-out;
 }
-
 .row section.link:hover {
   border: 2px solid black;
   border-radius: 5px;
 }
 
-ul.readEasy li {
-  margin-bottom: 15px;
-}
+
 
 ul {
   padding-left: 0px;
   list-style: upper-roman;
   list-style-position: inside;
 }
-
-/**not used 
-div.space {
-  margin-top: 17px;
+ul.readEasy li {
+  margin-bottom: 15px;
 }
-**/
 
 div.row.mx-1.justify-content-center {
   /* targets links to projects in all 3 categories */
@@ -210,9 +204,16 @@ div.row.mx-1.justify-content-center {
   opacity: 1;
 }
 
+.fixedHeader {
+  position: fixed;
+  top:0;
+  left:0;
+}
+
 .flexContainer {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  width: 100vw;
 }
 
 
