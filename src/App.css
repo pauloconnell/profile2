@@ -5,9 +5,10 @@
   --primary-color: #1E90FF;
   --secondary-color: #062a78;
   --tertiary-color: #b22222;
-  --tertiary-color-lite: rgb(178, 34, 34, .2);
+  --tertiary-color-lite: rgb(220, 20, 60);
   --background-color-lite: #bebfc5;
   --background-color-dark: #536878;
+  --background-color-black: black;
 }
 
 .App-logo {

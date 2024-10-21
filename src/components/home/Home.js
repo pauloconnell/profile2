@@ -61,7 +61,7 @@ function Home() {
   // every time this component is reached 
   useEffect(() => {
     setIsMounted(true);
-    const element = homeTop.current;
+    const element = homeTop.current;                                      // this is ref to main div on page
     if (element && isMounted) {
       element.classList.add(styles.transparent);
 
@@ -90,6 +90,10 @@ function Home() {
           entry.target.classList.remove(styles.visibleNow);
         }
       });
+    }, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
     });
 
     if (observeElement.current) {
@@ -98,7 +102,7 @@ function Home() {
     }
 
 
-    return () => {
+    return () => {                                                              // unmount
       if (observeElement.current) {
         const items = observeElement.current.querySelectorAll('li');
         items.forEach((item) => observer.unobserve(item));
@@ -675,7 +679,7 @@ function Home() {
                 <div className="my-2">
                   <div className="text-center">
                     <button className="link" onClick={() => toggleVisibility('details')} title="Click to see details">
-                      Click to see Technologies used:
+                      Click for Technology details:
                     </button>
                   </div>
                 </div>
@@ -718,7 +722,19 @@ function Home() {
                 <li>
                   <b className="textShadow">Testims</b> automated nightly and CI/CD testing
                 </li>
+                
+                <div className="my-2">
+                  <div className="text-center">
+                    <button className="link" onClick={() => toggleVisibility('details')} title="Click to see details">
+                      Hide details
+                    </button>
+                  </div>
+                
+
+
+              </div>
               </ul>
+              
             </div>
 
             {/**

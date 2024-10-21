@@ -66,7 +66,7 @@ ul.hidden.shrink li {
 }
 
 .homeTop {
-  background-color: var(--background-color-lite);
+  background-color: var(--background-color-black);
   transition: background-color 15s ease;
 }
 
@@ -94,20 +94,21 @@ ul.hidden.shrink li {
 
 /* animate 'experience' buttons with intersection observer */
 .observeElement li {
-  position: relative;
-  top: 150px;
+  /* position: relative;
+  top: 150px; */
   /* Initial position */
-  transform: translateX(250px);  /* Initial translate from right */
+  transform: rotateX(45deg) rotateY(90deg);      /* translateX(250px);   Initial translate from right */
   opacity: 0;
-  transition: top 2.5s ease-out, left 2.5s ease-out, opacity 1.5s ease-out;
-  
+  transition:  opacity 1.5s ease-out, transform 3s ease-in-out; /* top 2.5s ease-out, left 2.5s ease-out, */
+  z-index: 1;
 }
 
 .observeElement li.visibleNow {
-  top: 0;
+  /* top: 0; */
   /* Final position */
-  transform: translateX(0px);  /* translate back  */
+  transform: rotateX(0) rotateY(0);        /*  translateX(0px);  translate back  */
   opacity: 1;
+  z-index: 10;
 }
 
 .observeElement li button {
