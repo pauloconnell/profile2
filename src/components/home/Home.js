@@ -4,6 +4,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './home.module.css';
+
+
 import UnorderedList from '../UnorderedList';
 import MyWork from '../links/MyWork';
 
@@ -81,19 +83,26 @@ function Home() {
   // Component mounted:
   useEffect(() => {
     setIsMounted(true);
+    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
+        console.log("observer triggered ", entry.target)
         if (entry.isIntersecting) {
-          entry.target.classList.add(styles.visibleNow);
+     //    setTimeout(()=>{
+           entry.target.classList.add(styles.visibleNow);
+           observer.unobserve(entry.target); 
+     //     }, 300);
 
         } else {
+       //   setTimeout(()=>{
           entry.target.classList.remove(styles.visibleNow);
+       //   },300);
         }
       });
     }, {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5
+      threshold: 0.1
     });
 
     if (observeElement.current) {
@@ -113,7 +122,7 @@ function Home() {
 
 
   const toggleVisibility = (key) => {
-    setVisible((prevState) => ({
+    setVisible((prevState) => ({                                              // toggle visibility for selected key of visible ref
       ...prevState,
       [key]: !prevState[key],
     }));
@@ -679,7 +688,7 @@ function Home() {
                 <div className="my-2">
                   <div className="text-center">
                     <button className="link" onClick={() => toggleVisibility('details')} title="Click to see details">
-                      Click for Technology details:
+                     {visible.details ? 'Hide details' : 'Click for Technology details:'} 
                     </button>
                   </div>
                 </div>

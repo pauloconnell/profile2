@@ -7,7 +7,7 @@ const Header = function () {
     return (
   
   
-      <header className="textAlign my-3">
+      <header className="textAlign mb-3">
         <div className="flexContainer fixedHeader">
           <Link className="col link border bgSolid" to="/">
             Home
