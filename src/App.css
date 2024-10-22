@@ -8,6 +8,7 @@
   --tertiary-color-lite: rgb(220, 20, 60);
   --background-color-lite: #bebfc5;
   --background-color-dark: #536878;
+  --background-color-blue: #062a78;
   --background-color-black: black;
 }
 
@@ -143,6 +144,11 @@ div.row.mx-1.justify-content-center {
 .backgroundBlue {
   background: DodgerBlue;
   border-radius: 5px;
+}
+
+.backgroundDarkBlue {
+  background-color: var(--background-color-blue);
+  color:white;
 }
 
 .bgSolid {
@@ -344,9 +350,7 @@ div.row.mx-1.justify-content-center {
 .textBlue {
   color: dodgerblue;
 }
-.textShadow {
-  text-shadow: 2px 2px 8px black;
-}
+
 
 /* .textShadowWhite {
   text-shadow: 2px 2px 15px white;

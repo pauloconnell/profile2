@@ -119,6 +119,9 @@ ul.hidden.shrink li {
 .textShadowBlack {
   text-shadow: 2px 2px 1px black;
 }
+.textShadowRed {
+  text-shadow: 2px 2px 8px var(--tertiary-color);
+}
 
 ul.hidden li {
   background-color: var(--secondary-color);

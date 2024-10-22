@@ -436,10 +436,9 @@ function Home() {
                 <div
                   id="fe"
                   style={{
-                    color: highlightFE ? "white" : "black",
-                    fontWeight: highlightFE
-                      ? "bold"
-                      : " normal",
+                    color: "black",
+                    fontWeight: "bold",
+                      //: " normal",
                     display: highlightFE ? "block" : "none",
                   }}
                 >
@@ -459,7 +458,7 @@ function Home() {
                           React, Redux & Next:
                         </button>
                         {visible.react && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Expert building dynamic, responsive, data-rich websites, applications, and user interfaces using React, Next.js, and Redux for state management and/or Context Provider for efficient simple state sharing.
                           </p>
                         )}
@@ -469,7 +468,7 @@ function Home() {
                           Vue3, Pinia & Nuxt3:
                         </button>
                         {visible.vue && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Expert building dynamic, responsive, data-rich websites, applications, and user interfaces using Vue 3, Nuxt 3, and Pinia for state management, and/or Composables for simple global state as well as reusable logic.
                           </p>
                         )}
@@ -479,7 +478,7 @@ function Home() {
                           HTML/CSS:
                         </button>
                         {visible.htmlCss && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Over a decade of experience in crafting semantic, accessible HTML and CSS for clean, visually appealing web pages.
                           </p>
                         )}
@@ -489,7 +488,7 @@ function Home() {
                           JavaScript:
                         </button>
                         {visible.javascript && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Specializing in JavaScript for interactive, user-friendly applications on both frontend and backend via Node.js and Express.js.
                           </p>
                         )}
@@ -499,7 +498,7 @@ function Home() {
                           TypeScript:
                         </button>
                         {visible.typescript && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Implemented robust, type-safe code with TypeScript.
                           </p>
                         )}
@@ -509,7 +508,7 @@ function Home() {
                           Node.js & Express:
                         </button>
                         {visible.nodeExpress && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Built scalable, Full Stack applications.
                           </p>
                         )}
@@ -519,7 +518,7 @@ function Home() {
                           Automated Testing:
                         </button>
                         {visible.testingFE && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Ensured code reliability with Jest, Mocha, Playwright, and Testim.
                           </p>
                         )}
@@ -529,7 +528,7 @@ function Home() {
                           Bootstrap:
                         </button>
                         {visible.bootstrap && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Utilized Bootstrap for responsive, mobile-first design.
                           </p>
                         )}
@@ -539,7 +538,7 @@ function Home() {
                           jQuery:
                         </button>
                         {visible.jquery && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Enhanced interactivity and animations of basic applications using jQuery.
                           </p>
                         )}
@@ -549,7 +548,7 @@ function Home() {
                           .NET Experience:
                         </button>
                         {visible.dotnet && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Experience building Front End for an e-commerce platform with RazorPages, RazorComponents, and C#.
                           </p>
                         )}
@@ -575,7 +574,7 @@ function Home() {
                 <div
                   id="be"
                   style={{
-                    color: highlightBE ? "white" : "black",
+                    color: "black",
                     fontWeight: highlightBE
                       ? "bold"
                       : " normal",
@@ -592,7 +591,7 @@ function Home() {
                           Node.js
                         </button>
                         {visible.node && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Built scalable network applications with Node.js, utilizing its event-driven model for handling high concurrency.
                           </p>
                         )}
@@ -602,7 +601,7 @@ function Home() {
                           MongoDB & Mongoose
                         </button>
                         {visible.mongo && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Leveraged MongoDB for flexibility and Mongoose for schema-based solutions to efficiently manage data.
                           </p>
                         )}
@@ -612,7 +611,7 @@ function Home() {
                           AWS Deployment
                         </button>
                         {visible.aws && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Deployed apps on AWS using services like EC2 and S3, ensuring robust and scalable server environments.
                           </p>
                         )}
@@ -622,7 +621,7 @@ function Home() {
                           Express Server
                         </button>
                         {visible.express && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Developed RESTful APIs with Express.js, focusing on secure and efficient routing and middleware.
                           </p>
                         )}
@@ -632,7 +631,7 @@ function Home() {
                           D3.js
                         </button>
                         {visible.d3 && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Created interactive data visualizations with D3.js for insightful data representation.
                           </p>
                         )}
@@ -642,7 +641,7 @@ function Home() {
                           Passport & OAuth
                         </button>
                         {visible.passport && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Implemented user authentication with Passport, integrating OAuth for third-party logins.
                           </p>
                         )}
@@ -652,7 +651,7 @@ function Home() {
                           Pug (Jade) Template Engine
                         </button>
                         {visible.pug && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Used Pug for server-side templating, creating maintainable and dynamic HTML templates.
                           </p>
                         )}
@@ -662,7 +661,7 @@ function Home() {
                           Testing with Jest, Mocha, Chai, Playwright, and Testim
                         </button>
                         {visible.testingBE && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Ensured code reliability with Jest, Mocha, and Chai, and automated tests with Playwright and Testim.
                           </p>
                         )}
@@ -672,7 +671,7 @@ function Home() {
                           Nuxt 3 and Vue 3 for Hybrid SSR
                         </button>
                         {visible.nuxt && (
-                          <p className="text-start p-1 backgroundBlue">
+                          <p className="text-start p-1 backgroundDarkBlue">
                             Refactored pages for hybrid SSR with Nuxt 3 and Vue 3, improving SEO with pre-rendering.
                           </p>
                         )}
@@ -727,7 +726,7 @@ function Home() {
                       Software Developer
                     </button>
                     {visible.dev && (
-                      <p className="text-start p-1 backgroundBlue">
+                      <p className="text-start p-1 backgroundDarkBlue">
                         Proficient in developing responsive, pixel perfect, user friendly websites and web applications using HTML, CSS, JavaScript, Vue 3 w/ Nuxt, as well as React w/ Next.
                       </p>
                     )}
@@ -737,7 +736,7 @@ function Home() {
                       Version Control and Git Branching Strategies
                     </button>
                     {visible.git && (
-                      <p className="text-start p-1 backgroundBlue">
+                      <p className="text-start p-1 backgroundDarkBlue">
                         Proficient in feature branching, hotfixes, release branches, managing pull requests, conducting code reviews, and deploying changes in production environments using Git, GitHub, and Azure.
                       </p>
                     )}
@@ -747,7 +746,7 @@ function Home() {
                       Azure DevOps
                     </button>
                     {visible.azure && (
-                      <p className="text-start p-1 backgroundBlue">
+                      <p className="text-start p-1 backgroundDarkBlue">
                         Extensive use of Azure DevOps for sprint planning, daily standups, and utilizing Azure Kanban boards.
                       </p>
                     )}
@@ -757,7 +756,7 @@ function Home() {
                       API Integration
                     </button>
                     {visible.api && (
-                      <p className="text-start p-1 backgroundBlue">
+                      <p className="text-start p-1 backgroundDarkBlue">
                         Delivering data-rich content with reactive data, interfacing with backend teams, and using Postman and Swagger to build out API connections.
                       </p>
                     )}
@@ -767,7 +766,7 @@ function Home() {
                       Design Collaboration
                     </button>
                     {visible.design && (
-                      <p className="text-start p-1 backgroundBlue">
+                      <p className="text-start p-1 backgroundDarkBlue">
                         Developing pixel perfect code from both rough wireframes as well as collaborating closely with the design team using Sketch and Figma to ensure a seamless and visually appealing user experience.
                       </p>
                     )}
@@ -777,7 +776,7 @@ function Home() {
                       SEO, GTM, Google Analytics, and Performance Optimization
                     </button>
                     {visible.seo && (
-                      <p className="text-start p-1 backgroundBlue">
+                      <p className="text-start p-1 backgroundDarkBlue">
                         Setting up GTM and interfacing with Google Analytics, implementing dynamic SEO tags, and optimizing website performance and loading times.
                       </p>
                     )}
@@ -787,7 +786,7 @@ function Home() {
                       Marketing Collaboration
                     </button>
                     {visible.abTesting && (
-                      <p className="text-start p-1 backgroundBlue">
+                      <p className="text-start p-1 backgroundDarkBlue">
                         Assisting the Marketing team with A/B testing using Google Analytics to optimize campaign performance and improve user engagement.
                       </p>
                     )}
@@ -797,7 +796,7 @@ function Home() {
                       Meeting Contributions
                     </button>
                     {visible.meetings && (
-                      <p className="text-start p-1 backgroundBlue">
+                      <p className="text-start p-1 backgroundDarkBlue">
                         As the champion managing the Kanban board and backlog, I regularly share my screen for daily scrum, and make positive contributions to weekly meetings with the development team, design team, managers, C-suite executives, and clients by providing valuable insights, feedback, and solutions.
                       </p>
                     )}
@@ -807,7 +806,7 @@ function Home() {
                       Testing and monitoring
                     </button>
                     {visible.testingExperience && (
-                      <p className="text-start p-1 backgroundBlue">
+                      <p className="text-start p-1 backgroundDarkBlue">
                         Utilized Test-Driven Development (TDD) with Jest, implemented automated nightly and CI/CD testing using Testim, and integrated Exceptionless for monitoring and alerting.
                       </p>
                     )}
@@ -817,7 +816,7 @@ function Home() {
                       Content Management System (CMS)
                     </button>
                     {visible.cms && (
-                      <p className="text-start p-1 backgroundBlue">
+                      <p className="text-start p-1 backgroundDarkBlue">
                         Implemented an in-house built CMS, enabling stakeholders to make simple content changes independently, without requiring the involvement of the development team.
                       </p>
                     )}
@@ -827,7 +826,7 @@ function Home() {
 
 
               <br />
-              <div className="row"
+              {/* <div className="row"
                 style={{
                   color: highlightBE ? "white" : "black",
                   fontWeight: highlightBE
@@ -855,32 +854,33 @@ function Home() {
                 >
                   &nbsp; Azure devops.
                 </div>
-              </div>
+              </div> */}
               <br />
-              <div className="row"
-                style={{
-                  color: highlightFE ? "white" : "black",
-                  fontWeight: highlightFE
-                    ? "bold"
-                    : " normal",
-                  display: highlightFE ? "block" : "none",
-                }}
+              <div className="text-center"
+                 style={{
+                   color: "black",
+                   fontWeight: "bold"
+                //     : " normal",
+                //   display: highlightFE ? "block" : "none",
+                 }}
               >
                 Currently adding cutting-edge features like 
-                <div> <b className="textShadow">hybrid SSR </b>
+                <div> <b className={styles.textShadowRed}>hybrid SSR </b>
                 </div> to our full featured
                 peer to peer e-commerce platform.
               </div>
 
 
 
-              <div className="row" style={{
-                color: highlightFE ? "white" : "black",
-                fontWeight: highlightFE
-                  ? "bold"
-                  : " normal",
-                display: highlightFE ? "block" : "none",
-              }}>
+              <div className="row" 
+              // style={{
+              //   color: highlightFE ? "white" : "black",
+              //   fontWeight: highlightFE
+              //     ? "bold"
+              //     : " normal",
+              //   display: highlightFE ? "block" : "none",
+              // }}
+              >
                 <br />
                 <div className={`py-4 ${styles.knowitalls}`}  > <a className="link p-1" href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
                   rel="noreferrer" title="Click to see my work at: www.knowitalls.com" >www.knowitalls.com</a>
