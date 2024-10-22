@@ -204,6 +204,7 @@ div.row.mx-1.justify-content-center {
   color: black;
   border-radius: 5px;
   padding: 6px;
+  z-index: 1;
 }
 
 .fade-in-info:hover {

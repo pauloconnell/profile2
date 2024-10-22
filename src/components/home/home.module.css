@@ -97,7 +97,7 @@ ul.hidden.shrink li {
   /* position: relative;
   top: 150px; */
   /* Initial position */
-  transform: rotateX(45deg) rotateY(90deg);      /* translateX(250px);   Initial translate from right */
+  transform: rotateX(25deg) rotateY(180deg);      /* translateX(250px);   Initial translate from right */
   opacity: 0;
   transition:  opacity 1.5s ease-out, transform 3s ease-in-out; /* top 2.5s ease-out, left 2.5s ease-out, */
   z-index: 1;
@@ -108,6 +108,7 @@ ul.hidden.shrink li {
   /* Final position */
   transform: rotateX(0) rotateY(0);        /*  translateX(0px);  translate back  */
   opacity: 1;
+  z-index: 1;
   
 }
 
