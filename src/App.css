@@ -17,7 +17,7 @@ body {
 }
 
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -37,7 +37,7 @@ body {
 
 .App-link {
   color: #61dafb;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -149,6 +149,7 @@ div.row.mx-1.justify-content-center {
 .backgroundDarkBlue {
   background-color: var(--background-color-blue);
   color:white;
+  font-weight: bold;
 }
 
 .bgSolid {
@@ -217,16 +218,17 @@ div.row.mx-1.justify-content-center {
   opacity: 1;
 }
 
-.fixedHeader {
-  position: fixed;
+/* .header {
+  position: absolute;
   top:0;
   left:0;
-}
+} */
 
 .flexContainer {
   display: flex;
   /* justify-content: space-around; */
-  width: 100vw;
+  /* width: 100vw; */
+  flex-wrap: wrap;
 }
 
 
@@ -261,6 +263,7 @@ div.row.mx-1.justify-content-center {
   border-radius: 5px;
   font-weight: bold;
   margin: 2px;
+  min-width: 155px;
 }
 
 .link:hover {

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Navbar } from "../nav/Navbar";
 //import styles from "../App.css";
 /* the main page for the index route of this app */
 
@@ -8,19 +9,7 @@ const Header = function () {
   
   
       <header className="textAlign mb-3">
-        <div className="flexContainer fixedHeader">
-          <Link className="col link border bgSolid" to="/">
-            Home
-          </Link>
-
-          <Link className="col link border bgSolid" to="/about">
-            About Me
-          </Link>
-
-          <Link className="col link border bgSolid" to="/Contact">
-            Contact Me
-          </Link>
-        </div>
+        <Navbar />
         <h1 className="text" id="name">
           Paul O'Connell
         </h1>

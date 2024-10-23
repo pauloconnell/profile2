@@ -23,11 +23,11 @@ const goToTop = () => {
 
 const MyWork = function () {
   return (
-    <div className="textAlign pt-1">
+    <div className="textAlign ">
       <div className="gridContainer width70" onClick={goToTop}>
         <Link
           style={{ display: "inline-block" }}
-          className="link width"
+          className="link width p-1 border my-1"
           id="webApps"
           to="/WebApps"
         >
@@ -37,7 +37,7 @@ const MyWork = function () {
           </span>
         </Link>
 
-        <Link className="link width inlineBlock" id="fullStack" to="/fullStack">
+        <Link className="link width inlineBlock p-1 border my-1" id="fullStack" to="/fullStack">
           <span className="center">
             Full Stack <br />
             Applications
@@ -45,7 +45,7 @@ const MyWork = function () {
         </Link>
 
         <Link
-          className="link width inlineBlock"
+          className="link width inlineBlock p-1 border my-1"
           id="d3"
           to="/DataVisualization2"
         >
