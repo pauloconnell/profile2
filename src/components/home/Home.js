@@ -155,7 +155,13 @@ function Home() {
 
 
     };
-  }, []);
+  }, []);                                                                   // Empty dependency array ensures it runs once on mount
+
+  useEffect(() => {
+   // window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });              // Scroll to top of the page
+   window.scrollTo(0, 0);
+  }, []);                                                                   
+
 
 
   const toggleVisibility = (key) => {
