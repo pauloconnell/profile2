@@ -1,9 +1,16 @@
-import React from "react";
-
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { RowCard } from '../rowCards/RowCard';
 
 /* Refactored Feb 2023 */
 const FullStack = function () {
+
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+
+  },[location]);
+
   return (
     <div className="bgSolid textAlign">
 

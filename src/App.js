@@ -33,7 +33,7 @@ function App() {
           <Route path="/contact" element={<Suspense fallback={<div className="text-center">Loading...</div>}><Contact /></Suspense>} />
           <Route path="/fullStack" element={<Suspense fallback={<div>Loading...</div>}><FullStack /></Suspense>} />
           <Route path="/dataVisualization2" element={<Suspense fallback={<div>Loading...</div>}><DataVisualization2 /></Suspense>} />
-          <Route path="/WebApps" element={<Suspense fallback={<div>Loading...</div>}><WebApps /></Suspense>} />
+          <Route path="/webApps" element={<Suspense fallback={<div>Loading...</div>}><WebApps /></Suspense>} />
         </Routes>
        
         <MyWork />

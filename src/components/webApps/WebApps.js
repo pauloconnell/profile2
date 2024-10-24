@@ -1,6 +1,6 @@
 
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import UnorderedList from '../UnorderedList';
 import MyWork from '../links/MyWork';
 import { RowCard } from '../rowCards/RowCard';
@@ -8,6 +8,12 @@ import { RowCard } from '../rowCards/RowCard';
 
 /* the main page for the index route of this app */
 const WebApps = function () {
+
+  const location = useLocation();
+  useEffect(()=>{
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, [location])
+
   return (
     <div className="bgSolid" >
 
@@ -83,7 +89,7 @@ const WebApps = function () {
         <RowCard link1="https://www.knowitalls.com" header1="www.knowitalls.com" title1="Peer to Peer e-commerce platform"
           imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1726776409/homepage_flzeh0.png" imgAlt1="www.knowitalls.com" footer1="Peer to Peer e-commerce platform built with Vue 3 Nuxt and Azure"
           link2="/#/WebApps" header2="Test Center" title2="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
-          imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1610401628/Test_Center_ue5srv.png" imgAlt2="Test Center app screenshot" footer2="Product Knowledge App for retail stores" />
+          imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1610401628/Test_Center_ue5srv.png" imgAlt2="Test Center app screenshot" footer2="Product Knowledge App used in multiple Retail store locations" />
 
 {/* 
         <RowCard link1="/#/WebApps" header1="Test Center" title1="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"

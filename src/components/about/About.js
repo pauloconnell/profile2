@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react" ;
-//import Link  from "react-router-dom";
+import { useLocation }  from "react-router-dom";
 import styles from './about.module.css';
 import MyWork from '../links/MyWork';
 
@@ -8,8 +8,9 @@ const About = function () {
 
   const flyers= useRef(null);                                                           // elements that will fly in on page load
 
-
+  const location = useLocation();
   useEffect(() => {
+
     if (flyers.current) {
       const [fly1, fly2] = flyers.current.children;
       let delay1 = setTimeout(() => {
@@ -25,12 +26,12 @@ const About = function () {
         clearTimeout(delay1);
       };
     }
-  }, []);  
+  }, [location]);  
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
-  }, []);
+  }, [location]);
 
   return (
     <div className="textAlign">

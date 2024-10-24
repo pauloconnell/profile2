@@ -1,10 +1,17 @@
-import React from "react";
+import React, {  useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 //import { Link } from "react-router-dom";
 //import UnorderedList from "./UnorderedList";
 //import Footer from "./Footer";
 import MyWork from "../links/MyWork";
 
 const DataVisualization2 = function () {
+
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <div className="bgSolid">
  
