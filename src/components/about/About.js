@@ -29,7 +29,21 @@ const About = function () {
   }, [location]);  
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    console.log("location.hash", location.hash)
+    if(location.hash === "#certifications") {
+      setTimeout(() => {
+        const element = document.getElementById('certifications');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+      
+    }else{
+      console.log("scrolling to top")
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });  
+    }
+
+    
 
   }, [location]);
 
