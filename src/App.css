@@ -257,9 +257,11 @@ div.row.mx-1.justify-content-center {
 
 .link {
   color: DodgerBlue;
+  background-color: var(--background-color-black);
   text-shadow: 1px 1px 3px white;
   font-size: 24px;
   padding-bottom: 6px;
+  border: 1px solid black;
   border-radius: 5px;
   font-weight: bold;
   margin: 2px;
@@ -268,7 +270,7 @@ div.row.mx-1.justify-content-center {
 
 .link:hover {
   color: black;
-  background: DodgerBlue;
+  background-color: DodgerBlue;
 }
 
 .lineHeight {

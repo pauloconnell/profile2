@@ -245,9 +245,9 @@ function Home() {
 
 
   return (
-    <div className={`textAlign my-3 ${styles.backgroundFixed}`}>
+    <div className={`textAlign mt-3 ${styles.backgroundFixed}`}>
 
-      <div ref={homeTop} className={`pb-5 ${styles.homeTop}`}>
+      <div ref={homeTop} className={` ${styles.homeTop} mb-4` }>
         <div className="w-75 readEasy word  m-auto my-3 animate">
 
           <div className={`lineHeight wordSpace mt-3 ${styles.homeMainText}`}>
@@ -278,7 +278,7 @@ function Home() {
           <a href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
             rel="noreferrer" title="Click to see my work on: www.knowitalls.com" >
             {/* <span className="p-1 textShadowWhite">See My Work:</span> <br /> */}
-            <b className="p-1 link">www.knowitalls.com</b></a>
+            <b className="p-3 link">www.knowitalls.com</b></a>
           <br />
 
         </div>
@@ -290,6 +290,16 @@ function Home() {
              |<br/>
              V<br/>
         </div> */}
+
+<section className={`${styles.hero} p-1 ms-3 rounded mt-5`}>
+     <p>Focused on developing pixel-perfect responsive software with today's best Full Stack Frameworks: <br/>
+     Vue, Nuxt, React, Next, and Azure. <br/>
+     <br/>
+     <strong>Passionate about learning and building data rich, intuitive UI/UX.</strong>
+          </p> 
+</section>
+
+
       <div className=" width90  mt-5 pt-5">
 
         <div className="fade-in-info "
@@ -419,8 +429,10 @@ function Home() {
                 <span
                   className="col fs-3 link"
                   style={{
-                    color: highlightFE ? "blue" : "black",
+                    color: highlightFE ? "black" : "dodgerBlue",
+                    backgroundColor: highlightFE ? "dodgerBlue" : "black",
                   }}
+                  
                   onClick={handleHoverFE}
                   title="Click to see FrontEnd details"
                 >
@@ -429,7 +441,8 @@ function Home() {
                 <span
                   className="col fs-3 link"
                   style={{
-                    color: highlightBE ? "white" : "black",
+                    color: highlightBE ? "black" : "dodgerBlue",
+                    backgroundColor: highlightBE ? "dodgerBlue" : "black",
                   }}
                   onClick={handleHoverBE}
                   title="Click to see BackEnd details"
@@ -824,7 +837,7 @@ function Home() {
                     </button>
                     {visible.cms && (
                       <p className="text-start p-1 backgroundDarkBlue">
-                        Implemented an in-house built CMS, enabling stakeholders to make simple content changes independently, without requiring the involvement of the development team.
+                        Implemented and improved an in-house built CMS, as well as integrating and using 'Contentful' headless CMS for more advanced features.  Enabling stakeholders to make content changes quickly and independently, without requiring the involvement of the development team.
                       </p>
                     )}
                   </li>
@@ -888,20 +901,21 @@ function Home() {
               //   display: highlightFE ? "block" : "none",
               // }}
               >
-                <br />
-                <div className={`py-4 ${styles.knowitalls}`}  > <a className="link p-1" href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
+                
+                <div className={`py-4 wordSpace ${styles.knowitalls} `}  > 
+                  <a className="link p-3" href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
                   rel="noreferrer" title="Click to see my work at: www.knowitalls.com" >www.knowitalls.com</a>
 
 
                 </div>
               </div>
-              <div className="row">
-                <div className="my-2">
+              <div className="row my-2">
+                
                   <div className="text-center">
                     <button className="link" onClick={() => toggleVisibility('details')} title="Click to see details">
                       {visible.details ? 'Hide details' : 'Click for Technology details:'}
                     </button>
-                  </div>
+                
                 </div>
 
 
@@ -997,7 +1011,7 @@ function Home() {
         title="Click any of the options below:"
         className=" pt-5 mt-5 title readEasy inlineBlock width "
       >
-        See My work:
+      
       </p>
 
     </div>

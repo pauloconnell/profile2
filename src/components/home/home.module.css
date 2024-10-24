@@ -40,6 +40,15 @@
   font-size: 16px;
 } */
 
+
+.hero {
+  /* margin-top: 150px; */
+  margin-bottom: 250px;
+  width: 40%;
+  background-color: var(--background-color-lite);
+}
+
+
 /* animate 'tech details' on open/close */
 ul.hidden {
   max-height:65px;
@@ -67,6 +76,8 @@ ul.hidden.shrink li {
 
 .homeTop {
   background-color: var(--background-color-black);
+  padding-bottom: 100px;
+  margin-bottom: 50px;
   transition: background-color 15s ease;
 }
 
@@ -75,7 +86,7 @@ ul.hidden.shrink li {
 }
 
 .knowitalls {
-  width: 275px;
+  width: 295px;
   margin: auto;
   border-radius: 8px;
   text-align: center;
@@ -133,6 +144,14 @@ ul.hidden li {
   background-color: transparent;
   transform: translatey(0px);
   animation: zoomer 12s ease infinite;
+  margin-bottom: 250px;
+}
+
+@media only screen and (max-width: 500px) {
+  .hero {
+    width: 100%;
+
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
