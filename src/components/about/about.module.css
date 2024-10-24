@@ -1,20 +1,59 @@
 
-.flyLeft {
+/* .fly {
+  height:100px;
+  width: 100vw;
+}
+.fly .left{
     position:relative;
-    left:500px;
+    left:1500px;
     transition: left 2.5s ease-out;
+    overflow: hidden;
   }
   
-  .flyRight {
+  .fly .right {
     position:relative;
-    right:500px;
-    transition: left 2.5s ease-out;
+    right:2500px;
+    transition: right 2.5s ease-out;
   }
+.fly :hover {
+  right:0px;
+  left:0px;
+} */
 
 
+.fly1 {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-100%); /* Start off-screen */
+  transition: opacity 0.5s ease-in, transform 1.5s ease-in, background-color 3s ease-in;
+}
+.fly2 {
+  position: relative;
+  opacity: 0;
+  transform: translateX(100%); /* Start off-screen */
+  transition: opacity 0.5s ease-in, transform 1.5s ease-in,  background-color 3s ease-in;
+}
+
+.fly1.active, .fly2.active {
+  opacity: 1;
+  transform: translateX(0); /* Move into place */
+}
+/* 
+.fly .right {
+  opacity: 1;
+  transform: translateX(0); /* Move into place 
+} */
+
+.left {
+  /* Add any specific styles for left-aligned text */
+}
+
+.right {
+  /* Add any specific styles for right-aligned text */
+}
 
 .meImage { 
-  position:absolute;
+  position:relative;
   left:50%;
   transform: translate(-50%);
   max-height: 260px;

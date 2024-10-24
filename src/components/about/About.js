@@ -1,4 +1,4 @@
-import React, { useEffect } from "react" ;
+import React, { useEffect, useRef } from "react" ;
 //import Link  from "react-router-dom";
 import styles from './about.module.css';
 import MyWork from '../links/MyWork';
@@ -6,38 +6,63 @@ import MyWork from '../links/MyWork';
 /* the main page for the about route of this app */
 const About = function () {
 
+  const flyers= useRef(null);                                                           // elements that will fly in on page load
+
+
+  useEffect(() => {
+    if (flyers.current) {
+      const [fly1, fly2] = flyers.current.children;
+      let delay1 = setTimeout(() => {
+      fly1.classList.add(styles.active);                                                // adding active class triggers 'fly in'
+      fly1.classList.add("backgroundBlue");
+      }, 1000);
+      let delay2 = setTimeout(() => {                                                   // 2nd element flys in
+        fly2.classList.add(styles.active);
+        fly2.classList.add("backgroundBlue");
+      }, 2900)
+      return () => {
+        clearTimeout(delay2);                                                         // Cleanup the timeouts on component unmount to ensure no memory leaks
+        clearTimeout(delay1);
+      };
+    }
+  }, []);  
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+
   }, []);
 
   return (
     <div className="textAlign">
-      
-        <div
-          className="title text lineHeight width70"
-          style={{ fontSize: "initial" }}
-        >
-          
-          <h2 className="bigH2 text backgroundBlue">Hi, I am Paul O’Connell, a passionate Full Stack Web (M.E.R.N.) Software Developer.</h2><br/><br/>
-          <div className={`${styles.meImage}`}><img src="https://res.cloudinary.com/pollie/image/upload/v1728088299/Capture_rsvvf2.png" alt="This is me" /></div>
 
-          <div className="fade-in-info text-start">
-            <p>I have a proven track record of developing and deploying scalable web applications in today's top Front-end frameworks: React (Next.js and Redux) and Vue (Nuxt.js and Pinia). <br />
-            <br />
+      <div
+        className="title lineHeight width70"
+        style={{ fontSize: "initial" }}
+      >
+
+        <h2 className="bigH2 text backgroundBlue">Hi, I am Paul O’Connell, a passionate Full Stack Web (M.E.R.N.) Software Developer.</h2>
+        <div className={`${styles.meImage} mt-3`}><img src="https://res.cloudinary.com/pollie/image/upload/v1728088299/Capture_rsvvf2.png" alt="This is me" /></div>
+        <section ref={flyers}>
+          <div className={`${styles.fly1} text-start p-3 mt-5`}>
+            <p className={`${styles.left} `} >I have a proven track record of developing and deploying scalable web applications in today's top Full Stack frameworks: React (Next.js and Redux) and Vue (Nuxt.js and Pinia). <br />
+            </p>
+          </div>
+          <div className={`${styles.fly2} text-start p-3 my-5`}>
+            <p className={`${styles.right}`}>
               I thrive on solving complex problems and turning ideas into elegant, user-friendly interfaces that drive reactive data in responsive, pixel-perfect applications.<br />
-              My mission is to leverage technology to make a positive impact.<br />
+              
             </p>
 
-         
-          
-          <br />
-          <p>Focused on developing software using both front-end and
+
+
+            
+            {/* <p>Focused on developing software using both front-end and
             back-end technologies to deploy scaleable cloud based modern web
             applications, API's, databases, and web sites.
-          </p>
+          </p> */}
           </div>
-          
-        </div>
+        </section>
+      </div>
       
       <div id="certifications" className="readEasy big lineHeight width80 mx-auto my-5 p-4 hoverDark">
         <u className="title">FULLSTACK M.E.R.N. CERTIFICATION:</u>
