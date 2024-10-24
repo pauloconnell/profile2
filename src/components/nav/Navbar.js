@@ -17,7 +17,11 @@ export const Navbar = function () {
         About Me
       </Link>
 
-      <Link className="col link border bgSolid my-1" to="/Contact">
+      <Link className="col link border bgSolid my-1" to="/webApps">
+        My Work
+      </Link>
+
+      <Link className="col link border bgSolid my-1" to="/contact">
         Contact Me
       </Link>
     </nav>
