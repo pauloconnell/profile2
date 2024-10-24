@@ -17,11 +17,11 @@ const DataVisualization2 = function () {
       <MyWork />
       
       <h2 className=" my-3 textAlign ">
-        <span className="text textBlue bigH2">
+        <span className="bigH2 text textBlue ">
           Data Visualization D3
         </span>
       </h2>
-      <h3 className="py-3 textAlign backgroundBlue w-75 mx-auto text">
+      <h3 className="py-3 textAlign backgroundBlue width90 mx-auto text">
         <span className="">
           API driven data displayed in browser using D3 library on SVG canvas
         </span>

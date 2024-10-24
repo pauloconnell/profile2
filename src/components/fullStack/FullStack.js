@@ -13,17 +13,17 @@ const FullStack = function () {
   },[location]);
 
   return (
-    <div className="bgSolid textAlign">
+    <div className="bgSolid ">
 
       <MyWork />
-      <div className="py-3 mx-auto w-75 ">
-        <h2 className=" my-3 ">
+      
+        <h2 className=" my-3 textAlign ">
           <span className="bigH2 text textBlue ">
             Full Stack MERN Applications
           </span>
         </h2>
 
-        <h3 className="mb-5 py-3 mx-auto backgroundBlue w-75 text-center text">
+        <h3 className="mb-5 py-3 mx-auto backgroundBlue width90 text-center text">
 
           Deployed in the cloud using:
           <br />
@@ -34,7 +34,7 @@ const FullStack = function () {
 
 
 
-      </div>
+     
 
       <section className="width90">
 
