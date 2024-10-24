@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { RowCard } from '../rowCards/RowCard';
+import MyWork  from '../links/MyWork';
 
 /* Refactored Feb 2023 */
 const FullStack = function () {
@@ -14,7 +15,7 @@ const FullStack = function () {
   return (
     <div className="bgSolid textAlign">
 
-
+      <MyWork />
       <div className="py-3 mx-auto w-75 ">
         <h2 className=" my-3 ">
           <span className="bigH2 text textBlue ">
@@ -231,6 +232,7 @@ const FullStack = function () {
       </div> */}
 
       </section>
+      <MyWork />
     </div>
   );
 };

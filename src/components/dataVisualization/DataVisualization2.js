@@ -14,7 +14,7 @@ const DataVisualization2 = function () {
 
   return (
     <div className="bgSolid">
- 
+      <MyWork />
       
       <h2 className=" my-3 textAlign ">
         <span className="text textBlue bigH2">
@@ -143,6 +143,7 @@ const DataVisualization2 = function () {
         </div>
       </div>
     </section>
+    <MyWork />
     </div>
   );
 };

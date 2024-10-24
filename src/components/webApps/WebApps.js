@@ -16,7 +16,7 @@ const WebApps = function () {
 
   return (
     <div className="bgSolid" >
-
+<MyWork />
 
       <h2 className=" my-3 textAlign">
         <span className="bigH2 text textBlue">Web Applications</span>
@@ -273,6 +273,7 @@ const WebApps = function () {
 
 
       </section>
+      <MyWork />
     </div>
   );
 };

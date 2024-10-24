@@ -10,7 +10,7 @@ import './App.css';
 /* Import Components */
 import Header from './components/header/Header';
 import Home from './components/home/Home';
-import MyWork from './components/links/MyWork';
+// import MyWork from './components/links/MyWork';
 import { Navbar } from './components/nav/Navbar';
 const About = lazy(() => import('./components/about/About'));
 const Contact = lazy(() => import('./components/contact/Contact'));
@@ -36,7 +36,7 @@ function App() {
           <Route path="/webApps" element={<Suspense fallback={<div>Loading...</div>}><WebApps /></Suspense>} />
         </Routes>
        
-        <MyWork />
+        
         <hr />
         <Navbar />
       </Router >
