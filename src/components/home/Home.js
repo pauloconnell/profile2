@@ -291,7 +291,7 @@ function Home() {
              V<br/>
         </div> */}
 
-<section className={`${styles.homeMainText} ${styles.hero} readEasy lineHeight wordSpace p-1 ms-3 rounded mt-5`}>
+<section className={` ${styles.hero} readEasy lineHeight wordSpace p-1 ms-3 rounded mt-5`}>
      <p>Focused on developing pixel-perfect responsive software with today's top Full Stack Frameworks.    
      </p> 
 </section>
@@ -299,7 +299,7 @@ function Home() {
 
 <section className={` ${styles.heroRight} readEasy lineHeight wordSpace p-1 me-3 rounded mt-5`}>
      <p>
-     <strong>I love building state-of-the-art, data-rich, intuitive UI/UX.</strong>
+     I <strong> love </strong> building state-of-the-art, data-rich, intuitive software.
           </p> 
 </section>
 

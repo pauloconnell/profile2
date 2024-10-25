@@ -45,7 +45,7 @@
   /* margin-top: 150px; */
   margin-bottom: 250px;
   width: 40%;
-  max-width: 710px;
+  max-width: 390px;
   background-color: var(--secondary-color);
 }
 
@@ -78,14 +78,14 @@ ul.hidden.shrink li {
   transform: translateY(0);
 }
 
-.homeMainText {
+/* .homeMainText {
   background-color: var(--secondary-color);
   border-radius: 5px;
   padding: 3px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .homeTop {
   background-color: var(--background-color-black);
@@ -172,19 +172,26 @@ ul.hidden li {
 .zoomer {
   background-color: transparent;
   transform: translatey(0px);
-  animation: zoomer 12s ease infinite;
+  animation: zoomer 18s ease infinite;
   margin-bottom: 250px;
 }
 
+@media only screen and (max-width: 450px) {
+  
+  .zoomer{
+    animation: none;
+  }
+}
 @media only screen and (max-width: 875px) {
   .hero {
     width: 95%;
-
+    max-width:870px;
   }
   .heroRight {
     width: 95%;
     max-width: 870px;
   }
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -201,19 +208,19 @@ ul.hidden li {
     25% {
       /* box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4); 
       transform: scale(1.2);*/
-      background-color: transparent;
+      background-color: var(--secondary-color);
     }
 
     50% {
       /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
-      background-color: black;
+      background-color:black;
       transform: scale(1.4);
     }
 
     75% {
       /* box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4); 
       transform: scale(1.2);*/
-      background-color: transparent;
+      background-color:var(--secondary-color);
     }
 
     100% {
