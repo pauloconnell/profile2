@@ -46,7 +46,16 @@
   margin-bottom: 250px;
   width: 40%;
   max-width: 710px;
-  background-color: var(--background-color-lite);
+  background-color: var(--secondary-color);
+}
+
+.heroRight {
+  /* margin-top: 150px; */
+  margin-bottom: 250px;
+  width: 40%;
+  max-width: 390px;
+  background-color: var(--secondary-color);
+  margin-left:auto;
 }
 
 
@@ -144,6 +153,22 @@ ul.hidden li {
   padding:3px;
 }
 
+.quote {
+  font-style: italic;
+  margin: 20px 0;
+  padding: 10px;
+  border: 3px solid #ccc;
+  color: #555;
+}
+
+.quoteAuthor {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
 .zoomer {
   background-color: transparent;
   transform: translatey(0px);
@@ -155,6 +180,10 @@ ul.hidden li {
   .hero {
     width: 95%;
 
+  }
+  .heroRight {
+    width: 95%;
+    max-width: 870px;
   }
 }
 

@@ -258,7 +258,7 @@ function Home() {
               Specializing in Web Technologies including Vue 3 w/Nuxt 3 and React w/Next.
             </div>
           </div>
-          <div className={` mt-5 py-5 ${styles.textShadowBlack}`}>
+          <div className={` mt-5 pt-5 ${styles.textShadowBlack}`}>
             {/* <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div> */}
             <i>    Currently working as a Senior Front End Software Engineer @
             </i>
@@ -291,31 +291,34 @@ function Home() {
              V<br/>
         </div> */}
 
-<section className={`${styles.hero} p-1 ms-3 rounded mt-5`}>
-     <p>Focused on developing pixel-perfect responsive software with today's best Full Stack Frameworks: <br/>
-     Vue, Nuxt, React, Next, and Azure. <br/>
-     <br/>
-     <strong>Passionate about learning and building data rich, intuitive UI/UX.</strong>
-          </p> 
+<section className={`${styles.homeMainText} ${styles.hero} readEasy lineHeight wordSpace p-1 ms-3 rounded mt-5`}>
+     <p>Focused on developing pixel-perfect responsive software with today's top Full Stack Frameworks.    
+     </p> 
 </section>
 
 
-      <div className=" width90  mt-5 pt-5">
+<section className={` ${styles.heroRight} readEasy lineHeight wordSpace p-1 me-3 rounded mt-5`}>
+     <p>
+     <strong>I love building state-of-the-art, data-rich, intuitive UI/UX.</strong>
+          </p> 
+</section>
+
+      <section className=" width90  mt-5 pt-5">
 
         <div className="fade-in-info "
           onMouseEnter={handleHoverIn}
           onMouseLeave={handleHoverOut}
           style={{ minHeight: "420px", opacity: hovering ? 1 : 0, transition: 'opacity 2.5s ease' }}>
 
-          <div className="width90 wordSpace" style={{ minHeight: "300px" }}>
-            <div className="container-fluid">
-              <div className="row">
+          <div className="width90 wordSpace container-fluid" style={{ minHeight: "300px" }}>
+            
+              
                 <h3 className=" m-auto my-3 marginTop">
                   <p className="title inlineBlock text">
                     Certified M.E.R.N. Full Stack Software Developer
                   </p>
                 </h3>
-              </div>
+              
               <h4 className="title text-center">Technologies used include:</h4>
               <div className={`mb-5 ${styles.mainTech}`} >
 
@@ -463,7 +466,7 @@ function Home() {
                   }}
                 >
                   Master of modern web development with expertise in React, Vue 3, Nuxt 3, HTML, CSS, and JavaScript/TypeScript, delivering dynamic and responsive user experiences.
-                  <div className='text-center my-2'>
+                  <div className='text-center my-5'>
                     <Link to="/About#certifications">Certifications</Link>
                   </div>
 
@@ -478,7 +481,7 @@ function Home() {
                           React, Redux & Next:
                         </button>
                         {visible.react && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Expert building dynamic, responsive, data-rich websites, applications, and user interfaces using React, Next.js, and Redux for state management and/or Context Provider for efficient simple state sharing.
                           </p>
                         )}
@@ -488,7 +491,7 @@ function Home() {
                           Vue3, Pinia & Nuxt3:
                         </button>
                         {visible.vue && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Expert building dynamic, responsive, data-rich websites, applications, and user interfaces using Vue 3, Nuxt 3, and Pinia for state management, and/or Composables for simple global state as well as reusable logic.
                           </p>
                         )}
@@ -498,7 +501,7 @@ function Home() {
                           HTML/CSS:
                         </button>
                         {visible.htmlCss && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Over a decade of experience in crafting semantic, accessible HTML and CSS for clean, visually appealing web pages.
                           </p>
                         )}
@@ -508,7 +511,7 @@ function Home() {
                           JavaScript:
                         </button>
                         {visible.javascript && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Specializing in JavaScript for interactive, user-friendly applications on both frontend and backend via Node.js and Express.js.
                           </p>
                         )}
@@ -518,7 +521,7 @@ function Home() {
                           TypeScript:
                         </button>
                         {visible.typescript && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Implemented robust, type-safe code with TypeScript.
                           </p>
                         )}
@@ -528,17 +531,17 @@ function Home() {
                           Node.js & Express:
                         </button>
                         {visible.nodeExpress && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Built scalable, Full Stack applications.
                           </p>
                         )}
                       </li>
                       <li>
-                        <button className="link" onClick={() => toggleVisibility('testing')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
+                        <button className="link" onClick={() => toggleVisibility('testingFE')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
                           Automated Testing:
                         </button>
                         {visible.testingFE && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Ensured code reliability with Jest, Mocha, Playwright, and Testim.
                           </p>
                         )}
@@ -548,7 +551,7 @@ function Home() {
                           Bootstrap:
                         </button>
                         {visible.bootstrap && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Utilized Bootstrap for responsive, mobile-first design.
                           </p>
                         )}
@@ -558,7 +561,7 @@ function Home() {
                           jQuery:
                         </button>
                         {visible.jquery && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Enhanced interactivity and animations of basic applications using jQuery.
                           </p>
                         )}
@@ -568,7 +571,7 @@ function Home() {
                           .NET Experience:
                         </button>
                         {visible.dotnet && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Experience building Front End for an e-commerce platform with RazorPages, RazorComponents, and C#.
                           </p>
                         )}
@@ -611,7 +614,7 @@ function Home() {
                           Node.js
                         </button>
                         {visible.node && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Built scalable network applications with Node.js, utilizing its event-driven model for handling high concurrency.
                           </p>
                         )}
@@ -621,7 +624,7 @@ function Home() {
                           MongoDB & Mongoose
                         </button>
                         {visible.mongo && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Leveraged MongoDB for flexibility and Mongoose for schema-based solutions to efficiently manage data.
                           </p>
                         )}
@@ -631,7 +634,7 @@ function Home() {
                           AWS Deployment
                         </button>
                         {visible.aws && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded ">
                             Deployed apps on AWS using services like EC2 and S3, ensuring robust and scalable server environments.
                           </p>
                         )}
@@ -641,7 +644,7 @@ function Home() {
                           Express Server
                         </button>
                         {visible.express && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Developed RESTful APIs with Express.js, focusing on secure and efficient routing and middleware.
                           </p>
                         )}
@@ -651,7 +654,7 @@ function Home() {
                           D3.js
                         </button>
                         {visible.d3 && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Created interactive data visualizations with D3.js for insightful data representation.
                           </p>
                         )}
@@ -661,7 +664,7 @@ function Home() {
                           Passport & OAuth
                         </button>
                         {visible.passport && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Implemented user authentication with Passport, integrating OAuth for third-party logins.
                           </p>
                         )}
@@ -671,7 +674,7 @@ function Home() {
                           Pug (Jade) Template Engine
                         </button>
                         {visible.pug && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Used Pug for server-side templating, creating maintainable and dynamic HTML templates.
                           </p>
                         )}
@@ -681,7 +684,7 @@ function Home() {
                           Testing with Jest, Mocha, Chai, Playwright, and Testim
                         </button>
                         {visible.testingBE && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Ensured code reliability with Jest, Mocha, and Chai, and automated tests with Playwright and Testim.
                           </p>
                         )}
@@ -691,7 +694,7 @@ function Home() {
                           Nuxt 3 and Vue 3 for Hybrid SSR
                         </button>
                         {visible.nuxt && (
-                          <p className="text-start p-1 backgroundDarkBlue">
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
                             Refactored pages for hybrid SSR with Nuxt 3 and Vue 3, improving SEO with pre-rendering.
                           </p>
                         )}
@@ -705,28 +708,42 @@ function Home() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
               </div>
               <br />
+
+
+
+
+
+
+
+
+
+<hr></hr>
+<br></br>
+
+
+
+<section className={`  lineHeight wordSpace p-1 mx-auto rounded my-5`}>
+     <p className={styles.quote}>"His ability to troubleshoot and problem solve were very valuable across my team. Paul proved himself a strong team player with a strong work ethic. I confidently recommend Paul for future roles where he has the opportunity and expectation of improving whatever he focuses on." 
+      <br/>
+     <span className={styles.quoteAuthor}> John - Senior Manager</span>
+
+    
+          </p> 
+</section>
+
+<br></br>
+
+
+
+
+
+
+
+<hr></hr>
+<br></br>
 
               <div className="row"
                 style={{
@@ -737,8 +754,7 @@ function Home() {
 
                 }}
               >
-                <hr></hr>
-                <br></br>
+               
                 <div className="my-3 title" style={{ color: "black", textShadow: '1px 1px 3px white' }}>Experience:</div>
                 <ul ref={observeElement} className={styles.observeElement} style={{ textAlign: "center", listStyleType: "none" }}>
                   <li>
@@ -746,7 +762,7 @@ function Home() {
                       Software Developer
                     </button>
                     {visible.dev && (
-                      <p className="text-start p-1 backgroundDarkBlue">
+                      <p className="text-start p-1 backgroundDarkBlue rounded">
                         Proficient in developing responsive, pixel perfect, user friendly websites and web applications using HTML, CSS, JavaScript, Vue 3 w/ Nuxt, as well as React w/ Next.
                       </p>
                     )}
@@ -756,7 +772,7 @@ function Home() {
                       Version Control and Git Branching Strategies
                     </button>
                     {visible.git && (
-                      <p className="text-start p-1 backgroundDarkBlue">
+                      <p className="text-start p-1 backgroundDarkBlue rounded">
                         Proficient in feature branching, hotfixes, release branches, managing pull requests, conducting code reviews, and deploying changes in production environments using Git, GitHub, and Azure.
                       </p>
                     )}
@@ -766,7 +782,7 @@ function Home() {
                       Azure DevOps
                     </button>
                     {visible.azure && (
-                      <p className="text-start p-1 backgroundDarkBlue">
+                      <p className="text-start p-1 backgroundDarkBlue rounded">
                         Extensive use of Azure DevOps for sprint planning, daily standups, and utilizing Azure Kanban boards.
                       </p>
                     )}
@@ -776,7 +792,7 @@ function Home() {
                       API Integration
                     </button>
                     {visible.api && (
-                      <p className="text-start p-1 backgroundDarkBlue">
+                      <p className="text-start p-1 backgroundDarkBlue rounded">
                         Delivering data-rich content with reactive data, interfacing with backend teams, and using Postman and Swagger to build out API connections.
                       </p>
                     )}
@@ -786,7 +802,7 @@ function Home() {
                       Design Collaboration
                     </button>
                     {visible.design && (
-                      <p className="text-start p-1 backgroundDarkBlue">
+                      <p className="text-start p-1 backgroundDarkBlue rounded">
                         Developing pixel perfect code from both rough wireframes as well as collaborating closely with the design team using Sketch and Figma to ensure a seamless and visually appealing user experience.
                       </p>
                     )}
@@ -796,7 +812,7 @@ function Home() {
                       SEO, GTM, Google Analytics, and Performance Optimization
                     </button>
                     {visible.seo && (
-                      <p className="text-start p-1 backgroundDarkBlue">
+                      <p className="text-start p-1 backgroundDarkBlue rounded">
                         Setting up GTM and interfacing with Google Analytics, implementing dynamic SEO tags, and optimizing website performance and loading times.
                       </p>
                     )}
@@ -806,7 +822,7 @@ function Home() {
                       Marketing Collaboration
                     </button>
                     {visible.abTesting && (
-                      <p className="text-start p-1 backgroundDarkBlue">
+                      <p className="text-start p-1 backgroundDarkBlue rounded">
                         Assisting the Marketing team with A/B testing using Google Analytics to optimize campaign performance and improve user engagement.
                       </p>
                     )}
@@ -816,7 +832,7 @@ function Home() {
                       Meeting Contributions
                     </button>
                     {visible.meetings && (
-                      <p className="text-start p-1 backgroundDarkBlue">
+                      <p className="text-start p-1 backgroundDarkBlue rounded">
                         As the champion managing the Kanban board and backlog, I regularly share my screen for daily scrum, and make positive contributions to weekly meetings with the development team, design team, managers, C-suite executives, and clients by providing valuable insights, feedback, and solutions.
                       </p>
                     )}
@@ -826,7 +842,7 @@ function Home() {
                       Testing and monitoring
                     </button>
                     {visible.testingExperience && (
-                      <p className="text-start p-1 backgroundDarkBlue">
+                      <p className="text-start p-1 backgroundDarkBlue rounded">
                         Utilized Test-Driven Development (TDD) with Jest, implemented automated nightly and CI/CD testing using Testim, and integrated Exceptionless for monitoring and alerting.
                       </p>
                     )}
@@ -836,7 +852,7 @@ function Home() {
                       Content Management System (CMS)
                     </button>
                     {visible.cms && (
-                      <p className="text-start p-1 backgroundDarkBlue">
+                      <p className="text-start p-1 backgroundDarkBlue rounded">
                         Implemented and improved an in-house built CMS, as well as integrating and using 'Contentful' headless CMS for more advanced features.  Enabling stakeholders to make content changes quickly and independently, without requiring the involvement of the development team.
                       </p>
                     )}
@@ -969,7 +985,7 @@ function Home() {
                 </div>
               </ul>
 
-            </div>
+            
 
             {/**
                         <span
@@ -1003,7 +1019,7 @@ function Home() {
 
 
         </div>
-      </div>
+      </section>
 
 
 
