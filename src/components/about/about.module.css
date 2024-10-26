@@ -1,24 +1,4 @@
 
-/* .fly {
-  height:100px;
-  width: 100vw;
-}
-.fly .left{
-    position:relative;
-    left:1500px;
-    transition: left 2.5s ease-out;
-    overflow: hidden;
-  }
-  
-  .fly .right {
-    position:relative;
-    right:2500px;
-    transition: right 2.5s ease-out;
-  }
-.fly :hover {
-  right:0px;
-  left:0px;
-} */
 
 
 .fly1 {
@@ -38,19 +18,7 @@
   opacity: 1;
   transform: translateX(0); /* Move into place */
 }
-/* 
-.fly .right {
-  opacity: 1;
-  transform: translateX(0); /* Move into place 
-} */
 
-.left {
-  /* Add any specific styles for left-aligned text */
-}
-
-.right {
-  /* Add any specific styles for right-aligned text */
-}
 
 .meImage { 
   position:relative;
@@ -59,4 +27,9 @@
   max-height: 260px;
     overflow: hidden;
     z-index: -1;
+}
+
+.mernCert {
+  margin-left:100px;
+  text-align: left;
 }

@@ -482,7 +482,7 @@ function Home() {
                         </button>
                         {visible.react && (
                           <p className="text-start p-1 backgroundDarkBlue rounded">
-                            Expert building dynamic, responsive, data-rich websites, applications, and user interfaces using React, Next.js, and Redux for state management and/or Context Provider for efficient simple state sharing.
+                            Expert in building dynamic, responsive, data-rich websites, applications, and user interfaces using React, Next.js, and Redux for state management or Context Provider for efficient, simple, reactive state sharing. Skilled at implementing complex UI components, optimizing performance, and ensuring maintainable, scalable codebases. Proficient with React hooks and custom hooks (also used as middleware).
                           </p>
                         )}
                       </li>
@@ -492,7 +492,7 @@ function Home() {
                         </button>
                         {visible.vue && (
                           <p className="text-start p-1 backgroundDarkBlue rounded">
-                            Expert building dynamic, responsive, data-rich websites, applications, and user interfaces using Vue 3, Nuxt 3, and Pinia for state management, and/or Composables for simple global state as well as reusable logic.
+                            Expert in building dynamic, responsive, data-rich websites, applications, and user interfaces using Vue 3, Nuxt 3, and Pinia for state management, and/or Composables for simple global state as well as reusable logic. Skilled at implementing complex UI components, optimizing performance, and ensuring maintainable, scalable codebases. Proficient with lifecycle hooks, custom plugins, and middleware.
                           </p>
                         )}
                       </li>
