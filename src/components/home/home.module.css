@@ -54,8 +54,10 @@
   margin-bottom: 250px;
   width: 40%;
   max-width: 390px;
-  background-color: var(--secondary-color);
+  color: var(--secondary-color);
   margin-left:auto;
+  text-shadow: -2px 1px 2px white;
+  font-size: xx-large;
 }
 
 
@@ -201,32 +203,32 @@ ul.hidden li {
   @keyframes zoomer {
     0% {
       /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
-      background-color: transparent;
+      /* background-color: transparent; */
       transform: scale(1);
     }
 
     25% {
       /* box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4); 
       transform: scale(1.2);*/
-      background-color: var(--secondary-color);
+      /* background-color: var(--secondary-color); */
     }
 
     50% {
       /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
-      background-color:black;
-      transform: scale(1.4);
+      /* background-color:black; */
+      transform: scale(1.6);
     }
 
     75% {
       /* box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4); 
       transform: scale(1.2);*/
-      background-color:var(--secondary-color);
+      /* background-color:var(--secondary-color); */
     }
 
     100% {
       /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
       transform: scale(1);
-      background-color: transparent;
+      /* background-color: transparent; */
     }
   }
 }

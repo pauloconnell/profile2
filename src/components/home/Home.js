@@ -299,7 +299,7 @@ function Home() {
 
 <section className={` ${styles.heroRight} readEasy lineHeight wordSpace p-1 me-3 rounded mt-5`}>
      <p>
-     I <strong> love </strong> building state-of-the-art, data-rich, intuitive software.
+     "I <strong> love </strong> building and maintaining state-of-the-art, data-rich, intuitive software."
           </p> 
 </section>
 
@@ -502,8 +502,7 @@ function Home() {
                         </button>
                         {visible.htmlCss && (
                           <p className="text-start p-1 backgroundDarkBlue rounded">
-                            Over a decade of experience in crafting semantic, accessible HTML and CSS for clean, visually appealing web pages.
-                          </p>
+                              Over a decade of experience crafting semantic, accessible HTML and CSS, ensuring clean, visually appealing websites and web applications.                           </p>
                         )}
                       </li>
                       <li>
