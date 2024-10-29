@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "../nav/Navbar";
+import styles from './header.module.css';
 //import styles from "../App.css";
 /* the main page for the index route of this app */
 
@@ -10,7 +11,7 @@ const Header = function () {
   
       <header className="textAlign mb-3">
         <Navbar />
-        <h1 className="text" id="name">
+        <h1 className="text" id={styles.name}>
           Paul O'Connell
         </h1>
 

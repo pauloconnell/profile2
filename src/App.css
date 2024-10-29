@@ -424,14 +424,7 @@ div.row.mx-1.justify-content-center {
 
 
 
-#name {
-  background: DodgerBlue;
-  text-shadow: 3px 3px 5px white;
-  font-variant: small-caps;
-  font-weight: bold;
-  font-size: 3.2rem;
-  margin-top: 50px;
-}
+
 
 #showOnHover {
   transition: font-size 3s ease-in-out;
@@ -442,11 +435,6 @@ div.row.mx-1.justify-content-center {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 422px) {
-  #name {
-    margin-top: 90px;
-  }
-}
 
 @media only screen and (max-width: 452px) {
   .fade-in-info {

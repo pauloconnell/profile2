@@ -299,7 +299,7 @@ function Home() {
 
 <section className={` ${styles.heroRight} readEasy lineHeight wordSpace p-1 me-3 rounded mt-5`}>
      <p>
-     "I <strong> love </strong> building and maintaining state-of-the-art, data-rich, intuitive software."
+     "I <strong> love </strong> building state-of-the-art, data-rich, intuitive software and maintaining legacy codebases."
           </p> 
 </section>
 
