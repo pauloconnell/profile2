@@ -240,6 +240,9 @@ div.row.mx-1.justify-content-center {
   flex-wrap: wrap;
 }
 
+.hot {
+    text-shadow: 0px 0px 1.5px var(--tertiary-color-lite) !important;
+}
 
 
 .hoverDark {
@@ -259,7 +262,7 @@ div.row.mx-1.justify-content-center {
 .link {
   color: DodgerBlue;
   background-color: var(--background-color-black);
-  text-shadow: 1px 1px 3px white;
+  /* text-shadow: .5px .1px 0px white; */
   font-size: 24px;
   padding-bottom: 6px;
   border: 1px solid black;
@@ -336,7 +339,7 @@ div.row.mx-1.justify-content-center {
   text-align: center;
   font-weight: bold;
   width: 100%;
-  text-shadow: 2px 2px 2px white;
+  /* text-shadow:0px 0px 3.5px white; */
   line-height: 1.6;
 }
 

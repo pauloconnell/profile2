@@ -8,6 +8,26 @@
   color: black;
 }
 
+.arrow {
+  width: 30px; /* Adjust size as needed */
+  margin: 0 auto;
+  display: block;
+  animation: bounce 4s infinite;
+  animation-iteration-count: 10; /* Make it bounce 30 times */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-240px);
+  }
+  60% {
+    transform: translateY(-100px);
+  }
+}
+
 .backgroundFixed {
   background-image: url("https://res.cloudinary.com/pollie/image/upload/v1621034051/Million_Ridge_tkchwl.png");
   /* Center and scale the image nicely */
@@ -16,6 +36,7 @@
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
+  /* opacity: .7; */
   
 }
 
@@ -80,7 +101,10 @@ ul.hidden.shrink li {
   transform: translateY(0);
 }
 
-/* .homeMainText {
+ .homeMainText {
+  text-shadow: .1px .1px 2px var(--tertiary-color);
+ }
+/*
   background-color: var(--secondary-color);
   border-radius: 5px;
   padding: 3px;
@@ -143,7 +167,7 @@ ul.hidden.shrink li {
 }
 
 .textShadowBlack {
-  text-shadow: 2px 2px 1px black;
+  text-shadow: .2px .2px 2px black;
 }
 .textShadowRed {
   text-shadow: 2px 2px 8px var(--tertiary-color);

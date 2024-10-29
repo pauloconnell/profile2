@@ -248,9 +248,9 @@ function Home() {
     <div className={`textAlign mt-3 ${styles.backgroundFixed}`}>
 
       <div ref={homeTop} className={` ${styles.homeTop} mb-4` }>
-        <div className="w-75 readEasy word  m-auto my-3 animate">
+        <div className="w-75 readEasy word  mx-auto mt-5 pt-5 mb-3 ">
 
-          <div className={`lineHeight wordSpace mt-3 ${styles.homeMainText}`}>
+          <div className={`lineHeight wordSpace mt-5 ${styles.homeMainText}`}>
 
             Keen problem solver experienced in all aspects of Software
             Development.
@@ -260,7 +260,7 @@ function Home() {
           </div>
           <div className={` mt-5 pt-5 ${styles.textShadowBlack}`}>
             {/* <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div> */}
-            <i>    Currently working as a Senior Front End Software Engineer @
+            <i>    Currently working as a <span className="hot">Senior Front End Software Engineer</span> @
             </i>
           </div>
 
@@ -281,6 +281,12 @@ function Home() {
             <b className="p-3 link">www.knowitalls.com</b></a>
           <br />
 
+        </div>
+        <div className={styles.arrow} >
+          <svg className="scroll-arrow" width="30" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="45"></line>
+            <polyline points="19 38 12 45 5 38"></polyline>
+          </svg>
         </div>
       </div>
 
@@ -314,7 +320,7 @@ function Home() {
             
               
                 <h3 className=" m-auto my-3 marginTop">
-                  <p className="title inlineBlock text">
+                  <p className="title inlineBlock text hot">
                     Certified M.E.R.N. Full Stack Software Developer
                   </p>
                 </h3>
