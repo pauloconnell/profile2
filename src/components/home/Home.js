@@ -527,7 +527,7 @@ function Home() {
                         </button>
                         {visible.typescript && (
                           <p className="text-start p-1 backgroundDarkBlue rounded">
-                            Implemented robust, type-safe code with TypeScript.
+                            Implemented robust, type-safe code with TypeScript, currently deployed in a live production environment.
                           </p>
                         )}
                       </li>

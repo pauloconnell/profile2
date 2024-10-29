@@ -12,20 +12,31 @@
   width: 30px; /* Adjust size as needed */
   margin: 0 auto;
   display: block;
-  animation: bounce 4s infinite;
-  animation-iteration-count: 10; /* Make it bounce 30 times */
+  animation: bounce 9s ease-in-out infinite;
+  animation-iteration-count: 5; /* Make it bounce 10 times */
+  animation-fill-mode: forwards; /* Keeps the last keyframe (opacity: 0) */
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%, 50%   {
     transform: translateY(0);
+    /* opacity: 1; */
   }
-  40% {
+  25% {
     transform: translateY(-240px);
   }
-  60% {
+  /* 65% {
     transform: translateY(-100px);
+  }*/
+  75% {
+    transform: translateY(-240px); 
+   
   }
+  /*
+  100% {
+   opacity: 0; 
+  }
+*/  
 }
 
 .backgroundFixed {
