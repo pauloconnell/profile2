@@ -177,7 +177,7 @@ function Home() {
 
   // }
 
-  const handleHoverFE = () => {
+  const handleClickFE = () => {
 
 
     setHighlightFE(true);
@@ -187,7 +187,7 @@ function Home() {
 
   }
 
-  const handleHoverBE = () => {
+  const handleClickBE = () => {
 
     setHighlightFE(false);
     setHighlightBE(true);
@@ -283,7 +283,7 @@ function Home() {
 
         </div>
         <div className={styles.arrow} >
-          <svg className="scroll-arrow" width="30" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg className="scroll-arrow" width="30" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 50" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <line x1="12" y1="5" x2="12" y2="45"></line>
             <polyline points="19 38 12 45 5 38"></polyline>
           </svg>
@@ -442,7 +442,7 @@ function Home() {
                     backgroundColor: highlightFE ? "dodgerBlue" : "black",
                   }}
                   
-                  onClick={handleHoverFE}
+                  onClick={handleClickFE}
                   title="Click to see FrontEnd details"
                 >
                   FrontEnd
@@ -453,7 +453,7 @@ function Home() {
                     color: highlightBE ? "black" : "dodgerBlue",
                     backgroundColor: highlightBE ? "dodgerBlue" : "black",
                   }}
-                  onClick={handleHoverBE}
+                  onClick={handleClickBE}
                   title="Click to see BackEnd details"
                 >
                   BackEnd
