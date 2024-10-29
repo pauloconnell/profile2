@@ -12,7 +12,7 @@
   width: 30px; /* Adjust size as needed */
   margin: 0 auto;
   display: block;
-  animation: bounce 9s ease-in-out infinite;
+  animation: bounce 9s ease infinite;
   animation-iteration-count: 5; /* Make it bounce 10 times */
   animation-fill-mode: forwards; /* Keeps the last keyframe (opacity: 0) */
 }
