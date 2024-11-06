@@ -79,7 +79,7 @@ const About = function () {
         </section>
       </section>
       
-      <section class="h2 text-center readEasy my-5">Certifications</section>
+      <section className="h2 text-center readEasy my-5">Certifications</section>
 
 
       <section id="certifications" className="readEasy big lineHeight mx-auto my-5 p-4 hoverDark">
