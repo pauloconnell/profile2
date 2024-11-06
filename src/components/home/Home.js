@@ -541,11 +541,11 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('nodeExpress')} title={visible.nodeExpress ? "Click to Hide" : "Click to see details"}>
-                        Node.js & Express:
+                        Node.js and NPM:
                       </button>
                       {visible.nodeExpress && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Built scalable, Full Stack applications.
+                          Building scalable S.P.A.s using plentiful npm libraries with React and Next, as well as Vue and Nuxt.
                         </p>
                       )}
                     </li>
@@ -618,7 +618,7 @@ function Home() {
                 }}
               >
                 Seasoned backend developer proficient in Node.js, Express, MongoDB, AWS, and automated testing, delivering robust, scalable, and secure server-side solutions.
-                <div className='text-center my-2'> <Link to="/About#certifications">Certifications</Link></div>
+                <div className='text-center my-5'> <Link to="/About#certifications">Certifications</Link></div>
 
                 <div className="text-center">
                   <ul style={{ listStyleType: "none" }}>
@@ -741,7 +741,7 @@ function Home() {
 
 
 
-            <section className={` ${styles.reference} lineHeight wordSpace p-1 py-5 mx-auto rounded `}>
+            <section className={` ${styles.reference} lineHeight wordSpace p-1 py-5 mx-auto rounded width90`}>
               <p className={styles.quote}>"His ability to troubleshoot and problem solve were very valuable across my team. Paul proved himself a strong team player with a strong work ethic. I confidently recommend Paul for future roles where he has the opportunity and expectation of improving whatever he focuses on."
                 <br />
                 <span className={styles.quoteAuthor}> John - Senior Manager</span>
@@ -765,7 +765,7 @@ function Home() {
             <div className="row" >
 
               <div ref={observeElement} className="my-3 title fs-2" style={{ color: "black", textShadow: '1px 1px 3px white' }}>Experience:</div>
-              <ul  style={{ textAlign: "center", listStyleType: "none" }}>
+              <ul  className="width90" style={{ textAlign: "center", listStyleType: "none" }}>
                 <li>
                   <button className="link" onClick={() => toggleVisibility('dev')} title={visible.dev ? "Click to Hide" : "Click to see details"}>
                     Software Developer
