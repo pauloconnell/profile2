@@ -112,7 +112,7 @@ function Home() {
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        // console.log("observer triggered ", entry.target)
+         console.log("observer triggered ", entry.target)
         if (entry.isIntersecting && entry.intersectionRatio === 1) {
           //  setTimeout(() => {
           entry.target.classList.add(styles.visibleNow);
@@ -135,28 +135,36 @@ function Home() {
     });
 
     const items = [[], []];
-    // if (observeElement.current) {
-    //   const listItems1 = Array.from(observeElement.current.querySelectorAll('li'));
-    //   items[0] = listItems1;
-    //   console.log("l1 = ", items[0])
-    //   items[0]?.forEach((item) => observer.observe(item));
-    // }
+    setTimeout(() => {
+   
+    
     if (observeElement2.current) {
       const listItems2 = Array.from(observeElement2.current.querySelectorAll('li'));
       items[1] = listItems2;
       console.log("l2 = ", items[1])
       items[1]?.forEach((item) => observer.observe(item));
     }
+  },400);
 
+
+  // setTimeout(() => {
+  //   if (observeElement.current) {
+  //     const listItems1 = Array.from(observeElement.current.querySelectorAll('li'));
+  //     items[0] = listItems1;
+  //     console.log("l1 = ", items[0])
+  //     items[0]?.forEach((item) => observer.observe(item));
+  //   }
+    
+  // },400);
 
     return () => {                                                              // unmount
-      // if (observeElement.current) {
-      //   //const items = observeElement.current.querySelectorAll('li');
+      // if (items[0].length > 0 ){  //this element may be gone when this runs -> observeElement.current) {
+      
       //   console.log("Unmounting items[0]:", items[0]);
       //   items[0]?.forEach((item) => observer.unobserve(item));
       // }
       if (items[1].length > 0 ){ // this element may be gone when this runs -> observeElement2.current) {
-        //const items = observeElement2.current.querySelectorAll('li');
+      
         console.log("Unmounting items[1]:", items[1]);
         items[1]?.forEach((item) => observer.unobserve(item));
       }
@@ -764,8 +772,8 @@ function Home() {
 
             <div className="row" >
 
-              <div ref={observeElement} className="my-3 title fs-2" style={{ color: "black", textShadow: '1px 1px 3px white' }}>Experience:</div>
-              <ul  className="width90" style={{ textAlign: "center", listStyleType: "none" }}>
+              <div className="my-3 title fs-2" style={{ color: "black", textShadow: '1px 1px 3px white' }}>Experience:</div>
+              <ul  ref={observeElement} className={` width90`} style={{ textAlign: "center", listStyleType: "none" }}>
                 <li>
                   <button className="link" onClick={() => toggleVisibility('dev')} title={visible.dev ? "Click to Hide" : "Click to see details"}>
                     Software Developer
