@@ -81,7 +81,7 @@ function Home() {
   const isThrottled = useRef(false);
   const homeTop = useRef(null);
   const observeElement = useRef(null);
-  const observeElement2 = useRef(null);
+  const observeElement2 = useRef(null);                                 // removed class ${styles.observeElement} to turn off effect for debugging
   const location = useLocation();
   const [isMounted, setIsMounted] = useState(false);
 
@@ -130,7 +130,7 @@ function Home() {
       });
     }, {
       root: null,
-      rootMargin: '0px',
+      rootMargin: '-25% 0px -25% 0px',
       threshold: 1
     });
 
@@ -476,7 +476,7 @@ function Home() {
               </span>
             </div>
             <br />
-            <div ref={observeElement2} className={`${styles.observeElement} row text-start`}>
+            <div ref={observeElement2} className={`row text-start`}>
 
               <div
                 id="fe"
