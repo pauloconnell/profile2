@@ -72,6 +72,9 @@
   font-size: 16px;
 } */
 
+.experience {
+  background-color: var(--background-color-lite);
+}
 
 .hero {
   /* margin-top: 150px; */
@@ -177,6 +180,14 @@ ul.hidden.shrink li {
   background-color: var(--tertiary-color-lite);
 }
 
+.reference {
+  background-color: var(--secondary-color);
+  margin-top: 150px;
+  margin-bottom: 150px;
+  
+  
+}
+
 .textShadowBlack {
   text-shadow: .2px .2px 2px black;
 }
@@ -195,7 +206,7 @@ ul.hidden li {
   margin: 20px 0;
   padding: 10px;
   border: 3px solid #ccc;
-  color: #555;
+  color:white;
 }
 
 .quoteAuthor {
@@ -203,7 +214,7 @@ ul.hidden li {
   text-align: right;
   margin-top: 10px;
   font-weight: bold;
-  color: #333;
+  
 }
 
 .zoomer {
