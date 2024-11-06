@@ -6,8 +6,8 @@ import { Link, useLocation } from 'react-router-dom';
 import styles from './home.module.css';
 
 
-import UnorderedList from '../UnorderedList';
-import MyWork from '../links/MyWork';
+//import UnorderedList from '../UnorderedList';
+//import MyWork from '../links/MyWork';
 
 //import DynamicData from './DynamicData';
 //import styles from '../App.css';
@@ -16,15 +16,15 @@ import MyWork from '../links/MyWork';
 
 
 
-const dependenciesArray = [
-  "suspense - allows for lazy loading of components",
-  "gh-pages - builds and deploys app to gitHub Pages",
-  "react - for generating the views of the app",
-  "react-dom - powers the rendering of elements to the DOM, with React",
-  "webpack - for bundling all the javascript",
-  "react-router-dom - handles routing and ",
-  "bootstrap 5 - classic CSS library",
-];
+//const dependenciesArray = [
+//   "suspense - allows for lazy loading of components",
+//   "gh-pages - builds and deploys app to gitHub Pages",
+//   "react - for generating the views of the app",
+//   "react-dom - powers the rendering of elements to the DOM, with React",
+//   "webpack - for bundling all the javascript",
+//   "react-router-dom - handles routing and ",
+//   "bootstrap 5 - classic CSS library",
+// ];
 
 // const componentsMade = [
 //   "Profile- which is the view you are seeing now",
@@ -36,7 +36,7 @@ const dependenciesArray = [
 
 function Home() {
 
-  const [showThis, setShowThis] = useState(false);
+  //const [showThis, setShowThis] = useState(false);
   const [hovering, setHovering] = useState(false);
   const [highlightFE, setHighlightFE] = useState(true);
   const [highlightBE, setHighlightBE] = useState(false);
@@ -85,11 +85,12 @@ function Home() {
   const location = useLocation();
   const [isMounted, setIsMounted] = useState(false);
 
-  // every time this component is reached 
+  // every time this component is reached start out with blacked out background
   useEffect(() => {
 
     const element = homeTop.current;                                      // this is ref to main div on page
-    if (element && isMounted) {
+    if (element ) {
+      setIsMounted(true);
       element.classList.add(styles.transparent);                          // this creates the effect of being black background on page load, then transition to image background
 
     }
@@ -132,13 +133,14 @@ function Home() {
       rootMargin: '0px',
       threshold: 1
     });
+
     const items = [[], []];
-    if (observeElement.current) {
-      const listItems1 = Array.from(observeElement.current.querySelectorAll('li'));
-      items[0] = listItems1;
-      console.log("l1 = ", items[0])
-      items[0]?.forEach((item) => observer.observe(item));
-    }
+    // if (observeElement.current) {
+    //   const listItems1 = Array.from(observeElement.current.querySelectorAll('li'));
+    //   items[0] = listItems1;
+    //   console.log("l1 = ", items[0])
+    //   items[0]?.forEach((item) => observer.observe(item));
+    // }
     if (observeElement2.current) {
       const listItems2 = Array.from(observeElement2.current.querySelectorAll('li'));
       items[1] = listItems2;
@@ -148,12 +150,12 @@ function Home() {
 
 
     return () => {                                                              // unmount
-      if (observeElement.current) {
-        //const items = observeElement.current.querySelectorAll('li');
-        console.log("Unmounting items[0]:", items[0]);
-        items[0]?.forEach((item) => observer.unobserve(item));
-      }
-      if (observeElement2.current) {
+      // if (observeElement.current) {
+      //   //const items = observeElement.current.querySelectorAll('li');
+      //   console.log("Unmounting items[0]:", items[0]);
+      //   items[0]?.forEach((item) => observer.unobserve(item));
+      // }
+      if (items[1].length > 0 ){ // this element may be gone when this runs -> observeElement2.current) {
         //const items = observeElement2.current.querySelectorAll('li');
         console.log("Unmounting items[1]:", items[1]);
         items[1]?.forEach((item) => observer.unobserve(item));

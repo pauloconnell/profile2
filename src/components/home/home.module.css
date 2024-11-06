@@ -177,7 +177,8 @@ ul.hidden.shrink li {
 }
 
 .observeElement li button {
-  background-color: var(--tertiary-color-lite);
+  background-color: var(--background-color-blue);
+  /* text-shadow: .3px .3px 0px white; */
 }
 
 .reference {
