@@ -4,7 +4,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './home.module.css';
-
+import 'intersection-observer';
 
 //import UnorderedList from '../UnorderedList';
 //import MyWork from '../links/MyWork';
@@ -106,13 +106,16 @@ function Home() {
     };
   }, [location, isMounted]);                                             // Dependency array includes location
 
-  // Component mounted:
+
+
+
+  // Component mounted, set up intersection observer to flip links on initial view
   useEffect(() => {
     setIsMounted(true);
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-         console.log("observer triggered ", entry.target)
+        // console.log("observer triggered ", entry.target)
         if (entry.isIntersecting && entry.intersectionRatio === 1) {
           //  setTimeout(() => {
           entry.target.classList.add(styles.visibleNow);
@@ -130,12 +133,12 @@ function Home() {
       });
     }, {
       root: null,
-      rootMargin: '-25% 0px -25% 0px',
+      rootMargin: '-5% 0px -5% 0px',
       threshold: 1
     });
 
     const items = [[], []];
-    setTimeout(() => {
+   // setTimeout(() => {
    
     
     if (observeElement2.current) {
@@ -144,31 +147,31 @@ function Home() {
       console.log("l2 = ", items[1])
       items[1]?.forEach((item) => observer.observe(item));
     }
-  },400);
+  //},400);
 
 
-  // setTimeout(() => {
-  //   if (observeElement.current) {
-  //     const listItems1 = Array.from(observeElement.current.querySelectorAll('li'));
-  //     items[0] = listItems1;
-  //     console.log("l1 = ", items[0])
-  //     items[0]?.forEach((item) => observer.observe(item));
-  //   }
+ // setTimeout(() => {
+    if (observeElement.current) {
+      const listItems1 = Array.from(observeElement.current.querySelectorAll('li'));
+      items[0] = listItems1;
+      console.log("l1 = ", items[0])
+      items[0]?.forEach((item) => observer.observe(item));
+    }
     
-  // },400);
+ // },400);
 
     return () => {                                                              // unmount
-      // if (items[0].length > 0 ){  //this element may be gone when this runs -> observeElement.current) {
+      if (items[0].length > 0 ){  //this element may be gone when this runs -> observeElement.current) {
       
-      //   console.log("Unmounting items[0]:", items[0]);
-      //   items[0]?.forEach((item) => observer.unobserve(item));
-      // }
+        console.log("Unmounting items[0]:", items[0]);
+        items[0]?.forEach((item) => observer.unobserve(item));
+      }
       if (items[1].length > 0 ){ // this element may be gone when this runs -> observeElement2.current) {
       
         console.log("Unmounting items[1]:", items[1]);
         items[1]?.forEach((item) => observer.unobserve(item));
       }
-
+      observer.disconnect();
 
     };
   }, []);                                                                   // Empty dependency array ensures it runs once on mount
@@ -210,17 +213,24 @@ function Home() {
 
   }
 
+  if(window.innerWidth<920){
+    if(!hovering) setHovering(true);                                                    // tablets and smaller screens should not have hover fade-in effect
+  }
+
   // this shows/hides details on home page PROFILE
   const handleHoverIn = () => {
 
-    setHovering(true);
+    if(!hovering) setHovering(true);
 
     //document.getElementById("showOnHover").classList.delete("hidden");
     //document.getElementById("showOnHover").classList.add("show");
   }
 
   const handleHoverOut = () => {
-    setHovering(false);
+    if(window.innerWidth>920 && hovering){
+      setHovering(false);                                               // tablets and smaller screens should not have hover fade-in effect
+    }
+    
   }
 
   // componentDidMount() {
@@ -228,13 +238,13 @@ function Home() {
   // }
 
 
-  const handleScroll = () => {                                      // make 'hidden' details section appear if user scrolls down past 350px
+  const handleScroll = () => {                                      // make 'hidden' details section appear if user scrolls down past 1350px
 
     if (!isThrottled.current) {
       console.log("caught scroll, ", window.scrollY)
-      if (window.scrollY > 100) {
+      if (window.scrollY > 1550) {
         // console.log("are we ever here?")
-        setHovering(true);
+        if(!hovering) setHovering(true);
       } else {
 
       }
@@ -313,15 +323,15 @@ function Home() {
              V<br/>
         </div> */}
 
-      <section className={` ${styles.hero} readEasy lineHeight wordSpace p-1 ms-3 rounded mt-5`}>
+      <section className={` ${styles.hero}  readEasy lineHeight wordSpace p-1 ms-1 ms-md-3  ms-lg-5  rounded mt-5 ${styles.heroCustomMargin}`}>
         <p>Focused on developing pixel-perfect responsive software with today's top Full Stack Frameworks.
         </p>
       </section>
 
 
-      <section className={` ${styles.heroRight} readEasy lineHeight wordSpace p-1 me-3 rounded mt-5`}>
+      <section className={` ${styles.heroRight} readEasy lineHeight wordSpace p-1 me-3 rounded mt-5 mx-xxl-auto`}>
         <p>
-          "I <strong> love </strong> building state-of-the-art, data-rich, intuitive software and maintaining legacy codebases."
+          "I <strong> love </strong> building state-of-the-art, data-rich, intuitive software and upgrading/maintaining legacy codebases."
         </p>
       </section>
 
@@ -476,7 +486,7 @@ function Home() {
               </span>
             </div>
             <br />
-            <div ref={observeElement2} className={`row text-start`}>
+            <div ref={observeElement2} className={` row text-start`}>
 
               <div
                 id="fe"
@@ -773,7 +783,7 @@ function Home() {
             <div className="row" >
 
               <div className="my-3 title fs-2" style={{ color: "black", textShadow: '1px 1px 3px white' }}>Experience:</div>
-              <ul  ref={observeElement} className={` width90`} style={{ textAlign: "center", listStyleType: "none" }}>
+              <ul  ref={observeElement} className={`${styles.observeElement} width90`} style={{ textAlign: "center", listStyleType: "none" }}>
                 <li>
                   <button className="link" onClick={() => toggleVisibility('dev')} title={visible.dev ? "Click to Hide" : "Click to see details"}>
                     Software Developer
@@ -988,6 +998,10 @@ function Home() {
               <hr />
               <li>
                 <b className="textShadow">Testims</b> automated nightly and CI/CD testing
+              </li>
+              <li>
+              <a target="_blank" href="https://icons8.com/icon/mEfSlxcx5RCD/quote">Quote</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                
               </li>
 
               <div className="my-2">
