@@ -242,7 +242,7 @@ function Home() {
 
     if (!isThrottled.current) {
       console.log("caught scroll, ", window.scrollY)
-      if (window.scrollY > 1550) {
+      if (window.scrollY > 1450) {
         // console.log("are we ever here?")
         if(!hovering) setHovering(true);
       } else {
@@ -1000,7 +1000,7 @@ function Home() {
                 <b className="textShadow">Testims</b> automated nightly and CI/CD testing
               </li>
               <li>
-              <a target="_blank" href="https://icons8.com/icon/mEfSlxcx5RCD/quote">Quote</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+              <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/mEfSlxcx5RCD/quote">Quote</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a>
                 
               </li>
 
