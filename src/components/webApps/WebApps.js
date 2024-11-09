@@ -91,13 +91,13 @@ const WebApps = function () {
         <RowCard link1="https://www.knowitalls.com" header1="www.knowitalls.com" title1="Peer to Peer e-commerce platform"
           imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1726776409/homepage_flzeh0.png" imgAlt1="www.knowitalls.com" footer1="Peer to Peer e-commerce platform built with Vue 3 Nuxt and Azure"
           link2="https://www.knowitalls.com/p/brian" header2="Dynamic Profile Page" title2="Profile page: research knowitall's bio, links, videos and availability"
-          imgSrc2="/profile2/profile.png" imgAlt2="CEO's Profile page screenshot" footer2="Dynamic page renders data based on route" />
+          imgSrc2="/profile2/images/profile.png" imgAlt2="CEO's Profile page screenshot" footer2="Dynamic page renders data based on route" />
 
 
 
 <RowCard link1="https://www.knowitalls.com/p/brian" header1="Integrated Custom Booking" title1="Research page owner, select time to meet, and sign up for Knowitalls"
-          imgSrc1="/profile2/booking.png" imgAlt1="Profile Booking screenshot" footer1="Integrated Custom Booking interface for video conferencing transaction."
-          header2="Integrated calendar Availability setting" link2="null"  title2="In house Availability Calendar setting" imgSrc2="/profile2/availability.png" imgAlt2="Availability settings Page" footer2="Easy and intuitive 'Click and Drag' availability setting interface."  /> 
+          imgSrc1="/profile2/images/booking.png" imgAlt1="Profile Booking screenshot" footer1="Integrated Custom Booking interface for video conferencing transaction."
+          header2="Integrated calendar Availability setting" link2="null"  title2="In house Availability Calendar setting" imgSrc2="/profile2/images/availability.png" imgAlt2="Availability settings Page" footer2="Easy and intuitive 'Click and Drag' availability setting interface."  /> 
 
 
 
@@ -111,7 +111,7 @@ const WebApps = function () {
 <RowCard link1="https://mrproconstruction.glitch.me/" header1="M.R.Pro Construction" title1="Landing page for construction company"
           imgSrc1="/profile2/images/MRPro.png" imgAlt1="M.R. PRO Construction" footer1="Landing page for construction company"
           link2="https://knowitalls.com" header2="Form Validation" title2=" Using both custom validation(Styled message) and vee-validate w/ Yup Library (standard red text) "
-          imgSrc2="/profile2/validation.png" imgAlt2="Form validation image" footer2="Using both custom validation(Styled message) and vee-validate w/ Yup Library (standard red text) " />
+          imgSrc2="/profile2/images/validation.png" imgAlt2="Form validation image" footer2="Using both custom validation(Styled message) and vee-validate w/ Yup Library (standard red text) " />
 
 
 <RowCard  link1="/#/WebApps" header1="Test Center" title1="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
