@@ -85,7 +85,7 @@ function Home() {
   const location = useLocation();
   const [isMounted, setIsMounted] = useState(false);
 
-  // every time this component is reached start out with blacked out background
+  // initially renders with blacked out background and fades in
   useEffect(() => {
 
     const element = homeTop.current;                                      // this is ref to main div on page
@@ -783,7 +783,7 @@ function Home() {
             <div className="row" >
 
               <div className="my-3 title fs-2" style={{ color: "black", textShadow: '1px 1px 3px white' }}>Experience:</div>
-              <ul  ref={observeElement} className={`${styles.observeElement} width90`} style={{ textAlign: "center", listStyleType: "none" }}>
+              <ul  ref={observeElement} className={` width90`} style={{ textAlign: "center", listStyleType: "none" }}>
                 <li>
                   <button className="link" onClick={() => toggleVisibility('dev')} title={visible.dev ? "Click to Hide" : "Click to see details"}>
                     Software Developer
