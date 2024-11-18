@@ -109,13 +109,13 @@ const WebApps = function () {
 
 
 <RowCard link1="https://mrproconstruction.glitch.me/" header1="M.R.Pro Construction" title1="Landing page for construction company"
-          imgSrc1="/profile2/images/MRPro.png" imgAlt1="M.R. PRO Construction" footer1="Landing page for construction company"
+          imgSrc1="/profile2/images/MRPro.PNG" imgAlt1="M.R. PRO Construction" footer1="Landing page for construction company"
           link2="https://knowitalls.com" header2="Form Validation" title2=" Using both custom validation(Styled message) and vee-validate w/ Yup Library (standard red text) "
           imgSrc2="/profile2/images/validation.png" imgAlt2="Form validation image" footer2="Using both custom validation(Styled message) and vee-validate w/ Yup Library (standard red text) " />
 
 
 <RowCard  link1="/#/WebApps" header1="Test Center" title1="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
-          imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610401628/Test_Center_ue5srv.png" imgAlt1="Test Center app screenshot" footer1="Product Knowledge App used in multiple Retail store locations"
+          imgSrc1="/profile2/images/testCenter.png" imgAlt1="Test Center app screenshot" footer1="Product Knowledge App used in multiple Retail store locations"
           link2="https://codepen.io/p_ollie/full/ZEzNJWo" header2="React Drum Machine" title2=" Drum Machine built with React"
           imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1590166330/Drum_Machien_ithb8w.jpg" imgAlt2="Drum Machine img screenshot" footer2=" Drum Machine built with React" />
 
