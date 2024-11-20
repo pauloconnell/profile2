@@ -4,7 +4,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './home.module.css';
-import 'intersection-observer';
+
 
 //import UnorderedList from '../UnorderedList';
 //import MyWork from '../links/MyWork';
@@ -53,6 +53,7 @@ function Home() {
     bootstrap: false,
     jquery: false,
     dotnet: false,
+    
     //BackEnd
     node: false,
     mongo: false,
@@ -74,7 +75,9 @@ function Home() {
     abTesting: false,
     meetings: false,
     cms: false,
+    ssr: false,
     details: false,
+    
 
   });
 
@@ -109,72 +112,72 @@ function Home() {
 
 
 
-  // Component mounted, set up intersection observer to flip links on initial view
-  useEffect(() => {
-    setIsMounted(true);
+//   // Component mounted, set up intersection observer to flip links on initial view
+//   useEffect(() => {
+//     setIsMounted(true);
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        // console.log("observer triggered ", entry.target)
-        if (entry.isIntersecting && entry.intersectionRatio === 1) {
-          //  setTimeout(() => {
-          entry.target.classList.add(styles.visibleNow);
-          observer.unobserve(entry.target);
-          console.log("observed and remove element", entry.target)
-          //entry.target.classList.remove(styles.visibleNow)
-          //     }, 300);
+//     const observer = new IntersectionObserver((entries) => {
+//       entries.forEach((entry) => {
+//         // console.log("observer triggered ", entry.target)
+//         if (entry.isIntersecting && entry.intersectionRatio === 1) {
+//           //  setTimeout(() => {
+//           entry.target.classList.add(styles.visibleNow);
+//           observer.unobserve(entry.target);
+//           console.log("observed and remove element", entry.target)
+//           //entry.target.classList.remove(styles.visibleNow)
+//           //     }, 300);
 
 
-        } //else {
-        //   //   setTimeout(()=>{
-        //   entry.target.classList.remove(styles.visibleNow);
-        //   //   },300);
-        // }
-      });
-    }, {
-      root: null,
-      rootMargin: '-5% 0px -5% 0px',
-      threshold: 1
-    });
+//         } //else {
+//         //   //   setTimeout(()=>{
+//         //   entry.target.classList.remove(styles.visibleNow);
+//         //   //   },300);
+//         // }
+//       });
+//     }, {
+//       root: null,
+//       rootMargin: '-5% 0px -5% 0px',
+//       threshold: 1
+//     });
 
-    const items = [[], []];
-   // setTimeout(() => {
+//     const items = [[], []];
+//    // setTimeout(() => {
    
     
-    if (observeElement2.current) {
-      const listItems2 = Array.from(observeElement2.current.querySelectorAll('li'));
-      items[1] = listItems2;
-      console.log("l2 = ", items[1])
-      items[1]?.forEach((item) => observer.observe(item));
-    }
-  //},400);
+//     if (observeElement2.current) {
+//       const listItems2 = Array.from(observeElement2.current.querySelectorAll('li'));
+//       items[1] = listItems2;
+//       console.log("l2 = ", items[1])
+//       items[1]?.forEach((item) => observer.observe(item));
+//     }
+//   //},400);
 
 
- // setTimeout(() => {
-    if (observeElement.current) {
-      const listItems1 = Array.from(observeElement.current.querySelectorAll('li'));
-      items[0] = listItems1;
-      console.log("l1 = ", items[0])
-      items[0]?.forEach((item) => observer.observe(item));
-    }
+//  // setTimeout(() => {
+//     if (observeElement.current) {
+//       const listItems1 = Array.from(observeElement.current.querySelectorAll('li'));
+//       items[0] = listItems1;
+//       console.log("l1 = ", items[0])
+//       items[0]?.forEach((item) => observer.observe(item));
+//     }
     
- // },400);
+//  // },400);
 
-    return () => {                                                              // unmount
-      if (items[0].length > 0 ){  //this element may be gone when this runs -> observeElement.current) {
+//     return () => {                                                              // unmount
+//       if (items[0].length > 0 ){  //this element may be gone when this runs -> observeElement.current) {
       
-        console.log("Unmounting items[0]:", items[0]);
-        items[0]?.forEach((item) => observer.unobserve(item));
-      }
-      if (items[1].length > 0 ){ // this element may be gone when this runs -> observeElement2.current) {
+//         console.log("Unmounting items[0]:", items[0]);
+//         items[0]?.forEach((item) => observer.unobserve(item));
+//       }
+//       if (items[1].length > 0 ){ // this element may be gone when this runs -> observeElement2.current) {
       
-        console.log("Unmounting items[1]:", items[1]);
-        items[1]?.forEach((item) => observer.unobserve(item));
-      }
-      observer.disconnect();
+//         console.log("Unmounting items[1]:", items[1]);
+//         items[1]?.forEach((item) => observer.unobserve(item));
+//       }
+//       observer.disconnect();
 
-    };
-  }, []);                                                                   // Empty dependency array ensures it runs once on mount
+//     };
+//   }, []);                                                                   // Empty dependency array ensures it runs once on mount
 
 
   useEffect(() => {
@@ -242,7 +245,7 @@ function Home() {
 
     if (!isThrottled.current) {
       console.log("caught scroll, ", window.scrollY)
-      if (window.scrollY > 1450) {
+      if (window.scrollY > 1250) {
         // console.log("are we ever here?")
         if(!hovering) setHovering(true);
       } else {
@@ -880,11 +883,21 @@ function Home() {
                   </button>
                   {visible.cms && (
                     <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Implemented and improved an in-house built CMS, as well as integrating and using 'Contentful' headless CMS for more advanced features.  Enabling stakeholders to make content changes quickly and independently, without requiring the involvement of the development team.
-                    </p>
-                  )}
-                </li>
-              </ul>
+                    Implemented and improved an in-house built CMS, as well as integrating and using 'Contentful' headless CMS for more advanced features.  Enabling stakeholders to make content changes quickly and independently, without requiring the involvement of the development team.
+                  </p>
+                )}
+              </li>
+              <li>
+                <button className="link" onClick={() => toggleVisibility('ssr')} title={visible.ssr ? "Click to Hide" : "Click to see details"}>
+                  Hybrid Server Side Rendering (SSR)
+                </button>
+                {visible.ssr && (
+                  <p className="text-start p-1 backgroundDarkBlue rounded">
+                    <b className='textShadow'>Hybrid SSR:</b> Lightning fast - select public pages initially render on the server, then the rest of app seamlessly loads, shares state, and runs super fast as normal SPA.  Literally the best of both worlds. 
+                  </p>
+                )}
+              </li>
+            </ul>
             </div>
 
 
@@ -927,10 +940,9 @@ function Home() {
                 //   display: highlightFE ? "block" : "none",
               }}
             >
-              Currently adding cutting-edge features like
-              <div> <b className={styles.textShadowRed}>hybrid SSR </b>
-              </div> to our full featured
-              peer to peer e-commerce platform:
+              Currently adding 
+              <div> <b className={styles.textShadowRed}>hybrid SSR </b> to:
+              </div> 
             </div>
 
 
@@ -963,7 +975,7 @@ function Home() {
 
 
             </div>
-            <ul className={`pt-4 readEasy w-75 mx-auto ${styles.hidden} ${visible.details ? `${styles.transition}` : styles.shrink}`} style={{ textAlign: "left", listStyleType: "none" }}>
+            <ul className={`py-4 readEasy width90 mx-auto ${styles.hidden} ${visible.details ? `${styles.transition}` : styles.shrink}`} style={{ textAlign: "left", listStyleType: "none", maxWidth:"700px"  }}>
               <li>
                 Payment integration with <b className="textShadow">Stripe</b>
               </li>
@@ -1000,22 +1012,24 @@ function Home() {
                 <b className="textShadow">Testims</b> automated nightly and CI/CD testing
               </li>
               <li>
-              <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/mEfSlxcx5RCD/quote">Quote</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a>
-                
+              <b className='textShadow'>Hybrid SSR:</b> Lightning fast - select public pages initially render on the server, then the rest of app seamlessly loads, shares state, and runs super fast as normal SPA.  Literally the best of both worlds.   
               </li>
-
               <div className="my-2">
                 <div className="text-center">
                   <button className="link" onClick={() => toggleVisibility('details')} title="Click to see details">
                     Hide details
                   </button>
                 </div>
-
-
-
-              </div>
+          </div>
             </ul>
 
+          
+
+<div className='text-center'>
+<a target="_blank" rel="noreferrer" href="https://icons8.com/icon/mEfSlxcx5RCD/quote">Quote</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a>
+</div>
+
+          
 
 
             {/**
