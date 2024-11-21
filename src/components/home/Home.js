@@ -327,7 +327,7 @@ function Home() {
         </div> */}
 
       <section className={` ${styles.hero}  readEasy lineHeight wordSpace p-1 ms-1 ms-md-3  ms-lg-5  rounded mt-5 ${styles.heroCustomMargin}`}>
-        <p>Focused on developing pixel-perfect responsive software with today's top Full Stack Frameworks.
+        <p className="m-1">Focused on developing pixel-perfect responsive software with today's top Full Stack Frameworks.
         </p>
       </section>
 
@@ -975,7 +975,7 @@ function Home() {
 
 
             </div>
-            <ul className={`py-4 readEasy width90 mx-auto ${styles.hidden} ${visible.details ? `${styles.transition}` : styles.shrink}`} style={{ textAlign: "left", listStyleType: "none", maxWidth:"700px"  }}>
+            <ul className={`py-4 readEasy width90 mx-auto ${styles.hidden} ${visible.details ? `${styles.transition}` : styles.shrink}`} style={{ textAlign: "left", listStyleType: "none", maxWidth:"700px", maxHeight: "auto"  }}>
               <li>
                 Payment integration with <b className="textShadow">Stripe</b>
               </li>
@@ -1039,7 +1039,7 @@ function Home() {
                     Hide details
                   </button>
                 </div>
-          </div>
+              </div>
             </ul>
 
           

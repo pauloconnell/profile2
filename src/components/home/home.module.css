@@ -118,7 +118,7 @@
  }
 
  .hidden.transition {
-   max-height: 920px;
+   max-height: 1270px;
    opacity: 1;
    transform: translateY(0);
  }
@@ -278,7 +278,7 @@
 
  @media (max-width: 1200px) {
    .heroCustomMargin {
-     margin-left: 2rem;
+     margin-left: 3rem;
      /* Smaller margin for medium screens */
    }
  }
@@ -291,17 +291,22 @@
  }
  @media (min-width: 1201px) {
   .heroCustomMargin {
-    margin-left: 4rem !important;
+    margin-left: 8rem !important;
     /* Smaller margin for medium screens */
   }
 }
 @media (min-width: 1400px) {
   .heroCustomMargin {
-    margin-left: 8rem !important;
+    margin-left: 16rem !important;
     /* Smaller margin for medium screens */
   }
 }
-
+@media (min-width: 1600px) {
+  .heroCustomMargin {
+    margin-left: 18rem !important;
+    /* Smaller margin for medium screens */
+  }
+}
 
  @media (prefers-reduced-motion: no-preference) {
 
