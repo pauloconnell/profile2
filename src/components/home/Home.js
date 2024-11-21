@@ -985,6 +985,25 @@ function Home() {
               </li>
               <hr />
               <li>
+              Authentication and API access tokens through <b className="textShadow">Auth0</b> 
+              </li>
+              <hr />
+              <li>
+              24/7 Error monitoring by  <b className="textShadow">Exceptionless</b> 
+              </li>
+              
+              <hr />
+              <li>
+                Custom Error handling using SSR friendly 'toasts' <b className="textShadow">Notivue</b>
+              </li>
+              
+              <hr />
+              <li>
+                State Management with <b className="textShadow">Pinia</b> reactive data store
+              </li>
+              
+              <hr />
+              <li>
                 Chat messaging - <b className="textShadow">built in house</b>
               </li>
               <hr />
