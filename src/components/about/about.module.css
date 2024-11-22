@@ -1,35 +1,56 @@
-
-
-
 .fly1 {
   position: relative;
   opacity: 0;
-  transform: translateX(-100%); /* Start off-screen */
+  transform: translateX(-100%);
+  /* Start off-screen */
   transition: opacity 0.5s ease-in, transform 1.5s ease-in, background-color 3s ease-in;
 }
+
 .fly2 {
   position: relative;
   opacity: 0;
-  transform: translateX(100%); /* Start off-screen */
-  transition: opacity 0.5s ease-in, transform 1.5s ease-in,  background-color 3s ease-in;
+  transform: translateX(100%);
+  /* Start off-screen */
+  transition: opacity 0.5s ease-in, transform 1.5s ease-in, background-color 3s ease-in;
 }
 
 .fly1.active, .fly2.active {
   opacity: 1;
-  transform: translateX(0); /* Move into place */
+  transform: translateX(0);
+  /* Move into place */
 }
 
+.fullPageBackground {
+  
+  /* max-height: auto; */
+  height: 100%;
+  /* background-image: url('/profile2/images/brohm.jpg'), url('/profile2/images/LLE.jpg'); */
+  /* Make the section height equal to the viewport height */
+  background-size: cover;
+  /* Ensure the image covers the entire section */
+  background-position: center, center;
+  /* Center the image */
+  background-repeat: no-repeat, no-repeat;
+  /* Prevent the image from repeating 
+  position: sticky;*/
+  top: 0;
+  /* Stick to the top */
+  width: 100%;
+  /* Ensure the section width is full */
+  z-index: -1;
+  
+}
 
-.meImage { 
-  position:relative;
-  left:50%;
+.meImage {
+  position: relative;
+  left: 50%;
   transform: translate(-50%);
   max-height: 260px;
-    overflow: hidden;
-    z-index: -1;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .mernCert {
-  margin-left:100px;
+  margin-left: 100px;
   text-align: left;
 }

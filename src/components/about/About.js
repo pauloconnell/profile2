@@ -65,225 +65,231 @@ const About = function () {
           <div className={`${styles.fly2} text-start p-3 my-5`}>
             <p className={`${styles.right}`}>
               I thrive on solving complex problems and turning ideas into elegant, user-friendly interfaces that drive reactive data in responsive, pixel-perfect applications.<br />
-              
+
             </p>
 
 
 
-            
+
             {/* <p>Focused on developing software using both front-end and
             back-end technologies to deploy scaleable cloud based modern web
             applications, API's, databases, and web sites.
+
+            , url('/profile2/images/LLE.jpg')
           </p> */}
           </div>
         </section>
       </section>
-      
-      <section className="h2 text-center readEasy my-5">Certifications</section>
+      <section className={`${styles.fullPageBackground} mt-5`} style={{ backgroundImage: "url('/profile2/images/brohm.jpg')" }}>
+        <section className="h2 text-center readEasy my-5 ">
+          <div className="my-5 bgSolid width70 rounded p-3" style={{ maxWidth: "315px"}}><u>Certifications</u>
+          </div>
+          </section>
 
 
-      <section id="certifications" className="readEasy big lineHeight mx-auto my-5 p-4 hoverDark">
-        <u className="title">FULLSTACK M.E.R.N. CERTIFICATION:</u>
-        <br />
-        <br />
-        The MERN Stack is: MongoDB, Express(server) React, Node.js
-        <br /> 1800 Hours Certification awarded after completion of 6+
-        Certifications:
-        <br />
-        <div >
-        <ul className={`mx-auto ${styles.mernCert}`} style={{maxWidth:'500px'}} >
-          <li>Responsive Web Design Certification</li>
-          <li>JavaScript Algorithms and Data Structures Certification </li>
-          <li>Front End Development Libraries Certification </li>
-          <li>Data Visualization with D3 Certification </li>
-          <li>Back End Development and APIs Certification </li>
-          <li>Quality Assurance and Information Security Certification </li>
-
-        </ul>
-        </div>
-      </section>
-      <br /> <br />
-      <br />
-      <br />
-      <section className="center p-4">
-        <ul className="readEasy inlineBlock">
+        <section id="certifications" className="readEasy big lineHeight mx-auto my-5 p-4 hoverDark bgSolid"  >
+          <u className="title">FULLSTACK M.E.R.N. CERTIFICATION:</u>
           <br />
-          <li>
+          <br />
+          The MERN Stack is: MongoDB, Express(server) React, Node.js
+          <br /> 1800 Hours Certification awarded after completion of 6+
+          Certifications:
+          <br />
+          <div className="mt-3" >
+            <ul className={`mx-auto ${styles.mernCert}`} style={{ maxWidth: '500px' }} >
+              <li>Responsive Web Design Certification</li>
+              <li>JavaScript Algorithms and Data Structures Certification </li>
+              <li>Front End Development Libraries Certification </li>
+              <li>Data Visualization with D3 Certification </li>
+              <li>Back End Development and APIs Certification </li>
+              <li>Quality Assurance and Information Security Certification </li>
+
+            </ul>
+          </div>
+        </section>
+        <br /> <br />
+        <br />
+        <br />
+        <section className="center p-4">
+          <ul className="readEasy inlineBlock">
             <br />
-            <div className=" card h-100 widthCard">
-            <div className="card-header  big py-3">
-            
-              
-                Responsive Web Design Certification
-              </div>
+            <li>
+              <br />
+              <div className=" card h-100 widthCard">
+                <div className="card-header  big py-3">
 
-              <code className="card-body">
-                HTML5, CSS, Applied Visual Design, Applied Accessibility,
-                Responsive Web Design Principles, CSS FlexBox, CSS Grid, and
-                e-forms
-              </code>
-              <div className="card-footer">
-              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/responsive-web-design" target="_blank"
-                rel="noreferrer">
-                View Certificate
-              </a>
-              <div className="my-3">
-                *** Also completed Legacy Front End Certification:<br />
-                <a href="https://www.freecodecamp.org/certification/fccd9e19c59/legacy-front-end" target="_blank"
-                  rel="noreferrer">
-                  View Certificate
+
+                  Responsive Web Design Certification
+                </div>
+
+                <code className="card-body">
+                  HTML5, CSS, Applied Visual Design, Applied Accessibility,
+                  Responsive Web Design Principles, CSS FlexBox, CSS Grid, and
+                  e-forms
+                </code>
+                <div className="card-footer">
+                  <a href="https://www.freecodecamp.org/certification/fccd9e19c59/responsive-web-design" target="_blank"
+                    rel="noreferrer">
+                    View Certificate
+                  </a>
+                  <div className="my-3">
+                    *** Also completed Legacy Front End Certification:<br />
+                    <a href="https://www.freecodecamp.org/certification/fccd9e19c59/legacy-front-end" target="_blank"
+                      rel="noreferrer">
+                      View Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <hr></hr>
+
+            <li>
+              <div className="card widthCard">
+                <div className="card-header big py-3">
+                  JavaScript Algorithms and Data Structures Certification
+                </div>
+
+                <code className="card-body">
+                  JavaScript data structures are explored. Then creating
+                  algorithms to manipulate strings, factorialize numbers, and
+                  solve problems. Also touches on OOP and FP(functional
+                  programming).
+                </code>
+                <div className="card-footer">
+                  <a href="https://www.freecodecamp.org/certification/fccd9e19c59/javascript-algorithms-and-data-structures" target="_blank"
+                    rel="noreferrer">
+                    View Certificate
+                  </a>
+                </div>
+              </div>
+            </li>
+            <hr></hr>
+            <li>
+              <div className="card widthCard">
+                <div className="card-header big py-3">
+                  Front End Development Libraries Certification
+                </div>
+
+                <code className="card-body">
+                  Bootstrap, jQuery Sass, React and Redux. Building modern
+                  responsive component based web applications capable of scaling
+                  up.
+                </code>
+                <div className="card-footer">
+                  <a href="https://www.freecodecamp.org/certification/fccd9e19c59/front-end-libraries" target="_blank"
+                    rel="noreferrer">
+                    View Certificate
+                  </a>
+                </div>
+              </div>
+            </li>
+            <hr></hr>
+            <li>
+              <div className=" card widthCard">
+                <div className="card-header big py-3">Data Visualization Certification</div>
+
+                <code className="card-body">
+                  Using data to create different charts, graphs, hover elements,
+                  and other ingredients to create dynamic and attractive data
+                  visualizations.
+                </code>
+                <div className="card-footer">
+                  <a href="https://www.freecodecamp.org/certification/fccd9e19c59/data-visualization" target="_blank"
+                    rel="noreferrer">
+                    View Certificate
+                  </a>
+                </div>
+              </div>
+            </li>
+            <hr></hr>
+            <li>
+              <div className="card widthCard">
+                <div className="card-header big py-3">
+                  Back End Development and APIs Certification
+                </div>
+
+                <code className="card-body">
+                  Back end with Node.js and npm (Node Package Manager). Also
+                  building web applications with the Express framework, build APIs
+                  and microservices with MongoDB and the Mongoose library.
+                </code>
+                <div className="card-footer">
+                  <a href="https://www.freecodecamp.org/certification/fccd9e19c59/apis-and-microservices" target="_blank"
+                    rel="noreferrer">
+                    View Certificate
+                  </a>
+                </div>
+              </div>
+            </li>
+            <hr></hr>
+            <li>
+              <div className=" card widthCard">
+                <div className="card-header big py-3">Quality Assurance Certification</div>
+
+                <code className="card-body justify-left">
+                  Advanced Node.js, Authentication with Passport, Social
+                  Authentication, Template Engine allows server-side variable
+                  rendering with Pug, and Testing with Chai.
+                </code>
+
+                <div className="card-footer">
+                  <a
+                    className="margin"
+                    href="https://www.freecodecamp.org/certification/fccd9e19c59/quality-assurance-v7" target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Certificate
+                  </a>
+                  <div className="my-3">
+                    *** Also completed Legacy Information Security and Quality Assurance Certification:<br />
+                    <a href="https://www.freecodecamp.org/certification/fccd9e19c59/information-security-and-quality-assurance" target="_blank"
+                      rel="noreferrer">
+                      View Certificate
+                    </a>
+                  </div>
+
+                  <br />
+
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div className="card">
+                <div className=" card-header big py-3 ">Full Stack M.E.R.N. Certification</div>
+
+                <code className={`card-body mx-auto ${styles.mernCert}`}>
+                  <u>M</u>ongoDB <br />
+                  <u>E</u>xpress.js<br />
+                  <u>R</u>eact<br />
+                  <u>N</u>ode.js<br />
+                </code>
+                <div className="card-footer"> Awarded upon sucessful completion of the above certifications</div>
+
+                <a href="https://www.freecodecamp.org/certification/fccd9e19c59/full-stack" target="_blank" rel="noreferrer">
+                  View Full Stack Certificate
                 </a>
               </div>
-              </div>
-            </div>
-          </li>
 
+            </li>
+          </ul>
           <hr></hr>
 
-          <li>
-            <div className="card widthCard">
-              <div className="card-header big py-3">
-                JavaScript Algorithms and Data Structures Certification
-              </div>
 
-              <code className="card-body">
-                JavaScript data structures are explored. Then creating
-                algorithms to manipulate strings, factorialize numbers, and
-                solve problems. Also touches on OOP and FP(functional
-                programming).
-              </code>
-              <div className="card-footer">
-              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/javascript-algorithms-and-data-structures" target="_blank"
-            rel="noreferrer">
-                View Certificate
-              </a>
-              </div>
-            </div>
-          </li>
-          <hr></hr>
-          <li>
-            <div className="card widthCard">
-              <div className="card-header big py-3">
-                Front End Development Libraries Certification
-              </div>
 
-              <code className="card-body">
-                Bootstrap, jQuery Sass, React and Redux. Building modern
-                responsive component based web applications capable of scaling
-                up.
-              </code>
-              <div className="card-footer">
-              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/front-end-libraries" target="_blank"
-            rel="noreferrer">
-                View Certificate
-              </a>
-              </div>
-            </div>
-          </li>
-          <hr></hr>
-          <li>
-            <div className=" card widthCard">
-              <div className="card-header big py-3">Data Visualization Certification</div>
+          <div className=" my-5">
+            <span className="readEasy title">
+              Full Stack M.E.R.N. Certification: 1800 hours
+            </span>
 
-              <code className="card-body">
-                Using data to create different charts, graphs, hover elements,
-                and other ingredients to create dynamic and attractive data
-                visualizations.
-              </code>
-              <div className="card-footer">
-              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/data-visualization" target="_blank"
-            rel="noreferrer">
-                View Certificate
-              </a>
-              </div>
-            </div>
-          </li>
-          <hr></hr>
-          <li>
-            <div className="card widthCard">
-              <div className="card-header big py-3">
-                Back End Development and APIs Certification
-              </div>
 
-              <code className="card-body">
-                Back end with Node.js and npm (Node Package Manager). Also
-                building web applications with the Express framework, build APIs
-                and microservices with MongoDB and the Mongoose library.
-              </code>
-              <div className="card-footer">
-              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/apis-and-microservices" target="_blank"
-            rel="noreferrer">
-                View Certificate
-              </a>
-              </div>
-            </div>
-          </li>
-          <hr></hr>
-          <li>
-            <div className=" card widthCard">
-              <div className="card-header big py-3">Quality Assurance Certification</div>
-
-              <code className="card-body justify-left">
-                Advanced Node.js, Authentication with Passport, Social
-                Authentication, Template Engine allows server-side variable
-                rendering with Pug, and Testing with Chai.
-              </code>
-            
-              <div className="card-footer">
-            <a
-              className="margin"
-              href="https://www.freecodecamp.org/certification/fccd9e19c59/quality-assurance-v7" target="_blank"
-            rel="noreferrer"
-            >
-              View Certificate
-            </a>
-            <div className="my-3">
-                *** Also completed Legacy Information Security and Quality Assurance Certification:<br />
-                <a href="https://www.freecodecamp.org/certification/fccd9e19c59/information-security-and-quality-assurance" target="_blank"
-                  rel="noreferrer">
-                  View Certificate
-                </a>
-              </div>
-              
-            <br/>
-          
-            </div>
-            </div>
-          </li>
-
-          <li>
-          <div className="card">
-              <div className=" card-header big py-3 ">Full Stack M.E.R.N. Certification</div>
-
-              <code className={`card-body mx-auto ${styles.mernCert}`}>
-                <u>M</u>ongoDB <br/>
-                <u>E</u>xpress.js<br/>
-                <u>R</u>eact<br/>
-                <u>N</u>ode.js<br/>
-              </code>
-              <div className="card-footer"> Awarded upon sucessful completion of the above certifications</div>
-
-              <a href="https://www.freecodecamp.org/certification/fccd9e19c59/full-stack" target="_blank" rel="noreferrer">
-              View Full Stack Certificate
-            </a>
           </div>
 
-          </li>
-        </ul>
-        <hr></hr>
 
 
-
-        <div className=" my-5">
-          <span className="readEasy title">
-            Full Stack M.E.R.N. Certification: 1800 hours
-          </span>
-
-       
-        </div>
-
-       
-      
+        </section>
       </section>
     </div>
   );
