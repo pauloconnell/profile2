@@ -26,7 +26,7 @@
 
     margin: auto;
     height: auto;
-    
+
 }
 
 .dialog button {
@@ -42,3 +42,9 @@
 .dialog button:hover {
     background-color: darkblue;
 }
+
+.noUnderline {
+    text-decoration: none;
+}
+
+

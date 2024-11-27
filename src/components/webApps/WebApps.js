@@ -90,15 +90,32 @@ const WebApps = function () {
 
         <RowCard link1="https://www.knowitalls.com" header1="www.knowitalls.com" title1="Peer to Peer e-commerce platform"
           imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1726776409/homepage_flzeh0.png" imgAlt1="www.knowitalls.com" footer1="Peer to Peer e-commerce platform built with Vue 3 Nuxt and Azure"
-          link2="https://www.knowitalls.com/p/brian" header2="Dynamic Profile Page" title2="Profile page: research knowitall's bio, links, videos and availability"
-          imgSrc2="/profile2/images/profile.png" imgAlt2="CEO's Profile page screenshot" footer2="Dynamic page renders data based on route" />
+          link2="https://www.knowitalls.com/p/brian" header2="Dynamic Profile Pages" title2="Profile page: research knowitall's bio, links, videos and availability"
+          imgSrc2="/profile2/images/profile.png" imgAlt2="CEO's Profile page screenshot" footer2="Dynamic page renders data from database based on URL" />
+
+<RowCard link1="https://www.knowitalls.com/c/personal-trainer" header1="Category Pages - CMS Driven" title1="Category pages: Renders Category specific content from CMS based on URL"
+          imgSrc1="/profile2/images/category.png" imgAlt1="CMS driven Category Pages" footer1="Dynamic page renders content from CMS based on URL"
+          link2="https://knowitalls.com" header2="Form Validation" title2=" Using both custom validation(Styled message) and vee-validate w/ Yup Library (standard red text) "
+          imgSrc2="/profile2/images/validation.png" imgAlt2="Form validation image" footer2="Using both custom validation (with regex) and VeeValidate with the Yup Library" />
+
+
+          
+<RowCard link1="https://www.knowitalls.com" header1="Authentication with Auth0" title1="Authentication with Auth0"
+          imgSrc1="/profile2/images/auth0SignUp.png" imgAlt1="Authentication with Auth0" footer1="Using custom form for user signup, and standard navBar login/logout with Auth0 login window."
+          link2="https://knowitalls.com/brian" header2="Streamlined User Signup" title2="Streamlined User Signup"
+          imgSrc2="/profile2/images/userSignup.png" imgAlt2="Inline user signup" footer2="Quick and easy for new users to sign up.  Allows user to browse and select Knowitall, then ensure availability match before signing up." />
 
 
 
-<RowCard link1="https://www.knowitalls.com/p/brian" header1="Integrated Custom Booking" title1="Research page owner, select time to meet, and sign up for Knowitalls"
-          imgSrc1="/profile2/images/booking.png" imgAlt1="Profile Booking screenshot" footer1="Integrated Custom Booking interface for video conferencing transaction."
-          header2="Integrated calendar Availability setting" link2="/#/webApps/"  title2="In house Availability Calendar setting" imgSrc2="/profile2/images/availability.png" imgAlt2="Availability settings Page" footer2="Easy and intuitive 'Click and Drag' availability setting interface."  /> 
 
+<RowCard link1="https://www.knowitalls.com/p/brian" header1="Integrated Custom Booking Calendar" title1="Research page owner, select time to meet, and sign up for Knowitalls"
+          imgSrc1="/profile2/images/booking.png" imgAlt1="Profile Booking screenshot" footer1="Integrated Custom Booking interface with in-line user sign-up."
+          header2="Integrated Calendar Availability Setting" link2="/#/webApps/"  title2="In house Availability Calendar Setting" imgSrc2="/profile2/images/availability.png" imgAlt2="Availability settings Page" footer2="Easy and intuitive 'Click and Drag' availability setting interface."  /> 
+
+
+<RowCard link1="https://www.knowitalls.com/" header1="Authenticated Chat Messaging" title1="Custom chat messaging - only authenticated users with active booking request can contact Knowitalls expert."
+          imgSrc1="/profile2/images/chatMessaging.png" imgAlt1="Chat messaging screenshot" footer1="Custom Chat Message Inbox also allows management of requested sessions and booked sessions - based on Client/User"
+          header2="Custom Third-Party Integrations for Payments and Video Conferencing" link2="/#/webApps/"  title2="Custom Third-Party Integrations for Payments and Video Conferencing" imgSrc2="/profile2/images/custom3rdParty.png" imgAlt2="Availability settings Page" footer2="Custom Third-Party Integrations for Payments and Video Conferencing"  /> 
 
 
 {/*  
@@ -108,74 +125,20 @@ const WebApps = function () {
 
 
 
-<RowCard link1="https://mrproconstruction.glitch.me/" header1="M.R.Pro Construction" title1="Landing page for construction company"
-          imgSrc1="/profile2/images/MRPro.PNG" imgAlt1="M.R. PRO Construction" footer1="Landing page for construction company"
-          link2="https://knowitalls.com" header2="Form Validation" title2=" Using both custom validation(Styled message) and vee-validate w/ Yup Library (standard red text) "
-          imgSrc2="/profile2/images/validation.png" imgAlt2="Form validation image" footer2="Using both custom validation(Styled message) and vee-validate w/ Yup Library (standard red text) " />
+
 
 
 <RowCard  link1="/#/webApps" header1="Test Center" title1="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
-          imgSrc1="/profile2/images/testCenter.png" imgAlt1="Test Center app screenshot" footer1="Product Knowledge App used in multiple Retail store locations"
-          link2="https://codepen.io/p_ollie/full/ZEzNJWo" header2="React Drum Machine" title2=" Drum Machine built with React"
-          imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1590166330/Drum_Machien_ithb8w.jpg" imgAlt2="Drum Machine img screenshot" footer2=" Drum Machine built with React" />
-
+          imgSrc1="/profile2/images/testCenter.png" imgAlt1="Test Center app screenshot" footer1="Product Knowledge App used in multiple Retail Store Locations"
+          link2="https://mrproconstruction.glitch.me/" header2="M.R.Pro Construction" title2="Landing page for Construction Company"
+          imgSrc2="/profile2/images/MRPro.PNG" imgAlt2="M.R. PRO Construction" footer2="Landing page for construction company" />
 
 {/* 
-        <div className="row mx-1 justify-content-center">
-     
-
-          <section className="col-12 col-sm-5 my-1 px-0 link">
-            <a
-              className="link d-block"
-              href="https://mrproconstruction.glitch.me/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="text-align">
-                <span className="title text inlineBlock">
-                  <strong><u>M.R.Pro Construction</u></strong> <br />
-                  Landing page for construction company
-
-                </span>
-
-                <img
-                  className="responsive"
-                  src="https://res.cloudinary.com/pollie/image/upload/v1672192690/Logo_zpv0kl.png"
-                  alt="M.R. PRO Construction"
-                />
-              </div>
-            </a>
-          </section>
-          <div className="col-sm-auto"></div>
-
-          <section className="col-12 col-sm-5 my-1 px-0 link">
-            <a
-              className="link d-block"
-              href="https://codepen.io/p_ollie/full/ZEzNJWo"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className=" text-align">
-                <span className="title text inlineBlock">
-                  <strong><u>React Drum Machine</u></strong><br />
-                  Drum Machine built with React
-                </span>
-
-                <img
-                  className="responsive"
-                  src="https://res.cloudinary.com/pollie/image/upload/v1590166330/Drum_Machien_ithb8w.jpg"
-                  alt="Drum Machine img loading"
-                />
-              </div>
-            </a>
-          </section>
-        </div> */}
-
 
 <RowCard link1="https://codepen.io/p_ollie/full/VMVeQw" header1="Wiki Search via API" title1="App that searches Wikipedia via API and displays several results"
           imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1598909611/Wiki_search_avfb5n.png" imgAlt1="wiki search app" footer1="Search for articles on Wikipedia via API"
           link2="https://codepen.io/p_ollie/full/ayJXyZ" header2="Web Developer Profile (old)" title2="Profile developed with pure HTML and CSS"
-          imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1631908054/profile_v31u4b.png" imgAlt2="Web Developer profile image" footer2="Original Profile built with HTML and CSS" />
+          imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1631908054/profile_v31u4b.png" imgAlt2="Web Developer profile image" footer2="Original Profile built with HTML and CSS" /> */}
 
 
 {/* 

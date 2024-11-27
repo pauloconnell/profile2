@@ -427,7 +427,7 @@ function Home() {
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" alt="tech icon" title="NPM" />
 
               <img className={` ${styles.enlarge}`} src={`/profile2/nuxtLogo.svg`} alt="tech icon" title="Nuxt 3" />
-
+              <img src={`/profile2/images/openAI.png`} style={{width:"85px"}} alt="tech icon" title="OpenAI API" />
 
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg" alt="tech icon" title="OAuth authentication protocol" />
               <img src="https://www.passportjs.org/images/logo.svg" alt="tech icon" title="passport.js authentication" />

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react" ;
 import { useLocation }  from "react-router-dom";
 import styles from './about.module.css';
-import MyWork from '../links/MyWork';
+
 
 /* the main page for the about route of this app */
 const About = function () {
@@ -278,7 +278,8 @@ const About = function () {
           <hr></hr>
 
 
-
+          </section>
+          </section>
           <div className=" my-5">
             <span className="readEasy title">
               Full Stack M.E.R.N. Certification: 1800 hours
@@ -289,8 +290,7 @@ const About = function () {
 
 
 
-        </section>
-      </section>
+     
     </div>
   );
 };
