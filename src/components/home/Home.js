@@ -333,9 +333,11 @@ function Home() {
 
 
       <section className={` ${styles.heroRight} readEasy lineHeight wordSpace p-1 me-3 rounded mt-5 mx-xxl-auto`}>
+        <div className={`${styles.overlay}`}>
         <p>
-          "I <strong> love </strong> building state-of-the-art, data-rich, intuitive software and upgrading/maintaining legacy codebases."
+          "I <strong> love </strong> building state-of-the-art,  data-rich, and intuitive software,<br/> solving complex problems, debugging issues,  and upgrading or maintaining legacy codebases."
         </p>
+        </div>
       </section>
 
       <section className=" width90  mt-5 pt-5">
@@ -843,7 +845,7 @@ function Home() {
                   </button>
                   {visible.seo && (
                     <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Setting up GTM and interfacing with Google Analytics, implementing dynamic SEO tags, and optimizing website performance and loading times.
+                      Setting up GTM and interfacing with Google Analytics, implementing dynamic SEO tags, and optimizing website performance -significantly improving loading times.
                     </p>
                   )}
                 </li>
