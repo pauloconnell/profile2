@@ -110,12 +110,12 @@ const WebApps = function () {
 
 <RowCard link1="https://www.knowitalls.com/p/brian" header1="Integrated Custom Booking Calendar" title1="Research page owner, select time to meet, and sign up for Knowitalls"
           imgSrc1="/profile2/images/booking.png" imgAlt1="Profile Booking screenshot" footer1="Integrated Custom Booking interface with in-line user sign-up."
-          header2="Integrated Calendar Availability Setting" link2="https://www.knowitalls.com/"  title2="In house Availability Calendar Setting" imgSrc2="/profile2/images/availability.png" imgAlt2="Availability settings Page" footer2="Easy and intuitive 'Click and Drag' availability setting interface."  /> 
+          header2="Integrated Calendar Availability Setting" link2="https://www.knowitalls.com/admin/availability"  title2="In house Availability Calendar Setting" imgSrc2="/profile2/images/availability.png" imgAlt2="Availability settings Page" footer2="Easy and intuitive 'Click and Drag' availability setting interface."  /> 
 
 
-<RowCard link1="https://www.knowitalls.com/" header1="Authenticated Chat Messaging" title1="Custom chat messaging - only authenticated users with active booking request can contact Knowitalls expert."
+<RowCard link1="https://www.knowitalls.com/admin/inbox" header1="Authenticated Chat Messaging" title1="Custom chat messaging - only authenticated users with active booking request can contact Knowitalls expert."
           imgSrc1="/profile2/images/chatMessaging.png" imgAlt1="Chat messaging screenshot" footer1="Custom Chat Message Inbox also allows management of requested sessions and booked sessions - based on Client/User"
-          header2="Custom Third-Party Integrations for Payments and Video Conferencing" link2="https://www.knowitalls.com/"  title2="Custom Third-Party Integrations for Payments and Video Conferencing" imgSrc2="/profile2/images/custom3rdParty.png" imgAlt2="Availability settings Page" footer2="Custom Third-Party Integrations for Payments and Video Conferencing"  /> 
+          header2="Custom Third-Party Integrations for Payments and Video Conferencing" link2="https://www.knowitalls.com/admin/payments"  title2="Custom Third-Party Integrations for Payments and Video Conferencing" imgSrc2="/profile2/images/custom3rdParty.png" imgAlt2="Availability settings Page" footer2="Custom Third-Party Integrations for Payments and Video Conferencing"  /> 
 
 
 {/*  
@@ -126,7 +126,7 @@ const WebApps = function () {
 
 
 
-
+{/* https://pauloconnell.github.io/testCenter/ */}
 
 <RowCard  link1={null} header1="Test Center" title1="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
           imgSrc1="/profile2/images/testCenter.png" imgAlt1="Test Center app screenshot" footer1="Product Knowledge App used in multiple Retail Store Locations"
