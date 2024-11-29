@@ -335,7 +335,7 @@ function Home() {
       <section className={` ${styles.heroRight} readEasy lineHeight wordSpace p-1 me-3 rounded mt-5 mx-xxl-auto`}>
         <div className={`${styles.overlay}`}>
         <p>
-          "I <strong> love </strong> building state-of-the-art,  data-rich, and intuitive software,<br/> solving complex problems, debugging issues,  and upgrading or maintaining legacy codebases."
+          "I <strong> love </strong> building state-of-the-art,  data-rich, intuitive software,<br/> solving complex problems, debugging issues,  and upgrading or maintaining legacy codebases."
         </p>
         </div>
       </section>
@@ -574,11 +574,21 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('testingFE')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
-                        Automated Testing:
+                      Test-Driven Development (TDD)
                       </button>
                       {visible.testingFE && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Ensured code reliability with Jest, Mocha, Playwright, and Testim.
+                       Implemented TDD practices using Jest and Mocha to write and maintain comprehensive unit tests
+                        </p>
+                      )}
+                    </li>
+                    <li>
+                      <button className="link" onClick={() => toggleVisibility('testingFE')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
+                      Automated Testing:
+                      </button>
+                      {visible.testingFE && (
+                        <p className="text-start p-1 backgroundDarkBlue rounded">
+                          Developed and executed automated tests with Playwright and Testim, ensuring thorough end-to-end testing and robust application performance
                         </p>
                       )}
                     </li>
@@ -588,7 +598,7 @@ function Home() {
                       </button>
                       {visible.bootstrap && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Utilized Bootstrap for responsive, mobile-first design.
+                          Utilized Bootstrap for rapid development of responsive, mobile-first design.
                         </p>
                       )}
                     </li>
