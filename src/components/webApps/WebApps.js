@@ -95,14 +95,14 @@ const WebApps = function () {
 
 <RowCard link1="https://www.knowitalls.com/c/personal-trainer" header1="Category Pages - CMS Driven" title1="Category pages: Renders Category specific content from CMS based on URL"
           imgSrc1="/profile2/images/category.png" imgAlt1="CMS driven Category Pages" footer1="Dynamic page renders content from CMS based on URL"
-          link2="https://knowitalls.com" header2="Form Validation" title2=" Using both custom validation(Styled message) and vee-validate w/ Yup Library (standard red text) "
-          imgSrc2="/profile2/images/validation.png" imgAlt2="Form validation image" footer2="Using both custom validation (with regex) and VeeValidate with the Yup Library" />
+          link2="https://knowitalls.com" header2="Form Validation" title2="Custom validation responds reactively to 'live' user input and standard vee-validate w/ Yup Library (validates on 'submit') "
+          imgSrc2="/profile2/images/validation.png" imgAlt2="Form validation image" footer2="Utilizing custom reactive validation (regex checks live user input) along with VeeValidate and the Yup Library" />
 
 
           
-<RowCard link1="https://www.knowitalls.com" header1="Authentication with Auth0" title1="Authentication with Auth0"
+<RowCard link1="https://www.knowitalls.com/admin/account-settings" header1="Authentication with Auth0" title1="Authentication with Auth0"
           imgSrc1="/profile2/images/auth0SignUp.png" imgAlt1="Authentication with Auth0" footer1="Using custom form for user signup, and standard navBar login/logout with Auth0 login window."
-          link2="https://knowitalls.com/brian" header2="Streamlined User Signup" title2="Streamlined User Signup"
+          link2="https://knowitalls.com/p/brian" header2="Streamlined User Signup" title2="Streamlined User Signup"
           imgSrc2="/profile2/images/userSignup.png" imgAlt2="Inline user signup" footer2="Quick and easy for new users to sign up.  Allows user to browse and select Knowitall, then ensure availability match before signing up." />
 
 
@@ -110,12 +110,12 @@ const WebApps = function () {
 
 <RowCard link1="https://www.knowitalls.com/p/brian" header1="Integrated Custom Booking Calendar" title1="Research page owner, select time to meet, and sign up for Knowitalls"
           imgSrc1="/profile2/images/booking.png" imgAlt1="Profile Booking screenshot" footer1="Integrated Custom Booking interface with in-line user sign-up."
-          header2="Integrated Calendar Availability Setting" link2="/#/webApps/"  title2="In house Availability Calendar Setting" imgSrc2="/profile2/images/availability.png" imgAlt2="Availability settings Page" footer2="Easy and intuitive 'Click and Drag' availability setting interface."  /> 
+          header2="Integrated Calendar Availability Setting" link2="https://www.knowitalls.com/"  title2="In house Availability Calendar Setting" imgSrc2="/profile2/images/availability.png" imgAlt2="Availability settings Page" footer2="Easy and intuitive 'Click and Drag' availability setting interface."  /> 
 
 
 <RowCard link1="https://www.knowitalls.com/" header1="Authenticated Chat Messaging" title1="Custom chat messaging - only authenticated users with active booking request can contact Knowitalls expert."
           imgSrc1="/profile2/images/chatMessaging.png" imgAlt1="Chat messaging screenshot" footer1="Custom Chat Message Inbox also allows management of requested sessions and booked sessions - based on Client/User"
-          header2="Custom Third-Party Integrations for Payments and Video Conferencing" link2="/#/webApps/"  title2="Custom Third-Party Integrations for Payments and Video Conferencing" imgSrc2="/profile2/images/custom3rdParty.png" imgAlt2="Availability settings Page" footer2="Custom Third-Party Integrations for Payments and Video Conferencing"  /> 
+          header2="Custom Third-Party Integrations for Payments and Video Conferencing" link2="https://www.knowitalls.com/"  title2="Custom Third-Party Integrations for Payments and Video Conferencing" imgSrc2="/profile2/images/custom3rdParty.png" imgAlt2="Availability settings Page" footer2="Custom Third-Party Integrations for Payments and Video Conferencing"  /> 
 
 
 {/*  
@@ -128,7 +128,7 @@ const WebApps = function () {
 
 
 
-<RowCard  link1="/#/webApps" header1="Test Center" title1="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
+<RowCard  link1={null} header1="Test Center" title1="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
           imgSrc1="/profile2/images/testCenter.png" imgAlt1="Test Center app screenshot" footer1="Product Knowledge App used in multiple Retail Store Locations"
           link2="https://mrproconstruction.glitch.me/" header2="M.R.Pro Construction" title2="Landing page for Construction Company"
           imgSrc2="/profile2/images/MRPro.PNG" imgAlt2="M.R. PRO Construction" footer2="Landing page for construction company" />
