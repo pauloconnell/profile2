@@ -128,7 +128,7 @@ const WebApps = function () {
 
 {/* https://pauloconnell.github.io/testCenter/ */}
 
-<RowCard  link1={null} header1="Test Center" title1="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
+<RowCard dataUrl1="https://pauloconnell.github.io/testCenter/" link1={null} header1="Test Center" title1="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
           imgSrc1="/profile2/images/testCenter.png" imgAlt1="Test Center app screenshot" footer1="Product Knowledge App used in multiple Retail Store Locations"
           link2="https://mrproconstruction.glitch.me/" header2="M.R.Pro Construction" title2="Landing page for Construction Company"
           imgSrc2="/profile2/images/MRPro.PNG" imgAlt2="M.R. PRO Construction" footer2="Landing page for construction company" />

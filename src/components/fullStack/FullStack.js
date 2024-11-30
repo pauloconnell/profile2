@@ -38,17 +38,17 @@ const FullStack = function () {
 
       <section className="width90">
 
-        <RowCard link1="https://authentication-pug.glitch.me/" header1="Encrypted Authentication Using Passport and MongoDB" title1="This app encrypts login details, stores users details on
+        <RowCard dataUrl1="https://authentication-pug.glitch.me/" link1={null} header1="Encrypted Authentication Using Passport and MongoDB" title1="This app encrypts login details, stores users details on
                   database, and allows secure login with Passport.js"
           imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610815824/Authenticate-Pug_awfw7d.png" imgAlt1="Full Stack app with encrypted secure login image " footer1="This app encrypts login details, stores users details on
                   database, and allows secure login with Passport.js"
-          link2={null} header2="Slang Translation App" title2="This app converts from British spelling/slang to US and Vise-Versa"
+          dataUrl2="https://QA-5-american-british-english-translator.pauloconnell.repl.co" link2={null} header2="Slang Translation App" title2="This app converts from British spelling/slang to US and Vise-Versa"
           imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1610564580/translate_yjhf3p.png" imgAlt2="translator app image" footer2="This app converts from British spelling/slang to US and Vise-Versa" />
 
        {/* repl repo inactive "https://QA-5-american-british-english-translator.pauloconnell.repl.co" 
        Upgraded node and DB, so it's working, but still needs major CSS update: "https://messageboard-anon.glitch.me/"
        */}
-        <RowCard link1={null} header1="Anonymous Message Board Web App" title1="This App allows anonymous users to set password protected content on database 'boards'"
+        <RowCard dataUrl1="https://messageboard-anon.glitch.me/" link1={null} header1="Anonymous Message Board Web App" title1="This App allows anonymous users to set password protected content on database 'boards'"
           imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610571643/messageBoard_km9wul.png" imgAlt1="Full Stack Message Board" footer1="This App allows anonymous users to set password protected content on database 'boards'"
           link2="https://exercisetrackerapi.glitch.me" header2="Exercise Tracker App" title2="This app creates an API to Querry database results for users
                   results. The app creates unique userId for each user to log
@@ -61,9 +61,9 @@ const FullStack = function () {
         */}
         {/* <a href="https://825f669b-dc9a-4bff-8630-5cbc22ac4b31-00-3ks6dkftqw91c.riker.replit.dev/"> testing Sudoku Link</a> */}
 
-        <RowCard link1={null} header1="Sudoku Solver Game" title1="This app implements Sudoku logic and solves any board using recursion"
+        <RowCard dataUrl1="https://825f669b-dc9a-4bff-8630-5cbc22ac4b31-00-3ks6dkftqw91c.riker.replit.dev/" link1={null} header1="Sudoku Solver Game" title1="This app implements Sudoku logic and solves any board using recursion"
           imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610747577/suduko_e2wjgi.png" imgAlt1="Full Stack Sudoku Solver" footer1="This app implements Sudoku logic and solves any board using recursion"
-          link2={null} header2="API Stock Price Checker" title2="This app takes user input, hits API to get stock price, hits Database to store likes for each stock from unique IP addresses, and shows comparision of likes."
+          dataUrl2="https://stock-price-checker-paul.glitch.me/" link2={null} header2="API Stock Price Checker" title2="This app takes user input, hits API to get stock price, hits Database to store likes for each stock from unique IP addresses, and shows comparision of likes."
           imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1610734887/StockPriceChecker_h0yedt.png" imgAlt2="API Stock Price Checker app image" footer2="Full Stack Suduko Solver" />
 
         {/* 

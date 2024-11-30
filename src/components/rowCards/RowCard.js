@@ -71,7 +71,7 @@ export const RowCard = function (props) {
           
           */}
 
-          <div className=" col-12 col-sm-5 mx-md-2 mx-lg-3 mx-xl-4    my-5 py-1 px-0 text-center link" >
+          <div {...(props.dataUrl1 ? { 'data-url': props.dataUrl1 } : {})} className=" col-12 col-sm-5 mx-md-2 mx-lg-3 mx-xl-4    my-5 py-1 px-0 text-center link" >
               <a
                   className={`${styles.noUnderline} link d-block h-100`}
                   href={props.link1 ? props.link1 : null}
@@ -100,7 +100,7 @@ export const RowCard = function (props) {
                 </a>
             </div>
 
-            <div className=" col-12 col-sm-5 text-center my-5 py-1 px-0 link" >
+            <div {...(props.dataUrl2 ? { 'data-url': props.dataUrl2 } : {})} className=" col-12 col-sm-5 text-center my-5 py-1 px-0 link" >
                 <a
                     className={`${styles.noUnderline} link d-block h-100`}
                     href={props.link2 ? props.link2 : null}
