@@ -568,7 +568,7 @@ function Home() {
                       </button>
                       {visible.nodeExpress && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Building scalable S.P.A.s using plentiful npm libraries with React and Next, as well as Vue and Nuxt.
+                         Building scalable Single Page Applications (SPAs) using a wide array of npm libraries with React and Next.js, as well as Vue and Nuxt.js.
                         </p>
                       )}
                     </li>
@@ -805,7 +805,7 @@ function Home() {
                   </button>
                   {visible.dev && (
                     <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Proficient in developing responsive, pixel perfect, user friendly websites and web applications using HTML, CSS, JavaScript, Vue 3 w/ Nuxt, as well as React w/ Next.
+                      Proficient in developing responsive, pixel-perfect, user-friendly websites and web applications using HTML, CSS, JavaScript, Vue 3 w/ Nuxt, React w/ Next, as well as server-side development with Node.js and Express.js.
                     </p>
                   )}
                 </li>
@@ -815,7 +815,7 @@ function Home() {
                   </button>
                   {visible.git && (
                     <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Proficient in feature branching, hotfixes, release branches, managing pull requests, conducting code reviews, and deploying changes in production environments using Git, GitHub, and Azure.
+                      Proficient in version control and code management, including feature branching, hotfixes, release branches, managing pull requests, conducting thorough code reviews, and deploying changes in production environments using Git, GitHub, and Azure.
                     </p>
                   )}
                 </li>
@@ -825,7 +825,7 @@ function Home() {
                   </button>
                   {visible.azure && (
                     <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Extensive use of Azure DevOps for sprint planning, daily standups, and utilizing Azure Kanban boards.
+                     Extensive experience with Azure DevOps for sprint planning, facilitating daily standups, and leveraging Azure Kanban boards to track and manage workflow efficiently.
                     </p>
                   )}
                 </li>
@@ -835,7 +835,7 @@ function Home() {
                   </button>
                   {visible.api && (
                     <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Delivering data-rich content with reactive data, interfacing with backend teams, and using Postman and Swagger to build out API connections.
+                      Delivering data-rich content with reactive data, collaborating effectively with backend teams, and utilizing Postman and Swagger to develop and test robust API connections.
                     </p>
                   )}
                 </li>
@@ -855,7 +855,7 @@ function Home() {
                   </button>
                   {visible.seo && (
                     <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Setting up GTM and interfacing with Google Analytics, implementing dynamic SEO tags, and optimizing website performance -significantly improving loading times.
+                      Setting up Google Tag Manager (GTM) and interfacing with Google Analytics, implementing dynamic SEO tags, and optimizing website performance -significantly improving loading times.
                     </p>
                   )}
                 </li>
@@ -865,7 +865,7 @@ function Home() {
                   </button>
                   {visible.abTesting && (
                     <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Assisting the Marketing team with A/B testing using Google Analytics to optimize campaign performance and improve user engagement.
+                      Assisting the Marketing team with A/B testing using Google Analytics to optimize campaign performance and enhance user engagement.
                     </p>
                   )}
                 </li>
@@ -875,7 +875,7 @@ function Home() {
                   </button>
                   {visible.meetings && (
                     <p className="text-start p-1 backgroundDarkBlue rounded">
-                      As the champion managing the Kanban board and backlog, I regularly share my screen for daily scrum, and make positive contributions to weekly meetings with the development team, design team, managers, C-suite executives, and clients by providing valuable insights, feedback, and solutions.
+                     Championing the management of the Kanban board and backlog, I regularly share my screen during daily scrum meetings. I make valuable contributions to weekly meetings with the development team, design team, managers, C-suite executives, and clients by providing insightful feedback and innovative solutions.
                     </p>
                   )}
                 </li>
@@ -885,7 +885,7 @@ function Home() {
                   </button>
                   {visible.testingExperience && (
                     <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Utilized Test-Driven Development (TDD) with Jest, implemented automated nightly and CI/CD testing using Testim, and integrated Exceptionless for monitoring and alerting.
+                     Utilizing Test-Driven Development (TDD) with Jest unit tests, implementing automated nightly and CI/CD testing using Testim, and integrating Exceptionless for comprehensive monitoring and alerting.
                     </p>
                   )}
                 </li>
