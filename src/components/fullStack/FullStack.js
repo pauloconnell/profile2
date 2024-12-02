@@ -50,7 +50,7 @@ const FullStack = function () {
        */}
         <RowCard dataUrl1="https://messageboard-anon.glitch.me/" link1={null} header1="Anonymous Message Board Web App" title1="This App allows anonymous users to set password protected content on database 'boards'"
           imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610571643/messageBoard_km9wul.png" imgAlt1="Full Stack Message Board" footer1="This App allows anonymous users to set password protected content on database 'boards'"
-          link2="https://exercisetrackerapi.glitch.me" header2="Exercise Tracker App" title2="This app creates an API to Querry database results for users
+          dataUrl2="https://exercisetrackerapi.glitch.me" link2={null} header2="Exercise Tracker App" title2="This app creates an API to Querry database results for users
                   results. The app creates unique userId for each user to log
                   exercises and track on the database via API Querries."
           imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1606166908/xTracker_nm1gfn.png" imgAlt2="Full Stack Exercise tracker Web App image" footer2="Full Stack Exercise tracker Web App" />
