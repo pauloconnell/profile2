@@ -515,17 +515,17 @@ function Home() {
                   <ul style={{ listStyleType: "none" }}>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('react')} title={visible.react ? "Click to Hide" : "Click to see details"}>
-                        React, Redux & Next:
+                        React, Redux & Next
                       </button>
                       {visible.react && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Expert in building dynamic, responsive, data-rich websites, applications, and user interfaces using React, Next.js, and Redux for state management or Context Provider for efficient, simple, reactive state sharing. Skilled at implementing complex UI components, optimizing performance, and ensuring maintainable, scalable codebases. Proficient with React hooks and custom hooks (also used as middleware).
+                          Expert in building dynamic, responsive, data-rich websites, applications, and user interfaces using React, Next.js, and Redux for state management as well as the  Context API for efficient, simple, reactive state sharing. Skilled at implementing complex UI components, optimizing performance, and ensuring maintainable, scalable codebases. Proficient with React hooks and custom hooks (also used as middleware).
                         </p>
                       )}
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('vue')} title={visible.vue ? "Click to Hide" : "Click to see details"}>
-                        Vue3, Pinia & Nuxt3:
+                        Vue3, Pinia & Nuxt3
                       </button>
                       {visible.vue && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
@@ -535,7 +535,7 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('htmlCss')} title={visible.htmlCss ? "Click to Hide" : "Click to see details"}>
-                        HTML/CSS:
+                        HTML/CSS
                       </button>
                       {visible.htmlCss && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
@@ -544,7 +544,7 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('javascript')} title={visible.javascript ? "Click to Hide" : "Click to see details"}>
-                        JavaScript:
+                        JavaScript
                       </button>
                       {visible.javascript && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
@@ -554,7 +554,7 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('typescript')} title={visible.typescript ? "Click to Hide" : "Click to see details"}>
-                        TypeScript:
+                        TypeScript
                       </button>
                       {visible.typescript && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
@@ -564,7 +564,7 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('nodeExpress')} title={visible.nodeExpress ? "Click to Hide" : "Click to see details"}>
-                        Node.js and NPM:
+                        Node.js and NPM
                       </button>
                       {visible.nodeExpress && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
@@ -584,7 +584,7 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('testingFE')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
-                      Automated Testing:
+                      Automated Testing
                       </button>
                       {visible.testingFE && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
@@ -594,7 +594,7 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('bootstrap')} title={visible.bootstrap ? "Click to Hide" : "Click to see details"}>
-                        Bootstrap:
+                        Bootstrap
                       </button>
                       {visible.bootstrap && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
@@ -604,7 +604,7 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('jquery')} title={visible.jquery ? "Click to Hide" : "Click to see details"}>
-                        jQuery:
+                        jQuery
                       </button>
                       {visible.jquery && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
@@ -614,7 +614,7 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('dotnet')} title={visible.dotnet ? "Click to Hide" : "Click to see details"}>
-                        .NET Experience:
+                        .NET Experience
                       </button>
                       {visible.dotnet && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
@@ -774,13 +774,17 @@ function Home() {
 
 
 
-            <section className={` ${styles.reference} lineHeight wordSpace p-1 py-5 mx-auto rounded width90`}>
-              <p className={styles.quote}>"His ability to troubleshoot and problem solve were very valuable across my team. Paul proved himself a strong team player with a strong work ethic. I confidently recommend Paul for future roles where he has the opportunity and expectation of improving whatever he focuses on."
+            <section className={` ${styles.reference} lineHeight wordSpace p-1 mx-auto rounded width90`}>
+              <img src="/profile2/images/quote-50.png" className={`${styles.quoteImg}`} alt="quote icon" title="reference1" />
+              <p className={`${styles.quote} py-5 px-3 mx-3`}>"His ability to troubleshoot and problem solve were very valuable across my team. Paul proved himself a strong team player with a strong work ethic. I confidently recommend Paul for future roles where he has the opportunity and expectation of improving whatever he focuses on."
                 <br />
                 <span className={styles.quoteAuthor}> John - Senior Manager</span>
 
 
               </p>
+              <div className='d-flex flex-row-reverse'>
+              <img src="/profile2/images/quote-50.png"  alt="quote icon" title="reference1" />
+              </div>
             </section>
 
             <br></br>
@@ -1057,7 +1061,9 @@ function Home() {
           
 
 <div className='text-center'>
+
 <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/mEfSlxcx5RCD/quote">Quote</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a>
+<p>Site custom built by <strong>Paul OConnell</strong> with <b>React</b></p>
 </div>
 
           

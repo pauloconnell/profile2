@@ -246,6 +246,12 @@
      font-weight: bold;
 
    }
+   .quoteImg {
+    display: block;
+    transform: rotate(180deg);
+   }
+
+  
 
    .zoomer {
      background-color: transparent;
