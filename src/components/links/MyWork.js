@@ -38,13 +38,6 @@ const MyWork = function () {
           </span>
         </Link>
 
-        <Link className="link width inlineBlock p-1 border my-1" id="fullStack" to="/fullStack">
-          <span className="center">
-            Full Stack <br />
-            Applications
-          </span>
-        </Link>
-
         <Link
           className="link width inlineBlock p-1 border my-1"
           id="d3"
@@ -55,6 +48,15 @@ const MyWork = function () {
             Visualization
           </span>
         </Link>
+
+        <Link className="link width inlineBlock p-1 border my-1" id="fullStack" to="/fullStack">
+          <span className="center">
+            Full Stack <br />
+            Applications
+          </span>
+        </Link>
+
+
       </div>
     </div>
   );

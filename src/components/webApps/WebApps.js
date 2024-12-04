@@ -91,7 +91,7 @@ const WebApps = function () {
         <RowCard link1="https://www.knowitalls.com" header1="www.knowitalls.com" title1="Peer to Peer e-commerce platform"
           imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1726776409/homepage_flzeh0.png" imgAlt1="www.knowitalls.com" footer1="Peer to Peer e-commerce platform built with Vue 3 Nuxt and Azure"
           link2="https://www.knowitalls.com/p/brian" header2="Dynamic Profile Pages" title2="Profile page: research knowitall's bio, links, videos and availability"
-          imgSrc2="/profile2/images/profile.png" imgAlt2="CEO's Profile page screenshot" footer2="Dynamic page renders data from database based on URL" />
+          imgSrc2="/profile2/images/profile.png" imgAlt2="CEO's Profile page screenshot" footer2="Dynamic profile page renders data from database based on URL" />
 
 <RowCard link1="https://www.knowitalls.com/c/personal-trainer" header1="Category Pages - CMS Driven" title1="Category pages: Renders Category specific content from CMS based on URL"
           imgSrc1="/profile2/images/category.png" imgAlt1="CMS driven Category Pages" footer1="Dynamic page renders content from CMS based on URL"
