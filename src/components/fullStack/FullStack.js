@@ -42,31 +42,40 @@ const FullStack = function () {
                   database, and allows secure login with Passport.js"
           imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610815824/Authenticate-Pug_awfw7d.png" imgAlt1="Full Stack app with encrypted secure login image " footer1="This app encrypts login details, stores users details on
                   database, and allows secure login with Passport.js"
-          dataUrl2="https://QA-5-american-british-english-translator.pauloconnell.repl.co" link2={null} header2="Slang Translation App" title2="This app converts from British spelling/slang to US and Vise-Versa"
-          imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1610564580/translate_yjhf3p.png" imgAlt2="translator app image" footer2="This app converts from British spelling/slang to US and Vise-Versa" />
+                  dataUrl2="https://messageboard-anon.glitch.me/" link2={null} header2="Anonymous Message Board Web App" title2="This App allows anonymous users to set password protected content on 'boards' stored on MongoDB"
+          imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1610571643/messageBoard_km9wul.png" imgAlt2="Full Stack Message Board" footer2="This App allows anonymous users to set password protected content on each 'board' on MongoDB "
+          
+          />
+
+
 
        {/* repl repo inactive "https://QA-5-american-british-english-translator.pauloconnell.repl.co" 
        Upgraded node and DB, so it's working, but still needs major CSS update: "https://messageboard-anon.glitch.me/"
+       Removing these
+       // dataUrl2="https://QA-5-american-british-english-translator.pauloconnell.repl.co" link2={null} header2="Slang Translation App" title2="This app converts from British spelling/slang to US and Vise-Versa"
+          // imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1610564580/translate_yjhf3p.png" imgAlt2="translator app image" footer2="This app converts from British spelling/slang to US and Vise-Versa" 
        */}
-        <RowCard dataUrl1="https://messageboard-anon.glitch.me/" link1={null} header1="Anonymous Message Board Web App" title1="This App allows anonymous users to set password protected content on database 'boards'"
-          imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610571643/messageBoard_km9wul.png" imgAlt1="Full Stack Message Board" footer1="This App allows anonymous users to set password protected content on database 'boards'"
+
+
+        <RowCard dataUrl1="https://825f669b-dc9a-4bff-8630-5cbc22ac4b31-00-3ks6dkftqw91c.riker.replit.dev/" link1={null} header1="Sudoku Solver Game" title1="This app implements Sudoku logic and solves any board using recursion"
+          imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610747577/suduko_e2wjgi.png" imgAlt1="Full Stack Sudoku Solver" footer1="This app implements Sudoku logic and solves any board using recursion"
           dataUrl2="https://exercisetrackerapi.glitch.me" link2={null} header2="Exercise Tracker App" title2="This app creates an API to Querry database results for users
                   results. The app creates unique userId for each user to log
                   exercises and track on the database via API Querries."
-          imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1606166908/xTracker_nm1gfn.png" imgAlt2="Full Stack Exercise tracker Web App image" footer2="Full Stack Exercise tracker Web App" />
+          imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1606166908/xTracker_nm1gfn.png" imgAlt2="Full Stack Exercise tracker Web App image" footer2="Full Stack Exercise tracker Web App stores each user's exercises in MongoDB" />
 
 
         {/* replit repo inactive too "https://qa-4-suduko-solver.pauloconnell.repl.co/" 
         "https://stock-price-checker-paul.glitch.me/" npm needs update
         */}
-        {/* <a href="https://825f669b-dc9a-4bff-8630-5cbc22ac4b31-00-3ks6dkftqw91c.riker.replit.dev/"> testing Sudoku Link</a> */}
+        {/* <a href="https://825f669b-dc9a-4bff-8630-5cbc22ac4b31-00-3ks6dkftqw91c.riker.replit.dev/"> testing Sudoku Link</a> 
 
         <RowCard dataUrl1="https://825f669b-dc9a-4bff-8630-5cbc22ac4b31-00-3ks6dkftqw91c.riker.replit.dev/" link1={null} header1="Sudoku Solver Game" title1="This app implements Sudoku logic and solves any board using recursion"
           imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610747577/suduko_e2wjgi.png" imgAlt1="Full Stack Sudoku Solver" footer1="This app implements Sudoku logic and solves any board using recursion"
           dataUrl2="https://stock-price-checker-paul.glitch.me/" link2={null} header2="API Stock Price Checker" title2="This app takes user input, hits API to get stock price, hits Database to store likes for each stock from unique IP addresses, and shows comparision of likes."
           imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1610734887/StockPriceChecker_h0yedt.png" imgAlt2="API Stock Price Checker app image" footer2="Full Stack Suduko Solver" />
 
-        {/* 
+        
       <div className="row mx-1 justify-content-center">
         <section className="col-12 col-sm-5 text-center py-1 px-0 link">
           <a
