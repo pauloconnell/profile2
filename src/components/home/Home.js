@@ -782,7 +782,7 @@ function Home() {
 
 
               </p>
-              <div className='d-flex flex-row-reverse'>
+              <div className='d-flex justify-content-end'>
               <img src="/profile2/images/quote-50.png"  alt="quote icon" title="reference1" />
               </div>
             </section>
