@@ -1,10 +1,15 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./rowCard.module.css";
+
 // props are:
 // link1="" header1="" title1="" imgSrc1="" imgAlt1="" footer1="" link2="" header2="" title2="" imgSrc2="" imgAlt2="" footer2=""
 
 
 export const RowCard = function (props) {
+
+
+ 
+    
 
     // const [imageUrl, setImageUrl] = useState('null');
     // const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -71,7 +76,7 @@ export const RowCard = function (props) {
           
           */}
 
-          <div {...(props.dataUrl1 ? { 'data-url': props.dataUrl1 } : {})} className=" col-12 col-sm-5 mx-md-2 mx-lg-3 mx-xl-4    my-5 py-1 px-0 text-center link" >
+          <div data-aos="slide-right" {...(props.dataUrl1 ? { 'data-url': props.dataUrl1 } : {})} className=" col-12 col-sm-5 mx-md-2 mx-lg-3 mx-xl-4    my-5 py-1 px-0 text-center link" >
               <a
                   className={`${styles.noUnderline} link d-block h-100`}
                   href={props.link1 ? props.link1 : null}
@@ -100,7 +105,7 @@ export const RowCard = function (props) {
                 </a>
             </div>
 
-            <div {...(props.dataUrl2 ? { 'data-url': props.dataUrl2 } : {})} className=" col-12 col-sm-5 text-center my-5 py-1 px-0 link" >
+            <div data-aos="slide-left" {...(props.dataUrl2 ? { 'data-url': props.dataUrl2 } : {})} className=" col-12 col-sm-5 text-center my-5 py-1 px-0 link" >
                 <a
                     className={`${styles.noUnderline} link d-block h-100`}
                     href={props.link2 ? props.link2 : null}

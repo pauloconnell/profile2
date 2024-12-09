@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 import UnorderedList from '../UnorderedList';
 import MyWork from '../links/MyWork';
 import { RowCard } from '../rowCards/RowCard';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 
 /* the main page for the index route of this app */
@@ -15,6 +17,12 @@ const WebApps = function () {
   }, [location])
 
 
+  useEffect(() => { AOS.init({ 
+    duration: 1300, 
+    once: false,
+    offset: 20 
+     
+    }); }, []);
 
   return (
     <div className="bgSolid" >

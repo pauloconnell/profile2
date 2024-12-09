@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { RowCard } from '../rowCards/RowCard';
 import MyWork  from '../links/MyWork';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 /* Refactored Feb 2023 */
 const FullStack = function () {
@@ -11,6 +13,13 @@ const FullStack = function () {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
   },[location]);
+
+  useEffect(() => { AOS.init({ 
+    duration: 1300, 
+    once: false,
+    offset: 20 
+     
+    }); }, []);
 
   return (
     <div className="bgSolid ">

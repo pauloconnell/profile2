@@ -1,4 +1,3 @@
-
 /* color: 2078d0; */
 
 :root {
@@ -68,6 +67,7 @@ img {
 section {
   transition: all 1s ease-in-out;
 }
+
 .row section.link:hover {
   border: 2px solid black;
   border-radius: 5px;
@@ -80,6 +80,7 @@ ul {
   list-style: upper-roman;
   list-style-position: inside;
 }
+
 ul.readEasy li {
   margin-bottom: 15px;
 }
@@ -149,7 +150,7 @@ div.row.mx-1.justify-content-center {
 
 .backgroundDarkBlue {
   background-color: var(--background-color-blue);
-  color:white;
+  color: white;
   font-weight: bold;
 }
 
@@ -162,8 +163,9 @@ div.row.mx-1.justify-content-center {
 }
 
 .bigH2 {
-  font-size:34px;
+  font-size: 34px;
 }
+
 @media screen and (max-width: 1080px) {
   .bigH2 {
     font-size: 30px;
@@ -183,6 +185,7 @@ div.row.mx-1.justify-content-center {
     font-size: 22px;
   }
 }
+
 .border {
   border: 3px solid white;
   border-radius: 5px;
@@ -208,7 +211,8 @@ div.row.mx-1.justify-content-center {
   opacity: 0;
   transition: all 1.2s ease-in-out;
 
-   background: var(--background-color-lite); /* (128, 128, 128, 0.98); */
+  background: var(--background-color-lite);
+  /* (128, 128, 128, 0.98); */
   color: black;
   border-radius: 5px;
   padding: 6px;
@@ -241,7 +245,7 @@ div.row.mx-1.justify-content-center {
 }
 
 .hot {
-    text-shadow: 0px 0px 1.5px var(--tertiary-color-lite) !important;
+  text-shadow: 0px 0px 1.5px var(--tertiary-color-lite) !important;
 }
 
 
@@ -390,8 +394,8 @@ div.row.mx-1.justify-content-center {
 .widthCard {
   min-width: 300px;
   max-width: 600px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .width70 {
@@ -473,3 +477,14 @@ div.row.mx-1.justify-content-center {
 }
 
 
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Mobile styles */
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Tablet styles */
+}
+
+@media (min-width: 769px) {
+  /* Desktop styles */
+}

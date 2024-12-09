@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react" ;
 import { useLocation }  from "react-router-dom";
 import styles from './about.module.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 /* the main page for the about route of this app */
 const About = function () {
@@ -47,15 +48,22 @@ const About = function () {
 
   }, [location]);
 
+  useEffect(() => { AOS.init({ 
+    duration: 1300, 
+    once: false 
+     // once: true, // Optional: animate only once
+    }); }, []);
+
+
   return (
     <div className="textAlign">
 
       <section
         className="title lineHeight width70"
-        style={{ fontSize: "initial" }}
+        style={{ fontSize: "initial", minHeight:"100vh" }}
       >
 
-        <h2 className="bigH2 text backgroundBlue">Hi, I am Paul O’Connell, a passionate Full Stack Web (M.E.R.N.) Software Developer.</h2>
+        <h2 data-aos="slide-down" className="bigH2 text backgroundBlue">Hi, I am Paul O’Connell, a passionate Full Stack Web (M.E.R.N.) Software Developer.</h2>
         <div className={`${styles.meImage} mt-3`}><img src="https://res.cloudinary.com/pollie/image/upload/v1728088299/Capture_rsvvf2.png" alt="This is me" /></div>
         <section ref={flyers}>
           <div className={`${styles.fly1} text-start p-3 mt-5`}>
@@ -113,7 +121,7 @@ const About = function () {
         <section className="center p-4">
           <ul className="readEasy inlineBlock">
             <br />
-            <li>
+            <li data-aos="zoom-in">
               <br />
               <div className=" card h-100 widthCard">
                 <div className="card-header  big py-3">
@@ -145,7 +153,7 @@ const About = function () {
 
             <hr></hr>
 
-            <li>
+            <li data-aos="zoom-in">
               <div className="card widthCard">
                 <div className="card-header big py-3">
                   JavaScript Algorithms and Data Structures Certification
@@ -166,7 +174,7 @@ const About = function () {
               </div>
             </li>
             <hr></hr>
-            <li>
+            <li data-aos="zoom-in">
               <div className="card widthCard">
                 <div className="card-header big py-3">
                   Front End Development Libraries Certification
@@ -186,7 +194,7 @@ const About = function () {
               </div>
             </li>
             <hr></hr>
-            <li>
+            <li data-aos="zoom-in">
               <div className=" card widthCard">
                 <div className="card-header big py-3">Data Visualization Certification</div>
 
@@ -204,7 +212,7 @@ const About = function () {
               </div>
             </li>
             <hr></hr>
-            <li>
+            <li data-aos="zoom-in">
               <div className="card widthCard">
                 <div className="card-header big py-3">
                   Back End Development and APIs Certification
@@ -224,7 +232,7 @@ const About = function () {
               </div>
             </li>
             <hr></hr>
-            <li>
+            <li data-aos="zoom-in">
               <div className=" card widthCard">
                 <div className="card-header big py-3">Quality Assurance Certification</div>
 
@@ -256,7 +264,7 @@ const About = function () {
               </div>
             </li>
 
-            <li>
+            <li data-aos="zoom-in">
               <div className="card">
                 <div className=" card-header big py-3 ">Full Stack M.E.R.N. Certification</div>
 

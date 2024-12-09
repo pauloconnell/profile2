@@ -4,7 +4,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './home.module.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 //import UnorderedList from '../UnorderedList';
 //import MyWork from '../links/MyWork';
@@ -185,7 +186,10 @@ function Home() {
     window.scrollTo(0, 0);
   }, [location]);
 
-
+  useEffect(() => { AOS.init({ 
+    duration: 1300, 
+      once: false, // Optional: animate only once
+    }); }, []);
 
   const toggleVisibility = (key) => {
     setVisible((prevState) => ({                                              // toggle visibility for selected key of visible ref
@@ -276,7 +280,7 @@ function Home() {
   return (
     <div className={`textAlign mt-3 ${styles.backgroundFixed}`}>
 
-      <div ref={homeTop} className={` ${styles.homeTop} mb-4`}>
+      <section ref={homeTop} className={` ${styles.homeTop} mb-4`}>
         <div className="w-75 readEasy word  mx-auto mt-5 pt-5 mb-3 ">
 
           <div className={`lineHeight wordSpace mt-5 ${styles.homeMainText}`}>
@@ -301,7 +305,7 @@ function Home() {
 
           onMouseEnter={handleHoverIn}
           onMouseLeave={handleHoverOut}
-          className={`py-4 wordSpace ${styles.knowitalls} ${styles.zoomer}`}
+          className={`py-4 wordSpace ${styles.knowitalls} ${styles.zoomer} `}
 
         >
           <a href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
@@ -311,13 +315,15 @@ function Home() {
           <br />
 
         </div>
+
+        
         <div className={styles.arrow} >
           <svg className="scroll-arrow" width="30" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 50" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <line x1="12" y1="5" x2="12" y2="45"></line>
             <polyline points="19 38 12 45 5 38"></polyline>
           </svg>
         </div>
-      </div>
+      </section>
 
       {/* <div className="backgroundV2">
             <div style={{ fontSize: "150px"}}>V1 </div>
@@ -326,15 +332,15 @@ function Home() {
              V<br/>
         </div> */}
 
-      <section className={` ${styles.hero}  readEasy lineHeight wordSpace p-1 ms-1 ms-md-3  ms-lg-5  rounded mt-5 ${styles.heroCustomMargin}`}>
-        <p className="m-1">Focused on developing pixel-perfect responsive software with today's top Full Stack Frameworks.
+      <section data-aos="flip-left"  className={` ${styles.hero}   readEasy lineHeight wordSpace p-1 ms-1 ms-md-3  ms-lg-5  rounded mt-5 ${styles.heroCustomMargin}`}>
+        <p  className="m-1">Focused on developing pixel-perfect responsive software with today's top Full Stack Frameworks.
         </p>
       </section>
 
 
       <section className={` ${styles.heroRight} readEasy lineHeight wordSpace p-1 me-3 rounded mt-5 mx-xxl-auto`}>
         <div className={`${styles.overlay}`}>
-        <p>
+        <p data-aos="flip-right">
           "I <strong> love </strong> building state-of-the-art,  data-rich, intuitive software,<br/> solving complex problems, debugging issues,  and upgrading or maintaining legacy codebases."
         </p>
         </div>
@@ -351,7 +357,7 @@ function Home() {
 
 
             <h3 className=" m-auto my-3 marginTop">
-              <p className="title inlineBlock text hot fs-2">
+              <p data-aos="zoom-in" className="title inlineBlock text hot fs-2">
                 Certified M.E.R.N. Full Stack Software Developer
               </p>
             </h3>
@@ -514,7 +520,7 @@ function Home() {
                 <div className="text-center">
                   <ul style={{ listStyleType: "none" }}>
                     <li>
-                      <button className="link" onClick={() => toggleVisibility('react')} title={visible.react ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('react')} title={visible.react ? "Click to Hide" : "Click to see details"}>
                         React, Redux & Next
                       </button>
                       {visible.react && (
@@ -524,7 +530,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button className="link" onClick={() => toggleVisibility('vue')} title={visible.vue ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('vue')} title={visible.vue ? "Click to Hide" : "Click to see details"}>
                         Vue3, Pinia & Nuxt3
                       </button>
                       {visible.vue && (
@@ -534,7 +540,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button className="link" onClick={() => toggleVisibility('htmlCss')} title={visible.htmlCss ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('htmlCss')} title={visible.htmlCss ? "Click to Hide" : "Click to see details"}>
                         HTML/CSS
                       </button>
                       {visible.htmlCss && (
@@ -543,7 +549,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button className="link" onClick={() => toggleVisibility('javascript')} title={visible.javascript ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('javascript')} title={visible.javascript ? "Click to Hide" : "Click to see details"}>
                         JavaScript
                       </button>
                       {visible.javascript && (
@@ -553,7 +559,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button className="link" onClick={() => toggleVisibility('typescript')} title={visible.typescript ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('typescript')} title={visible.typescript ? "Click to Hide" : "Click to see details"}>
                         TypeScript
                       </button>
                       {visible.typescript && (
@@ -563,7 +569,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button className="link" onClick={() => toggleVisibility('nodeExpress')} title={visible.nodeExpress ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('nodeExpress')} title={visible.nodeExpress ? "Click to Hide" : "Click to see details"}>
                         Node.js and NPM
                       </button>
                       {visible.nodeExpress && (
@@ -573,7 +579,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button className="link" onClick={() => toggleVisibility('testingFE')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in"className="link" onClick={() => toggleVisibility('testingFE')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
                       Test-Driven Development (TDD)
                       </button>
                       {visible.testingFE && (
@@ -583,7 +589,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button className="link" onClick={() => toggleVisibility('testingFE')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('testingFE')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
                       Automated Testing
                       </button>
                       {visible.testingFE && (
@@ -593,7 +599,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button className="link" onClick={() => toggleVisibility('bootstrap')} title={visible.bootstrap ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in"className="link" onClick={() => toggleVisibility('bootstrap')} title={visible.bootstrap ? "Click to Hide" : "Click to see details"}>
                         Bootstrap
                       </button>
                       {visible.bootstrap && (
@@ -603,7 +609,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button className="link" onClick={() => toggleVisibility('jquery')} title={visible.jquery ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in"className="link" onClick={() => toggleVisibility('jquery')} title={visible.jquery ? "Click to Hide" : "Click to see details"}>
                         jQuery
                       </button>
                       {visible.jquery && (
@@ -613,7 +619,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button className="link" onClick={() => toggleVisibility('dotnet')} title={visible.dotnet ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in"className="link" onClick={() => toggleVisibility('dotnet')} title={visible.dotnet ? "Click to Hide" : "Click to see details"}>
                         .NET Experience
                       </button>
                       {visible.dotnet && (
@@ -776,7 +782,7 @@ function Home() {
 
             <section className={` ${styles.reference} lineHeight wordSpace p-1 mx-auto rounded width90`}>
               <img src="/profile2/images/quote-50.png" className={`${styles.quoteImg}`} alt="quote icon" title="reference1" />
-              <p className={`${styles.quote} py-5 px-3 mx-3`}>"His ability to troubleshoot and problem solve were very valuable across my team. Paul proved himself a strong team player with a strong work ethic. I confidently recommend Paul for future roles where he has the opportunity and expectation of improving whatever he focuses on."
+              <p data-aos="slide-up" className={`${styles.quote} py-5 px-3 mx-3`}>"His ability to troubleshoot and problem solve were very valuable across my team. Paul proved himself a strong team player with a strong work ethic. I confidently recommend Paul for future roles where he has the opportunity and expectation of improving whatever he focuses on."
                 <br />
                 <span className={styles.quoteAuthor}> John - Senior Manager</span>
 
@@ -801,10 +807,10 @@ function Home() {
 
             <div className="row" >
 
-              <div className="my-3 title fs-2" style={{ color: "black", textShadow: '1px 1px 3px white' }}>Experience:</div>
+              <div data-aos="zoom-in" className="my-3 title fs-2" style={{ color: "black", textShadow: '1px 1px 3px white' }}>Experience:</div>
               <ul  ref={observeElement} className={` width90`} style={{ textAlign: "center", listStyleType: "none" }}>
                 <li>
-                  <button className="link" onClick={() => toggleVisibility('dev')} title={visible.dev ? "Click to Hide" : "Click to see details"}>
+                  <button  data-aos="slide-left" className="link" onClick={() => toggleVisibility('dev')} title={visible.dev ? "Click to Hide" : "Click to see details"}>
                     Software Developer
                   </button>
                   {visible.dev && (
@@ -814,7 +820,7 @@ function Home() {
                   )}
                 </li>
                 <li>
-                  <button className="link" onClick={() => toggleVisibility('git')} title={visible.git ? "Click to Hide" : "Click to see details"}>
+                  <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('git')} title={visible.git ? "Click to Hide" : "Click to see details"}>
                     Version Control and Git Branching Strategies
                   </button>
                   {visible.git && (
@@ -824,7 +830,7 @@ function Home() {
                   )}
                 </li>
                 <li>
-                  <button className="link" onClick={() => toggleVisibility('azure')} title={visible.azure ? "Click to Hide" : "Click to see details"}>
+                  <button data-aos="slide-left" className="link" onClick={() => toggleVisibility('azure')} title={visible.azure ? "Click to Hide" : "Click to see details"}>
                     Azure DevOps
                   </button>
                   {visible.azure && (
@@ -834,7 +840,7 @@ function Home() {
                   )}
                 </li>
                 <li>
-                  <button className="link" onClick={() => toggleVisibility('api')} title={visible.api ? "Click to Hide" : "Click to see details"}>
+                  <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('api')} title={visible.api ? "Click to Hide" : "Click to see details"}>
                     API Integration
                   </button>
                   {visible.api && (
@@ -844,7 +850,7 @@ function Home() {
                   )}
                 </li>
                 <li>
-                  <button className="link" onClick={() => toggleVisibility('design')} title={visible.design ? "Click to Hide" : "Click to see details"}>
+                  <button data-aos="slide-left" className="link" onClick={() => toggleVisibility('design')} title={visible.design ? "Click to Hide" : "Click to see details"}>
                     Design Collaboration
                   </button>
                   {visible.design && (
@@ -854,7 +860,7 @@ function Home() {
                   )}
                 </li>
                 <li>
-                  <button className="link" onClick={() => toggleVisibility('seo')} title={visible.seo ? "Click to Hide" : "Click to see details"}>
+                  <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('seo')} title={visible.seo ? "Click to Hide" : "Click to see details"}>
                     SEO, GTM, Google Analytics, and Performance Optimization
                   </button>
                   {visible.seo && (
@@ -864,7 +870,7 @@ function Home() {
                   )}
                 </li>
                 <li>
-                  <button className="link" onClick={() => toggleVisibility('abTesting')} title={visible.abTesting ? "Click to Hide" : "Click to see details"}>
+                  <button  data-aos="slide-left" className="link" onClick={() => toggleVisibility('abTesting')} title={visible.abTesting ? "Click to Hide" : "Click to see details"}>
                     Marketing Collaboration
                   </button>
                   {visible.abTesting && (
@@ -874,7 +880,7 @@ function Home() {
                   )}
                 </li>
                 <li>
-                  <button className="link" onClick={() => toggleVisibility('meetings')} title={visible.meetings ? "Click to Hide" : "Click to see details"}>
+                  <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('meetings')} title={visible.meetings ? "Click to Hide" : "Click to see details"}>
                     Meeting Contributions
                   </button>
                   {visible.meetings && (
@@ -884,7 +890,7 @@ function Home() {
                   )}
                 </li>
                 <li>
-                  <button className="link" onClick={() => toggleVisibility('testingExperience')} title={visible.testingExperience ? "Click to Hide" : "Click to see details"}>
+                  <button data-aos="slide-left" className="link" onClick={() => toggleVisibility('testingExperience')} title={visible.testingExperience ? "Click to Hide" : "Click to see details"}>
                     Testing and monitoring
                   </button>
                   {visible.testingExperience && (
@@ -894,7 +900,7 @@ function Home() {
                   )}
                 </li>
                 <li>
-                  <button className="link" onClick={() => toggleVisibility('cms')} title={visible.cms ? "Click to Hide" : "Click to see details"}>
+                  <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('cms')} title={visible.cms ? "Click to Hide" : "Click to see details"}>
                     Content Management System (CMS)
                   </button>
                   {visible.cms && (
@@ -904,7 +910,7 @@ function Home() {
                 )}
               </li>
               <li>
-                <button className="link" onClick={() => toggleVisibility('ssr')} title={visible.ssr ? "Click to Hide" : "Click to see details"}>
+                <button data-aos="slide-left" className="link" onClick={() => toggleVisibility('ssr')} title={visible.ssr ? "Click to Hide" : "Click to see details"}>
                   Hybrid Server Side Rendering (SSR)
                 </button>
                 {visible.ssr && (
