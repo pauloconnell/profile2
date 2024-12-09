@@ -32,7 +32,7 @@ const DataVisualization2 = function () {
           Data Visualization D3
         </span>
       </h2>
-      <h3 className="py-3 textAlign backgroundBlue width90 mx-auto text">
+      <h3 data-aos="zoom-in" className="py-3 textAlign backgroundBlue width90 mx-auto text">
         <span className="">
           API driven data displayed in browser using D3 library on SVG canvas
         </span>

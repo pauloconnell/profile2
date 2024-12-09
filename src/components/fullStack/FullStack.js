@@ -32,7 +32,7 @@ const FullStack = function () {
           </span>
         </h2>
 
-        <h3 className="mb-5 py-3 mx-auto backgroundBlue width90 text-center text">
+        <h3 data-aos="zoom-in" className="mb-5 py-3 mx-auto backgroundBlue width90 text-center text">
 
           Deployed in the cloud using:
           <br />

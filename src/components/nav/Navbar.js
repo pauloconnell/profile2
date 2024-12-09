@@ -8,7 +8,7 @@ export const Navbar = function () {
   return (
 
 
-    <nav className="flexContainer text-center">
+    <nav className="flexContainer text-center me-1">
       <Link className="col link border bgSolid my-1 " to="/" title="Homepage">
         Home
       </Link>

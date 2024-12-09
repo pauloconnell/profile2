@@ -31,7 +31,7 @@ const WebApps = function () {
       <h2 className=" my-3 textAlign">
         <span className="bigH2 text textBlue">Web Applications</span>
       </h2>
-      <h3 className="mb-5 py-3 mx-auto backgroundBlue width90 text-center text">
+      <h3 data-aos="zoom-in" className="mb-5 py-3 mx-auto backgroundBlue width90 text-center text">
         <span className="">
           Modern responsive custom Web Applications. <br />
           Built using either pure JavaScript, HTML, CSS, or React / Vue3 with Nuxt 3.
