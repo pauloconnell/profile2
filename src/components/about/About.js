@@ -51,7 +51,7 @@ const About = function () {
   useEffect(() => { AOS.init({ 
     duration: 1300, 
     once: false 
-     // once: true, // Optional: animate only once
+   
     }); }, []);
 
 

@@ -248,10 +248,11 @@ function Home() {
   const handleScroll = () => {                                      // make 'hidden' details section appear if user scrolls down past 1350px
 
     if (!isThrottled.current) {
-      console.log("caught scroll, ", window.scrollY)
+     // console.log("caught scroll, ", window.scrollY)
       if (window.scrollY > 1250) {
         // console.log("are we ever here?")
         if(!hovering) setHovering(true);
+
       } else {
 
       }
@@ -579,7 +580,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button data-aos="zoom-in"className="link" onClick={() => toggleVisibility('testingFE')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('testingFE')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
                       Test-Driven Development (TDD)
                       </button>
                       {visible.testingFE && (
@@ -599,7 +600,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button data-aos="zoom-in"className="link" onClick={() => toggleVisibility('bootstrap')} title={visible.bootstrap ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('bootstrap')} title={visible.bootstrap ? "Click to Hide" : "Click to see details"}>
                         Bootstrap
                       </button>
                       {visible.bootstrap && (
@@ -609,7 +610,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button data-aos="zoom-in"className="link" onClick={() => toggleVisibility('jquery')} title={visible.jquery ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('jquery')} title={visible.jquery ? "Click to Hide" : "Click to see details"}>
                         jQuery
                       </button>
                       {visible.jquery && (
@@ -619,7 +620,7 @@ function Home() {
                       )}
                     </li>
                     <li>
-                      <button data-aos="zoom-in"className="link" onClick={() => toggleVisibility('dotnet')} title={visible.dotnet ? "Click to Hide" : "Click to see details"}>
+                      <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('dotnet')} title={visible.dotnet ? "Click to Hide" : "Click to see details"}>
                         .NET Experience
                       </button>
                       {visible.dotnet && (

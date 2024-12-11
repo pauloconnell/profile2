@@ -20,7 +20,7 @@ const WebApps = function () {
   useEffect(() => { AOS.init({ 
     duration: 1300, 
     once: false,
-    offset: 20 
+    offset: 30 
      
     }); }, []);
 
