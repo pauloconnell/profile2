@@ -72,6 +72,7 @@ function Home() {
     api: false,
     testingExperience: false,
     seo: false,
+    performance: false,
     design: false,
     abTesting: false,
     meetings: false,
@@ -189,6 +190,7 @@ function Home() {
   useEffect(() => { AOS.init({ 
     duration: 1300, 
       once: false, // Optional: animate only once
+      offset: 30
     }); }, []);
 
   const toggleVisibility = (key) => {
@@ -742,13 +744,14 @@ function Home() {
                         </p>
                       )}
                     </li>
+                 
                     <li>
                       <button className="link" onClick={() => toggleVisibility('nuxt')} title={visible.nuxt ? "Click to Hide" : "Click to see details"}>
                         Nuxt 3 and Vue 3 for Hybrid SSR
                       </button>
                       {visible.nuxt && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Refactored pages for hybrid SSR with Nuxt 3 and Vue 3, improving SEO with pre-rendering.
+                          Refactored pages to work on server side for hybrid SSR with Nuxt 3 and Vue 3, improving performance and SEO.
                         </p>
                       )}
                     </li>
@@ -862,11 +865,21 @@ function Home() {
                 </li>
                 <li>
                   <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('seo')} title={visible.seo ? "Click to Hide" : "Click to see details"}>
-                    SEO, GTM, Google Analytics, and Performance Optimization
-                  </button>
+                    SEO, GTM, Google Analytics
+                    </button>
                   {visible.seo && (
                     <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Setting up Google Tag Manager (GTM) and interfacing with Google Analytics, implementing dynamic SEO tags, and optimizing website performance -significantly improving loading times.
+                      Setting up Google Tag Manager (GTM) and interfacing with Google Analytics, implementing dynamic SEO tags, and monitoring traffic as well as 'a/b' testing results.
+                    </p>
+                  )}
+                </li>
+                <li>
+                  <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('performance')} title={visible.seo ? "Click to Hide" : "Click to see details"}>
+                    Performance Optimization and Code Splitting
+                  </button>
+                  {visible.performance && (
+                    <p className="text-start p-1 backgroundDarkBlue rounded">
+                      Optimizing website performance to significantly improve loading times using Code Spliting, Image Optimization, Caching, CDN, Lazy Hydration, Dynamic Imorts, Build tools and Hybrid SSR.
                     </p>
                   )}
                 </li>
