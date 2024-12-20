@@ -43,6 +43,11 @@
     background-color: darkblue;
 }
 
+.isScaled {
+    scale: 1.5;
+ 
+}
+
 .noUnderline {
     text-decoration: none;
 }

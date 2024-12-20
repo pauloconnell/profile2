@@ -54,7 +54,16 @@ export const RowCard = function (props) {
     //     setIsDialogOpen(true);
     //     webAppsDialog.current.showModal();
     // }
-    
+    const [is1Scaled, setIs1Scaled] = useState(false); 
+    const [is2Scaled, setIs2Scaled] = useState(false); 
+
+    const handleToggle = (num) => { 
+        if(num ===1){
+            setIs1Scaled(!is1Scaled); 
+        }else if(num === 2){
+            setIs2Scaled(!is2Scaled); 
+        }
+    };
 
 
   return (
@@ -85,13 +94,13 @@ export const RowCard = function (props) {
                   rel="noreferrer"
                 //   onClick={(e) => handleClick(e, 1)}
               >
-                  <div className="card h-100">
+                  <div className={`card h-100  `} onClick={()=> handleToggle(1)}>
                       <div className="card-header title text">
                             <strong>{props.header1}</strong>
                         </div>
                         <div className="card-body d-flex ">
                             <img
-                                className="img-fluid justify-content-center object-fit-contain mx-auto"
+                                className={`img-fluid justify-content-center object-fit-contain mx-auto   ${is1Scaled && !props.link1 ? styles.isScaled:''} `}
                                 src={props.imgSrc1}
                                 alt={props.imgAlt1}
                             />
@@ -114,13 +123,13 @@ export const RowCard = function (props) {
                     title={props.title2}
                     //onClick={(e)=> handleClick(e,2)}
                 >
-                    <div className="card h-100">
+                    <div className={`card h-100 `} onClick={()=> handleToggle(2)}>
                         <div className="card-header title text">
                             <strong>{props.header2}</strong>
                         </div>
                         <div className="card-body d-flex  ">
                             <img
-                                className="img-fluid justify-content-center object-fit-contain mx-auto"
+                                className={`img-fluid justify-content-center object-fit-contain mx-auto   ${is2Scaled && !props.link2 ? styles.isScaled:''} `}
                                 src={props.imgSrc2}
                                 alt={props.imgAlt2}
                             />
