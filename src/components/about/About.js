@@ -88,7 +88,7 @@ const About = function () {
           </div>
         </section>
       </section>
-      <section className={`${styles.fullPageBackground} mt-5`} style={{ backgroundImage: "url('/profile2/images/brohm.jpg')" }}>
+      <section className={`${styles.fullPageBackground} mt-5`} style={{ backgroundImage: "url('/profile2/images/LLE.jpg')" }}>
         <section className="h2 text-center readEasy my-5 ">
           <div className="my-5 bgSolid width70 rounded p-3" style={{ maxWidth: "315px"}}><u>Certifications</u>
           </div>
@@ -283,7 +283,7 @@ const About = function () {
 
             </li>
           </ul>
-          <hr></hr>
+          
 
 
           </section>
