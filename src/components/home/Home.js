@@ -976,7 +976,11 @@ function Home() {
                 //   display: highlightFE ? "block" : "none",
               }}
             >
-            Recently completed a major refactor the single-page application (SPA) www.knowitalls.com into a <div> <b className={styles.textShadowRed}>hybrid Server-Side Rendered (SSR) app</b> with <b className={styles.textShadowRed}>custom SEO meta tags</b> on dynamic routes, integrating data from both a database and a CMS into the SEO meta tags.
+            Recently completed a major refactor the single-page application (SPA) www.knowitalls.com into a
+             <div> <b className={styles.textShadowRed}>hybrid Server-Side Rendered (SSR) app</b> with <b className={styles.textShadowRed}>custom SEO meta tags</b> 
+             on dynamic routes, integrating data from both a database and a CMS into the SEO meta tags.
+             </div>
+
             </div>
 
 
