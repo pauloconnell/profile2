@@ -968,7 +968,7 @@ function Home() {
                 </div>
               </div> */}
             <br />
-            <div className="text-center"
+            <div className="text-center mb-2"
               style={{
                 color: "black",
                 fontWeight: "bold"
@@ -976,8 +976,8 @@ function Home() {
                 //   display: highlightFE ? "block" : "none",
               }}
             >
-              Currently adding 
-              <div> <b className={styles.textShadowRed}>hybrid SSR </b> to:
+              Recently personally completed a refactor of the (SPA) application into a
+              <div> <b className={styles.textShadowRed}>hybrid SSR app </b> with <b className={styles.textShadowRed}>custom SEO meta tags </b> on dynamic routes with data from both DataBase and CMS
               </div> 
             </div>
 
