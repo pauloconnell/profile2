@@ -143,7 +143,7 @@ const WebApps = function () {
 <RowCard dataUrl1="https://pauloconnell.github.io/testCenter/" link1={null} header1="Test Center 2017-2020" title1="Delivers specific information for every item on sales floor and organizes similar models to increase sales conversions"
           imgSrc1="/profile2/images/testCenter.png" imgAlt1="Test Center app screenshot" footer1="Product Knowledge App used in multiple Retail Store Locations"
           link2="https://mrproconstruction.glitch.me/" header2="M.R.Pro Construction" title2="Landing page for Construction Company"
-          imgSrc2="/profile2/images/MRPro.PNG" imgAlt2="M.R. PRO Construction" footer2="Website for a Construction Company 'McLaren Rouse Pro Construction'" />
+          imgSrc2="/profile2/images/mrPro.png" imgAlt2="M.R. PRO Construction" footer2="Website for a Construction Company 'McLaren Rouse Pro Construction'" />
 
 {/* 
 
