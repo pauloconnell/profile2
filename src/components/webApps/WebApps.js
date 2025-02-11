@@ -34,7 +34,7 @@ const WebApps = function () {
       <h3 data-aos="zoom-in" className="mb-5 py-3 mx-auto backgroundBlue width90 text-center text">
         <span className="">
           Modern responsive custom Web Applications. <br />
-          Built using either pure JavaScript, HTML, CSS, or React / Vue3 with Nuxt 3.
+          Building with JavaScript, TypeScript, HTML, CSS, SCSS/Bootstrap, React with Next.js, or Vue 3 with Nuxt 3.
         </span>
       </h3>
 
