@@ -296,7 +296,7 @@ function Home() {
           </div>
           <div className={` mt-5 pt-5 ${styles.textShadowBlack}`}>
             {/* <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div> */}
-            <i>    Currently working as a <span className="hot">Senior Front End Software Engineer</span> @
+            <i>    Currently working as a <span data-testid="SnFE" className="hot">Senior Front End Software Engineer</span> @
             </i>
           </div>
 
@@ -336,7 +336,7 @@ function Home() {
         </div> */}
 
       <section data-aos="flip-left"  className={` ${styles.hero}   readEasy lineHeight wordSpace p-1 ms-1 ms-md-3  ms-lg-5  rounded mt-5 ${styles.heroCustomMargin}`}>
-        <p  className="m-1">Focused on developing pixel-perfect responsive software with today's top Full Stack Frameworks.
+        <p className="m-1">Focused on developing pixel-perfect responsive software with today's top Full Stack Frameworks.
         </p>
       </section>
 
@@ -460,6 +460,7 @@ function Home() {
 
               <img className={` ${styles.enlarge}`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original-wordmark.svg" alt="tech icon" title="Swagger API Documentation/testing" />
 
+              <img src={`${process.env.PUBLIC_URL}/images/threeJS.png`}  alt="tech icon" title="Three.js" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="tech icon" title="Typescript" />
 
 
@@ -784,7 +785,7 @@ function Home() {
 
 
 
-            <section className={` ${styles.reference} lineHeight wordSpace p-1 mx-auto rounded width90`}>
+            <section data-testid="reference" className={` ${styles.reference} lineHeight wordSpace p-1 mx-auto rounded width90`}>
               <img src="/profile2/images/quote-50.png" className={`${styles.quoteImg}`} alt="quote icon" title="reference1" />
               <p data-aos="slide-up" className={`${styles.quote} py-5 px-3 mx-3`}>"His ability to troubleshoot and problem solve were very valuable across my team. Paul proved himself a strong team player with a strong work ethic. I confidently recommend Paul for future roles where he has the opportunity and expectation of improving whatever he focuses on."
                 <br />
@@ -975,13 +976,13 @@ function Home() {
                 //     : " normal",
                 //   display: highlightFE ? "block" : "none",
               }}
-            >
+          >
             Recently completed a major refactor the single-page application (SPA) www.knowitalls.com into a
-             <div> <b className={styles.textShadowRed}>hybrid Server-Side Rendered (SSR) app</b> with <b className={styles.textShadowRed}>custom SEO meta tags</b> 
-             on dynamic routes, integrating data from both a database and a CMS into the SEO meta tags.
-             </div>
+            <div> <b className={styles.textShadowRed}>hybrid Server-Side Rendered (SSR) app</b> with <b className={styles.textShadowRed}>custom SEO meta tags</b> <br></br>
 
             </div>
+            on dynamic routes, integrating data from both a database and a CMS into the SEO meta tags.
+          </div>
 
 
 
