@@ -7,9 +7,19 @@ import 'aos/dist/aos.css'; // Import AOS styles
 /* the main page for the about route of this app */
 const About = function () {
 
-  const flyers= useRef(null);                                                           // elements that will fly in on page load
+  const flyers= useRef(null);                                                           // elements that will 'fly in' on page load
 
-  const location = useLocation();
+  const location = useLocation();                                                       // page change triggers 'location' change (location is actually where we came from )
+                                                                                        // like this:
+                                                                                            //   {
+                                                                                            //   pathname: "/dashboard",
+                                                                                            //   search: "?sort=asc",
+                                                                                            //   hash: "#top",
+                                                                                            //   state: { from: "/login" },
+                                                                                            //   key: "abc123"
+                                                                                            // }
+
+
   useEffect(() => {
 
     if (flyers.current) {
@@ -31,28 +41,41 @@ const About = function () {
 
   useEffect(() => {
     console.log("location.hash", location.hash)
-    if(location.hash === "#certifications") {
+    if (location.hash === "#certifications") {
       setTimeout(() => {
         const element = document.getElementById('certifications');
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
       }, 100);
-      
-    }else{
+
+    } else {
       console.log("scrolling to top")
-      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });  
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }
 
-    
+
 
   }, [location]);
 
-  useEffect(() => { AOS.init({ 
-    duration: 1300, 
-    once: false 
-   
-    }); }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+      once: false
+
+    });
+  }, []);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://cdn.credly.com/assets/utilities/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
 
   return (
@@ -93,7 +116,6 @@ const About = function () {
           <div className="my-5 bgSolid width70 rounded p-3" style={{ maxWidth: "315px"}}><u>Certifications</u>
           </div>
           </section>
-
 
         <section id="certifications" className="readEasy big lineHeight mx-auto my-5 p-4 hoverDark bgSolid"  >
           <u className="title">FULLSTACK M.E.R.N. CERTIFICATION:</u>
@@ -295,7 +317,13 @@ const About = function () {
 
 
           </div>
+                    <hr />
 
+        <section >
+          <div className="readEasy title">OpenJS Certifications</div>
+          <div className="readEasy">Linux Foundation NODE.JS</div>
+            <div title="Linux Foundation OpenJS Cert" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8da2df80-ffca-4abd-b636-af85692e39c1" data-share-badge-host="https://www.credly.com"></div>
+        </section>
 
 
      
