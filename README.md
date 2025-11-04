@@ -1,4 +1,4 @@
-# Rebuilding my developer profile Comming soon : Nov 2024
+# Developer profile built with React 
 
 ## Deploying to gh pages
 I have the ghpages package which automates publishing to ghpages - just push changes to github 'main', then run 'npm run deploy'.  This is where gh pages will auto merge to the 'gh-page' branch (where live PROD lives) and runs build for deployment
@@ -6,30 +6,22 @@ I have the ghpages package which automates publishing to ghpages - just push cha
 
 
 # Next: 
--add tooltips to links: done for homepage
--Add linkedin icon to message me in linked in
+-add 3.js globe to homepage
 
 -add Brohm Mt to 'contact Me' background
 
 
-Update cards
-a- format upgrade CSS from card to wide screen 
-b- add copy to each project-topics in img below: 
-
-![alt text](image.png)
-
-update links in Full Stack section
-a- Update Exercise tracker
-b- " " anoynamus messageboard
-c- passport
-
 # Tech Debt
 
-feat: scroll to top of home.js should toggle hidden section to go back to hidden
+
 Refactor: Get rid of CSS class 'hoverDark'
 feat: Refactor CSS to BEM asap fade-in-info vs fadeInInfo => camelCase
 
 
+
+*****************************************************************************************************************************************************
+
+Just for refference:
 
 ## Git commit codeNames
 
