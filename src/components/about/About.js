@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react" ;
-import { useLocation }  from "react-router-dom";
+import React, { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import styles from './about.module.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
@@ -7,17 +7,17 @@ import 'aos/dist/aos.css'; // Import AOS styles
 /* the main page for the about route of this app */
 const About = function () {
 
-  const flyers= useRef(null);                                                           // elements that will 'fly in' on page load
+  const flyers = useRef(null);                                                           // elements that will 'fly in' on page load
 
   const location = useLocation();                                                       // page change triggers 'location' change (location is actually where we came from )
-                                                                                        // like this:
-                                                                                            //   {
-                                                                                            //   pathname: "/dashboard",
-                                                                                            //   search: "?sort=asc",
-                                                                                            //   hash: "#top",
-                                                                                            //   state: { from: "/login" },
-                                                                                            //   key: "abc123"
-                                                                                            // }
+  // like this:
+  //   {
+  //   pathname: "/dashboard",
+  //   search: "?sort=asc",
+  //   hash: "#top",
+  //   state: { from: "/login" },
+  //   key: "abc123"
+  // }
 
 
   useEffect(() => {
@@ -25,8 +25,8 @@ const About = function () {
     if (flyers.current) {
       const [fly1, fly2] = flyers.current.children;
       let delay1 = setTimeout(() => {
-      fly1.classList.add(styles.active);                                                // adding active class triggers 'fly in'
-      fly1.classList.add("backgroundBlue");
+        fly1.classList.add(styles.active);                                                // adding active class triggers 'fly in'
+        fly1.classList.add("backgroundBlue");
       }, 1000);
       let delay2 = setTimeout(() => {                                                   // 2nd element flys in
         fly2.classList.add(styles.active);
@@ -37,7 +37,7 @@ const About = function () {
         clearTimeout(delay1);
       };
     }
-  }, [location]);  
+  }, [location]);
 
   useEffect(() => {
     console.log("location.hash", location.hash)
@@ -83,7 +83,7 @@ const About = function () {
 
       <section
         className="title lineHeight width70"
-        style={{ fontSize: "initial", minHeight:"100vh" }}
+        style={{ fontSize: "initial", minHeight: "100vh" }}
       >
 
         <h2 data-aos="slide-down" className="bigH2 text backgroundBlue">Hi, I am Paul O’Connell, a passionate Full Stack Web (M.E.R.N.) Software Developer.</h2>
@@ -113,10 +113,17 @@ const About = function () {
       </section>
       <section className={`${styles.fullPageBackground} mt-5`} style={{ backgroundImage: "url('/profile2/images/LLE.jpg')" }}>
         <section className="h2 text-center readEasy my-5 ">
-          <div className="my-5 bgSolid width70 rounded p-3" style={{ maxWidth: "315px"}}><u>Certifications</u>
+          <div className="my-5 bgSolid width70 rounded p-3" style={{ maxWidth: "315px" }}><u>Certifications</u>
           </div>
-          </section>
+        </section>
+                         <hr />
 
+        <section >
+          <div className="readEasy title">OpenJS Certifications</div>
+          <div className="readEasy">Linux Foundation NODE.JS</div>
+            <div title="Linux Foundation OpenJS Cert" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8da2df80-ffca-4abd-b636-af85692e39c1" data-share-badge-host="https://www.credly.com"></div>
+        </section>
+              <hr />
         <section id="certifications" className="readEasy big lineHeight mx-auto my-5 p-4 hoverDark bgSolid"  >
           <u className="title">FULLSTACK M.E.R.N. CERTIFICATION:</u>
           <br />
@@ -305,28 +312,22 @@ const About = function () {
 
             </li>
           </ul>
-          
 
 
-          </section>
-          </section>
-          <div className=" my-5">
-            <span className="readEasy title">
-              Full Stack M.E.R.N. Certification: 1800 hours
-            </span>
 
-
-          </div>
-                    <hr />
-
-        <section >
-          <div className="readEasy title">OpenJS Certifications</div>
-          <div className="readEasy">Linux Foundation NODE.JS</div>
-            <div title="Linux Foundation OpenJS Cert" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8da2df80-ffca-4abd-b636-af85692e39c1" data-share-badge-host="https://www.credly.com"></div>
         </section>
+      </section>
+      <div className=" my-5">
+        <span className="readEasy title">
+          Full Stack M.E.R.N. Certification: 1800 hours
+        </span>
 
 
-     
+      </div>
+
+
+
+
     </div>
   );
 };
