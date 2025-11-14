@@ -607,7 +607,7 @@ function Home() {
                       </button>
                       {visible.bootstrap && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Utilized Bootstrap for rapid development of responsive, mobile-first design.
+                          Utilized Bootstrap for rapid development of responsive, mobile‑first designs. Skilled at leveraging its grid system and components to accelerate prototyping while ensuring cross‑browser consistency and scalable front‑end layouts.
                         </p>
                       )}
                     </li>
@@ -617,7 +617,7 @@ function Home() {
                       </button>
                       {visible.jquery && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Enhanced interactivity and animations of basic applications using jQuery.
+                          Enhanced interactivity and animations in basic applications using jQuery, streamlining DOM manipulation and event handling to improve user experience in lightweight and legacy projects.
                         </p>
                       )}
                     </li>
@@ -627,7 +627,7 @@ function Home() {
                       </button>
                       {visible.dotnet && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Experience building Front End for an e-commerce platform with RazorPages, RazorComponents, and C#.
+                          Experience building front‑end for an e‑commerce platform using Razor Pages, Razor Components, and C#, delivering responsive, maintainable interfaces within the .NET ecosystem. Skilled at leveraging server‑rendered views and component‑based architecture to streamline development workflows and ensure scalable, production‑ready applications.
                         </p>
                       )}
                     </li>
@@ -670,7 +670,7 @@ function Home() {
                       </button>
                       {visible.node && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Built scalable network applications with Node.js, utilizing its event-driven model for handling high concurrency.
+                          Built scalable network applications with Node.js, leveraging its event‑driven model to efficiently handle high concurrency and deliver responsive server performance.
                         </p>
                       )}
                     </li>
@@ -680,7 +680,7 @@ function Home() {
                       </button>
                       {visible.mongo && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Leveraged MongoDB for flexibility and Mongoose for schema-based solutions to efficiently manage data.
+                          Leveraged MongoDB for flexible, document‑oriented data storage and Mongoose for schema‑based solutions, ensuring efficient data management and maintainable database structures.
                         </p>
                       )}
                     </li>
@@ -690,7 +690,7 @@ function Home() {
                       </button>
                       {visible.aws && (
                         <p className="text-start p-1 backgroundDarkBlue rounded ">
-                          Deployed apps on AWS using services like EC2 and S3, ensuring robust and scalable server environments.
+                          Deployed applications on AWS using EC2 and S3, creating robust, scalable server environments with reliable cloud infrastructure and optimized resource management.
                         </p>
                       )}
                     </li>
@@ -700,7 +700,7 @@ function Home() {
                       </button>
                       {visible.express && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Developed RESTful APIs with Express.js, focusing on secure and efficient routing and middleware.
+                         Developed RESTful APIs with Express.js, implementing secure routing and middleware to deliver efficient request handling and reliable back‑end workflows.
                         </p>
                       )}
                     </li>
@@ -710,7 +710,7 @@ function Home() {
                       </button>
                       {visible.d3 && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Created interactive data visualizations with D3.js for insightful data representation.
+                          Created interactive data visualizations with D3.js, transforming complex datasets into insightful, dynamic representations that enhance user understanding and engagement.
                         </p>
                       )}
                     </li>
@@ -720,7 +720,7 @@ function Home() {
                       </button>
                       {visible.passport && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Implemented user authentication with Passport, integrating OAuth for third-party logins.
+                          Implemented user authentication with Passport, integrating OAuth for third-party logins and streamlined identity management across applications.
                         </p>
                       )}
                     </li>
@@ -740,7 +740,7 @@ function Home() {
                       </button>
                       {visible.testingBE && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Ensured code reliability with Jest, Mocha, and Chai, and automated tests with Playwright and Testim.
+                          Ensured code reliability with unit and integration testing using Jest, Mocha, and Chai, and created automated tests with Playwright and Testim to validate robust application performance.
                         </p>
                       )}
                     </li>
@@ -751,7 +751,7 @@ function Home() {
                       </button>
                       {visible.nuxt && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Refactored pages to work on server side for hybrid SSR with Nuxt 3 and Vue 3, improving performance and SEO.
+                          Refactored pages to run on the server side with Nuxt 3 and Vue 3, implementing hybrid SSR/CSR architectures to improve performance, scalability, and SEO.
                         </p>
                       )}
                     </li>
