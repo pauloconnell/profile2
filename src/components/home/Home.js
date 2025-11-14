@@ -62,6 +62,7 @@ function Home() {
     express: false,
     d3: false,
     passport: false,
+    auth0: false,
     pug: false,
     testingBE: false,
     nuxt: false,
@@ -680,7 +681,7 @@ function Home() {
                       </button>
                       {visible.mongo && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Leveraged MongoDB for flexible, document‑oriented data storage and Mongoose for schema‑based solutions, ensuring efficient data management and maintainable database structures.
+                          Implemented flexible data solutions with MongoDB and schema‑based models with Mongoose to ensure efficient, maintainable data management.
                         </p>
                       )}
                     </li>
@@ -696,11 +697,11 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('express')} title={visible.express ? "Click to Hide" : "Click to see details"}>
-                        Express Server
+                        Express.js
                       </button>
                       {visible.express && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                         Developed RESTful APIs with Express.js, implementing secure routing and middleware to deliver efficient request handling and reliable back‑end workflows.
+                         Built servers and RESTful APIs with Express.js, implementing secure routing and middleware to deliver efficient request processing and reliable back‑end workflows.
                         </p>
                       )}
                     </li>
@@ -716,13 +717,31 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('passport')} title={visible.passport ? "Click to Hide" : "Click to see details"}>
-                        Passport & OAuth
+                        Auth0: Authentication and Authorization 
                       </button>
                       {visible.passport && (
-                        <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Implemented user authentication with Passport, integrating OAuth for third-party logins and streamlined identity management across applications.
-                        </p>
+                        
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
+                           
+                            Configured authentication flows with Auth0 in production environments, leveraging its identity‑as‑a‑service platform to simplify user management, enforce security standards, and support scalable applications. 
+                            <br/>
+                            Integrated bearer token handling to protect API requests, providing authenticated users with secure and reliable access control. 
+                          </p>
+                     
+                        
                       )}
+                    </li>
+                          <button className="link" onClick={() => toggleVisibility('auth0')} title={visible.auth0 ? "Click to Hide" : "Click to see details"}>
+                        Passport, OAuth: 
+                      </button>
+                       {visible.auth0 && (
+                          <p className="text-start p-1 backgroundDarkBlue rounded">
+                           Implemented authentication with Passport.js, integrating OAuth strategies for third‑party logins such as Facebook and GitHub. Gained hands‑on experience with secure token exchange, and session management to protect application workflows.
+                          </p>
+                       )}
+                    <li>
+
+
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('pug')} title={visible.pug ? "Click to Hide" : "Click to see details"}>
@@ -751,7 +770,7 @@ function Home() {
                       </button>
                       {visible.nuxt && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Refactored pages to run on the server side with Nuxt 3 and Vue 3, implementing hybrid SSR/CSR architectures to improve performance, scalability, and SEO.
+                         Architected and refactored pages to run on the server side with Nuxt 3 and Vue 3, implementing hybrid SSR/CSR architectures that enhanced performance, scalability, SEO, and long‑term maintainability.
                         </p>
                       )}
                     </li>
