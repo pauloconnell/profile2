@@ -90,12 +90,12 @@ const About = function () {
         <div className={`${styles.meImage} mt-3`}><img src="https://res.cloudinary.com/pollie/image/upload/v1728088299/Capture_rsvvf2.png" alt="This is me" /></div>
         <section ref={flyers}>
           <div className={`${styles.fly1} text-start p-3 mt-5`}>
-            <p className={`${styles.left} `} >I have a proven track record of developing and deploying scalable web applications in today's top Full Stack frameworks: React (Next.js and Redux) and Vue (Nuxt.js and Pinia). <br />
+            <p className={`${styles.left} `} >I have a proven track record building and deploying scalable apps with React (Next.js, Redux) and Vue (Nuxt.js, Pinia). <br />
             </p>
           </div>
           <div className={`${styles.fly2} text-start p-3 my-5`}>
             <p className={`${styles.right}`}>
-              I thrive on solving complex problems and turning ideas into elegant, user-friendly interfaces that drive reactive data in responsive, pixel-perfect applications.<br />
+             I thrive on solving complex problems and crafting elegant, pixel‑perfect, user‑friendly interfaces for responsive, data‑driven applications.<br />
 
             </p>
 

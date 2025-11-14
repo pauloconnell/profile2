@@ -187,11 +187,13 @@ function Home() {
     window.scrollTo(0, 0);
   }, [location]);
 
-  useEffect(() => { AOS.init({ 
-    duration: 1300, 
+  useEffect(() => { 
+    AOS.init({ 
+      duration: 1300, 
       once: false, // Optional: animate only once
       offset: 30
-    }); }, []);
+    }); 
+  }, []);
 
   const toggleVisibility = (key) => {
     setVisible((prevState) => ({                                              // toggle visibility for selected key of visible ref
@@ -288,11 +290,8 @@ function Home() {
 
           <div className={`lineHeight wordSpace mt-5 ${styles.homeMainText}`}>
 
-            Keen problem solver experienced in all aspects of Software
-            Development.
-            <div className="mt-3">
-              Specializing in Web Technologies including Vue 3 w/Nuxt 3 and React w/Next.
-            </div>
+          Architecting scalable, maintainable front-end systems with  React, Next, Vue, Nuxt and TypeScript 
+          <br /> backed by Full Stack expertise in Node.js, Express, and MongoDB.
           </div>
           <div className={` mt-5 pt-5 ${styles.textShadowBlack}`}>
             {/* <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div> */}
@@ -463,7 +462,7 @@ function Home() {
               <img src={`${process.env.PUBLIC_URL}/images/threeJS.png`}  alt="tech icon" title="Three.js" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="tech icon" title="Typescript" />
 
-
+              <img src={`${process.env.PUBLIC_URL}/images/vite.jpg`} alt="Vite icon" title="Vite super fast build tool" />
 
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg" alt="tech icon" title="Vue 3" />
 
@@ -529,7 +528,7 @@ function Home() {
                       </button>
                       {visible.react && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Expert in building dynamic, responsive, data-rich websites, applications, and user interfaces using React, Next.js, and Redux for state management as well as the  Context API for efficient, simple, reactive state sharing. Skilled at implementing complex UI components, optimizing performance, and ensuring maintainable, scalable codebases. Proficient with React hooks and custom hooks (also used as middleware).
+                          Expert in building dynamic, responsive, data-rich websites, applications, and user interfaces using React, Next.js, and Redux for state management as well as the  Context API for efficient, simple, reactive state sharing. Skilled at implementing complex UI components, optimizing performance, and ensuring maintainable, scalable codebases. Proficient with React hooks and custom hooks, including middleware implementations.
                         </p>
                       )}
                     </li>
@@ -539,7 +538,7 @@ function Home() {
                       </button>
                       {visible.vue && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Expert in building dynamic, responsive, data-rich websites, applications, and user interfaces using Vue 3, Nuxt 3, and Pinia for state management, and/or Composables for simple global state as well as reusable logic. Skilled at implementing complex UI components, optimizing performance, and ensuring maintainable, scalable codebases. Proficient with lifecycle hooks, custom plugins, and middleware.
+                          Expert in building scalable, maintainable applications with Vue 3 and Nuxt 3, leveraging Pinia for modern, efficient state management. Skilled at designing reusable components, optimizing performance, and ensuring responsive, pixel‑perfect interfaces. Proficient in composables, dynamic routing, and SSR/CSR hybrids to deliver fast, SEO‑friendly user experiences.
                         </p>
                       )}
                     </li>
@@ -549,7 +548,7 @@ function Home() {
                       </button>
                       {visible.htmlCss && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Over a decade of experience crafting semantic, accessible HTML and CSS, ensuring clean, visually appealing websites and web applications.                           </p>
+                          Expert in crafting semantic, accessible HTML and responsive layouts with modern CSS frameworks including Bootstrap, Tailwind, and Sass. Skilled at building pixel‑perfect, cross‑browser interfaces, optimizing performance, and enforcing design system consistency. Proficient in modular CSS architecture, responsive grid systems, and accessibility standards to deliver clean, maintainable front‑end code.                           </p>
                       )}
                     </li>
                     <li>
@@ -558,7 +557,7 @@ function Home() {
                       </button>
                       {visible.javascript && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Specializing in JavaScript for interactive, user-friendly applications on both frontend and backend via Node.js and Express.js.
+                         Expert in modern JavaScript (ES6+) with deep experience in functional programming, object‑oriented design, and modular architecture. Skilled at building dynamic, data‑driven applications, optimizing performance, and enforcing maintainable coding standards. Proficient in advanced concepts including closures, async/await, and event‑driven programming to deliver responsive, scalable solutions.
                         </p>
                       )}
                     </li>
@@ -568,7 +567,7 @@ function Home() {
                       </button>
                       {visible.typescript && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                          Implemented robust, type-safe code with TypeScript, currently deployed in a live production environment.
+                          Implemented robust, type‑safe applications with TypeScript, deployed in live production environments to ensure reliability and scalability. Skilled at leveraging TypeScript’s advanced type system, generics, and interfaces to enforce defensive programming practices and maintainable codebases. Proficient in integrating TypeScript across modern frameworks (React, Vue, Node.js) to deliver consistent, error‑resistant solutions.
                         </p>
                       )}
                     </li>
@@ -578,7 +577,7 @@ function Home() {
                       </button>
                       {visible.nodeExpress && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                         Building scalable Single Page Applications (SPAs) using a wide array of npm libraries with React and Next.js, as well as Vue and Nuxt.js.
+                        Experienced in building scalable front‑end architectures with Node.js and npm tooling for dependency management, versioning, and streamlined workflows. Skilled at architecting single‑page applications (SPA) and hybrid SSR/CSR solutions to balance performance, SEO, and dynamic content delivery. Proficient in modular build systems, code splitting, and release management to ensure maintainable, production‑ready deployments.
                         </p>
                       )}
                     </li>
