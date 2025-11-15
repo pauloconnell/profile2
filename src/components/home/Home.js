@@ -297,13 +297,13 @@ function Home() {
           onMouseEnter={handleHoverIn}
           onMouseLeave={handleHoverOut}
           className={`py-4 wordSpace ${styles.knowitalls} ${styles.zoomer} `}
-          style={{ padding: hovering ? 100 : 0, transition: 'opacity 2.5s ease' }}
+         
 
         >
           <a href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
             rel="noreferrer" title="Click to see my work on: www.knowitalls.com" >
             {/* <span className="p-1 textShadowWhite">See My Work:</span> <br /> */}
-            <b className="p-3 link">www.knowitalls.com</b></a>
+            <b className=" link"  style={{ padding: hovering ? '20px' : '16px', transition: 'padding .5s ease' }}>www.knowitalls.com</b></a>
           <br />
 
         </div>
