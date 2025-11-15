@@ -17,27 +17,12 @@ import 'aos/dist/aos.css'; // Import AOS styles
 
 
 
-//const dependenciesArray = [
-//   "suspense - allows for lazy loading of components",
-//   "gh-pages - builds and deploys app to gitHub Pages",
-//   "react - for generating the views of the app",
-//   "react-dom - powers the rendering of elements to the DOM, with React",
-//   "webpack - for bundling all the javascript",
-//   "react-router-dom - handles routing and ",
-//   "bootstrap 5 - classic CSS library",
-// ];
-
-// const componentsMade = [
-//   "Profile- which is the view you are seeing now",
-//   'UnorderedList - which takes an array of "items" and returns a <ul> element with <li>, elements of each of those items within it',
-//   "About -About Me",
-// ];
 
 /* the main page for the index route of this app */
 
 function Home() {
 
-  //const [showThis, setShowThis] = useState(false);
+
   const [hovering, setHovering] = useState(false);
   const [highlightFE, setHighlightFE] = useState(true);
   const [highlightBE, setHighlightBE] = useState(false);
@@ -54,7 +39,7 @@ function Home() {
     bootstrap: false,
     jquery: false,
     dotnet: false,
-    
+
     //BackEnd
     node: false,
     mongo: false,
@@ -80,7 +65,7 @@ function Home() {
     cms: false,
     ssr: false,
     details: false,
-    
+
 
   });
 
@@ -95,7 +80,7 @@ function Home() {
   useEffect(() => {
 
     const element = homeTop.current;                                      // this is ref to main div on page
-    if (element ) {
+    if (element) {
       setIsMounted(true);
       element.classList.add(styles.transparent);                          // this creates the effect of being black background on page load, then transition to image background
 
@@ -115,72 +100,72 @@ function Home() {
 
 
 
-//   // Component mounted, set up intersection observer to flip links on initial view
-//   useEffect(() => {
-//     setIsMounted(true);
+  //   // Component mounted, set up intersection observer to flip links on initial view
+  //   useEffect(() => {
+  //     setIsMounted(true);
 
-//     const observer = new IntersectionObserver((entries) => {
-//       entries.forEach((entry) => {
-//         // console.log("observer triggered ", entry.target)
-//         if (entry.isIntersecting && entry.intersectionRatio === 1) {
-//           //  setTimeout(() => {
-//           entry.target.classList.add(styles.visibleNow);
-//           observer.unobserve(entry.target);
-//           console.log("observed and remove element", entry.target)
-//           //entry.target.classList.remove(styles.visibleNow)
-//           //     }, 300);
-
-
-//         } //else {
-//         //   //   setTimeout(()=>{
-//         //   entry.target.classList.remove(styles.visibleNow);
-//         //   //   },300);
-//         // }
-//       });
-//     }, {
-//       root: null,
-//       rootMargin: '-5% 0px -5% 0px',
-//       threshold: 1
-//     });
-
-//     const items = [[], []];
-//    // setTimeout(() => {
-   
-    
-//     if (observeElement2.current) {
-//       const listItems2 = Array.from(observeElement2.current.querySelectorAll('li'));
-//       items[1] = listItems2;
-//       console.log("l2 = ", items[1])
-//       items[1]?.forEach((item) => observer.observe(item));
-//     }
-//   //},400);
+  //     const observer = new IntersectionObserver((entries) => {
+  //       entries.forEach((entry) => {
+  //         // console.log("observer triggered ", entry.target)
+  //         if (entry.isIntersecting && entry.intersectionRatio === 1) {
+  //           //  setTimeout(() => {
+  //           entry.target.classList.add(styles.visibleNow);
+  //           observer.unobserve(entry.target);
+  //           console.log("observed and remove element", entry.target)
+  //           //entry.target.classList.remove(styles.visibleNow)
+  //           //     }, 300);
 
 
-//  // setTimeout(() => {
-//     if (observeElement.current) {
-//       const listItems1 = Array.from(observeElement.current.querySelectorAll('li'));
-//       items[0] = listItems1;
-//       console.log("l1 = ", items[0])
-//       items[0]?.forEach((item) => observer.observe(item));
-//     }
-    
-//  // },400);
+  //         } //else {
+  //         //   //   setTimeout(()=>{
+  //         //   entry.target.classList.remove(styles.visibleNow);
+  //         //   //   },300);
+  //         // }
+  //       });
+  //     }, {
+  //       root: null,
+  //       rootMargin: '-5% 0px -5% 0px',
+  //       threshold: 1
+  //     });
 
-//     return () => {                                                              // unmount
-//       if (items[0].length > 0 ){  //this element may be gone when this runs -> observeElement.current) {
-      
-//         console.log("Unmounting items[0]:", items[0]);
-//         items[0]?.forEach((item) => observer.unobserve(item));
-//       }
-//       if (items[1].length > 0 ){ // this element may be gone when this runs -> observeElement2.current) {
-      
-//         console.log("Unmounting items[1]:", items[1]);
-//         items[1]?.forEach((item) => observer.unobserve(item));
-//       }
-//       observer.disconnect();
+  //     const items = [[], []];
+  //    // setTimeout(() => {
 
-//     };
-//   }, []);                                                                   // Empty dependency array ensures it runs once on mount
+
+  //     if (observeElement2.current) {
+  //       const listItems2 = Array.from(observeElement2.current.querySelectorAll('li'));
+  //       items[1] = listItems2;
+  //       console.log("l2 = ", items[1])
+  //       items[1]?.forEach((item) => observer.observe(item));
+  //     }
+  //   //},400);
+
+
+  //  // setTimeout(() => {
+  //     if (observeElement.current) {
+  //       const listItems1 = Array.from(observeElement.current.querySelectorAll('li'));
+  //       items[0] = listItems1;
+  //       console.log("l1 = ", items[0])
+  //       items[0]?.forEach((item) => observer.observe(item));
+  //     }
+
+  //  // },400);
+
+  //     return () => {                                                              // unmount
+  //       if (items[0].length > 0 ){  //this element may be gone when this runs -> observeElement.current) {
+
+  //         console.log("Unmounting items[0]:", items[0]);
+  //         items[0]?.forEach((item) => observer.unobserve(item));
+  //       }
+  //       if (items[1].length > 0 ){ // this element may be gone when this runs -> observeElement2.current) {
+
+  //         console.log("Unmounting items[1]:", items[1]);
+  //         items[1]?.forEach((item) => observer.unobserve(item));
+  //       }
+  //       observer.disconnect();
+
+  //     };
+  //   }, []);                                                                   // Empty dependency array ensures it runs once on mount
 
 
   useEffect(() => {
@@ -188,12 +173,12 @@ function Home() {
     window.scrollTo(0, 0);
   }, [location]);
 
-  useEffect(() => { 
-    AOS.init({ 
-      duration: 1300, 
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
       once: false, // Optional: animate only once
       offset: 30
-    }); 
+    });
   }, []);
 
   const toggleVisibility = (key) => {
@@ -203,10 +188,6 @@ function Home() {
     }));
   };
 
-  // const handleClick = () => {
-  //   setShowThis: !showThis;
-
-  // }
 
   const handleClickFE = () => {
 
@@ -225,38 +206,43 @@ function Home() {
 
   }
 
-  if(window.innerWidth<920){
-    if(!hovering) setHovering(true);                                                    // tablets and smaller screens should not have hover fade-in effect
-  }
-
   // this shows/hides details on home page PROFILE
   const handleHoverIn = () => {
 
-    if(!hovering) setHovering(true);
+    if (!hovering) setHovering(true);
 
     //document.getElementById("showOnHover").classList.delete("hidden");
     //document.getElementById("showOnHover").classList.add("show");
   }
 
   const handleHoverOut = () => {
-    if(window.innerWidth>920 && hovering){
+    if (window.innerWidth > 920 && hovering) {
       setHovering(false);                                               // tablets and smaller screens should not have hover fade-in effect
     }
-    
+
   }
 
-  // componentDidMount() {
-  //   window.scrollTo(0, 0);
-  // }
+  const hoveringRef = useRef(hovering);                                 // pattern to set up use effect to add event listener once on load -> useRef so useEffect doesn't get stale 'hovering' state
 
+
+  useEffect(() => {
+    if (window.innerWidth < 920) {
+      if (!hoveringRef) setHovering(true);                                                    // tablets and smaller screens should not have hover fade-in effect - just always shows content 
+    }
+  }, [])
+
+
+  useEffect(() => {
+    hoveringRef.current = hovering;
+  }, [hovering]);
 
   const handleScroll = () => {                                      // make 'hidden' details section appear if user scrolls down past 1350px
 
     if (!isThrottled.current) {
-     // console.log("caught scroll, ", window.scrollY)
+      // console.log("caught scroll, ", window.scrollY)
       if (window.scrollY > 1250) {
-        // console.log("are we ever here?")
-        if(!hovering) setHovering(true);
+
+        if (!hoveringRef.current) setHovering(true);
 
       } else {
 
@@ -267,6 +253,8 @@ function Home() {
       }, 1000); // 0.5 seconds timeout
     }
   };
+
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
@@ -291,8 +279,8 @@ function Home() {
 
           <div className={`lineHeight wordSpace mt-5 ${styles.homeMainText}`}>
 
-          Architecting scalable, maintainable front-end systems with  React, Next, Vue, Nuxt and TypeScript 
-          <br /> backed by Full Stack expertise in Node.js, Express, and MongoDB.
+            Architecting scalable, maintainable front-end systems with  React, Next, Vue, Nuxt and TypeScript
+            <br /> backed by Full Stack expertise in Node.js, Express, and MongoDB.
           </div>
           <div className={` mt-5 pt-5 ${styles.textShadowBlack}`}>
             {/* <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div> */}
@@ -309,6 +297,7 @@ function Home() {
           onMouseEnter={handleHoverIn}
           onMouseLeave={handleHoverOut}
           className={`py-4 wordSpace ${styles.knowitalls} ${styles.zoomer} `}
+          style={{ padding: hovering ? 100 : 0, transition: 'opacity 2.5s ease' }}
 
         >
           <a href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
@@ -319,7 +308,7 @@ function Home() {
 
         </div>
 
-        
+
         <div className={styles.arrow} >
           <svg className="scroll-arrow" width="30" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 50" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <line x1="12" y1="5" x2="12" y2="45"></line>
@@ -335,7 +324,7 @@ function Home() {
              V<br/>
         </div> */}
 
-      <section data-aos="flip-left"  className={` ${styles.hero}   readEasy lineHeight wordSpace p-1 ms-1 ms-md-3  ms-lg-5  rounded mt-5 ${styles.heroCustomMargin}`}>
+      <section data-aos="flip-left" className={` ${styles.hero}   readEasy lineHeight wordSpace p-1 ms-1 ms-md-3  ms-lg-5  rounded mt-5 ${styles.heroCustomMargin}`}>
         <p className="m-1">Focused on developing pixel-perfect responsive software with today's top Full Stack Frameworks.
         </p>
       </section>
@@ -343,9 +332,9 @@ function Home() {
 
       <section className={` ${styles.heroRight} readEasy lineHeight wordSpace p-1 me-3 rounded mt-5 mx-xxl-auto`}>
         <div className={`${styles.overlay}`}>
-        <p data-aos="flip-right">
-          "I <strong> love </strong> building state-of-the-art,  data-rich, intuitive software,<br/> solving complex problems, debugging issues,  and upgrading or maintaining legacy codebases."
-        </p>
+          <p data-aos="flip-right">
+            "I <strong> love </strong> building state-of-the-art,  data-rich, intuitive software,<br /> solving complex problems, debugging issues,  and upgrading or maintaining legacy codebases."
+          </p>
         </div>
       </section>
 
@@ -436,7 +425,7 @@ function Home() {
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" alt="tech icon" title="NPM" />
 
               <img className={` ${styles.enlarge}`} src={`/profile2/nuxtLogo.svg`} alt="tech icon" title="Nuxt 3" />
-              <img src={`/profile2/images/openAI.png`} style={{width:"85px"}} alt="tech icon" title="OpenAI API" />
+              <img src={`/profile2/images/openAI.png`} style={{ width: "85px" }} alt="tech icon" title="OpenAI API" />
 
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg" alt="tech icon" title="OAuth authentication protocol" />
               <img src="https://www.passportjs.org/images/logo.svg" alt="tech icon" title="passport.js authentication" />
@@ -460,7 +449,7 @@ function Home() {
 
               <img className={` ${styles.enlarge}`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original-wordmark.svg" alt="tech icon" title="Swagger API Documentation/testing" />
 
-              <img src={`${process.env.PUBLIC_URL}/images/threeJS.png`}  alt="tech icon" title="Three.js" />
+              <img src={`${process.env.PUBLIC_URL}/images/threeJS.png`} alt="tech icon" title="Three.js" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="tech icon" title="Typescript" />
 
               <img src={`${process.env.PUBLIC_URL}/images/vite.jpg`} alt="Vite icon" title="Vite super fast build tool" />
@@ -558,7 +547,7 @@ function Home() {
                       </button>
                       {visible.javascript && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                         Expert in modern JavaScript (ES6+) with deep experience in functional programming, object‑oriented design, and modular architecture. Skilled at building dynamic, data‑driven applications, optimizing performance, and enforcing maintainable coding standards. Proficient in advanced concepts including closures, async/await, and event‑driven programming to deliver responsive, scalable solutions.
+                          Expert in modern JavaScript (ES6+) with deep experience in functional programming, object‑oriented design, and modular architecture. Skilled at building dynamic, data‑driven applications, optimizing performance, and enforcing maintainable coding standards. Proficient in advanced concepts including closures, async/await, and event‑driven programming to deliver responsive, scalable solutions.
                         </p>
                       )}
                     </li>
@@ -578,23 +567,23 @@ function Home() {
                       </button>
                       {visible.nodeExpress && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                        Experienced in building scalable front‑end architectures with Node.js and npm tooling for dependency management, versioning, and streamlined workflows. Skilled at architecting single‑page applications (SPA) and hybrid SSR/CSR solutions to balance performance, SEO, and dynamic content delivery. Proficient in modular build systems, code splitting, and release management to ensure maintainable, production‑ready deployments.
+                          Experienced in building scalable front‑end architectures with Node.js and npm tooling for dependency management, versioning, and streamlined workflows. Skilled at architecting single‑page applications (SPA) and hybrid SSR/CSR solutions to balance performance, SEO, and dynamic content delivery. Proficient in modular build systems, code splitting, and release management to ensure maintainable, production‑ready deployments.
                         </p>
                       )}
                     </li>
                     <li>
                       <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('testingFE')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
-                      Test-Driven Development (TDD)
+                        Test-Driven Development (TDD)
                       </button>
                       {visible.testingFE && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                       Implemented TDD practices using Jest and Mocha to write and maintain comprehensive unit tests
+                          Implemented TDD practices using Jest and Mocha to write and maintain comprehensive unit tests
                         </p>
                       )}
                     </li>
                     <li>
                       <button data-aos="zoom-in" className="link" onClick={() => toggleVisibility('testingFE')} title={visible.testingFE ? "Click to Hide" : "Click to see details"}>
-                      Automated Testing
+                        Automated Testing
                       </button>
                       {visible.testingFE && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
@@ -701,7 +690,7 @@ function Home() {
                       </button>
                       {visible.express && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                         Built servers and RESTful APIs with Express.js, implementing secure routing and middleware to deliver efficient request processing and reliable back‑end workflows.
+                          Built servers and RESTful APIs with Express.js, implementing secure routing and middleware to deliver efficient request processing and reliable back‑end workflows.
                         </p>
                       )}
                     </li>
@@ -717,28 +706,28 @@ function Home() {
                     </li>
                     <li>
                       <button className="link" onClick={() => toggleVisibility('passport')} title={visible.passport ? "Click to Hide" : "Click to see details"}>
-                        Auth0: Authentication and Authorization 
+                        Auth0: Authentication and Authorization
                       </button>
                       {visible.passport && (
-                        
-                          <p className="text-start p-1 backgroundDarkBlue rounded">
-                           
-                            Configured authentication flows with Auth0 in production environments, leveraging its identity‑as‑a‑service platform to simplify user management, enforce security standards, and support scalable applications. 
-                            <br/>
-                            Integrated bearer token handling to protect API requests, providing authenticated users with secure and reliable access control. 
-                          </p>
-                     
-                        
+
+                        <p className="text-start p-1 backgroundDarkBlue rounded">
+
+                          Configured authentication flows with Auth0 in production environments, leveraging its identity‑as‑a‑service platform to simplify user management, enforce security standards, and support scalable applications.
+                          <br />
+                          Integrated bearer token handling to protect API requests, providing authenticated users with secure and reliable access control.
+                        </p>
+
+
                       )}
                     </li>
-                          <button className="link" onClick={() => toggleVisibility('auth0')} title={visible.auth0 ? "Click to Hide" : "Click to see details"}>
-                        Passport, OAuth: 
-                      </button>
-                       {visible.auth0 && (
-                          <p className="text-start p-1 backgroundDarkBlue rounded">
-                           Implemented authentication with Passport.js, integrating OAuth strategies for third‑party logins such as Facebook and GitHub. Gained hands‑on experience with secure token exchange, and session management to protect application workflows.
-                          </p>
-                       )}
+                    <button className="link" onClick={() => toggleVisibility('auth0')} title={visible.auth0 ? "Click to Hide" : "Click to see details"}>
+                      Passport, OAuth:
+                    </button>
+                    {visible.auth0 && (
+                      <p className="text-start p-1 backgroundDarkBlue rounded">
+                        Implemented authentication with Passport.js, integrating OAuth strategies for third‑party logins such as Facebook and GitHub. Gained hands‑on experience with secure token exchange, and session management to protect application workflows.
+                      </p>
+                    )}
                     <li>
 
 
@@ -763,14 +752,14 @@ function Home() {
                         </p>
                       )}
                     </li>
-                 
+
                     <li>
                       <button className="link" onClick={() => toggleVisibility('nuxt')} title={visible.nuxt ? "Click to Hide" : "Click to see details"}>
                         Nuxt 3 and Vue 3 for Hybrid SSR
                       </button>
                       {visible.nuxt && (
                         <p className="text-start p-1 backgroundDarkBlue rounded">
-                         Architected and refactored pages to run on the server side with Nuxt 3 and Vue 3, implementing hybrid SSR/CSR architectures that enhanced performance, scalability, SEO, and long‑term maintainability.
+                          Architected and refactored pages to run on the server side with Nuxt 3 and Vue 3, implementing hybrid SSR/CSR architectures that enhanced performance, scalability, SEO, and long‑term maintainability.
                         </p>
                       )}
                     </li>
@@ -787,157 +776,157 @@ function Home() {
             </div>
             <br />
           </div>
-          </div>
+        </div>
       </section>
 
-    
-        
 
 
 
 
 
 
-            <hr></hr>
-            <br></br>
+
+
+      <hr></hr>
+      <br></br>
 
 
 
-            <section data-testid="reference" className={` ${styles.reference} lineHeight wordSpace p-1 mx-auto rounded width90`}>
-              <img src="/profile2/images/quote-50.png" className={`${styles.quoteImg}`} alt="quote icon" title="reference1" />
-              <p data-aos="slide-up" className={`${styles.quote} py-5 px-3 mx-3`}>"His ability to troubleshoot and problem solve were very valuable across my team. Paul proved himself a strong team player with a strong work ethic. I confidently recommend Paul for future roles where he has the opportunity and expectation of improving whatever he focuses on."
-                <br />
-                <span className={styles.quoteAuthor}> John - Senior Manager</span>
+      <section data-testid="reference" className={` ${styles.reference} lineHeight wordSpace p-1 mx-auto rounded width90`}>
+        <img src="/profile2/images/quote-50.png" className={`${styles.quoteImg}`} alt="quote icon" title="reference1" />
+        <p data-aos="slide-up" className={`${styles.quote} py-5 px-3 mx-3`}>"His ability to troubleshoot and problem solve were very valuable across my team. Paul proved himself a strong team player with a strong work ethic. I confidently recommend Paul for future roles where he has the opportunity and expectation of improving whatever he focuses on."
+          <br />
+          <span className={styles.quoteAuthor}> John - Senior Manager</span>
 
 
-              </p>
-              <div className='d-flex justify-content-end'>
-              <img src="/profile2/images/quote-50.png"  alt="quote icon" title="reference1" />
-              </div>
-            </section>
+        </p>
+        <div className='d-flex justify-content-end'>
+          <img src="/profile2/images/quote-50.png" alt="quote icon" title="reference1" />
+        </div>
+      </section>
 
-            <br></br>
-
-
+      <br></br>
 
 
-            <section className={styles.experience}>
-            <div>
 
 
-            <hr></hr>
-            <br></br>
+      <section className={styles.experience}>
+        <div>
 
-            <div className="row" >
 
-              <div data-aos="zoom-in" className="my-3 title fs-2" style={{ color: "black", textShadow: '1px 1px 3px white' }}>Experience:</div>
-              <ul  ref={observeElement} className={` width90`} style={{ textAlign: "center", listStyleType: "none" }}>
-                <li>
-                  <button  data-aos="slide-left" className="link" onClick={() => toggleVisibility('dev')} title={visible.dev ? "Click to Hide" : "Click to see details"}>
-                    Software Developer
-                  </button>
-                  {visible.dev && (
-                    <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Proficient in developing responsive, pixel-perfect, user-friendly websites and web applications using HTML, CSS, JavaScript, Vue 3 w/ Nuxt, React w/ Next, as well as server-side development with Node.js and Express.js.
-                    </p>
-                  )}
-                </li>
-                <li>
-                  <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('git')} title={visible.git ? "Click to Hide" : "Click to see details"}>
-                    Version Control and Git Branching Strategies
-                  </button>
-                  {visible.git && (
-                    <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Proficient in version control and code management, including feature branching, hotfixes, release branches, managing pull requests, conducting thorough code reviews, and deploying changes in production environments using Git, GitHub, and Azure.
-                    </p>
-                  )}
-                </li>
-                <li>
-                  <button data-aos="slide-left" className="link" onClick={() => toggleVisibility('azure')} title={visible.azure ? "Click to Hide" : "Click to see details"}>
-                    Azure DevOps
-                  </button>
-                  {visible.azure && (
-                    <p className="text-start p-1 backgroundDarkBlue rounded">
-                     Extensive experience with Azure DevOps for sprint planning, facilitating daily standups, and leveraging Azure Kanban boards to track and manage workflow efficiently.
-                    </p>
-                  )}
-                </li>
-                <li>
-                  <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('api')} title={visible.api ? "Click to Hide" : "Click to see details"}>
-                    API Integration
-                  </button>
-                  {visible.api && (
-                    <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Delivering data-rich content with reactive data, collaborating effectively with backend teams, and utilizing Postman and Swagger to develop and test robust API connections.
-                    </p>
-                  )}
-                </li>
-                <li>
-                  <button data-aos="slide-left" className="link" onClick={() => toggleVisibility('design')} title={visible.design ? "Click to Hide" : "Click to see details"}>
-                    Design Collaboration
-                  </button>
-                  {visible.design && (
-                    <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Developing pixel perfect code from both rough wireframes as well as collaborating closely with the design team using Sketch and Figma to ensure a seamless and visually appealing user experience.
-                    </p>
-                  )}
-                </li>
-                <li>
-                  <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('seo')} title={visible.seo ? "Click to Hide" : "Click to see details"}>
-                    SEO, GTM, Google Analytics
-                    </button>
-                  {visible.seo && (
-                    <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Setting up Google Tag Manager (GTM) and interfacing with Google Analytics, implementing dynamic SEO tags, and monitoring traffic as well as 'a/b' testing results.
-                    </p>
-                  )}
-                </li>
-                <li>
-                  <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('performance')} title={visible.seo ? "Click to Hide" : "Click to see details"}>
-                    Performance Optimization and Code Splitting
-                  </button>
-                  {visible.performance && (
-                    <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Optimizing website performance to significantly improve loading times using Code Spliting, Image Optimization, Caching, CDN, Lazy Hydration, Dynamic Imorts, Build tools and Hybrid SSR.
-                    </p>
-                  )}
-                </li>
-                <li>
-                  <button  data-aos="slide-left" className="link" onClick={() => toggleVisibility('abTesting')} title={visible.abTesting ? "Click to Hide" : "Click to see details"}>
-                    Marketing Collaboration
-                  </button>
-                  {visible.abTesting && (
-                    <p className="text-start p-1 backgroundDarkBlue rounded">
-                      Assisting the Marketing team with A/B testing using Google Analytics to optimize campaign performance and enhance user engagement.
-                    </p>
-                  )}
-                </li>
-                <li>
-                  <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('meetings')} title={visible.meetings ? "Click to Hide" : "Click to see details"}>
-                    Meeting Contributions
-                  </button>
-                  {visible.meetings && (
-                    <p className="text-start p-1 backgroundDarkBlue rounded">
-                     Championing the management of the Kanban board and backlog, I regularly share my screen during daily scrum meetings. I make valuable contributions to weekly meetings with the development team, design team, managers, C-suite executives, and clients by providing insightful feedback and innovative solutions.
-                    </p>
-                  )}
-                </li>
-                <li>
-                  <button data-aos="slide-left" className="link" onClick={() => toggleVisibility('testingExperience')} title={visible.testingExperience ? "Click to Hide" : "Click to see details"}>
-                    Testing and monitoring
-                  </button>
-                  {visible.testingExperience && (
-                    <p className="text-start p-1 backgroundDarkBlue rounded">
-                     Utilizing Test-Driven Development (TDD) with Jest unit tests, implementing automated nightly and CI/CD testing using Testim, and integrating Exceptionless for comprehensive monitoring and alerting.
-                    </p>
-                  )}
-                </li>
-                <li>
-                  <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('cms')} title={visible.cms ? "Click to Hide" : "Click to see details"}>
-                    Content Management System (CMS)
-                  </button>
-                  {visible.cms && (
-                    <p className="text-start p-1 backgroundDarkBlue rounded">
+          <hr></hr>
+          <br></br>
+
+          <div className="row" >
+
+            <div data-aos="zoom-in" className="my-3 title fs-2" style={{ color: "black", textShadow: '1px 1px 3px white' }}>Experience:</div>
+            <ul ref={observeElement} className={` width90`} style={{ textAlign: "center", listStyleType: "none" }}>
+              <li>
+                <button data-aos="slide-left" className="link" onClick={() => toggleVisibility('dev')} title={visible.dev ? "Click to Hide" : "Click to see details"}>
+                  Software Developer
+                </button>
+                {visible.dev && (
+                  <p className="text-start p-1 backgroundDarkBlue rounded">
+                    Proficient in developing responsive, pixel-perfect, user-friendly websites and web applications using HTML, CSS, JavaScript, Vue 3 w/ Nuxt, React w/ Next, as well as server-side development with Node.js and Express.js.
+                  </p>
+                )}
+              </li>
+              <li>
+                <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('git')} title={visible.git ? "Click to Hide" : "Click to see details"}>
+                  Version Control and Git Branching Strategies
+                </button>
+                {visible.git && (
+                  <p className="text-start p-1 backgroundDarkBlue rounded">
+                    Proficient in version control and code management, including feature branching, hotfixes, release branches, managing pull requests, conducting thorough code reviews, and deploying changes in production environments using Git, GitHub, and Azure.
+                  </p>
+                )}
+              </li>
+              <li>
+                <button data-aos="slide-left" className="link" onClick={() => toggleVisibility('azure')} title={visible.azure ? "Click to Hide" : "Click to see details"}>
+                  Azure DevOps
+                </button>
+                {visible.azure && (
+                  <p className="text-start p-1 backgroundDarkBlue rounded">
+                    Extensive experience with Azure DevOps for sprint planning, facilitating daily standups, and leveraging Azure Kanban boards to track and manage workflow efficiently.
+                  </p>
+                )}
+              </li>
+              <li>
+                <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('api')} title={visible.api ? "Click to Hide" : "Click to see details"}>
+                  API Integration
+                </button>
+                {visible.api && (
+                  <p className="text-start p-1 backgroundDarkBlue rounded">
+                    Delivering data-rich content with reactive data, collaborating effectively with backend teams, and utilizing Postman and Swagger to develop and test robust API connections.
+                  </p>
+                )}
+              </li>
+              <li>
+                <button data-aos="slide-left" className="link" onClick={() => toggleVisibility('design')} title={visible.design ? "Click to Hide" : "Click to see details"}>
+                  Design Collaboration
+                </button>
+                {visible.design && (
+                  <p className="text-start p-1 backgroundDarkBlue rounded">
+                    Developing pixel perfect code from both rough wireframes as well as collaborating closely with the design team using Sketch and Figma to ensure a seamless and visually appealing user experience.
+                  </p>
+                )}
+              </li>
+              <li>
+                <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('seo')} title={visible.seo ? "Click to Hide" : "Click to see details"}>
+                  SEO, GTM, Google Analytics
+                </button>
+                {visible.seo && (
+                  <p className="text-start p-1 backgroundDarkBlue rounded">
+                    Setting up Google Tag Manager (GTM) and interfacing with Google Analytics, implementing dynamic SEO tags, and monitoring traffic as well as 'a/b' testing results.
+                  </p>
+                )}
+              </li>
+              <li>
+                <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('performance')} title={visible.seo ? "Click to Hide" : "Click to see details"}>
+                  Performance Optimization and Code Splitting
+                </button>
+                {visible.performance && (
+                  <p className="text-start p-1 backgroundDarkBlue rounded">
+                    Optimizing website performance to significantly improve loading times using Code Spliting, Image Optimization, Caching, CDN, Lazy Hydration, Dynamic Imorts, Build tools and Hybrid SSR.
+                  </p>
+                )}
+              </li>
+              <li>
+                <button data-aos="slide-left" className="link" onClick={() => toggleVisibility('abTesting')} title={visible.abTesting ? "Click to Hide" : "Click to see details"}>
+                  Marketing Collaboration
+                </button>
+                {visible.abTesting && (
+                  <p className="text-start p-1 backgroundDarkBlue rounded">
+                    Assisting the Marketing team with A/B testing using Google Analytics to optimize campaign performance and enhance user engagement.
+                  </p>
+                )}
+              </li>
+              <li>
+                <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('meetings')} title={visible.meetings ? "Click to Hide" : "Click to see details"}>
+                  Meeting Contributions
+                </button>
+                {visible.meetings && (
+                  <p className="text-start p-1 backgroundDarkBlue rounded">
+                    Championing the management of the Kanban board and backlog, I regularly share my screen during daily scrum meetings. I make valuable contributions to weekly meetings with the development team, design team, managers, C-suite executives, and clients by providing insightful feedback and innovative solutions.
+                  </p>
+                )}
+              </li>
+              <li>
+                <button data-aos="slide-left" className="link" onClick={() => toggleVisibility('testingExperience')} title={visible.testingExperience ? "Click to Hide" : "Click to see details"}>
+                  Testing and monitoring
+                </button>
+                {visible.testingExperience && (
+                  <p className="text-start p-1 backgroundDarkBlue rounded">
+                    Utilizing Test-Driven Development (TDD) with Jest unit tests, implementing automated nightly and CI/CD testing using Testim, and integrating Exceptionless for comprehensive monitoring and alerting.
+                  </p>
+                )}
+              </li>
+              <li>
+                <button data-aos="slide-right" className="link" onClick={() => toggleVisibility('cms')} title={visible.cms ? "Click to Hide" : "Click to see details"}>
+                  Content Management System (CMS)
+                </button>
+                {visible.cms && (
+                  <p className="text-start p-1 backgroundDarkBlue rounded">
                     Implemented and improved an in-house built CMS, as well as integrating and using 'Contentful' headless CMS for more advanced features.  Enabling stakeholders to make content changes quickly and independently, without requiring the involvement of the development team.
                   </p>
                 )}
@@ -948,16 +937,16 @@ function Home() {
                 </button>
                 {visible.ssr && (
                   <p className="text-start p-1 backgroundDarkBlue rounded">
-                    <b className='textShadow'>Hybrid SSR:</b> Lightning fast - select public pages initially render on the server, then the rest of app seamlessly loads, shares state, and runs super fast as normal SPA.  Literally the best of both worlds. 
+                    <b className='textShadow'>Hybrid SSR:</b> Lightning fast - select public pages initially render on the server, then the rest of app seamlessly loads, shares state, and runs super fast as normal SPA.  Literally the best of both worlds.
                   </p>
                 )}
               </li>
             </ul>
-            </div>
+          </div>
 
 
-            <br />
-            {/* <div className="row"
+          <br />
+          {/* <div className="row"
                 style={{
                   color: highlightBE ? "white" : "black",
                   fontWeight: highlightBE
@@ -986,14 +975,14 @@ function Home() {
                   &nbsp; Azure devops.
                 </div>
               </div> */}
-            <br />
-            <div className="text-center mb-2"
-              style={{
-                color: "black",
-                fontWeight: "bold"
-                //     : " normal",
-                //   display: highlightFE ? "block" : "none",
-              }}
+          <br />
+          <div className="text-center mb-2"
+            style={{
+              color: "black",
+              fontWeight: "bold"
+              //     : " normal",
+              //   display: highlightFE ? "block" : "none",
+            }}
           >
             Recently completed a major refactor the single-page application (SPA) www.knowitalls.com into a
             <div> <b className={styles.textShadowRed}>hybrid Server-Side Rendered (SSR) app</b> with <b className={styles.textShadowRed}>custom SEO meta tags</b> <br></br>
@@ -1004,113 +993,113 @@ function Home() {
 
 
 
-            <div className="row"
-            // style={{
-            //   color: highlightFE ? "white" : "black",
-            //   fontWeight: highlightFE
-            //     ? "bold"
-            //     : " normal",
-            //   display: highlightFE ? "block" : "none",
-            // }}
-            >
+          <div className="row"
+          // style={{
+          //   color: highlightFE ? "white" : "black",
+          //   fontWeight: highlightFE
+          //     ? "bold"
+          //     : " normal",
+          //   display: highlightFE ? "block" : "none",
+          // }}
+          >
 
-              <div className={`py-4 wordSpace ${styles.knowitalls} `}  >
-                <a className="link p-3" href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
-                  rel="noreferrer" title="Click to see my work at: www.knowitalls.com" >www.knowitalls.com</a>
+            <div className={`py-4 wordSpace ${styles.knowitalls} `}  >
+              <a className="link p-3" href="https://www.knowitalls.com" alt="knowitalls.com" target="_blank"
+                rel="noreferrer" title="Click to see my work at: www.knowitalls.com" >www.knowitalls.com</a>
 
 
-              </div>
             </div>
-            <div className="row my-2">
+          </div>
+          <div className="row my-2">
 
+            <div className="text-center">
+              <button className="link" onClick={() => toggleVisibility('details')} title="Click to see details">
+                {visible.details ? 'Hide details' : 'Click for Technology details:'}
+              </button>
+
+            </div>
+
+
+          </div>
+          <ul className={`py-4 readEasy width90 mx-auto ${styles.hidden} ${visible.details ? `${styles.transition}` : styles.shrink}`} style={{ textAlign: "left", listStyleType: "none", maxWidth: "700px", maxHeight: "auto" }}>
+            <li>
+              Payment integration with <b className="textShadow">Stripe</b>
+            </li>
+            <hr />
+            <li>
+              Video integration with <b className="textShadow"> WhereBy</b>
+            </li>
+            <hr />
+            <li>
+              Authentication and API access tokens through <b className="textShadow">Auth0</b>
+            </li>
+            <hr />
+            <li>
+              24/7 Error monitoring by  <b className="textShadow">Exceptionless</b>
+            </li>
+
+            <hr />
+            <li>
+              Custom Error handling using SSR friendly 'toasts' <b className="textShadow">Notivue</b>
+            </li>
+
+            <hr />
+            <li>
+              State Management with <b className="textShadow">Pinia</b> reactive data store
+            </li>
+
+            <hr />
+            <li>
+              Chat messaging - <b className="textShadow">built in house</b>
+            </li>
+            <hr />
+            <li>
+              2 sided booking calander - <b className="textShadow">built in house</b>
+            </li>
+            <hr />
+            <li>
+              <b className="textShadow"> Auth0</b> authentication to guard secure pages
+            </li>
+            <hr />
+            <li>
+              <b className="textShadow">Access Tokens</b> in request Headers to secure relevant API calls
+            </li>
+            <hr />
+            <li>
+              API Error handling with <b className="textShadow">Toast</b>s
+            </li>
+            <hr />
+            <li>
+              <b className="textShadow">Exceptionless</b> error monitoring and logging
+            </li>
+            <hr />
+            <li>
+              <b className="textShadow">Testims</b> automated nightly and CI/CD testing
+            </li>
+            <li>
+              <b className='textShadow'>Hybrid SSR:</b> Lightning fast - select public pages initially render on the server, then the rest of app seamlessly loads, shares state, and runs super fast as normal SPA.  Literally the best of both worlds.
+            </li>
+            <div className="my-2">
               <div className="text-center">
                 <button className="link" onClick={() => toggleVisibility('details')} title="Click to see details">
-                  {visible.details ? 'Hide details' : 'Click for Technology details:'}
+                  Hide details
                 </button>
-
               </div>
-
-
             </div>
-            <ul className={`py-4 readEasy width90 mx-auto ${styles.hidden} ${visible.details ? `${styles.transition}` : styles.shrink}`} style={{ textAlign: "left", listStyleType: "none", maxWidth:"700px", maxHeight: "auto"  }}>
-              <li>
-                Payment integration with <b className="textShadow">Stripe</b>
-              </li>
-              <hr />
-              <li>
-                Video integration with <b className="textShadow"> WhereBy</b>
-              </li>
-              <hr />
-              <li>
-              Authentication and API access tokens through <b className="textShadow">Auth0</b> 
-              </li>
-              <hr />
-              <li>
-              24/7 Error monitoring by  <b className="textShadow">Exceptionless</b> 
-              </li>
-              
-              <hr />
-              <li>
-                Custom Error handling using SSR friendly 'toasts' <b className="textShadow">Notivue</b>
-              </li>
-              
-              <hr />
-              <li>
-                State Management with <b className="textShadow">Pinia</b> reactive data store
-              </li>
-              
-              <hr />
-              <li>
-                Chat messaging - <b className="textShadow">built in house</b>
-              </li>
-              <hr />
-              <li>
-                2 sided booking calander - <b className="textShadow">built in house</b>
-              </li>
-              <hr />
-              <li>
-                <b className="textShadow"> Auth0</b> authentication to guard secure pages
-              </li>
-              <hr />
-              <li>
-                <b className="textShadow">Access Tokens</b> in request Headers to secure relevant API calls
-              </li>
-              <hr />
-              <li>
-                API Error handling with <b className="textShadow">Toast</b>s
-              </li>
-              <hr />
-              <li>
-                <b className="textShadow">Exceptionless</b> error monitoring and logging
-              </li>
-              <hr />
-              <li>
-                <b className="textShadow">Testims</b> automated nightly and CI/CD testing
-              </li>
-              <li>
-              <b className='textShadow'>Hybrid SSR:</b> Lightning fast - select public pages initially render on the server, then the rest of app seamlessly loads, shares state, and runs super fast as normal SPA.  Literally the best of both worlds.   
-              </li>
-              <div className="my-2">
-                <div className="text-center">
-                  <button className="link" onClick={() => toggleVisibility('details')} title="Click to see details">
-                    Hide details
-                  </button>
-                </div>
-              </div>
-            </ul>
-
-          
-
-<div className='text-center'>
-
-<a target="_blank" rel="noreferrer" href="https://icons8.com/icon/mEfSlxcx5RCD/quote">Quote</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a>
-<p>Site custom built by <strong>Paul OConnell</strong> with <b>React</b></p>
-</div>
-
-          
+          </ul>
 
 
-            {/**
+
+          <div className='text-center'>
+
+            <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/mEfSlxcx5RCD/quote">Quote</a> icon by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a>
+            <p>Site custom built by <strong>Paul OConnell</strong> with <b>React</b></p>
+          </div>
+
+
+
+
+          {/**
                         <span
                           style={{
                             color: this.state.highlightBE ? "white" : "black",
@@ -1135,18 +1124,18 @@ function Home() {
                           Pinia state management.
                         </span>
                         **/}
-          </div>
+        </div>
 
 
 
 
 
-        
+
       </section>
 
 
 
-      
+
 
     </div>
 
