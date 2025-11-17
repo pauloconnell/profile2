@@ -277,10 +277,12 @@ function Home() {
       <section ref={homeTop} className={` ${styles.homeTop} mb-4`}>
         <div className="w-75 readEasy word  mx-auto mt-5 pt-5 mb-3 ">
 
-          <div className={`lineHeight wordSpace mt-5 ${styles.homeMainText}`}>
-Senior Front-End Developer architecting scalable, maintainable, and tested systems <br></br> with React, Next, Vue, Nuxt & TypeScript <br/>
-— backed by Full Stack expertise in Node.js, Express & MongoDB, including secure API development and CI/CD deployments on Azure.
-           
+          <div className={`lineHeight wordSpace mt-5 mx-auto greyBackground ${styles.homeMainText}`}>
+            Senior Front-End Developer | Certified Full Stack<br />
+            Building scalable, tested systems with React, Next.js, Vue, Nuxt & TypeScript<br />
+            Node.js, Express, MongoDB & DevOps, CI/CD expertise
+
+
           </div>
           <div className={` mt-5 pt-5 ${styles.textShadowBlack}`}>
             {/* <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div> */}
