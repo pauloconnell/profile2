@@ -12,7 +12,8 @@
 }
 
 body {
-  scroll-padding-top: 160px;                 /* give space for header  */
+  scroll-padding-top: 160px;
+  /* give space for header  */
   overflow-x: hidden;
 }
 
@@ -233,7 +234,7 @@ div.row.mx-1.justify-content-center {
 .flexContainer {
   display: flex;
   /* justify-content: space-around; */
-   width: 100%;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -366,6 +367,14 @@ div.row.mx-1.justify-content-center {
   color: dodgerblue;
 }
 
+.textShadowBlack {
+  text-shadow: 2px 2px 2px black;
+}
+
+.textShadowRed {
+  text-shadow: 2px 2px 8px var(--tertiary-color);
+}
+
 
 /* .textShadowWhite {
   text-shadow: 2px 2px 15px white;
@@ -431,7 +440,7 @@ div.row.mx-1.justify-content-center {
   font-size: 1.2rem;
 }
 
-.greyBackground {
+.blueBackground {
   background-color: rgba(30, 144, 255, 0.3);
   border-radius: 5px;
   width: fit-content;

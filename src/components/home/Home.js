@@ -277,14 +277,14 @@ function Home() {
       <section ref={homeTop} className={` ${styles.homeTop} mb-4`}>
         <div className="w-75 readEasy word  mx-auto mt-5 pt-5 mb-3 ">
 
-          <div className={`lineHeight wordSpace mt-5 mx-auto greyBackground ${styles.homeMainText}`}>
+          <div className={`lineHeight wordSpace mt-5 mx-auto blueBackground ${styles.homeMainText}`}>
             Senior Front-End Developer | Certified Full Stack<br />
             Building scalable, tested systems with React, Next.js, Vue, Nuxt & TypeScript<br />
             Node.js, Express, MongoDB & DevOps, CI/CD expertise
 
 
           </div>
-          <div className={` mt-5 pt-5 ${styles.textShadowBlack}`}>
+          <div className={` mt-5 pt-5 textShadowBlack`}>
             {/* <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div> */}
             <i>    Currently working as a <span data-testid="SnFE" className="hot">Senior Front End Software Engineer</span> @
             </i>
@@ -333,7 +333,7 @@ function Home() {
 
 
       <section className={` ${styles.heroRight} readEasy lineHeight wordSpace p-1 me-3 rounded mt-5 mx-xxl-auto`}>
-        <div className={`${styles.overlay}`}>
+        <div className={` textShadowBlack ${styles.overlay}`}>
           <p data-aos="flip-right">
             "I <strong> love </strong> building state-of-the-art,  data-rich, intuitive software,<br /> solving complex problems, debugging issues,  and upgrading or maintaining legacy codebases."
           </p>
@@ -939,7 +939,7 @@ function Home() {
                 </button>
                 {visible.ssr && (
                   <p className="text-start p-1 backgroundDarkBlue rounded">
-                    <b className='textShadow'>Hybrid SSR:</b> Lightning fast - select public pages initially render on the server, then the rest of app seamlessly loads, shares state, and runs super fast as normal SPA.  Literally the best of both worlds.
+                    <b className='textShadowRed'>Hybrid SSR:</b> Lightning fast - select public pages initially render on the server, then the rest of app seamlessly loads, shares state, and runs super fast as normal SPA.  Literally the best of both worlds.
                   </p>
                 )}
               </li>

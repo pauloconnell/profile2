@@ -217,14 +217,11 @@
 
    }
 
-   .textShadowBlack {
-     text-shadow: .2px .2px 2px black;
-   }
+ .textShadowRed{
+   text-shadow:  2px 2px 8px var(--tertiary-color);
+ }
 
-   .textShadowRed {
-     text-shadow: 2px 2px 8px var(--tertiary-color);
-   }
-
+  
    ul.hidden li {
      background-color: var(--secondary-color);
      border-radius: 5px;
