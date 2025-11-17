@@ -278,9 +278,9 @@ function Home() {
         <div className="w-75 readEasy word  mx-auto mt-5 pt-5 mb-3 ">
 
           <div className={`lineHeight wordSpace mt-5 ${styles.homeMainText}`}>
-
-            Architecting scalable, maintainable front-end systems with  React, Next, Vue, Nuxt and TypeScript
-            <br /> backed by Full Stack expertise in Node.js, Express, and MongoDB.
+Senior Front-End Developer architecting scalable, maintainable, and tested systems <br></br> with React, Next, Vue, Nuxt & TypeScript <br/>
+— backed by Full Stack expertise in Node.js, Express & MongoDB, including secure API development and CI/CD deployments on Azure.
+           
           </div>
           <div className={` mt-5 pt-5 ${styles.textShadowBlack}`}>
             {/* <div className={`${styles.hidden}`}>Coming Soon: <b>Profile V2</b> </div> */}
