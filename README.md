@@ -1,5 +1,9 @@
 # Developer profile built with React 
 
+# View live site:
+
+https://pauloconnell.github.io/profile2/
+
 ## Deploying to gh pages
 I have the ghpages package which automates publishing to ghpages - just push changes to github 'main', then run 'npm run deploy'.  This is where gh pages will auto merge to the 'gh-page' branch (where live PROD lives) and runs build for deployment
 
