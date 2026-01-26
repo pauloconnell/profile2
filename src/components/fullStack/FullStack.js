@@ -1,83 +1,104 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { RowCard } from '../rowCards/RowCard';
-import MyWork  from '../links/MyWork';
+import MyWork from '../links/MyWork';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
 /* Refactored Feb 2023 */
 const FullStack = function () {
+   const location = useLocation();
+   useEffect(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+   }, [location]);
 
-  const location = useLocation();
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+   useEffect(() => {
+      AOS.init({
+         duration: 1300,
+         once: false,
+         offset: 20,
+      });
+   }, []);
 
-  },[location]);
+   return (
+      <div className="bgSolid ">
+         <MyWork />
 
-  useEffect(() => { AOS.init({ 
-    duration: 1300, 
-    once: false,
-    offset: 20 
-     
-    }); }, []);
+         <h2 className=" my-3 textAlign ">
+            <span className="bigH2 text textBlue ">Full Stack MERN Applications</span>
+         </h2>
 
-  return (
-    <div className="bgSolid ">
+         <h3
+            data-aos="zoom-in"
+            className="mb-5 py-3 mx-auto backgroundBlue width90 text-center text"
+         >
+            Deployed in the cloud using:
+            <br />
+            React, Next.js, Express, MongoDB, Mongoose, Node.js, API MicroServices, Vite,
+            Vitest, Jest, ReacTest, HTML, JavaScript, CSS, TailWind, Bootstrap, GitHub,
+            AWS, Vercel or Github Actions/Pages
+         </h3>
 
-      <MyWork />
-      
-        <h2 className=" my-3 textAlign ">
-          <span className="bigH2 text textBlue ">
-            Full Stack MERN Applications
-          </span>
-        </h2>
+         <section className="width90">
+            <RowCard
+               dataUrl1="https://maintracker.vercel.app/"
+               link1={'https://maintracker.vercel.app/'}
+               header1="Enterprise Fleet Management App"
+               title1="Full-Stack React Next.js Hybrid SSR solution for managing multi-tenant vehicle fleets, tracking commercial inspections, and automating maintenance work orders."
+               imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1769448548/portfolio/mainTrackerIMG.png"
+               imgAlt1="Full Stack app using auth0 React NextJS simplifies fleet maintenace management"
+               footer1="Multi-tenant architecture designed with SOC 2 principles and comprehensive unit testing, ensuring professional managers never miss a service interval."
+               dataUrl2="https://maintracker.vercel.app/"
+               link2={'https://maintracker.vercel.app/'}
+               header2="Action-Oriented Dashboard"
+               title2="A centralized command center that simplifies complex fleet data into intuitive, real-time notifications and quick-access actions."
+               imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1769451902/portfolio/Dashboard.png"
+               imgAlt2="Dashboard"
+               footer2="Built with TypeScript across front and backend for end-to-end type safety. Dashboard simplifies fleet management by centralizing control."
+            />
 
-        <h3 data-aos="zoom-in" className="mb-5 py-3 mx-auto backgroundBlue width90 text-center text">
-
-          Deployed in the cloud using:
-          <br />
-          React, Express, MongoDB, Mongoose, Node.js, API MicroServices
-
-          HTML, JavaScript, CSS, Bootstrap, GitHub, AWS
-        </h3>
-
-
-
-     
-
-      <section className="width90">
-
-        <RowCard dataUrl1="https://authentication-pug.glitch.me/" link1={null} header1="Encrypted Authentication Using Passport and MongoDB" title1="This app encrypts login details, stores users details on
+            <RowCard
+               dataUrl1="https://authentication-pug.glitch.me/"
+               link1={null}
+               header1="Encrypted Authentication Using Passport and MongoDB"
+               title1="This app encrypts login details, stores users details on
                   database, and allows secure login with Passport.js"
-          imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610815824/Authenticate-Pug_awfw7d.png" imgAlt1="Full Stack app with encrypted secure login image " footer1="This app encrypts login details, stores users details on
+               imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610815824/Authenticate-Pug_awfw7d.png"
+               imgAlt1="Full Stack app with encrypted secure login image "
+               footer1="This app encrypts login details, stores users details on
                   database, and allows secure login with Passport.js"
-                  dataUrl2="https://messageboard-anon.glitch.me/" link2={null} header2="Anonymous Message Board Web App" title2="This App allows anonymous users to set password protected content on 'boards' stored on MongoDB"
-          imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1610571643/messageBoard_km9wul.png" imgAlt2="Full Stack Message Board" footer2="This App allows anonymous users to set password protected content on each 'board' on MongoDB "
-          
-          />
+               dataUrl2="https://messageboard-anon.glitch.me/"
+               link2={null}
+               header2="Anonymous Message Board Web App"
+               title2="This App allows anonymous users(no sign up required) to set password protected content on 'boards' stored on MongoDB"
+               imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1610571643/messageBoard_km9wul.png"
+               imgAlt2="Full Stack Message Board"
+               footer2="This App allows anonymous users to set password protected content on each 'board' on MongoDB "
+            />
 
-
-
-       {/* repl repo inactive "https://QA-5-american-british-english-translator.pauloconnell.repl.co" 
-       Upgraded node and DB, so it's working, but still needs major CSS update: "https://messageboard-anon.glitch.me/"
-       Removing these
-       // dataUrl2="https://QA-5-american-british-english-translator.pauloconnell.repl.co" link2={null} header2="Slang Translation App" title2="This app converts from British spelling/slang to US and Vise-Versa"
-          // imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1610564580/translate_yjhf3p.png" imgAlt2="translator app image" footer2="This app converts from British spelling/slang to US and Vise-Versa" 
-       */}
-
-
-        <RowCard dataUrl1="https://825f669b-dc9a-4bff-8630-5cbc22ac4b31-00-3ks6dkftqw91c.riker.replit.dev/" link1={null} header1="Sudoku Solver Game" title1="This app implements Sudoku logic and solves any board using recursion"
-          imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610747577/suduko_e2wjgi.png" imgAlt1="Full Stack Sudoku Solver" footer1="This app implements Sudoku logic and solves any board using recursion"
-          dataUrl2="https://exercisetrackerapi.glitch.me" link2={null} header2="Exercise Tracker App" title2="This app creates an API to Querry database results for users
+            <RowCard
+               dataUrl1="https://825f669b-dc9a-4bff-8630-5cbc22ac4b31-00-3ks6dkftqw91c.riker.replit.dev/"
+               link1={null}
+               header1="Sudoku Solver Game"
+               title1="This app implements Sudoku logic and solves any board using recursion"
+               imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610747577/suduko_e2wjgi.png"
+               imgAlt1="Full Stack Sudoku Solver"
+               footer1="This app implements Sudoku logic and solves any board using recursion"
+               dataUrl2="https://exercisetrackerapi.glitch.me"
+               link2={null}
+               header2="Exercise Tracker App"
+               title2="This app creates an API to Querry database results for users
                   results. The app creates unique userId for each user to log
                   exercises and track on the database via API Querries."
-          imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1606166908/xTracker_nm1gfn.png" imgAlt2="Full Stack Exercise tracker Web App image" footer2="Full Stack Exercise tracker Web App stores each user's exercises in MongoDB" />
+               imgSrc2="https://res.cloudinary.com/pollie/image/upload/v1606166908/xTracker_nm1gfn.png"
+               imgAlt2="Full Stack Exercise tracker Web App image"
+               footer2="Full Stack Exercise tracker Web App stores each user's exercises in MongoDB"
+            />
 
-
-        {/* replit repo inactive too "https://qa-4-suduko-solver.pauloconnell.repl.co/" 
+            {/* replit repo inactive too "https://qa-4-suduko-solver.pauloconnell.repl.co/" 
         "https://stock-price-checker-paul.glitch.me/" npm needs update
         */}
-        {/* <a href="https://825f669b-dc9a-4bff-8630-5cbc22ac4b31-00-3ks6dkftqw91c.riker.replit.dev/"> testing Sudoku Link</a> 
+            {/* <a href="https://825f669b-dc9a-4bff-8630-5cbc22ac4b31-00-3ks6dkftqw91c.riker.replit.dev/"> testing Sudoku Link</a> 
 
         <RowCard dataUrl1="https://825f669b-dc9a-4bff-8630-5cbc22ac4b31-00-3ks6dkftqw91c.riker.replit.dev/" link1={null} header1="Sudoku Solver Game" title1="This app implements Sudoku logic and solves any board using recursion"
           imgSrc1="https://res.cloudinary.com/pollie/image/upload/v1610747577/suduko_e2wjgi.png" imgAlt1="Full Stack Sudoku Solver" footer1="This app implements Sudoku logic and solves any board using recursion"
@@ -139,8 +160,7 @@ const FullStack = function () {
         </section>
       </div> */}
 
-
-        {/* 
+            {/* 
       <div className="row mx-1 justify-content-center">
         <section className="col-12 col-sm-5 text-center py-1 px-0 link">
           <a
@@ -197,8 +217,7 @@ const FullStack = function () {
         </section>
       </div> */}
 
-
-        {/* 
+            {/* 
       <div className="row mx-1 justify-content-center">
         <section className="col-12 col-sm-5 text-center py-1 px-0 link">
           <a
@@ -255,11 +274,10 @@ const FullStack = function () {
           </a>
         </section>
       </div> */}
-
-      </section>
-      <MyWork />
-    </div>
-  );
+         </section>
+         <MyWork />
+      </div>
+   );
 };
 
 export default FullStack;
